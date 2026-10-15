@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex">
+<!-- slot: title --><title>Briefing · 2026-10-14</title><!-- /slot -->
+<style id="lang-rule">body [lang]:not([lang="en"]) { display: none !important; }</style>
+<link rel="stylesheet" href="../../../../../src/style.css">
+<script src="../../../../../src/lang.js"></script>
+</head>
+<body>
+<div class="page">
+
+  <aside class="rail">
+
+  <header class="masthead">
+    <div class="masthead-top">
+      <p class="label"><span lang="en">Daily briefing</span><span lang="ko">오늘의 브리핑</span></p>
+      <label class="lang-switch">
+        <select id="lang-select" aria-label="Language">
+          <!-- slot: languages -->
+          <option value="en">EN</option>
+          <option value="ko">KO</option>
+          <!-- /slot -->
+        </select>
+      </label>
+    </div>
+    <!-- slot: date lang=en -->
+    <div lang="en">
+      <h1>Wednesday, October 14</h1>
+      <p class="dateline"><time datetime="2026-10-14T08:00:03+09:00"><span>2026-10-14</span> <span>· prepared at 08:00</span></time></p>
+    </div>
+    <!-- /slot -->
+    <!-- slot: date lang=ko -->
+    <div lang="ko">
+      <h1>10월 14일 수요일</h1>
+      <p class="dateline"><time datetime="2026-10-14T08:00:03+09:00"><span>2026-10-14</span> <span>· 08:00 작성</span></time></p>
+    </div>
+    <!-- /slot -->
+  </header>
+
+  <nav class="contents" aria-label="Contents">
+    <!-- slot: contents -->
+    <ol>
+      <li><a href="#huggingface-papers-daily"><span class="toc-name">huggingface-papers-daily</span><span class="toc-count">10</span></a></li>
+      <li><a href="#world-news"><span class="toc-name">world-news</span><span class="status status-stale"><span lang="en">stale</span><span lang="ko">지연</span></span><span class="toc-count">10</span></a></li>
+      <li><a href="#github-trending-daily"><span class="toc-name">github-trending-daily</span><span class="toc-count">9</span></a></li>
+    </ol>
+    <!-- /slot -->
+  </nav>
+
+  <section class="health" aria-labelledby="attention">
+    <h2 id="attention"><span lang="en">Needs attention</span><span lang="ko">확인이 필요한 소스</span></h2>
+    <div class="notices">
+      <!-- slot: notices -->
+      <div class="notice">
+        <p class="notice-head"><span class="status status-stale"><span lang="en">Stale</span><span lang="ko">지연</span></span><span class="source-name"><span class="source-producer">world-news</span> cnn-topstories</span></p>
+        <p class="notice-detail"><span lang="en">No success on record</span><span lang="ko">성공 기록 없음</span></p>
+      </div>
+      <!-- /slot -->
+    </div>
+  </section>
+
+  </aside>
+
+  <section class="lead" aria-label="Summary">
+    <!-- slot: summary lang=en -->
+    <div lang="en">
+      <p>The reverse-engineering tool is at about 55,000 stars in a day, and <a href="#github-trending-daily-3">VoiceStudio</a>, a local voice suite, enters the list. <a href="#huggingface-papers-daily-1">S-Space</a> tops the papers with 272 upvotes, followed by <a href="#huggingface-papers-daily-3">a study of models that keep thinking when told not to</a>. The news turns to <a href="#world-news-1">a US indictment over the bugging of OpenAI’s offices</a> and <a href="#world-news-5">a lung cancer diagnosis for the Pope</a>, with <a href="#world-news-8">missiles intercepted near Riyadh</a> continuing the regional story.</p>
+      <p>One source needs a look: the CNN top-stories feed behind the news roundup remains stale. No item awaits a decision.</p>
+    </div>
+    <!-- /slot -->
+    <!-- slot: summary lang=ko -->
+    <div lang="ko">
+      <p>역공학 도구는 하루 별 약 55,000개이고, 로컬 음성 도구 <a href="#github-trending-daily-3">VoiceStudio</a>가 목록에 들어왔습니다. 논문에서는 <a href="#huggingface-papers-daily-1">S-Space</a>가 추천 272건으로 1위이며, <a href="#huggingface-papers-daily-3">생각하지 말라는 지시에도 계속 생각하는 모델에 관한 연구</a>가 뒤를 잇습니다. 뉴스는 <a href="#world-news-1">오픈에이아이 사무실 도청에 대한 미국의 기소</a>와 <a href="#world-news-5">교황의 폐암 진단</a>으로 옮겨 갔고, <a href="#world-news-8">리야드 인근에서 요격된 미사일</a>이 지역 소식을 이어 갑니다.</p>
+      <p>확인이 필요한 소스는 하나입니다. 뉴스 요약의 CNN 주요 뉴스 피드가 계속 오래된 상태입니다. 결정을 기다리는 항목은 없습니다.</p>
+    </div>
+    <!-- /slot -->
+  </section>
+
+  <main>
+    <div class="zone">
+      <!-- slot: producers -->
+      <section class="producer" aria-labelledby="huggingface-papers-daily">
+        <h2 class="producer-head" id="huggingface-papers-daily">huggingface-papers-daily <span class="count">10</span></h2>
+        <p class="producer-summary">HuggingFace daily papers: top 10 of 50 today</p>
+        <!-- slot: intro:huggingface-papers-daily lang=en -->
+  <p class="intro" lang="en"><a href="#huggingface-papers-daily-1">S-Space</a> carries over from the previous day and leads with 272 upvotes. <a href="#huggingface-papers-daily-3">Thinking Inertia</a> reports that models keep reasoning when told not to, and <a href="#huggingface-papers-daily-4">AgentSWE</a> and <a href="#huggingface-papers-daily-5">a terminal-agent data study</a> both concern coding and terminal agents.</p>
+  <!-- /slot -->
+        <!-- slot: intro:huggingface-papers-daily lang=ko -->
+  <p class="intro" lang="ko"><a href="#huggingface-papers-daily-1">S-Space</a>는 전날에서 이어져 추천 272건으로 선두입니다. <a href="#huggingface-papers-daily-3">Thinking Inertia</a>는 모델이 지시를 받고도 계속 추론한다고 보고하며, <a href="#huggingface-papers-daily-4">AgentSWE</a>와 <a href="#huggingface-papers-daily-5">터미널 에이전트 데이터 연구</a>는 모두 코딩과 터미널 에이전트를 다룹니다.</p>
+  <!-- /slot -->
+        <ol class="items">
+          <li class="item" id="huggingface-papers-daily-1"><div>
+      <a class="item-title" href="https://huggingface.co/papers/2610.13527">S-Space: Exploring Spatial Workspace in Multimodal Language Models</a>
+      <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-09T08:48:41Z">10-09 17:48</time></p>
+      <p class="item-excerpt">272 upvotes. Multimodal language models (MLLMs) exhibit promising spatial reasoning capabilities, yet the internal mechanisms supporting them remain poorly understood. We uncover S-Space, a linear representation subspace in which object-token representations encode continuous co…</p>
+    </div></li>
+          <li class="item" id="huggingface-papers-daily-2"><div>
+      <a class="item-title" href="https://huggingface.co/papers/2609.39601">GroundingPI: A Grounding Foundation Model towards Physical Intelligence with Visual Primitives</a>
+      <p class="item-meta">paper · huggingface.co · <time datetime="2026-09-29T20:00:00Z">09-30 05:00</time></p>
+      <p class="item-excerpt">247 upvotes. Precise grounding matters. It specifies which object is the target and where that object is, even in clutter and for tiny objects, and it has to be fast enough for closed-loop control. Yet vision-language-action (VLA) and world-action models (WAMs) take perception f…</p>
+    </div></li>
+          <li class="item" id="huggingface-papers-daily-3"><div>
+      <a class="item-title" href="https://huggingface.co/papers/2610.11765">Thinking Inertia: LLMs Keep Thinking When Told Not To</a>
+      <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-07T20:00:00Z">10-08 05:00</time></p>
+      <p class="item-excerpt">215 upvotes. Large Language Models (LLMs) increasingly ship with explicit &quot;thinking modes&quot;, yet their counterpart, &quot;no-thinking&quot;, has received far less attention. We study LLMs&#x27; no-thinking behavior along two axes. a. How to measure no-thinking? Prior work typically defines no-t…</p>
+    </div></li>
+          <li class="item" id="huggingface-papers-daily-4"><div>
+      <a class="item-title" href="https://huggingface.co/papers/2610.13361">AgentSWE: Can Coding Agents Build the Agent You Actually Want?</a>
+      <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-08T20:00:00Z">10-09 05:00</time></p>
+      <p class="item-excerpt">201 upvotes. As the production of software passes into the hands of software itself, coding agents are increasingly commissioned to build agents fitted to their users&#x27; own workflows. This delegation carries a quiet assumption, that the delivered agent will faithfully serve the r…</p>
+    </div></li>
+          <li class="item" id="huggingface-papers-daily-5"><div>
+      <a class="item-title" href="https://huggingface.co/papers/2610.13166">Scaling Agentic Data for Long-Horizon Terminal Intelligence</a>
+      <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-08T20:00:00Z">10-09 05:00</time></p>
+      <p class="item-excerpt">133 upvotes. Terminal agents are moving beyond local operations toward completing real-world professional tasks. Short trajectories can demonstrate commands and tool calls, but they do not fully show how agents accumulate evidence through exploration, use it to inform judgments,…</p>
+    </div></li>
+          <li class="item" id="huggingface-papers-daily-6"><div>
+      <a class="item-title" href="https://huggingface.co/papers/2610.09326">VIS-Ground: Video Interactive Storytelling with Contextual Grounding</a>
+      <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-06T20:00:00Z">10-07 05:00</time></p>
+      <p class="item-excerpt">78 upvotes. Video interactive storytelling enables viewers to actively steer how a video unfolds. However, once we allow viewers to intervene during generation, a new challenge arises: The viewer&#x27;s request can have latent dependencies on both the grounding source and the current…</p>
+    </div></li>
+        </ol>
+        <details class="more">
+    <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
+    <ol class="items" style="--start: 6">
+            <li class="item" id="huggingface-papers-daily-7"><div>
+        <a class="item-title" href="https://huggingface.co/papers/2609.39600">GroundAnything: Reconciling Parallel Decoding with Precise Visual Grounding at Flash Speed</a>
+        <p class="item-meta">paper · huggingface.co · <time datetime="2026-09-29T20:00:00Z">09-30 05:00</time></p>
+        <p class="item-excerpt">73 upvotes. Autoregressive (AR) grounding models serialize spatial predictions, introducing sequential latency and imposing a causal order on output tokens. We view grounding as visual evidence extraction: objects, locations, and spatial relations are jointly constrained by the …</p>
+      </div></li>
+            <li class="item" id="huggingface-papers-daily-8"><div>
+        <a class="item-title" href="https://huggingface.co/papers/2610.13630">Multi-Stream Attention Residuals</a>
+        <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-08T20:00:00Z">10-09 05:00</time></p>
+        <p class="item-excerpt">34 upvotes. Attention Residuals (AttnRes) enables content-dependent retrieval over network depth, which can be viewed as single-stream softmax attention along the depth axis. Inspired by the success of multi-head attention along the sequence axis, we introduce Multi-Stream Atten…</p>
+      </div></li>
+            <li class="item" id="huggingface-papers-daily-9"><div>
+        <a class="item-title" href="https://huggingface.co/papers/2609.33304">Relevance Does Not Imply Applicability: Experience Activation for Personal GUI Agents</a>
+        <p class="item-meta">paper · huggingface.co · <time datetime="2026-09-26T20:00:00Z">09-27 05:00</time></p>
+        <p class="item-excerpt">30 upvotes. Personal Graphical User Interface (GUI) agents rely on interaction history to infer what a user wants from ambiguous instructions and to anticipate recurring routines. Existing approaches retrieve task-relevant history and append it to the policy&#x27;s context, implicitl…</p>
+      </div></li>
+            <li class="item" id="huggingface-papers-daily-10"><div>
+        <a class="item-title" href="https://huggingface.co/papers/2610.12570">Contextual Correction of Parallel Drafts for Speculative Decoding</a>
+        <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-07T20:00:00Z">10-08 05:00</time></p>
+        <p class="item-excerpt">26 upvotes. Speculative decoding accelerates large language model inference by using a lightweight drafter to propose multiple tokens that are subsequently verified in parallel by the target model. Recent diffusion-based drafters make this paradigm particularly attractive: deep …</p>
+      </div></li>
+          </ol>
+  </details>
+      </section>
+
+      <section class="producer" aria-labelledby="world-news">
+        <h2 class="producer-head" id="world-news">world-news <span class="count">10</span></h2>
+        <p class="producer-summary">World news roundup: 10 items from 3 live feed(s)</p>
+        <!-- slot: intro:world-news lang=en -->
+  <p class="intro" lang="en"><a href="#world-news-1">The indictment of a Saudi OpenAI employee</a> for bugging its offices appears in both the FT and BBC feeds (<a href="#world-news-6">BBC report</a>). <a href="#world-news-5">The Pope’s lung cancer diagnosis</a>, <a href="#world-news-7">a warning from the head of MI5</a> and <a href="#world-news-9">an IMF assessment of the UK economy</a> complete the main stories. The CNN feed is stale.</p>
+  <!-- /slot -->
+        <!-- slot: intro:world-news lang=ko -->
+  <p class="intro" lang="ko"><a href="#world-news-1">오픈에이아이 사우디 직원 기소</a>는 사무실 도청 혐의로, FT와 BBC 피드에 모두 실렸습니다(<a href="#world-news-6">BBC 보도</a>). <a href="#world-news-5">교황의 폐암 진단</a>, <a href="#world-news-7">MI5 수장의 경고</a>, <a href="#world-news-9">IMF의 영국 경제 평가</a>가 나머지 주요 기사입니다. CNN 피드는 오래된 상태입니다.</p>
+  <!-- /slot -->
+        <ol class="items">
+          <li class="item" id="world-news-1"><div>
+      <a class="item-title" href="https://www.ft.com/content/2c3b583a-3ddc-4920-a350-9698c119435c?syn-25a6b1a6=1">US indicts Saudi employee of OpenAI for allegedly bugging its offices</a>
+      <p class="item-meta">news · www.ft.com · <time datetime="2026-10-13T20:54:58Z">05:54</time></p>
+      <p class="item-excerpt">AI lab discovered a recording device and reported it to the FBI</p>
+    </div></li>
+          <li class="item" id="world-news-2"><div>
+      <a class="item-title" href="https://www.ft.com/content/03e29a9f-1f03-46d0-9855-3b9d5081c29d?syn-25a6b1a6=1">How America’s dying coal industry found a lifeline in Trump’s White House</a>
+      <p class="item-meta">news · www.ft.com · <time datetime="2026-10-13T10:00:10Z">10-13 19:00</time></p>
+      <p class="item-excerpt">A CEO plays golf with Trump’s son as an industry once shut out of Washington turns access into policy</p>
+    </div></li>
+          <li class="item" id="world-news-3"><div>
+      <a class="item-title" href="https://www.ft.com/content/1724a30e-cf50-4a4e-ade8-bca72ea4b9a1?syn-25a6b1a6=1">Why Trump is going for Zelenskyy’s jugular</a>
+      <p class="item-meta">news · www.ft.com · <time datetime="2026-10-13T04:00:19Z">10-13 13:00</time></p>
+      <p class="item-excerpt">No matter how much America’s allies urge the president to back Ukraine, he cannot forgive its leader for showing up his dealmaking impotence</p>
+    </div></li>
+          <li class="item" id="world-news-4"><div>
+      <a class="item-title" href="https://www.ft.com/content/52a1bbdd-2171-4fcb-9efe-99ed4283def5?syn-25a6b1a6=1">How not to revive Europe’s auto industry</a>
+      <p class="item-meta">news · www.ft.com · <time datetime="2026-10-13T15:03:49Z">00:03</time></p>
+      <p class="item-excerpt">The electric vehicle market shows how legacy EU companies continue to fail when it comes to countering Chinese competition</p>
+    </div></li>
+          <li class="item" id="world-news-5"><div>
+      <a class="item-title" href="https://www.bbc.co.uk/news/articles/ck1wvd9dvv22o?at_medium=RSS&amp;at_campaign=rss">Pope diagnosed with lung cancer but had successful surgery, Vatican says</a>
+      <p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-13T20:46:06Z">05:46</time></p>
+      <p class="item-excerpt">Pope Leo had successful surgery to remove a lower lobe of his right lung, the Vatican said.</p>
+    </div></li>
+          <li class="item" id="world-news-6"><div>
+      <a class="item-title" href="https://www.bbc.co.uk/news/articles/cwg5jq4vlddzo?at_medium=RSS&amp;at_campaign=rss">Saudi man charged with planting &#x27;sophisticated&#x27; recording device in OpenAI office</a>
+      <p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-13T21:42:49Z">06:42</time></p>
+      <p class="item-excerpt">Prosecutors say the device, wrapped in toilet paper, was found inserted in a USB port on the back of a TV in an executive conference room.</p>
+    </div></li>
+        </ol>
+        <details class="more">
+    <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
+    <ol class="items" style="--start: 6">
+            <li class="item" id="world-news-7"><div>
+        <a class="item-title" href="https://www.bbc.co.uk/news/articles/c60rl5vwpk02o?at_medium=RSS&amp;at_campaign=rss">MI5 chief warns of threats to UK from Russia, Iran and AI</a>
+        <p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-13T15:52:15Z">00:52</time></p>
+        <p class="item-excerpt">Sir Ken McCallum says operations to tackle terrorism and state threats are now roughly of an &quot;equal scale&quot;.</p>
+      </div></li>
+            <li class="item" id="world-news-8"><div>
+        <a class="item-title" href="https://www.bbc.co.uk/news/articles/crx2d60y1py3o?at_medium=RSS&amp;at_campaign=rss">Missiles intercepted near Riyadh after Saudi coalition hits Yemen fuel depot</a>
+        <p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-13T22:29:55Z">07:29</time></p>
+        <p class="item-excerpt">The Saudi-led coalition fighting in Yemen struck a fuel depot near the Houthi-controlled capital, Sanaa.</p>
+      </div></li>
+            <li class="item" id="world-news-9"><div>
+        <a class="item-title" href="https://www.bbc.co.uk/news/articles/cmly05l1g15yo?at_medium=RSS&amp;at_campaign=rss">Three things we&#x27;ve learnt about the UK economy from the IMF</a>
+        <p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-13T11:58:43Z">10-13 20:58</time></p>
+        <p class="item-excerpt">The influential economics body has upgraded its UK growth forecast for this year, but risks remain.</p>
+      </div></li>
+            <li class="item" id="world-news-10"><div>
+        <a class="item-title" href="https://www.bbc.co.uk/news/articles/cm9qzwjgnjxlo?at_medium=RSS&amp;at_campaign=rss">Bumble bought for $1.3bn in &#x27;bet on the future of humanity&#x27;</a>
+        <p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-13T15:59:07Z">00:59</time></p>
+        <p class="item-excerpt">The dating app which recently ditched its &quot;women-first&quot; chat rule has been bought by an investment firm.</p>
+      </div></li>
+          </ol>
+  </details>
+      </section>
+
+      <section class="producer" aria-labelledby="github-trending-daily">
+        <h2 class="producer-head" id="github-trending-daily">github-trending-daily <span class="count">9</span></h2>
+        <p class="producer-summary">GitHub trending (daily): top 9 repos by stars</p>
+        <!-- slot: intro:github-trending-daily lang=en -->
+  <p class="intro" lang="en"><a href="#github-trending-daily-1">morluto/rea</a> reached 54,706 stars in a day. <a href="#github-trending-daily-3">VoiceStudio</a> is the new entry most worth a look, an open-source local alternative for voice cloning, dubbing and transcription, and <a href="#github-trending-daily-6">vercel-labs/skills</a> adds a command-line tool for agent skills.</p>
+  <!-- /slot -->
+        <!-- slot: intro:github-trending-daily lang=ko -->
+  <p class="intro" lang="ko"><a href="#github-trending-daily-1">morluto/rea</a>가 하루 별 54,706개에 이르렀습니다. 새로 들어온 항목 중에서는 음성 복제, 더빙, 받아쓰기를 로컬에서 처리하는 오픈소스 <a href="#github-trending-daily-3">VoiceStudio</a>를 살펴볼 만하고, <a href="#github-trending-daily-6">vercel-labs/skills</a>는 에이전트 스킬용 명령줄 도구를 더합니다.</p>
+  <!-- /slot -->
+        <ol class="items">
+          <li class="item" id="github-trending-daily-1"><div>
+      <a class="item-title" href="https://github.com/morluto/rea">morluto/rea</a>
+      <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-13T23:00:02Z">08:00</time></p>
+      <p class="item-excerpt">Reverse engineer anything with agents, from app behavior down to native binaries. · 205,363 stars total · 54,706 stars today</p>
+    </div></li>
+          <li class="item" id="github-trending-daily-2"><div>
+      <a class="item-title" href="https://github.com/bilawalsidhu/gods-eye-view">bilawalsidhu/gods-eye-view</a>
+      <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-13T23:00:02Z">08:00</time></p>
+      <p class="item-excerpt">A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe. · 55,283 stars total · 1,961 stars today</p>
+    </div></li>
+          <li class="item" id="github-trending-daily-3"><div>
+      <a class="item-title" href="https://github.com/debpalash/VoiceStudio">debpalash/VoiceStudio</a>
+      <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-13T23:00:02Z">08:00</time></p>
+      <p class="item-excerpt">VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription &amp; audiobook creation in 646 languages. · 63,088 stars total · 2,277 stars today</p>
+    </div></li>
+          <li class="item" id="github-trending-daily-4"><div>
+      <a class="item-title" href="https://github.com/mksglu/context-mode">mksglu/context-mode</a>
+      <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-13T23:00:02Z">08:00</time></p>
+      <p class="item-excerpt">Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks. · 28,179 stars total · 978 stars today</p>
+    </div></li>
+          <li class="item" id="github-trending-daily-5"><div>
+      <a class="item-title" href="https://github.com/cathrynlavery/diagram-design">cathrynlavery/diagram-design</a>
+      <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-13T23:00:02Z">08:00</time></p>
+      <p class="item-excerpt">Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. · 54,016 stars total · 1,813 stars today</p>
+    </div></li>
+          <li class="item" id="github-trending-daily-6"><div>
+      <a class="item-title" href="https://github.com/vercel-labs/skills">vercel-labs/skills</a>
+      <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-13T23:00:02Z">08:00</time></p>
+      <p class="item-excerpt">The open agent skills tool - npx skills · 34,453 stars total · 187 stars today</p>
+    </div></li>
+        </ol>
+        <details class="more">
+    <summary><span>3<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
+    <ol class="items" style="--start: 6">
+            <li class="item" id="github-trending-daily-7"><div>
+        <a class="item-title" href="https://github.com/lyogavin/airllm">lyogavin/airllm</a>
+        <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-13T23:00:02Z">08:00</time></p>
+        <p class="item-excerpt">AirLLM 2.8T LLM inference with single 4GB GPU · 38,288 stars total · 1,004 stars today</p>
+      </div></li>
+            <li class="item" id="github-trending-daily-8"><div>
+        <a class="item-title" href="https://github.com/storytold/artcraft">storytold/artcraft</a>
+        <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-13T23:00:02Z">08:00</time></p>
+        <p class="item-excerpt">ArtCraft is an intentional crafting engine for artists, designers, and filmmakers · 25,500 stars total · 4,078 stars today</p>
+      </div></li>
+            <li class="item" id="github-trending-daily-9"><div>
+        <a class="item-title" href="https://github.com/xtool-org/xtool">xtool-org/xtool</a>
+        <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-13T23:00:02Z">08:00</time></p>
+        <p class="item-excerpt">Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS. · 9,268 stars total · 1,182 stars today</p>
+      </div></li>
+          </ol>
+  </details>
+      </section>
+      <!-- /slot -->
+    </div>
+
+    <div class="zone">
+      <h2 class="zone-title"><span lang="en">Projects</span><span lang="ko">프로젝트</span></h2>
+      <!-- slot: personal -->
+      <!-- /slot -->
+    </div>
+
+  </main>
+
+  <nav class="days" aria-label="Other days">
+    <!-- slot: days -->
+    <a class="prev" href="../../../../../reports/2026/10/W2/13/"><span class="day-label"><span lang="en">Previous day</span><span lang="ko">이전 날</span></span><span class="day-date">2026-10-13</span></a>
+    <!-- /slot -->
+    <a class="all" href="../../../../../"><span class="day-date"><span lang="en">All days</span><span lang="ko">모든 날</span></span></a>
+    <a class="next" href="#" hidden><span class="day-label"><span lang="en">Next day</span><span lang="ko">다음 날</span></span><span class="day-date"></span></a>
+    <p class="next-none" hidden><span lang="en">No next day yet</span><span lang="ko">아직 다음 날이 없습니다</span></p>
+  </nav>
+
+</div>
+<script>
+  // The earliest of the next seven days that has a page; producers can skip days.
+  (function () {
+    var stamp = document.querySelector(".masthead time[datetime]");
+    var next = document.querySelector(".days .next");
+    var none = document.querySelector(".days .next-none");
+    if (!stamp || !next || !none) return;
+    var start = Date.parse(stamp.getAttribute("datetime").slice(0, 10) + "T00:00:00Z");
+    function folder(day) {
+      var week = Math.floor((Number(day.slice(8, 10)) - 1) / 7) + 1;
+      return "../../../../../reports/" + day.slice(0, 4) + "/" + day.slice(5, 7) + "/W" + week + "/" + day.slice(8, 10) + "/";
+    }
+    var days = [1, 2, 3, 4, 5, 6, 7].map(function (n) { return new Date(start + n * 864e5).toISOString().slice(0, 10); });
+    Promise.all(days.map(function (day) {
+      return fetch(folder(day), { method: "HEAD" }).then(function (r) { return r.ok ? day : null; }, function () { return null; });
+    })).then(function (found) {
+      var day = found.filter(Boolean)[0];
+      if (!day) { none.hidden = false; return; }
+      next.href = folder(day);
+      next.querySelector(".day-date").textContent = day;
+      next.hidden = false;
+    });
+  })();
+</script>
+</body>
+</html>
