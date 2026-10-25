@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex">
+<!-- slot: title --><title>Briefing · 2026-10-26</title><!-- /slot -->
+<style id="lang-rule">body [lang]:not([lang="en"]) { display: none !important; }</style>
+<link rel="stylesheet" href="../../../../../src/style.css">
+<script src="../../../../../src/lang.js"></script>
+</head>
+<body>
+<div class="page">
+
+  <aside class="rail">
+
+  <header class="masthead">
+    <div class="masthead-top">
+      <p class="label"><span lang="en">Daily briefing</span><span lang="ko">오늘의 브리핑</span></p>
+      <label class="lang-switch">
+        <select id="lang-select" aria-label="Language">
+          <!-- slot: languages -->
+          <option value="en">EN</option>
+          <option value="ko">KO</option>
+          <!-- /slot -->
+        </select>
+      </label>
+    </div>
+    <!-- slot: date lang=en -->
+    <div lang="en">
+      <h1>Monday, October 26</h1>
+      <p class="dateline"><time datetime="2026-10-26T08:16:46+09:00"><span>2026-10-26</span> <span>· prepared at 08:16</span></time></p>
+    </div>
+    <!-- /slot -->
+    <!-- slot: date lang=ko -->
+    <div lang="ko">
+      <h1>10월 26일 월요일</h1>
+      <p class="dateline"><time datetime="2026-10-26T08:16:46+09:00"><span>2026-10-26</span> <span>· 08:16 작성</span></time></p>
+    </div>
+    <!-- /slot -->
+  </header>
+
+  <nav class="contents" aria-label="Contents">
+    <!-- slot: contents -->
+    <ol>
+      <li><a href="#world-news"><span class="toc-name">world-news</span><span class="status status-stale"><span lang="en">stale</span><span lang="ko">지연</span></span><span class="toc-count">10</span></a></li>
+      <li><a href="#github-trending-daily"><span class="toc-name">github-trending-daily</span><span class="toc-count">10</span></a></li>
+      <li><a href="#huggingface-papers-daily"><span class="toc-name">huggingface-papers-daily</span><span class="toc-count">10</span></a></li>
+      <li><a href="#github-trending-weekly"><span class="toc-name">github-trending-weekly</span><span class="toc-count">10</span></a></li>
+      <li><a href="#huggingface-papers-weekly"><span class="toc-name">huggingface-papers-weekly</span><span class="toc-count">10</span></a></li>
+      <li><a href="#ruanyf-weekly"><span class="toc-name">ruanyf-weekly</span><span class="toc-count">9</span></a></li>
+    </ol>
+    <p class="toc-zone"><span lang="en">Projects</span><span lang="ko">프로젝트</span></p>
+    <ol>
+      <li><a href="#yui-repo"><span class="toc-name">yui-repo</span><span class="toc-count">7</span></a></li>
+    </ol>
+    <!-- /slot -->
+  </nav>
+
+  <section class="health" aria-labelledby="attention">
+    <h2 id="attention"><span lang="en">Needs attention</span><span lang="ko">확인이 필요한 소스</span></h2>
+    <div class="notices">
+      <!-- slot: notices -->
+      <div class="notice">
+        <p class="notice-head"><span class="status status-stale"><span lang="en">Stale</span><span lang="ko">지연</span></span><span class="source-name"><span class="source-producer">world-news</span> cnn-topstories</span></p>
+        <p class="notice-detail"><span lang="en">No success on record</span><span lang="ko">성공 기록 없음</span></p>
+      </div>
+      <!-- /slot -->
+    </div>
+  </section>
+
+  </aside>
+
+  <section class="lead" aria-label="Summary">
+    <!-- slot: summary lang=en -->
+    <div lang="en">
+      <p>Elections dominate the news: Brazil extended voting, Serbia's long-time ruler conceded, and Israel is preparing for a pivotal vote. In technology, coding-agent tooling leads both GitHub trending lists, headed by a security-audit skill from Cloudflare, while the paper lists feature a unified vision-language model and a streaming video generation benchmark.</p>
+      <p>The project merged three features and closed three issues, with no review request outstanding. One news feed (cnn-topstories) is stale and has no recorded success, so world news coverage may be incomplete.</p>
+    </div>
+    <!-- /slot -->
+    <!-- slot: summary lang=ko -->
+    <div lang="ko">
+      <p>뉴스는 선거 소식이 중심입니다. 브라질은 투표를 연장했고, 세르비아의 장기 집권 지도자는 패배를 인정했으며, 이스라엘은 중대한 선거를 앞두고 있습니다. 기술 분야에서는 코딩 에이전트 도구가 두 GitHub 트렌딩 목록을 모두 차지했고 Cloudflare의 보안 감사 스킬이 선두입니다. 논문 목록에서는 통합 시각-언어 모델과 스트리밍 영상 생성 벤치마크가 눈에 띕니다.</p>
+      <p>프로젝트에서는 기능 세 건이 병합되고 이슈 세 건이 닫혔으며, 대기 중인 검토 요청은 없습니다. 뉴스 피드 한 곳(cnn-topstories)이 지연 상태이고 성공 기록이 없어 세계 뉴스에 빠진 소식이 있을 수 있습니다.</p>
+    </div>
+    <!-- /slot -->
+  </section>
+
+  <main>
+    <div class="zone">
+      <!-- slot: producers -->
+      <section class="producer" aria-labelledby="world-news">
+        <h2 class="producer-head" id="world-news">world-news <span class="count">10</span></h2>
+        <p class="producer-summary">World news roundup: 10 items from 3 live feed(s)</p>
+        <!-- slot: intro:world-news lang=en -->
+        <p class="intro" lang="en">Elections lead the day: <a href="#world-news-1">Brazil's vote was extended</a> amid transport complaints, <a href="#world-news-5">Serbia's long-time ruler conceded</a> to a student-led movement, and <a href="#world-news-6">Israel prepares for a pivotal election</a>. The return of the Venezuelan opposition leader appears twice, as <a href="#world-news-2">one item</a> and <a href="#world-news-7">another</a>. One of the four feeds is stale, so coverage may be incomplete.</p>
+        <!-- /slot -->
+        <!-- slot: intro:world-news lang=ko -->
+        <p class="intro" lang="ko">선거 소식이 중심입니다. <a href="#world-news-1">브라질 대법원이 투표 시간을 연장했고</a>, <a href="#world-news-5">세르비아의 장기 집권 지도자가 학생 주도 운동에 패배를 인정했으며</a>, <a href="#world-news-6">이스라엘은 중대한 선거를 앞두고 있습니다</a>. 베네수엘라 야권 지도자의 귀국은 <a href="#world-news-2">한 항목</a>과 <a href="#world-news-7">다른 항목</a>으로 두 번 실렸습니다. 피드 네 곳 중 한 곳이 지연 상태여서 빠진 소식이 있을 수 있습니다.</p>
+        <!-- /slot -->
+        <ol class="items">
+          <li class="item" id="world-news-1"><div>
+            <a class="item-title" href="https://www.ft.com/content/29033fb9-2dc7-4af0-a2ff-55d1bdd5dece?syn-25a6b1a6=1">Brazil’s Supreme Court extends voting as transport complaints mar election</a>
+            <p class="item-meta">news · ft.com · <time datetime="2026-10-25T22:10:25Z">07:10</time></p>
+            <p class="item-excerpt">Lack of buses and ferries adds to tense contest as rightwing challenger seeks to oust leftist president and bring country closer to Trump</p>
+          </div></li>
+          <li class="item" id="world-news-2"><div>
+            <a class="item-title" href="https://www.ft.com/content/f691e41e-dd01-4ac0-ade7-5f7ca23d6135?syn-25a6b1a6=1">Venezuelan opposition leader Machado returns from exile</a>
+            <p class="item-meta">news · ft.com · <time datetime="2026-10-25T21:55:32Z">06:55</time></p>
+            <p class="item-excerpt">Nobel laureate’s arrival poses a challenge to the country’s Trump-backed interim government</p>
+          </div></li>
+          <li class="item" id="world-news-3"><div>
+            <a class="item-title" href="https://www.ft.com/content/73a2ca6f-29b7-49e5-b8c7-0bde6c4e945b?syn-25a6b1a6=1">London’s most famous shopping street bans cars in bid to revive its fortunes</a>
+            <p class="item-meta">news · ft.com · <time datetime="2026-10-25T12:26:15Z">10-25 21:26</time></p>
+            <p class="item-excerpt">Oxford Street’s controversial pedestrianisation comes as big brands invest in flagship stores</p>
+          </div></li>
+          <li class="item" id="world-news-4"><div>
+            <a class="item-title" href="https://www.ft.com/content/899bc060-3f17-4ed9-bea7-710c467d92fd">Marco Rubio still owes Europe answers about America’s intentions</a>
+            <p class="item-meta">news · ft.com · <time datetime="2026-10-25T16:00:05Z">01:00</time></p>
+            <p class="item-excerpt">The US secretary of state’s recent speech in Athens evoked a shared destiny but offered no vision of a common future</p>
+          </div></li>
+          <li class="item" id="world-news-5"><div>
+            <a class="item-title" href="https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&amp;at_campaign=rss">Serbia's veteran ruler Vučić concedes election to student-led protest movement</a>
+            <p class="item-meta">news · bbc.co.uk · <time datetime="2026-10-25T22:54:57Z">07:54</time></p>
+            <p class="item-excerpt">The populist right-wing leader of 12 years says it is &quot;clear&quot; his party has lost the vote billed as a referendum on the country's future.</p>
+          </div></li>
+          <li class="item" id="world-news-6"><div>
+            <a class="item-title" href="https://www.bbc.co.uk/news/articles/ckpdgy6pl7xlo?at_medium=RSS&amp;at_campaign=rss">Deeply divided Israel braces for pivotal election</a>
+            <p class="item-meta">news · bbc.co.uk · <time datetime="2026-10-25T22:11:13Z">07:11</time></p>
+            <p class="item-excerpt">After three years of regional war, this is a battle Israel always knew was coming, writes Lucy Williamson.</p>
+          </div></li>
+        </ol>
+        <details class="more">
+          <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
+          <ol class="items" style="--start: 6">
+            <li class="item" id="world-news-7"><div>
+              <a class="item-title" href="https://www.bbc.co.uk/news/articles/cq8ez592pp0eo?at_medium=RSS&amp;at_campaign=rss">Venezuelan opposition leader María Machado returns after months in exile</a>
+              <p class="item-meta">news · bbc.co.uk · <time datetime="2026-10-25T18:29:00Z">03:29</time></p>
+              <p class="item-excerpt">Machado had left the country just a month before the US government seized Venezuelan President Nicolás Maduro.</p>
+            </div></li>
+            <li class="item" id="world-news-8"><div>
+              <a class="item-title" href="https://www.bbc.co.uk/news/articles/cvx28ljp8n4xo?at_medium=RSS&amp;at_campaign=rss">Musk says SpaceX restricted Ukraine's Starlink connection as service restored</a>
+              <p class="item-meta">news · bbc.co.uk · <time datetime="2026-10-25T09:00:00Z">10-25 18:00</time></p>
+              <p class="item-excerpt">The tech billionaire accuses Ukraine of violating its terms of service by using the network for military activity.</p>
+            </div></li>
+            <li class="item" id="world-news-9"><div>
+              <a class="item-title" href="https://www.bbc.co.uk/news/articles/c65yn9p55np2o?at_medium=RSS&amp;at_campaign=rss">Four ways Labour could raise money in the Budget without hiking income tax</a>
+              <p class="item-meta">news · bbc.co.uk · <time datetime="2026-10-25T06:00:15Z">10-25 15:00</time></p>
+              <p class="item-excerpt">Chancellor John Healey may need to raise money to boost his fiscal headroom - BBC Verify examines what options could be on the table.</p>
+            </div></li>
+            <li class="item" id="world-news-10"><div>
+              <a class="item-title" href="https://www.bbc.co.uk/news/articles/cqm24j9y9zn7o?at_medium=RSS&amp;at_campaign=rss">Budget to include £1bn for social and affordable housing</a>
+              <p class="item-meta">news · bbc.co.uk · <time datetime="2026-10-25T10:03:17Z">10-25 19:03</time></p>
+              <p class="item-excerpt">The move will take funding for the 10-year programme to more than £40bn.</p>
+            </div></li>
+          </ol>
+        </details>
+      </section>
+
+      <section class="producer" aria-labelledby="github-trending-daily">
+        <h2 class="producer-head" id="github-trending-daily">github-trending-daily <span class="count">10</span></h2>
+        <p class="producer-summary">GitHub trending (daily): top 10 repos by stars</p>
+        <!-- slot: intro:github-trending-daily lang=en -->
+        <p class="intro" lang="en">The security-audit skill from Cloudflare posted the largest one-day gain, <a href="#github-trending-daily-10">about 2,900 stars</a>. Design-oriented agent skills fill two further places (<a href="#github-trending-daily-2">hallmark</a> and <a href="#github-trending-daily-4">impeccable</a>), and a local voice toolkit, <a href="#github-trending-daily-3">VoiceStudio</a>, also gained strongly.</p>
+        <!-- /slot -->
+        <!-- slot: intro:github-trending-daily lang=ko -->
+        <p class="intro" lang="ko">Cloudflare의 보안 감사 스킬이 하루 증가폭 최대, 즉 <a href="#github-trending-daily-10">약 2,900 스타</a>를 기록했습니다. 디자인 중심의 에이전트 스킬 두 건(<a href="#github-trending-daily-2">hallmark</a>, <a href="#github-trending-daily-4">impeccable</a>)이 그 뒤를 이었고, 로컬 음성 도구 모음 <a href="#github-trending-daily-3">VoiceStudio</a>도 크게 늘었습니다.</p>
+        <!-- /slot -->
+        <ol class="items">
+          <li class="item" id="github-trending-daily-1"><div>
+            <a class="item-title" href="https://github.com/makecindy/cindy">makecindy/cindy</a>
+            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-25T23:00:02Z">08:00</time></p>
+            <p class="item-excerpt">Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。 · 4,804 stars total · 677 stars today</p>
+          </div></li>
+          <li class="item" id="github-trending-daily-2"><div>
+            <a class="item-title" href="https://github.com/Nutlope/hallmark">Nutlope/hallmark</a>
+            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-25T23:00:02Z">08:00</time></p>
+            <p class="item-excerpt">Anti-AI-slop design skill for Claude Code, Cursor, and Codex. · 33,649 stars total · 1,359 stars today</p>
+          </div></li>
+          <li class="item" id="github-trending-daily-3"><div>
+            <a class="item-title" href="https://github.com/debpalash/VoiceStudio">debpalash/VoiceStudio</a>
+            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-25T23:00:02Z">08:00</time></p>
+            <p class="item-excerpt">VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription &amp; audiobook creation in 646 languages. · 86,690 stars total · 1,588 stars today</p>
+          </div></li>
+          <li class="item" id="github-trending-daily-4"><div>
+            <a class="item-title" href="https://github.com/pbakaus/impeccable">pbakaus/impeccable</a>
+            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-25T23:00:02Z">08:00</time></p>
+            <p class="item-excerpt">The design language that makes your AI harness better at design. · 87,614 stars total · 1,113 stars today</p>
+          </div></li>
+          <li class="item" id="github-trending-daily-5"><div>
+            <a class="item-title" href="https://github.com/pollen-robotics/microduck">pollen-robotics/microduck</a>
+            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-25T23:00:02Z">08:00</time></p>
+            <p class="item-excerpt">A Tiny biped duck robot 🦆 · 11,596 stars total · 657 stars today</p>
+          </div></li>
+          <li class="item" id="github-trending-daily-6"><div>
+            <a class="item-title" href="https://github.com/TauricResearch/TradingAgents">TauricResearch/TradingAgents</a>
+            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-25T23:00:02Z">08:00</time></p>
+            <p class="item-excerpt">TradingAgents: Multi-Agents LLM Financial Trading Framework · 114,538 stars total · 636 stars today</p>
+          </div></li>
+        </ol>
+        <details class="more">
+          <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
+          <ol class="items" style="--start: 6">
+            <li class="item" id="github-trending-daily-7"><div>
+              <a class="item-title" href="https://github.com/Renhuai123/ziwei-doushu">Renhuai123/ziwei-doushu</a>
+              <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-25T23:00:02Z">08:00</time></p>
+              <p class="item-excerpt">紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据 · 7,518 stars total · 255 stars today</p>
+            </div></li>
+            <li class="item" id="github-trending-daily-8"><div>
+              <a class="item-title" href="https://github.com/JetBrains/thinkrail">JetBrains/thinkrail</a>
+              <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-25T23:00:02Z">08:00</time></p>
+              <p class="item-excerpt">Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need · 1,620 stars total · 52 stars today</p>
+            </div></li>
+            <li class="item" id="github-trending-daily-9"><div>
+              <a class="item-title" href="https://github.com/coollabsio/coolify">coollabsio/coolify</a>
+              <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-25T23:00:02Z">08:00</time></p>
+              <p class="item-excerpt">An open-source, self-hostable PaaS alternative to Vercel, Heroku &amp; Netlify that lets you easily deploy static sites, databases, full-stack applications and 360+ one-click services on your own servers. · 64,317 stars total · 192 stars today</p>
+            </div></li>
+            <li class="item" id="github-trending-daily-10"><div>
+              <a class="item-title" href="https://github.com/cloudflare/security-audit-skill">cloudflare/security-audit-skill</a>
+              <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-25T23:00:02Z">08:00</time></p>
+              <p class="item-excerpt">A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings · 46,777 stars total · 2,874 stars today</p>
+            </div></li>
+          </ol>
+        </details>
+      </section>
+
+      <section class="producer" aria-labelledby="huggingface-papers-daily">
+        <h2 class="producer-head" id="huggingface-papers-daily">huggingface-papers-daily <span class="count">10</span></h2>
+        <p class="producer-summary">HuggingFace daily papers: top 10 of 50 today</p>
+        <!-- slot: intro:huggingface-papers-daily lang=en -->
+        <p class="intro" lang="en"><a href="#huggingface-papers-daily-1">WeVisOne-VL</a> leads on upvotes with a unified object-level and pixel-level vision-language model. Two items bear on agents and memory: <a href="#huggingface-papers-daily-4">a benchmark for deep search on the open web</a> and <a href="#huggingface-papers-daily-8">a chunk-level parametric memory for language models</a>.</p>
+        <!-- /slot -->
+        <!-- slot: intro:huggingface-papers-daily lang=ko -->
+        <p class="intro" lang="ko"><a href="#huggingface-papers-daily-1">WeVisOne-VL</a>이 객체 단위와 픽셀 단위 인식을 통합한 시각-언어 모델로 추천 수 선두입니다. 에이전트와 메모리에 관한 항목은 <a href="#huggingface-papers-daily-4">실제 웹 환경에서의 심층 검색 평가</a>와 <a href="#huggingface-papers-daily-8">언어 모델용 청크 단위 파라메트릭 메모리</a> 두 건입니다.</p>
+        <!-- /slot -->
+        <ol class="items">
+          <li class="item" id="huggingface-papers-daily-1"><div>
+            <a class="item-title" href="https://huggingface.co/papers/2610.31329">WeVisOne-VL: Unified Visual Perception from Objects to Pixels</a>
+            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-21T20:00:00Z">10-22 05:00</time></p>
+            <p class="item-excerpt">243 upvotes. Existing vision-language models (VLMs) remain unreliable for fine-grained visual perception. In this report, we present WeVisOne-VL (WeChat Vision All-in-One), a powerful VLM that unifies object-level and pixel-level perception through structured next-token predicti…</p>
+          </div></li>
+          <li class="item" id="huggingface-papers-daily-2"><div>
+            <a class="item-title" href="https://huggingface.co/papers/2610.24738">Editing Images into Reusable Layers via Compositional Edit-Prior Distillation</a>
+            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-16T20:00:00Z">10-17 05:00</time></p>
+            <p class="item-excerpt">184 upvotes. High-quality image editing requires precise modification of target regions while preserving the content of unrelated regions. Existing editing models produce flattened outputs that limit precise local manipulation and layer reuse, while decomposition methods typical…</p>
+          </div></li>
+          <li class="item" id="huggingface-papers-daily-3"><div>
+            <a class="item-title" href="https://huggingface.co/papers/2610.30926">Making MLLM Latents Matter: Factor-Aware Predictive Learning for Cinematic Video Generation</a>
+            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-22T04:43:48Z">10-22 13:43</time></p>
+            <p class="item-excerpt">174 upvotes. Cinematic video generation requires both temporal inference from limited inputs (i.e., sparse rather than frame-by-frame guidance) and factor-aware control of character, scene, action, and camera. Multimodal large language models (MLLMs) offer useful priors for both…</p>
+          </div></li>
+          <li class="item" id="huggingface-papers-daily-4"><div>
+            <a class="item-title" href="https://huggingface.co/papers/2610.30181">Deep Search in Real-World Web Environments</a>
+            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></p>
+            <p class="item-excerpt">164 upvotes. Despite substantial progress in Deep Search agents, their ability to conduct end-to-end research in real-world open Web environments remains insufficiently evaluated. Unlike static retrieval settings, information on the real-world Web is distributed across diverse s…</p>
+          </div></li>
+          <li class="item" id="huggingface-papers-daily-5"><div>
+            <a class="item-title" href="https://huggingface.co/papers/2610.30949">IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems</a>
+            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-21T20:00:00Z">10-22 05:00</time></p>
+            <p class="item-excerpt">99 upvotes. We present IQuest-Q1, a sparse Mixture-of-Experts (MoE) agentic foundation model with 320B total parameters (15B activated). IQuest-Q1 is developed through a three-stage process: (1) stable and efficient pre-training, combining Stable SplitNorm, Muon, and muP with a …</p>
+          </div></li>
+          <li class="item" id="huggingface-papers-daily-6"><div>
+            <a class="item-title" href="https://huggingface.co/papers/2610.29677">Toward Recursive Self-Improvement in Physical AI</a>
+            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-20T20:00:00Z">10-21 05:00</time></p>
+            <p class="item-excerpt">59 upvotes. Recursive self-improvement (RSI) describes a system that improves not only its behavior but also the process by which it improves. Recent digital agents test this idea by rewriting their own code and checking each version with executable tests. Bringing these mechani…</p>
+          </div></li>
+        </ol>
+        <details class="more">
+          <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
+          <ol class="items" style="--start: 6">
+            <li class="item" id="huggingface-papers-daily-7"><div>
+              <a class="item-title" href="https://huggingface.co/papers/2610.28889">Policy-Mask: Budget-Aware Adaptation of Diffusion Features to Discriminative Tasks</a>
+              <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-19T20:00:00Z">10-20 05:00</time></p>
+              <p class="item-excerpt">52 upvotes. Selecting intermediate features from a frozen diffusion model for discriminative tasks is non-trivial because the useful signal is distributed across the denoising trajectory, network depth, and channels. In practice, this requires choosing a timestep, a block, and a…</p>
+            </div></li>
+            <li class="item" id="huggingface-papers-daily-8"><div>
+              <a class="item-title" href="https://huggingface.co/papers/2610.25100">Deep Fusion Memory: A Chunk-Level Parametric Memory for Large Language Models</a>
+              <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-17T20:00:00Z">10-18 05:00</time></p>
+              <p class="item-excerpt">50 upvotes. Large language models need effective ways to acquire and use external knowledge beyond what they retain from pretraining. Continued pretraining risks catastrophic forgetting, while retrieval at inference time can add substantial overhead. External parametric memory a…</p>
+            </div></li>
+            <li class="item" id="huggingface-papers-daily-9"><div>
+              <a class="item-title" href="https://huggingface.co/papers/2610.23987">What Generation Knows: Unlocking Fine-Grained Understanding in Unified Multimodal Models</a>
+              <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-13T20:00:00Z">10-14 05:00</time></p>
+              <p class="item-excerpt">39 upvotes. Fine-grained visual understanding requires distinguishing subtle differences in local attributes and spatial relations, yet remains challenging for existing vision-language models. Unified multimodal models (UMMs) offer a new opportunity through generation pathways t…</p>
+            </div></li>
+            <li class="item" id="huggingface-papers-daily-10"><div>
+              <a class="item-title" href="https://huggingface.co/papers/2610.27851">LaLa-World: Scaling Latent World Models with Natural Language Actions</a>
+              <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-20T20:00:00Z">10-21 05:00</time></p>
+              <p class="item-excerpt">38 upvotes. This paper shows that JEPA-style latent world models (LWMs) can learn across diverse domains and data sources by adopting the language-conditioned interface of video generation models. We establish this approach as an effective and efficient basis for planning with i…</p>
+            </div></li>
+          </ol>
+        </details>
+      </section>
+
+      <section class="producer" aria-labelledby="github-trending-weekly">
+        <h2 class="producer-head" id="github-trending-weekly">github-trending-weekly <span class="count">10</span></h2>
+        <p class="producer-summary">GitHub trending (weekly): top 10 repos by stars</p>
+        <!-- slot: intro:github-trending-weekly lang=en -->
+        <p class="intro" lang="en">The weekly list is dominated by coding-agent tooling. <a href="#github-trending-weekly-1">The Cloudflare security-audit skill</a> gained the most stars of the week, followed by <a href="#github-trending-weekly-5">Orca</a> and <a href="#github-trending-weekly-4">opencode</a>. <a href="#github-trending-weekly-9">A long-term memory project for agent CLIs</a> is also listed.</p>
+        <!-- /slot -->
+        <!-- slot: intro:github-trending-weekly lang=ko -->
+        <p class="intro" lang="ko">주간 목록은 코딩 에이전트 도구가 대부분입니다. <a href="#github-trending-weekly-1">Cloudflare 보안 감사 스킬</a>이 한 주 동안 가장 많은 스타를 얻었고, <a href="#github-trending-weekly-5">Orca</a>와 <a href="#github-trending-weekly-4">opencode</a>가 뒤를 이었습니다. <a href="#github-trending-weekly-9">에이전트 CLI용 장기 기억 프로젝트</a>도 포함되어 있습니다.</p>
+        <!-- /slot -->
+        <ol class="items">
+          <li class="item" id="github-trending-weekly-1"><div>
+            <a class="item-title" href="https://github.com/cloudflare/security-audit-skill">cloudflare/security-audit-skill</a>
+            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-25T23:00:03Z">08:00</time></p>
+            <p class="item-excerpt">A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings · 46,777 stars total · 12,680 stars this week</p>
+          </div></li>
+          <li class="item" id="github-trending-weekly-2"><div>
+            <a class="item-title" href="https://github.com/ruvnet/ruflo">ruvnet/ruflo</a>
+            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-25T23:00:03Z">08:00</time></p>
+            <p class="item-excerpt">🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many …</p>
+          </div></li>
+          <li class="item" id="github-trending-weekly-3"><div>
+            <a class="item-title" href="https://github.com/anthropics/knowledge-work-plugins">anthropics/knowledge-work-plugins</a>
+            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-25T23:00:03Z">08:00</time></p>
+            <p class="item-excerpt">Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork · 32,964 stars total · 2,631 stars this week</p>
+          </div></li>
+          <li class="item" id="github-trending-weekly-4"><div>
+            <a class="item-title" href="https://github.com/anomalyco/opencode">anomalyco/opencode</a>
+            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-25T23:00:03Z">08:00</time></p>
+            <p class="item-excerpt">The open source coding agent. · 221,498 stars total · 6,857 stars this week</p>
+          </div></li>
+          <li class="item" id="github-trending-weekly-5"><div>
+            <a class="item-title" href="https://github.com/stablyai/orca">stablyai/orca</a>
+            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-25T23:00:03Z">08:00</time></p>
+            <p class="item-excerpt">Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime. · 105,747 stars total · 9,828 stars this week</p>
+          </div></li>
+          <li class="item" id="github-trending-weekly-6"><div>
+            <a class="item-title" href="https://github.com/heygen-com/hyperframes">heygen-com/hyperframes</a>
+            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-25T23:00:03Z">08:00</time></p>
+            <p class="item-excerpt">Write HTML. Render video. Built for agents. · 72,117 stars total · 5,633 stars this week</p>
+          </div></li>
+        </ol>
+        <details class="more">
+          <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
+          <ol class="items" style="--start: 6">
+            <li class="item" id="github-trending-weekly-7"><div>
+              <a class="item-title" href="https://github.com/android/skills">android/skills</a>
+              <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-25T23:00:03Z">08:00</time></p>
+              <p class="item-excerpt">9,711 stars total · 1,317 stars this week</p>
+            </div></li>
+            <li class="item" id="github-trending-weekly-8"><div>
+              <a class="item-title" href="https://github.com/Graphify-Labs/graphify">Graphify-Labs/graphify</a>
+              <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-25T23:00:03Z">08:00</time></p>
+              <p class="item-excerpt">Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store. · 135,188 stars total · 6,868 stars this …</p>
+            </div></li>
+            <li class="item" id="github-trending-weekly-9"><div>
+              <a class="item-title" href="https://github.com/akitaonrails/ai-memory">akitaonrails/ai-memory</a>
+              <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-25T23:00:03Z">08:00</time></p>
+              <p class="item-excerpt">Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors · 13,508 stars total · 3,541 stars this week</p>
+            </div></li>
+            <li class="item" id="github-trending-weekly-10"><div>
+              <a class="item-title" href="https://github.com/Comfy-Org/ComfyUI">Comfy-Org/ComfyUI</a>
+              <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-25T23:00:03Z">08:00</time></p>
+              <p class="item-excerpt">The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world. · 142,919 stars total · 4,648 stars this week</p>
+            </div></li>
+          </ol>
+        </details>
+      </section>
+
+      <section class="producer" aria-labelledby="huggingface-papers-weekly">
+        <h2 class="producer-head" id="huggingface-papers-weekly">huggingface-papers-weekly <span class="count">10</span></h2>
+        <p class="producer-summary">HuggingFace papers this week: top 10 by upvotes</p>
+        <!-- slot: intro:huggingface-papers-weekly lang=en -->
+        <p class="intro" lang="en"><a href="#huggingface-papers-weekly-1">StreamEval</a>, a benchmark for interactive streaming video generation that includes avatar dialogue tasks, leads the week. Memory-focused work appears again with <a href="#huggingface-papers-weekly-9">MemT-1.0</a>, and <a href="#huggingface-papers-weekly-4">Matrix-Game 4.0</a> addresses playable real-time worlds.</p>
+        <!-- /slot -->
+        <!-- slot: intro:huggingface-papers-weekly lang=ko -->
+        <p class="intro" lang="ko">아바타 대화 과제를 포함한 대화형 스트리밍 영상 생성 벤치마크 <a href="#huggingface-papers-weekly-1">StreamEval</a>이 이번 주 선두입니다. 메모리 중심 연구는 <a href="#huggingface-papers-weekly-9">MemT-1.0</a>으로 다시 등장했고, <a href="#huggingface-papers-weekly-4">Matrix-Game 4.0</a>는 실시간으로 즐길 수 있는 월드를 다룹니다.</p>
+        <!-- /slot -->
+        <ol class="items">
+          <li class="item" id="huggingface-papers-weekly-1"><div>
+            <a class="item-title" href="https://huggingface.co/papers/2610.28402">StreamEval: Evaluating Interactive Streaming Video Generation Models</a>
+            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-19T20:00:00Z">10-20 05:00</time></p>
+            <p class="item-excerpt">343 upvotes. As streaming video generation advances, enabling real-time interaction with generated video is becoming increasingly important. We introduce StreamEval, a unified benchmark for interactive streaming video generation spanning five tasks: avatar dialogue, avatar perfo…</p>
+          </div></li>
+          <li class="item" id="huggingface-papers-weekly-2"><div>
+            <a class="item-title" href="https://huggingface.co/papers/2610.26802">Scaling Parameter-Efficient Fine-Tuning for Brain Encoding</a>
+            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></p>
+            <p class="item-excerpt">231 upvotes. Brain encoding models aim to predict neural responses to stimuli. The most widely used approach fits readouts from frozen pretrained backbones. Using neural data to train large models from scratch or fully fine-tune them after task-pretraining has proven difficult b…</p>
+          </div></li>
+          <li class="item" id="huggingface-papers-weekly-3"><div>
+            <a class="item-title" href="https://huggingface.co/papers/2610.31329">WeVisOne-VL: Unified Visual Perception from Objects to Pixels</a>
+            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-21T20:00:00Z">10-22 05:00</time></p>
+            <p class="item-excerpt">221 upvotes. Existing vision-language models (VLMs) remain unreliable for fine-grained visual perception. In this report, we present WeVisOne-VL (WeChat Vision All-in-One), a powerful VLM that unifies object-level and pixel-level perception through structured next-token predicti…</p>
+          </div></li>
+          <li class="item" id="huggingface-papers-weekly-4"><div>
+            <a class="item-title" href="https://huggingface.co/papers/2610.27999">Matrix-Game 4.0: Harnessing Video Models for Real-Time Playable Game Worlds</a>
+            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-19T20:00:00Z">10-20 05:00</time></p>
+            <p class="item-excerpt">178 upvotes. Moving from controllable videos to genuinely playable worlds requires persistent world state, executable game rules, and low-latency interaction. We outline a roadmap for the next generation of Matrix-Game that separates game execution from visual generation through…</p>
+          </div></li>
+          <li class="item" id="huggingface-papers-weekly-5"><div>
+            <a class="item-title" href="https://huggingface.co/papers/2610.26855">Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience</a>
+            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></p>
+            <p class="item-excerpt">176 upvotes. World models enable embodied agents to anticipate action consequences, yet jointly modeling locomotion and manipulation across diverse embodiments remains challenging due to heterogeneous action spaces and limited multimodal supervision. We present Ropedia W0, the f…</p>
+          </div></li>
+          <li class="item" id="huggingface-papers-weekly-6"><div>
+            <a class="item-title" href="https://huggingface.co/papers/2610.30926">Making MLLM Latents Matter: Factor-Aware Predictive Learning for Cinematic Video Generation</a>
+            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-22T04:43:48Z">10-22 13:43</time></p>
+            <p class="item-excerpt">163 upvotes. Cinematic video generation requires both temporal inference from limited inputs (i.e., sparse rather than frame-by-frame guidance) and factor-aware control of character, scene, action, and camera. Multimodal large language models (MLLMs) offer useful priors for both…</p>
+          </div></li>
+        </ol>
+        <details class="more">
+          <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
+          <ol class="items" style="--start: 6">
+            <li class="item" id="huggingface-papers-weekly-7"><div>
+              <a class="item-title" href="https://huggingface.co/papers/2610.30181">Deep Search in Real-World Web Environments</a>
+              <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></p>
+              <p class="item-excerpt">149 upvotes. Despite substantial progress in Deep Search agents, their ability to conduct end-to-end research in real-world open Web environments remains insufficiently evaluated. Unlike static retrieval settings, information on the real-world Web is distributed across diverse s…</p>
+            </div></li>
+            <li class="item" id="huggingface-papers-weekly-8"><div>
+              <a class="item-title" href="https://huggingface.co/papers/2610.27628">PAR: Progress-Aligned Recurrence for Length Generalization in State Tracking</a>
+              <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-19T20:00:00Z">10-20 05:00</time></p>
+              <p class="item-excerpt">147 upvotes. Looped language models can run more iterations at test time, but additional iterations need not help them solve longer problems. For sequential state tracking, final-answer supervision does not specify how far each iteration should advance, and repeated updates can …</p>
+            </div></li>
+            <li class="item" id="huggingface-papers-weekly-9"><div>
+              <a class="item-title" href="https://huggingface.co/papers/2610.26825">MemT-1.0: Towards Memory-Native Evolution</a>
+              <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></p>
+              <p class="item-excerpt">146 upvotes. Memory-native evolution requires making memory an intrinsic capability of foundation models, enabling them to continuously accumulate and utilize information. To this end, we introduce MemT-1.0, a new architecture of memory foundation models that internalize memory …</p>
+            </div></li>
+            <li class="item" id="huggingface-papers-weekly-10"><div>
+              <a class="item-title" href="https://huggingface.co/papers/2610.21783">Learning to Think and Explore in 3D World</a>
+              <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-14T20:00:00Z">10-15 05:00</time></p>
+              <p class="item-excerpt">144 upvotes. We study how vision-language models (VLMs) can learn to think and actively explore in 3D space. Instead of providing multi-view images, videos, or 3D representations to the model, we preserve the native visual encoding of VLMs, i.e., a single image, one at a time, j…</p>
+            </div></li>
+          </ol>
+        </details>
+      </section>
+
+      <section class="producer" aria-labelledby="ruanyf-weekly">
+        <h2 class="producer-head" id="ruanyf-weekly">ruanyf-weekly <span class="count">9</span></h2>
+        <p class="producer-summary">Issue 416 of ruanyf-weekly: how AI has transformed programming, plus a weak CA key incident and developer tools.</p>
+        <!-- slot: intro:ruanyf-weekly lang=en -->
+        <p class="intro" lang="en">Issue 416 of the weekly pairs a security story with a discussion of AI in programming. <a href="#ruanyf-weekly-2">The cracked keys of a certificate authority</a> carry a practical consequence, since browsers must revoke trust in its certificates, while <a href="#ruanyf-weekly-1">the essay on programming practice</a> is the opinion piece of the issue.</p>
+        <!-- /slot -->
+        <!-- slot: intro:ruanyf-weekly lang=ko -->
+        <p class="intro" lang="ko">416호는 보안 사건과 프로그래밍 속 인공지능에 관한 논의를 함께 담았습니다. <a href="#ruanyf-weekly-2">인증 기관의 키가 풀린 사건</a>은 브라우저가 해당 인증서의 신뢰를 철회해야 한다는 실무적 결과를 낳으며, <a href="#ruanyf-weekly-1">개발 관행에 관한 에세이</a>는 이번 호의 의견 기사입니다.</p>
+        <!-- /slot -->
+        <ol class="items">
+          <li class="item" id="ruanyf-weekly-1"><div>
+            <a class="item-title" href="https://github.com/ruanyf/weekly">Programming Has Become Unrecognizable</a>
+            <p class="item-meta">weekly_digest · github.com · <time datetime="2026-10-23">10-23</time></p>
+            <p class="item-excerpt">A senior engineer's eleven bold claims on how AI reshapes software work, including the decline of code review and unit tests. It matters as a provocative view of where development practice is heading.</p>
+          </div></li>
+          <li class="item" id="ruanyf-weekly-2"><div>
+            <a class="item-title" href="https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/">Indian Certificate Authority Keys Cracked</a>
+            <p class="item-meta">weekly_digest · scotthelme.co.uk · <time datetime="2026-10-23">10-23</time></p>
+            <p class="item-excerpt">Eight private keys of a certificate authority were trivially small integers and were broken in about a millisecond. Major browsers must revoke trust in its certificates.</p>
+          </div></li>
+          <li class="item" id="ruanyf-weekly-3"><div>
+            <a class="item-title" href="https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/">LLM Developments in 2026 So Far</a>
+            <p class="item-meta">weekly_digest · simonwillison.net · <time datetime="2026-10-23">10-23</time></p>
+            <p class="item-excerpt">A conference talk summarising this year's large-model developments, including local models and notable incidents. It offers a compact overview of the field.</p>
+          </div></li>
+          <li class="item" id="ruanyf-weekly-4"><div>
+            <a class="item-title" href="https://simedw.com/2026/10/21/world-model-terminal/">I Trained a 360M-Parameter Model to Simulate a Terminal</a>
+            <p class="item-meta">weekly_digest · simedw.com · <time datetime="2026-10-23">10-23</time></p>
+            <p class="item-excerpt">A small model fine-tuned on about two billion tokens predicts command output instead of running commands. It is an unusual experiment in world-model design.</p>
+          </div></li>
+          <li class="item" id="ruanyf-weekly-5"><div>
+            <a class="item-title" href="https://viceconsole.fyi/blog/2026/10/10/what-i-self-host/">The 11 Services I Self-Host</a>
+            <p class="item-meta">weekly_digest · viceconsole.fyi · <time datetime="2026-10-23">10-23</time></p>
+            <p class="item-excerpt">The author runs many native and Podman services on a 16 GB home mini computer and explains each choice. It is a practical reference for home-lab setups.</p>
+          </div></li>
+          <li class="item" id="ruanyf-weekly-6"><div>
+            <a class="item-title" href="https://github.com/glincker/sslx">sslx</a>
+            <p class="item-meta">weekly_digest · github.com · <time datetime="2026-10-23">10-23</time></p>
+            <p class="item-excerpt">A command-line tool for inspecting HTTPS certificate information. It is useful for quick certificate diagnostics.</p>
+          </div></li>
+        </ol>
+        <details class="more">
+          <summary><span>3<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
+          <ol class="items" style="--start: 6">
+            <li class="item" id="ruanyf-weekly-7"><div>
+              <a class="item-title" href="https://github.com/CLoaKY233/siltop">siltop</a>
+              <p class="item-meta">weekly_digest · github.com · <time datetime="2026-10-23">10-23</time></p>
+              <p class="item-excerpt">A macOS terminal tool showing live CPU, GPU, memory, power, temperature, storage and network data. It consolidates system monitoring in one view.</p>
+            </div></li>
+            <li class="item" id="ruanyf-weekly-8"><div>
+              <a class="item-title" href="https://github.com/tt-a1i/archify">Archify</a>
+              <p class="item-meta">weekly_digest · github.com · <time datetime="2026-10-23">10-23</time></p>
+              <p class="item-excerpt">A skill project that turns text, a plan or a repository into an interactive web flowchart. It helps visualise architecture quickly.</p>
+            </div></li>
+            <li class="item" id="ruanyf-weekly-9"><div>
+              <a class="item-title" href="https://dthain.github.io/books/compiler/">Introduction to Compilers and Language Design</a>
+              <p class="item-meta">weekly_digest · dthain.github.io · <time datetime="2026-10-23">10-23</time></p>
+              <p class="item-excerpt">A free English textbook for beginners covering compiler concepts and writing a C compiler. It is a solid learning resource.</p>
+            </div></li>
+          </ol>
+        </details>
+      </section>
+      <!-- /slot -->
+    </div>
+
+    <div class="zone">
+      <h2 class="zone-title"><span lang="en">Projects</span><span lang="ko">프로젝트</span></h2>
+      <!-- slot: personal -->
+        <section class="producer" aria-labelledby="yui-repo">
+          <h3 class="producer-head" id="yui-repo">yui-repo <span class="count">7</span></h3>
+          <p class="producer-summary">YUI repository: 7 updates in the last 24 hours, including closed issues, merged pull requests, features, and review requests for the maintainer.</p>
+          <!-- slot: intro:yui-repo lang=en -->
+          <p class="intro" lang="en">The project merged three features and closed the three issues behind them: <a href="#yui-repo-3">a unified chat window</a>, <a href="#yui-repo-5">character-to-character addressing with a chain cap</a>, and <a href="#yui-repo-7">manual editing of relation values</a>. A maintenance change, <a href="#yui-repo-1">snake_case log event name checks</a>, also landed. No review request is open in this run.</p>
+          <!-- /slot -->
+          <!-- slot: intro:yui-repo lang=ko -->
+          <p class="intro" lang="ko">프로젝트에서 기능 세 건이 병합되었고 관련 이슈 세 건이 닫혔습니다. <a href="#yui-repo-3">통합 채팅 창</a>, <a href="#yui-repo-5">연쇄 상한이 있는 캐릭터 간 호출</a>, <a href="#yui-repo-7">관계 값 수동 편집</a>입니다. 유지보수 변경인 <a href="#yui-repo-1">snake_case 로그 이벤트 이름 검사</a>도 반영되었습니다. 이번 실행에는 열려 있는 검토 요청이 없습니다.</p>
+          <!-- /slot -->
+          <ol class="items">
+            <li class="item" id="yui-repo-1"><div>
+              <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1587">chore: snake_case log event names are checked, the smoke test declares per-client tools, .any-subagent is ignored</a>
+              <p class="item-meta">pull_request · github.com · <time datetime="2026-10-25T12:46:14Z">10-25 21:46</time></p>
+              <p class="item-excerpt">## Summary Retro of the #1546/#1583 session, the mechanical part. - `scripts/ci/logger-namespace.mjs` also refuses a log event name that is not `snake_case` (dots between segments allowed: `backend_call.unexpected_error`). The eight names with spaces (`push rejected`, `signal dr…</p>
+            </div></li>
+            <li class="item" id="yui-repo-2"><div>
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1583">[feature] Unified chat window with @ routing across open characters</a>
+              <p class="item-meta">issue · github.com · <time datetime="2026-10-25T12:31:37Z">10-25 21:31</time></p>
+              <p class="item-excerpt">## Work description Today each preset has its own message window with its own composer, so talking to a second character means switching windows. A unified chat window shows every open character's conversation in one time-ordered view and routes the user's input with `@`, the wa…</p>
+            </div></li>
+            <li class="item" id="yui-repo-3"><div>
+              <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1585">feat: unified chat window routes the user's messages to the open characters</a>
+              <p class="item-meta">feature · github.com · <time datetime="2026-10-25T12:31:36Z">10-25 21:31</time></p>
+              <p class="item-excerpt">## Summary One window for every open character: the unified chat window lists every open preset's current-session transcript in one time order and routes the user's messages to one preset, to the last speaker, or to every open preset one after another. ``` settings (Talk tab) ma…</p>
+            </div></li>
+            <li class="item" id="yui-repo-4"><div>
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1546">[feature] A character addresses another open character through a tool and that character receives a turn</a>
+              <p class="item-meta">issue · github.com · <time datetime="2026-10-25T11:43:08Z">10-25 20:43</time></p>
+              <p class="item-excerpt">## Work description Today a character only overhears other open characters: the next turn's `client_context` carries their recent transcript lines (#1536, #1542), and nothing opens a turn for a character that was spoken to. A character should be able to address another open char…</p>
+            </div></li>
+            <li class="item" id="yui-repo-5"><div>
+              <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1584">feat: address_character routes a reply to another open character, with a chain cap</a>
+              <p class="item-meta">feature · github.com · <time datetime="2026-10-25T11:43:07Z">10-25 20:43</time></p>
+              <p class="item-excerpt">## Summary A character can speak to another open character, and that character receives a turn whose trigger says so. The client routes; the backend judges. ``` pet window A (perlica) pet window B (natsume) backend calls address_character {to: &quot;natsume&quot;} ──► tool records the tur…</p>
+            </div></li>
+            <li class="item" id="yui-repo-6"><div>
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1541">[feature] Edit relation values by hand in the settings window</a>
+              <p class="item-meta">issue · github.com · <time datetime="2026-10-25T09:37:42Z">10-25 18:37</time></p>
+              <p class="item-excerpt">## Work description Let the user edit a character's relation values by hand in the settings window: per target, the band and the value, with the change written to the store as a log entry `why: &quot;set by the user&quot;`. #1509 chose the ingress `GET/PUT` route first (Q11 (a)) so an ext…</p>
+            </div></li>
+          </ol>
+          <details class="more">
+            <summary><span>1<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
+            <ol class="items" style="--start: 6">
+              <li class="item" id="yui-repo-7"><div>
+                <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1582">feat: edit relation values by hand in the Character tab, with a Relations switch</a>
+                <p class="item-meta">feature · github.com · <time datetime="2026-10-25T09:37:41Z">10-25 18:37</time></p>
+                <p class="item-excerpt">## Summary The Character tab gains a Relations section: one slider row per target (the user and every other preset), rated rows first, unrated rows after a stronger hairline. Dragging previews the glyph, band word and number; releasing writes the value. A device-wide Relations s…</p>
+              </div></li>
+            </ol>
+          </details>
+        </section>
+      <!-- /slot -->
+    </div>
+
+  </main>
+
+  <nav class="days" aria-label="Other days">
+    <!-- slot: days -->
+    <a class="prev" href="../../../../../reports/2026/10/W4/25/"><span class="day-label"><span lang="en">Previous day</span><span lang="ko">이전 날</span></span><span class="day-date">2026-10-25</span></a>
+    <!-- /slot -->
+    <a class="all" href="../../../../../"><span class="day-date"><span lang="en">All days</span><span lang="ko">모든 날</span></span></a>
+    <a class="next" href="#" hidden><span class="day-label"><span lang="en">Next day</span><span lang="ko">다음 날</span></span><span class="day-date"></span></a>
+    <p class="next-none" hidden><span lang="en">No next day yet</span><span lang="ko">아직 다음 날이 없습니다</span></p>
+  </nav>
+
+</div>
+<script>
+  // The earliest of the next seven days that has a page; producers can skip days.
+  (function () {
+    var stamp = document.querySelector(".masthead time[datetime]");
+    var next = document.querySelector(".days .next");
+    var none = document.querySelector(".days .next-none");
+    if (!stamp || !next || !none) return;
+    var start = Date.parse(stamp.getAttribute("datetime").slice(0, 10) + "T00:00:00Z");
+    function folder(day) {
+      var week = Math.floor((Number(day.slice(8, 10)) - 1) / 7) + 1;
+      return "../../../../../reports/" + day.slice(0, 4) + "/" + day.slice(5, 7) + "/W" + week + "/" + day.slice(8, 10) + "/";
+    }
+    var days = [1, 2, 3, 4, 5, 6, 7].map(function (n) { return new Date(start + n * 864e5).toISOString().slice(0, 10); });
+    Promise.all(days.map(function (day) {
+      return fetch(folder(day), { method: "HEAD" }).then(function (r) { return r.ok ? day : null; }, function () { return null; });
+    })).then(function (found) {
+      var day = found.filter(Boolean)[0];
+      if (!day) { none.hidden = false; return; }
+      next.href = folder(day);
+      next.querySelector(".day-date").textContent = day;
+      next.hidden = false;
+    });
+  })();
+</script>
+</body>
+</html>
