@@ -5,56 +5,64 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <meta name="robots" content="noindex">
+<meta name="description" content="One day of the briefing, with the state of every source.">
 <!-- slot: title -->
 <title>Briefing · 2026-10-18</title>
 <!-- /slot -->
 <style id="lang-rule">body [lang]:not([lang="en"]) { display: none !important; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans+KR:wght@500;600&family=Noto+Serif+KR:wght@400;500&display=swap">
 <link rel="stylesheet" href="../../../../../src/style.css">
 <script src="../../../../../src/lang.js"></script>
 </head>
 <body>
-<div class="page">
-
-  <aside class="rail">
-
-  <header class="masthead">
-    <div class="masthead-top">
-      <p class="label"><span lang="en">Daily briefing</span><span lang="ko">오늘의 브리핑</span></p>
-      <label class="lang-switch">
-        <select id="lang-select" aria-label="Language">
-          <!-- slot: languages -->
+<header class="runner container">
+  <a class="wordmark" href="../../../../../"><span lang="en">Daily briefing</span><span lang="ko">오늘의 브리핑</span></a>
+  <label class="lang-switch">
+    <select id="lang-select" aria-label="Language">
+      <!-- slot: languages -->
 <option value="en">EN</option><option value="ko">KO</option>
 <!-- /slot -->
-        </select>
-      </label>
-    </div>
-    <!-- slot: date lang=en --><div lang="en"><h1>Sunday, October 18</h1><p class="dateline"><time datetime="2026-10-18T08:17:05+09:00"><span>2026-10-18</span><span>· prepared at 08:17</span></time></p></div><!-- /slot --><!-- slot: date lang=ko --><div lang="ko"><h1>10월 18일 일요일</h1><p class="dateline"><time datetime="2026-10-18T08:17:05+09:00"><span>2026-10-18</span><span>· 08:17 작성</span></time></p></div><!-- /slot -->
-  </header>
+    </select>
+  </label>
+</header>
 
-  <nav class="contents" aria-label="Contents">
-    <!-- slot: contents -->
-<ol><li><a href="#world-news"><span class="toc-name">world-news</span><span class="status status-stale"><span lang="en">stale</span><span lang="ko">지연</span></span><span class="toc-count">10</span></a></li><li><a href="#github-trending-daily"><span class="toc-name">github-trending-daily</span><span class="toc-count">10</span></a></li><li><a href="#huggingface-papers-daily"><span class="toc-name">huggingface-papers-daily</span><span class="toc-count">10</span></a></li></ol><p class="toc-zone"><span lang="en">Projects</span><span lang="ko">프로젝트</span></p><ol><li><a href="#yui-repo"><span class="toc-name">yui-repo</span><span class="toc-count">10</span></a></li></ol>
-<!-- /slot -->
-  </nav>
+<div class="page container">
 
-  <section class="health" aria-labelledby="attention">
-    <h2 id="attention"><span lang="en">Needs attention</span><span lang="ko">확인이 필요한 소스</span></h2>
-    <div class="notices">
-      <!-- slot: notices -->
-<div class="notice"><p class="notice-head"><span class="status status-stale"><span lang="en">Stale</span><span lang="ko">지연</span></span><span class="source-name"><span class="source-producer">world-news</span> cnn-topstories</span></p><p class="notice-detail"><span lang="en">No success on record</span><span lang="ko">성공 기록 없음</span></p></div>
-<!-- /slot -->
-    </div>
-  </section>
+  <header class="front">
+    <div>
+      <div class="masthead">
+        <!-- slot: date lang=en --><div lang="en"><h1>Sunday, October 18</h1><p class="dateline"><time datetime="2026-10-18T08:17:05+09:00"><span>2026-10-18</span><span>prepared at 08:17</span></time></p></div><!-- /slot -->
+        <!-- slot: date lang=ko --><div lang="ko"><h1>10월 18일 일요일</h1><p class="dateline"><time datetime="2026-10-18T08:17:05+09:00"><span>2026-10-18</span><span>08:17 작성</span></time></p></div><!-- /slot -->
+      </div>
 
-  </aside>
-
-  <section class="lead" aria-label="Summary">
-    <!-- slot: summary lang=en -->
+      <section class="lead" aria-label="Summary">
+        <!-- slot: summary lang=en -->
 <div lang="en"><p>Today’s coverage spans geopolitical tensions and protests, alongside strong interest in agent-development tools and research on spatial intelligence and computer use. The YUI repository reports verification and observability improvements.</p><p>The CNN top-stories feed is stale and requires review; other listed sources report successful runs.</p></div>
 <!-- /slot -->
-<!-- slot: summary lang=ko --><div lang="ko"><p>오늘의 보도는 지정학적 긴장과 시위를 다루며, 에이전트 개발 도구와 공간 지능 및 컴퓨터 사용 연구에도 관심이 집중됩니다. YUI 저장소에서는 검증과 관측성 개선이 보고되었습니다.</p><p>CNN 주요 기사 피드는 지연 상태로 확인이 필요하며, 나머지 기재된 소스는 실행 성공을 보고했습니다.</p></div>
+        <!-- slot: summary lang=ko --><div lang="ko"><p>오늘의 보도는 지정학적 긴장과 시위를 다루며, 에이전트 개발 도구와 공간 지능 및 컴퓨터 사용 연구에도 관심이 집중됩니다. YUI 저장소에서는 검증과 관측성 개선이 보고되었습니다.</p><p>CNN 주요 기사 피드는 지연 상태로 확인이 필요하며, 나머지 기재된 소스는 실행 성공을 보고했습니다.</p></div>
 <!-- /slot -->
-  </section>
+      </section>
+    </div>
+
+    <aside class="ledger">
+      <nav class="contents" aria-label="Contents">
+        <!-- slot: contents -->
+<ol><li><a href="#world-news"><span class="toc-name">world-news</span><span class="status status-stale"><span lang="en">stale</span><span lang="ko">지연</span></span><span class="toc-count">10</span></a></li><li><a href="#github-trending-daily"><span class="toc-name">github-trending-daily</span><span class="toc-count">10</span></a></li><li><a href="#huggingface-papers-daily"><span class="toc-name">huggingface-papers-daily</span><span class="toc-count">10</span></a></li></ol><p class="toc-zone"><span lang="en">Projects</span><span lang="ko">프로젝트</span></p><ol><li><a href="#yui-repo"><span class="toc-name">yui-repo</span><span class="toc-count">10</span></a></li></ol>
+<!-- /slot -->
+      </nav>
+
+      <section class="health" aria-labelledby="attention">
+        <h2 id="attention"><span lang="en">Needs attention</span><span lang="ko">확인이 필요한 소스</span></h2>
+        <div class="notices">
+          <!-- slot: notices -->
+<div class="notice"><p class="notice-head"><span class="status status-stale"><span lang="en">Stale</span><span lang="ko">지연</span></span><span class="source-name"><span class="source-producer">world-news</span> cnn-topstories</span></p><p class="notice-detail"><span lang="en">No success on record</span><span lang="ko">성공 기록 없음</span></p></div>
+<!-- /slot -->
+        </div>
+      </section>
+    </aside>
+  </header>
 
   <main>
     <div class="zone">
@@ -66,8 +74,86 @@
 <!-- slot: intro:world-news lang=ko -->
 <p class="intro" lang="ko">제재 정책, 시위와 지역 안보 관련 보도가 포함되어 있으며, 주요 기사와 함께 지연된 CNN 피드의 확인이 필요합니다.</p>
 <!-- /slot -->
-<ol class="items"><li class="item" id="world-news-1"><div><a class="item-title" href="https://www.ft.com/content/e26723df-9076-416c-957a-7fa3bd00b4d7?syn-25a6b1a6=1">Zelenskyy says Starlink speed limits in Ukraine are a ‘planned operation’</a><p class="item-meta">news · www.ft.com · </p><p class="item-excerpt">President says restrictions only apply in Ukraine and are hampering efforts to intercept Russian attacks</p></div></li><li class="item" id="world-news-2"><div><a class="item-title" href="https://www.ft.com/content/836eddd7-3adc-4cbb-8527-7a0a7a277e50?syn-25a6b1a6=1">Trump exempts Russia from further sanctions mandated by new law</a><p class="item-meta">news · www.ft.com · </p><p class="item-excerpt">US president gives Putin a reprieve on threatened energy measures after cutting deal with Moscow to release diesel</p></div></li><li class="item" id="world-news-3"><div><a class="item-title" href="https://www.ft.com/content/3a56575e-ecfb-4fa9-af70-01aebd869729?syn-25a6b1a6=1">Are we sleepwalking into World War III?</a><p class="item-meta">news · www.ft.com · </p><p class="item-excerpt">As regional conflicts rage and revisionist powers challenge the established order, warnings of a new global conflagration are growing louder</p></div></li><li class="item" id="world-news-4"><div><a class="item-title" href="https://www.ft.com/content/ce75ac4a-3352-4986-939f-cfb17e482709?syn-25a6b1a6=1">The Man City theory of politics</a><p class="item-meta">news · www.ft.com · </p><p class="item-excerpt">The tribalism of football fans parallels modern politics like nothing else</p></div></li><li class="item" id="world-news-5"><div><a class="item-title" href="https://www.bbc.co.uk/news/articles/c6d937wedj7jo?at_medium=RSS&amp;at_campaign=rss">Violent clashes, looting and buildings ablaze in France as over 1,000 arrested after protests</a><p class="item-meta">news · www.bbc.co.uk · </p><p class="item-excerpt">Disorder broke out in cities across the country on a day in which more than half a million joined cost of living protests.</p></div></li><li class="item" id="world-news-6"><div><a class="item-title" href="https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&amp;at_campaign=rss">Trump waives several Russia sanctions as row with Zelensky intensifies</a><p class="item-meta">news · www.bbc.co.uk · </p><p class="item-excerpt">The US president temporarily ends many restrictions on Moscow recently passed by Congress over &quot;national security&quot; concerns.</p></div></li></ol>
-<details class="more"><summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary><ol class="items" style="--start: 6"><li class="item" id="world-news-7"><div><a class="item-title" href="https://www.bbc.co.uk/news/articles/c962ydpmjm3zo?at_medium=RSS&amp;at_campaign=rss">European diplomats attacked by Israeli settlers in West Bank</a><p class="item-meta">news · www.bbc.co.uk · </p><p class="item-excerpt">The Israeli military condemns the violence but the prime minister&#x27;s office says it is part of a &quot;smear&quot; campaign.</p></div></li><li class="item" id="world-news-8"><div><a class="item-title" href="https://www.bbc.co.uk/news/articles/crwydey50xeno?at_medium=RSS&amp;at_campaign=rss">Anti-government protesters battle with police in Albania</a><p class="item-meta">news · www.bbc.co.uk · </p><p class="item-excerpt">There were violent clashes between demonstrators and riot police throughout Saturday in the capital Tirana.</p></div></li><li class="item" id="world-news-9"><div><a class="item-title" href="https://www.bbc.co.uk/news/articles/c32l4k2xdvrzo?at_medium=RSS&amp;at_campaign=rss">Banks expect to be hit with higher taxes in Budget</a><p class="item-meta">news · www.bbc.co.uk · </p><p class="item-excerpt">Senior banking executives have told the BBC they expect to be &quot;on the menu&quot; in the chancellor&#x27;s Budget tax later this month.</p></div></li><li class="item" id="world-news-10"><div><a class="item-title" href="https://www.bbc.co.uk/news/videos/ckly4mj1g3n9o?at_medium=RSS&amp;at_campaign=rss">Watch: Did Tesla really just unveil a flying car?</a><p class="item-meta">news · www.bbc.co.uk · </p><p class="item-excerpt">Tesla CEO Elon Musk showcased the vehicle at a facility owned by his SpaceX company, which helped develop the model.</p></div></li></ol></details>
+<ol class="items"><li class="item item-lead" id="world-news-1">
+  <div class="lead-text">
+    <a class="item-title" href="https://www.ft.com/content/e26723df-9076-416c-957a-7fa3bd00b4d7?syn-25a6b1a6=1">Zelenskyy says Starlink speed limits in Ukraine are a ‘planned operation’</a>
+    <p class="item-excerpt">President says restrictions only apply in Ukraine and are hampering efforts to intercept Russian attacks</p>
+    <p class="item-meta"><span class="item-kind">news</span><span>www.ft.com</span><span></span></p>
+  </div>
+</li><li class="item" id="world-news-2">
+  <a class="item-title" href="https://www.ft.com/content/836eddd7-3adc-4cbb-8527-7a0a7a277e50?syn-25a6b1a6=1">Trump exempts Russia from further sanctions mandated by new law</a>
+  <p class="item-figure"><span class="figure-value"></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">US president gives Putin a reprieve on threatened energy measures after cutting deal with Moscow to release diesel</p>
+    <p class="item-meta"><span class="item-kind">news</span><span>www.ft.com</span><span></span></p>
+  </details>
+</li><li class="item" id="world-news-3">
+  <a class="item-title" href="https://www.ft.com/content/3a56575e-ecfb-4fa9-af70-01aebd869729?syn-25a6b1a6=1">Are we sleepwalking into World War III?</a>
+  <p class="item-figure"><span class="figure-value"></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">As regional conflicts rage and revisionist powers challenge the established order, warnings of a new global conflagration are growing louder</p>
+    <p class="item-meta"><span class="item-kind">news</span><span>www.ft.com</span><span></span></p>
+  </details>
+</li><li class="item" id="world-news-4">
+  <a class="item-title" href="https://www.ft.com/content/ce75ac4a-3352-4986-939f-cfb17e482709?syn-25a6b1a6=1">The Man City theory of politics</a>
+  <p class="item-figure"><span class="figure-value"></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">The tribalism of football fans parallels modern politics like nothing else</p>
+    <p class="item-meta"><span class="item-kind">news</span><span>www.ft.com</span><span></span></p>
+  </details>
+</li><li class="item" id="world-news-5">
+  <a class="item-title" href="https://www.bbc.co.uk/news/articles/c6d937wedj7jo?at_medium=RSS&amp;at_campaign=rss">Violent clashes, looting and buildings ablaze in France as over 1,000 arrested after protests</a>
+  <p class="item-figure"><span class="figure-value"></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">Disorder broke out in cities across the country on a day in which more than half a million joined cost of living protests.</p>
+    <p class="item-meta"><span class="item-kind">news</span><span>www.bbc.co.uk</span><span></span></p>
+  </details>
+</li><li class="item" id="world-news-6">
+  <a class="item-title" href="https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&amp;at_campaign=rss">Trump waives several Russia sanctions as row with Zelensky intensifies</a>
+  <p class="item-figure"><span class="figure-value"></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">The US president temporarily ends many restrictions on Moscow recently passed by Congress over &quot;national security&quot; concerns.</p>
+    <p class="item-meta"><span class="item-kind">news</span><span>www.bbc.co.uk</span><span></span></p>
+  </details>
+</li></ol>
+<details class="more"><summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary><ol class="items" style="--start: 6"><li class="item" id="world-news-7">
+  <a class="item-title" href="https://www.bbc.co.uk/news/articles/c962ydpmjm3zo?at_medium=RSS&amp;at_campaign=rss">European diplomats attacked by Israeli settlers in West Bank</a>
+  <p class="item-figure"><span class="figure-value"></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">The Israeli military condemns the violence but the prime minister&#x27;s office says it is part of a &quot;smear&quot; campaign.</p>
+    <p class="item-meta"><span class="item-kind">news</span><span>www.bbc.co.uk</span><span></span></p>
+  </details>
+</li><li class="item" id="world-news-8">
+  <a class="item-title" href="https://www.bbc.co.uk/news/articles/crwydey50xeno?at_medium=RSS&amp;at_campaign=rss">Anti-government protesters battle with police in Albania</a>
+  <p class="item-figure"><span class="figure-value"></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">There were violent clashes between demonstrators and riot police throughout Saturday in the capital Tirana.</p>
+    <p class="item-meta"><span class="item-kind">news</span><span>www.bbc.co.uk</span><span></span></p>
+  </details>
+</li><li class="item" id="world-news-9">
+  <a class="item-title" href="https://www.bbc.co.uk/news/articles/c32l4k2xdvrzo?at_medium=RSS&amp;at_campaign=rss">Banks expect to be hit with higher taxes in Budget</a>
+  <p class="item-figure"><span class="figure-value"></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">Senior banking executives have told the BBC they expect to be &quot;on the menu&quot; in the chancellor&#x27;s Budget tax later this month.</p>
+    <p class="item-meta"><span class="item-kind">news</span><span>www.bbc.co.uk</span><span></span></p>
+  </details>
+</li><li class="item" id="world-news-10">
+  <a class="item-title" href="https://www.bbc.co.uk/news/videos/ckly4mj1g3n9o?at_medium=RSS&amp;at_campaign=rss">Watch: Did Tesla really just unveil a flying car?</a>
+  <p class="item-figure"><span class="figure-value"></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">Tesla CEO Elon Musk showcased the vehicle at a facility owned by his SpaceX company, which helped develop the model.</p>
+    <p class="item-meta"><span class="item-kind">news</span><span>www.bbc.co.uk</span><span></span></p>
+  </details>
+</li></ol></details>
 </section><section class="producer" aria-labelledby="github-trending-daily"><h2 class="producer-head" id="github-trending-daily">github-trending-daily <span class="count">10</span></h2><p class="producer-summary">GitHub trending (daily): top 10 repos by stars</p>
 <!-- slot: intro:github-trending-daily lang=en -->
 <p class="intro" lang="en">Agent tooling and development workflows dominate today’s list, with notable growth in voice tools and locally run job-search systems.</p>
@@ -75,8 +161,86 @@
 <!-- slot: intro:github-trending-daily lang=ko -->
 <p class="intro" lang="ko">오늘 목록은 에이전트 도구와 개발 워크플로가 주도하며, 음성 도구와 로컬 구직 시스템의 성장도 두드러집니다.</p>
 <!-- /slot -->
-<ol class="items"><li class="item" id="github-trending-daily-1"><div><a class="item-title" href="https://github.com/anthropics/claude-plugins-official">anthropics/claude-plugins-official</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-18T08:00:03+09:00">08:00</time></p><p class="item-excerpt">Official, Anthropic-managed directory of high quality Claude Code Plugins. · 41,683 stars total · 1,383 stars today</p></div></li><li class="item" id="github-trending-daily-2"><div><a class="item-title" href="https://github.com/MadsLorentzen/ai-job-search">MadsLorentzen/ai-job-search</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-18T08:00:03+09:00">08:00</time></p><p class="item-excerpt">The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it. · 50,288 stars total · 1,397 stars today</p></div></li><li class="item" id="github-trending-daily-3"><div><a class="item-title" href="https://github.com/affaan-m/ECC">affaan-m/ECC</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-18T08:00:03+09:00">08:00</time></p><p class="item-excerpt">The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. · 282,443 stars total · 1,145 stars today</p></div></li><li class="item" id="github-trending-daily-4"><div><a class="item-title" href="https://github.com/HKUDS/CLI-Anything">HKUDS/CLI-Anything</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-18T08:00:03+09:00">08:00</time></p><p class="item-excerpt">&quot;CLI-Anything: Making ALL Software Agent-Native&quot; -- CLI-Hub: https://clianything.cc/ · 54,029 stars total · 580 stars today</p></div></li><li class="item" id="github-trending-daily-5"><div><a class="item-title" href="https://github.com/K-Dense-AI/scientific-agent-skills">K-Dense-AI/scientific-agent-skills</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-18T08:00:03+09:00">08:00</time></p><p class="item-excerpt">Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code…</p></div></li><li class="item" id="github-trending-daily-6"><div><a class="item-title" href="https://github.com/akitaonrails/ai-memory">akitaonrails/ai-memory</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-18T08:00:03+09:00">08:00</time></p><p class="item-excerpt">Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors · 9,893 stars total · 208 stars today</p></div></li></ol>
-<details class="more"><summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary><ol class="items" style="--start: 6"><li class="item" id="github-trending-daily-7"><div><a class="item-title" href="https://github.com/android/skills">android/skills</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-18T08:00:03+09:00">08:00</time></p><p class="item-excerpt">8,400 stars total · 368 stars today</p></div></li><li class="item" id="github-trending-daily-8"><div><a class="item-title" href="https://github.com/stablyai/orca">stablyai/orca</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-18T08:00:03+09:00">08:00</time></p><p class="item-excerpt">Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime. · 95,347 stars total · 829 stars today</p></div></li><li class="item" id="github-trending-daily-9"><div><a class="item-title" href="https://github.com/anthropics/claude-code">anthropics/claude-code</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-18T08:00:03+09:00">08:00</time></p><p class="item-excerpt">Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands. · 151,691 stars total · 168 stars today</p></div></li><li class="item" id="github-trending-daily-10"><div><a class="item-title" href="https://github.com/debpalash/VoiceStudio">debpalash/VoiceStudio</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-18T08:00:03+09:00">08:00</time></p><p class="item-excerpt">VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription &amp; audiobook creation in 646 languages. · 73,216 stars total · 2,135 stars today</p></div></li></ol></details>
+<ol class="items"><li class="item item-lead" id="github-trending-daily-1">
+  <div class="lead-text">
+    <a class="item-title" href="https://github.com/anthropics/claude-plugins-official">anthropics/claude-plugins-official</a>
+    <p class="item-excerpt">Official, Anthropic-managed directory of high quality Claude Code Plugins. · 41,683 stars total · 1,383 stars today</p>
+    <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-18T08:00:03+09:00">08:00</time></p>
+  </div>
+</li><li class="item" id="github-trending-daily-2">
+  <a class="item-title" href="https://github.com/MadsLorentzen/ai-job-search">MadsLorentzen/ai-job-search</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-18T08:00:03+09:00">08:00</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it. · 50,288 stars total · 1,397 stars today</p>
+    <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-18T08:00:03+09:00">08:00</time></p>
+  </details>
+</li><li class="item" id="github-trending-daily-3">
+  <a class="item-title" href="https://github.com/affaan-m/ECC">affaan-m/ECC</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-18T08:00:03+09:00">08:00</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. · 282,443 stars total · 1,145 stars today</p>
+    <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-18T08:00:03+09:00">08:00</time></p>
+  </details>
+</li><li class="item" id="github-trending-daily-4">
+  <a class="item-title" href="https://github.com/HKUDS/CLI-Anything">HKUDS/CLI-Anything</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-18T08:00:03+09:00">08:00</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">&quot;CLI-Anything: Making ALL Software Agent-Native&quot; -- CLI-Hub: https://clianything.cc/ · 54,029 stars total · 580 stars today</p>
+    <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-18T08:00:03+09:00">08:00</time></p>
+  </details>
+</li><li class="item" id="github-trending-daily-5">
+  <a class="item-title" href="https://github.com/K-Dense-AI/scientific-agent-skills">K-Dense-AI/scientific-agent-skills</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-18T08:00:03+09:00">08:00</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code…</p>
+    <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-18T08:00:03+09:00">08:00</time></p>
+  </details>
+</li><li class="item" id="github-trending-daily-6">
+  <a class="item-title" href="https://github.com/akitaonrails/ai-memory">akitaonrails/ai-memory</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-18T08:00:03+09:00">08:00</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors · 9,893 stars total · 208 stars today</p>
+    <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-18T08:00:03+09:00">08:00</time></p>
+  </details>
+</li></ol>
+<details class="more"><summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary><ol class="items" style="--start: 6"><li class="item" id="github-trending-daily-7">
+  <a class="item-title" href="https://github.com/android/skills">android/skills</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-18T08:00:03+09:00">08:00</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">8,400 stars total · 368 stars today</p>
+    <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-18T08:00:03+09:00">08:00</time></p>
+  </details>
+</li><li class="item" id="github-trending-daily-8">
+  <a class="item-title" href="https://github.com/stablyai/orca">stablyai/orca</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-18T08:00:03+09:00">08:00</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime. · 95,347 stars total · 829 stars today</p>
+    <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-18T08:00:03+09:00">08:00</time></p>
+  </details>
+</li><li class="item" id="github-trending-daily-9">
+  <a class="item-title" href="https://github.com/anthropics/claude-code">anthropics/claude-code</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-18T08:00:03+09:00">08:00</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands. · 151,691 stars total · 168 stars today</p>
+    <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-18T08:00:03+09:00">08:00</time></p>
+  </details>
+</li><li class="item" id="github-trending-daily-10">
+  <a class="item-title" href="https://github.com/debpalash/VoiceStudio">debpalash/VoiceStudio</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-18T08:00:03+09:00">08:00</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription &amp; audiobook creation in 646 languages. · 73,216 stars total · 2,135 stars today</p>
+    <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-18T08:00:03+09:00">08:00</time></p>
+  </details>
+</li></ol></details>
 </section><section class="producer" aria-labelledby="huggingface-papers-daily"><h2 class="producer-head" id="huggingface-papers-daily">huggingface-papers-daily <span class="count">10</span></h2><p class="producer-summary">HuggingFace daily papers: top 10 of 50 today</p>
 <!-- slot: intro:huggingface-papers-daily lang=en -->
 <p class="intro" lang="en">The leading papers examine policy distillation, spatial reasoning and open computer-use systems; several also address evaluation and agent training.</p>
@@ -84,13 +248,91 @@
 <!-- slot: intro:huggingface-papers-daily lang=ko -->
 <p class="intro" lang="ko">상위 논문은 정책 증류, 공간 추론, 개방형 컴퓨터 사용 시스템을 다루며 평가와 에이전트 훈련 연구도 포함합니다.</p>
 <!-- /slot -->
-<ol class="items"><li class="item" id="huggingface-papers-daily-1"><div><a class="item-title" href="https://huggingface.co/papers/2610.21601">Waypoint-OPD: Transferring RL-Induced Policy Shifts via Gated On-Policy Distillation</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-10-14T20:00:00.000Z">05:00</time></p><p class="item-excerpt">665 upvotes. Policy-shift distillation reuses the difference between a teacher&#x27;s log probabilities before and after reinforcement learning (RL) as supervision on student-generated trajectories. However, this endpoint policy shift cannot reveal whether local action preferences ev…</p></div></li><li class="item" id="huggingface-papers-daily-2"><div><a class="item-title" href="https://huggingface.co/papers/2610.22276">MJev-Spatial: System One Spatial Intelligence via Native Attention Matching</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-10-14T20:00:00.000Z">05:00</time></p><p class="item-excerpt">351 upvotes. Spatial intelligence lets an agent perceive and act in the physical world, and many of its judgments must be made at interaction rates: which spatial relation holds, how far an object is, or where to place it. Vision-language models (VLMs) produce these answers by f…</p></div></li><li class="item" id="huggingface-papers-daily-3"><div><a class="item-title" href="https://huggingface.co/papers/2610.22200">OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-10-14T20:00:00.000Z">05:00</time></p><p class="item-excerpt">315 upvotes. Computer use has reached a turning point: the focus is expanding from GUI-only interaction to systems that complete tasks on users&#x27; computers through visual and programmatic interfaces. We define a generalist computer-use agent (GCUA) as a system in which the model …</p></div></li><li class="item" id="huggingface-papers-daily-4"><div><a class="item-title" href="https://huggingface.co/papers/2610.22350">FDE-Gym: The Last Mile of AI Delivery</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-10-14T20:00:00.000Z">05:00</time></p><p class="item-excerpt">283 upvotes. Existing agent benchmarks typically evaluate agents on well-specified tasks defined by issue reports, specifications, or task tickets. Real-world customer delivery is different: forward-deployed engineers (FDEs) must clarify ambiguous requirements, work in live syst…</p></div></li><li class="item" id="huggingface-papers-daily-5"><div><a class="item-title" href="https://huggingface.co/papers/2610.17665">RoTA-Bench: Evaluating 3D Spatial Reasoning through Interactive Projection Alignment</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-10-13T20:00:00.000Z">05:00</time></p><p class="item-excerpt">201 upvotes. Can vision-language models turn 2D observations into 3D understanding that supports precise action? This requires inferring object geometry, anticipating the effects of rotation, and refining actions through visual feedback. We introduce RoTA-Bench to evaluate these…</p></div></li><li class="item" id="huggingface-papers-daily-6"><div><a class="item-title" href="https://huggingface.co/papers/2610.18813">Self-Evolving Agent Harness</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-10-12T20:00:00.000Z">05:00</time></p><p class="item-excerpt">197 upvotes. Harness self-evolution revises an agent&#x27;s software scaffolding, including prompts, memory, workflows, and executable components, while keeping model weights fixed. We formalize a feedback-driven process in which accepted revisions persist across runs. The framework …</p></div></li></ol>
-<details class="more"><summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary><ol class="items" style="--start: 6"><li class="item" id="huggingface-papers-daily-7"><div><a class="item-title" href="https://huggingface.co/papers/2610.20939">MAI-Gym: An Open All-in-One Platform for GUI Agent Evaluation and RL Training across Mobile and Computer Environments</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-10-13T20:00:00.000Z">05:00</time></p><p class="item-excerpt">153 upvotes. Online reinforcement learning (RL) with verifiable rewards has driven rapid progress in mathematics, coding, and tool use, but scaling this success to GUI agents remains challenging due to the high cost of interactive environments and the scarcity of realistic train…</p></div></li><li class="item" id="huggingface-papers-daily-8"><div><a class="item-title" href="https://huggingface.co/papers/2610.21261">Behavioral Compositionality of Sparse Autoencoder Representations</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-10-14T20:00:00.000Z">05:00</time></p><p class="item-excerpt">105 upvotes. Sparse autoencoders (SAEs) represent model activations with sparse, linearly decoded features, but the downstream effects of those features need not compose additively. We introduce SAE Additivity Residuals (SAR), which measure the behavioral variation left unexplai…</p></div></li><li class="item" id="huggingface-papers-daily-9"><div><a class="item-title" href="https://huggingface.co/papers/2610.21439">Each Reward to Its Relevant Tokens: Reward-Specific Token-Level Credit Assignment for Multi-Reward RL</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-10-15T03:47:04.000Z">12:47</time></p><p class="item-excerpt">55 upvotes. Language models are increasingly trained against several verifiable rewards at once, such as the correctness and the format of a tool call, or the individual constraints of a complex instruction. Reward-decoupled normalization (GDPO) normalizes each reward separately…</p></div></li><li class="item" id="huggingface-papers-daily-10"><div><a class="item-title" href="https://huggingface.co/papers/2610.21306">VLA-Δ: Learning Physical State Transition for Vision-Language-Action Models</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-10-14T20:00:00.000Z">05:00</time></p><p class="item-excerpt">54 upvotes. Vision-language-action (VLA) models transfer semantic knowledge acquired through vision-language pretraining to robot control, achieving strong performance across various benchmarks. However, most VLAs directly map observations to demonstrated actions without explici…</p></div></li></ol></details>
+<ol class="items"><li class="item item-lead" id="huggingface-papers-daily-1">
+  <div class="lead-text">
+    <a class="item-title" href="https://huggingface.co/papers/2610.21601">Waypoint-OPD: Transferring RL-Induced Policy Shifts via Gated On-Policy Distillation</a>
+    <p class="item-excerpt">665 upvotes. Policy-shift distillation reuses the difference between a teacher&#x27;s log probabilities before and after reinforcement learning (RL) as supervision on student-generated trajectories. However, this endpoint policy shift cannot reveal whether local action preferences ev…</p>
+    <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-14T20:00:00.000Z">05:00</time></p>
+  </div>
+</li><li class="item" id="huggingface-papers-daily-2">
+  <a class="item-title" href="https://huggingface.co/papers/2610.22276">MJev-Spatial: System One Spatial Intelligence via Native Attention Matching</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-14T20:00:00.000Z">05:00</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">351 upvotes. Spatial intelligence lets an agent perceive and act in the physical world, and many of its judgments must be made at interaction rates: which spatial relation holds, how far an object is, or where to place it. Vision-language models (VLMs) produce these answers by f…</p>
+    <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-14T20:00:00.000Z">05:00</time></p>
+  </details>
+</li><li class="item" id="huggingface-papers-daily-3">
+  <a class="item-title" href="https://huggingface.co/papers/2610.22200">OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-14T20:00:00.000Z">05:00</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">315 upvotes. Computer use has reached a turning point: the focus is expanding from GUI-only interaction to systems that complete tasks on users&#x27; computers through visual and programmatic interfaces. We define a generalist computer-use agent (GCUA) as a system in which the model …</p>
+    <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-14T20:00:00.000Z">05:00</time></p>
+  </details>
+</li><li class="item" id="huggingface-papers-daily-4">
+  <a class="item-title" href="https://huggingface.co/papers/2610.22350">FDE-Gym: The Last Mile of AI Delivery</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-14T20:00:00.000Z">05:00</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">283 upvotes. Existing agent benchmarks typically evaluate agents on well-specified tasks defined by issue reports, specifications, or task tickets. Real-world customer delivery is different: forward-deployed engineers (FDEs) must clarify ambiguous requirements, work in live syst…</p>
+    <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-14T20:00:00.000Z">05:00</time></p>
+  </details>
+</li><li class="item" id="huggingface-papers-daily-5">
+  <a class="item-title" href="https://huggingface.co/papers/2610.17665">RoTA-Bench: Evaluating 3D Spatial Reasoning through Interactive Projection Alignment</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-13T20:00:00.000Z">05:00</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">201 upvotes. Can vision-language models turn 2D observations into 3D understanding that supports precise action? This requires inferring object geometry, anticipating the effects of rotation, and refining actions through visual feedback. We introduce RoTA-Bench to evaluate these…</p>
+    <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-13T20:00:00.000Z">05:00</time></p>
+  </details>
+</li><li class="item" id="huggingface-papers-daily-6">
+  <a class="item-title" href="https://huggingface.co/papers/2610.18813">Self-Evolving Agent Harness</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-12T20:00:00.000Z">05:00</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">197 upvotes. Harness self-evolution revises an agent&#x27;s software scaffolding, including prompts, memory, workflows, and executable components, while keeping model weights fixed. We formalize a feedback-driven process in which accepted revisions persist across runs. The framework …</p>
+    <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-12T20:00:00.000Z">05:00</time></p>
+  </details>
+</li></ol>
+<details class="more"><summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary><ol class="items" style="--start: 6"><li class="item" id="huggingface-papers-daily-7">
+  <a class="item-title" href="https://huggingface.co/papers/2610.20939">MAI-Gym: An Open All-in-One Platform for GUI Agent Evaluation and RL Training across Mobile and Computer Environments</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-13T20:00:00.000Z">05:00</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">153 upvotes. Online reinforcement learning (RL) with verifiable rewards has driven rapid progress in mathematics, coding, and tool use, but scaling this success to GUI agents remains challenging due to the high cost of interactive environments and the scarcity of realistic train…</p>
+    <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-13T20:00:00.000Z">05:00</time></p>
+  </details>
+</li><li class="item" id="huggingface-papers-daily-8">
+  <a class="item-title" href="https://huggingface.co/papers/2610.21261">Behavioral Compositionality of Sparse Autoencoder Representations</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-14T20:00:00.000Z">05:00</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">105 upvotes. Sparse autoencoders (SAEs) represent model activations with sparse, linearly decoded features, but the downstream effects of those features need not compose additively. We introduce SAE Additivity Residuals (SAR), which measure the behavioral variation left unexplai…</p>
+    <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-14T20:00:00.000Z">05:00</time></p>
+  </details>
+</li><li class="item" id="huggingface-papers-daily-9">
+  <a class="item-title" href="https://huggingface.co/papers/2610.21439">Each Reward to Its Relevant Tokens: Reward-Specific Token-Level Credit Assignment for Multi-Reward RL</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-15T03:47:04.000Z">12:47</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">55 upvotes. Language models are increasingly trained against several verifiable rewards at once, such as the correctness and the format of a tool call, or the individual constraints of a complex instruction. Reward-decoupled normalization (GDPO) normalizes each reward separately…</p>
+    <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-15T03:47:04.000Z">12:47</time></p>
+  </details>
+</li><li class="item" id="huggingface-papers-daily-10">
+  <a class="item-title" href="https://huggingface.co/papers/2610.21306">VLA-Δ: Learning Physical State Transition for Vision-Language-Action Models</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-14T20:00:00.000Z">05:00</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">54 upvotes. Vision-language-action (VLA) models transfer semantic knowledge acquired through vision-language pretraining to robot control, achieving strong performance across various benchmarks. However, most VLAs directly map observations to demonstrated actions without explici…</p>
+    <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-14T20:00:00.000Z">05:00</time></p>
+  </details>
+</li></ol></details>
 </section>
 <!-- /slot -->
     </div>
 
-    <div class="zone">
+    <div class="zone zone-projects">
       <h2 class="zone-title"><span lang="en">Projects</span><span lang="ko">프로젝트</span></h2>
       <!-- slot: personal -->
 <section class="producer" aria-labelledby="yui-repo"><h3 class="producer-head" id="yui-repo">yui-repo <span class="count">10</span></h3><p class="producer-summary">YUI repository: 10 updates in the last 24 hours, including closed issues, merged pull requests, features, and review requests for Youngwoo.</p>
@@ -100,12 +342,89 @@
 <!-- slot: intro:yui-repo lang=ko -->
 <p class="intro" lang="ko">최근 저장소 작업은 검증용 임베디드 웹드라이버 선택 기능과 런타임 가시성 개선에 집중되어 있으며, 테스트와 에이전트 문서도 보강되었습니다.</p>
 <!-- /slot -->
-<ol class="items"><li class="item" id="yui-repo-1"><div><a class="item-title" href="https://github.com/yw0nam/YUI/issues/1480">\[feature\] Opt-in embedded WebDriver (verify feature) for the verify bundle</a><p class="item-meta">issue · github.com · <time datetime="2026-10-17T06:18:13Z">15:18</time></p><p class="item-excerpt">## Work description The spike in #1477 showed that Tauri&#x27;s embedded WebDriver provider (`tauri-plugin-wdio-webdriver` + `@wdio/tauri-service`) attaches to the verify bundle on macOS and gives JavaScript evaluation, DOM reads, a `localStorage` seed with reload, and pointer-event …</p></div></li><li class="item" id="yui-repo-2"><div><a class="item-title" href="https://github.com/yw0nam/YUI/pull/1481">feat: opt-in verify feature with the embedded WebDriver plugin</a><p class="item-meta">feature · github.com · <time datetime="2026-10-17T06:18:12Z">15:18</time></p><p class="item-excerpt">## Summary Ships the embedded WebDriver provider measured in #1477 as an opt-in Cargo feature. - **`verify` feature.** `src-tauri/Cargo.toml` declares `tauri-plugin-wdio-webdriver = { version = &quot;1.5.0&quot;, optional = true }` and `verify = [&quot;dep:tauri-plugin-wdio-webdriver&quot;]`. It is…</p></div></li><li class="item" id="yui-repo-3"><div><a class="item-title" href="https://github.com/yw0nam/YUI/issues/1477">\[spike\] Does Tauri&#x27;s embedded WebDriver provider reach the YUI verify bundle on macOS?</a><p class="item-meta">issue · github.com · <time datetime="2026-10-17T05:53:28Z">14:53</time></p><p class="item-excerpt">## Uncertainty / question Tauri&#x27;s WebDriver guide (https://v2.tauri.app/develop/tests/webdriver/) states that WebdriverIO with `@wdio/tauri-service` and its default `embedded` driver provider works on macOS, through a Tauri plugin added to the app. Stock `tauri-driver` still has…</p></div></li><li class="item" id="yui-repo-4"><div><a class="item-title" href="https://github.com/yw0nam/YUI/issues/1478">\[feature\] Debug-build settings seed for the verify bundle (YUI_SETTINGS_SEED)</a><p class="item-meta">issue · github.com · <time datetime="2026-10-17T05:53:26Z">14:53</time></p><p class="item-excerpt">## Work description A verification run of the desktop app needs the agent-ingress listener enabled and the chat endpoint pointed at a mock server before the first turn fires. Both live in `localStorage` (`yui.agentNotify`, `yui.endpoints`), and the only way to set them today is …</p></div></li><li class="item" id="yui-repo-5"><div><a class="item-title" href="https://github.com/yw0nam/YUI/issues/1476">\[feature\] Log lines for the states agents cannot see today</a><p class="item-meta">issue · github.com · <time datetime="2026-10-17T05:52:10Z">14:52</time></p><p class="item-excerpt">## Work description Agents verify runtime behaviour from `logs/*.log` (`pnpm tauri:dev`, the verify bundle). Six states happen today without any log line, so an agent falls back to screenshots or temporary code to see them. This issue adds one log line per state, following `docs…</p></div></li><li class="item" id="yui-repo-6"><div><a class="item-title" href="https://github.com/yw0nam/YUI/pull/1479">feat: log the states agents could not see</a><p class="item-meta">feature · github.com · <time datetime="2026-10-17T05:52:09Z">14:52</time></p><p class="item-excerpt">## Summary Adds one log line for each of the seven states the issue lists, so an agent reading `logs/*.log` can see them without screenshots or temporary code. Each line follows `docs/reference/logging.md`: a snake_case event name and named fields, with no chat text, tool result…</p></div></li></ol>
-<details class="more"><summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary><ol class="items" style="--start: 6"><li class="item" id="yui-repo-7"><div><a class="item-title" href="https://github.com/yw0nam/YUI/pull/1474">test: keep the config invariants and drop the blocks that mirrored tunable values</a><p class="item-meta">pull_request · github.com · <time datetime="2026-10-17T03:11:28Z">12:11</time></p><p class="item-excerpt">## Summary `src/config/configs.test.ts` keeps the invariants the shipped configs under `configs/` must hold and drops the blocks that restated a tunable&#x27;s current value. The file goes from 51 blocks (54 cases) to 16 blocks (54 cases); the mutations listed below each made their b…</p></div></li><li class="item" id="yui-repo-8"><div><a class="item-title" href="https://github.com/yw0nam/YUI/pull/1472">docs: state what a test must prove and when a test is not written</a><p class="item-meta">pull_request · github.com · <time datetime="2026-10-17T02:47:33Z">11:47</time></p><p class="item-excerpt">## Summary `docs/agent-guide/testing.md` opens with what a test is for, so a contributor can tell a test that earns its place from one that adds volume. The existing rules say how to write a test (public entry, literal expectations, red before green); none said what a failing te…</p></div></li><li class="item" id="yui-repo-9"><div><a class="item-title" href="https://github.com/yw0nam/YUI/pull/1473">test: fix two assertions that could not fail</a><p class="item-meta">pull_request · github.com · <time datetime="2026-10-17T02:46:38Z">11:46</time></p><p class="item-excerpt">## Summary Two test blocks found by a full read of the suite do not detect the regressions their titles name. - `src/dispatcher/backend/backend-caller.context.test.ts` &quot;renders no previous line when the slot is empty&quot; asserted the absence of `previous:`; the rendered line begins…</p></div></li><li class="item" id="yui-repo-10"><div><a class="item-title" href="https://github.com/yw0nam/YUI/pull/1471">chore: align agent docs and config with the repo after the audit</a><p class="item-meta">pull_request · github.com · <time datetime="2026-10-17T02:26:48Z">11:26</time></p><p class="item-excerpt">## Summary Follow-up to a repository audit (four read-only scans: tooling and CI, agent-doc accuracy, the architecture map, and a set of outside design references). Everything here is docs, config, or the map viewer; no `src/` or `src-tauri/src/` file changes. **Docs that had dr…</p></div></li></ol></details>
+<ol class="items"><li class="item item-lead" id="yui-repo-1">
+  <div class="lead-text">
+    <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1480">\[feature\] Opt-in embedded WebDriver (verify feature) for the verify bundle</a>
+    <p class="item-excerpt">## Work description The spike in #1477 showed that Tauri&#x27;s embedded WebDriver provider (`tauri-plugin-wdio-webdriver` + `@wdio/tauri-service`) attaches to the verify bundle on macOS and gives JavaScript evaluation, DOM reads, a `localStorage` seed with reload, and pointer-event …</p>
+    <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-17T06:18:13Z">15:18</time></p>
+  </div>
+</li><li class="item" id="yui-repo-2">
+  <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1481">feat: opt-in verify feature with the embedded WebDriver plugin</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-17T06:18:12Z">15:18</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">## Summary Ships the embedded WebDriver provider measured in #1477 as an opt-in Cargo feature. - **`verify` feature.** `src-tauri/Cargo.toml` declares `tauri-plugin-wdio-webdriver = { version = &quot;1.5.0&quot;, optional = true }` and `verify = [&quot;dep:tauri-plugin-wdio-webdriver&quot;]`. It is…</p>
+    <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-10-17T06:18:12Z">15:18</time></p>
+  </details>
+</li><li class="item" id="yui-repo-3">
+  <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1477">\[spike\] Does Tauri&#x27;s embedded WebDriver provider reach the YUI verify bundle on macOS?</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-17T05:53:28Z">14:53</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">## Uncertainty / question Tauri&#x27;s WebDriver guide (https://v2.tauri.app/develop/tests/webdriver/) states that WebdriverIO with `@wdio/tauri-service` and its default `embedded` driver provider works on macOS, through a Tauri plugin added to the app. Stock `tauri-driver` still has…</p>
+    <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-17T05:53:28Z">14:53</time></p>
+  </details>
+</li><li class="item" id="yui-repo-4">
+  <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1478">\[feature\] Debug-build settings seed for the verify bundle (YUI_SETTINGS_SEED)</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-17T05:53:26Z">14:53</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">## Work description A verification run of the desktop app needs the agent-ingress listener enabled and the chat endpoint pointed at a mock server before the first turn fires. Both live in `localStorage` (`yui.agentNotify`, `yui.endpoints`), and the only way to set them today is …</p>
+    <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-17T05:53:26Z">14:53</time></p>
+  </details>
+</li><li class="item" id="yui-repo-5">
+  <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1476">\[feature\] Log lines for the states agents cannot see today</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-17T05:52:10Z">14:52</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">## Work description Agents verify runtime behaviour from `logs/*.log` (`pnpm tauri:dev`, the verify bundle). Six states happen today without any log line, so an agent falls back to screenshots or temporary code to see them. This issue adds one log line per state, following `docs…</p>
+    <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-17T05:52:10Z">14:52</time></p>
+  </details>
+</li><li class="item" id="yui-repo-6">
+  <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1479">feat: log the states agents could not see</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-17T05:52:09Z">14:52</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">## Summary Adds one log line for each of the seven states the issue lists, so an agent reading `logs/*.log` can see them without screenshots or temporary code. Each line follows `docs/reference/logging.md`: a snake_case event name and named fields, with no chat text, tool result…</p>
+    <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-10-17T05:52:09Z">14:52</time></p>
+  </details>
+</li></ol>
+<details class="more"><summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary><ol class="items" style="--start: 6"><li class="item" id="yui-repo-7">
+  <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1474">test: keep the config invariants and drop the blocks that mirrored tunable values</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-17T03:11:28Z">12:11</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">## Summary `src/config/configs.test.ts` keeps the invariants the shipped configs under `configs/` must hold and drops the blocks that restated a tunable&#x27;s current value. The file goes from 51 blocks (54 cases) to 16 blocks (54 cases); the mutations listed below each made their b…</p>
+    <p class="item-meta"><span class="item-kind">pull_request</span><span class="item-host">github.com</span><time datetime="2026-10-17T03:11:28Z">12:11</time></p>
+  </details>
+</li><li class="item" id="yui-repo-8">
+  <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1472">docs: state what a test must prove and when a test is not written</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-17T02:47:33Z">11:47</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">## Summary `docs/agent-guide/testing.md` opens with what a test is for, so a contributor can tell a test that earns its place from one that adds volume. The existing rules say how to write a test (public entry, literal expectations, red before green); none said what a failing te…</p>
+    <p class="item-meta"><span class="item-kind">pull_request</span><span class="item-host">github.com</span><time datetime="2026-10-17T02:47:33Z">11:47</time></p>
+  </details>
+</li><li class="item" id="yui-repo-9">
+  <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1473">test: fix two assertions that could not fail</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-17T02:46:38Z">11:46</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">## Summary Two test blocks found by a full read of the suite do not detect the regressions their titles name. - `src/dispatcher/backend/backend-caller.context.test.ts` &quot;renders no previous line when the slot is empty&quot; asserted the absence of `previous:`; the rendered line begins…</p>
+    <p class="item-meta"><span class="item-kind">pull_request</span><span class="item-host">github.com</span><time datetime="2026-10-17T02:46:38Z">11:46</time></p>
+  </details>
+</li><li class="item" id="yui-repo-10">
+  <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1471">chore: align agent docs and config with the repo after the audit</a>
+  <p class="item-figure"><span class="figure-value"><time datetime="2026-10-17T02:26:48Z">11:26</time></span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">## Summary Follow-up to a repository audit (four read-only scans: tooling and CI, agent-doc accuracy, the architecture map, and a set of outside design references). Everything here is docs, config, or the map viewer; no `src/` or `src-tauri/src/` file changes. **Docs that had dr…</p>
+    <p class="item-meta"><span class="item-kind">pull_request</span><span class="item-host">github.com</span><time datetime="2026-10-17T02:26:48Z">11:26</time></p>
+  </details>
+</li></ol></details>
 </section>
 <!-- /slot -->
     </div>
-
   </main>
 
   <nav class="days" aria-label="Other days">

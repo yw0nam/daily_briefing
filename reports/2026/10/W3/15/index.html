@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex">
+<meta name="description" content="One day of the briefing, with the state of every source.">
+<!-- slot: title -->
+<title>Briefing · 2026-10-15</title>
+    <!-- /slot -->
+<style id="lang-rule">body [lang]:not([lang="en"]) { display: none !important; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans+KR:wght@500;600&family=Noto+Serif+KR:wght@400;500&display=swap">
+<link rel="stylesheet" href="../../../../../src/style.css">
+<script src="../../../../../src/lang.js"></script>
+</head>
+<body>
+<header class="runner container">
+  <a class="wordmark" href="../../../../../"><span lang="en">Daily briefing</span><span lang="ko">오늘의 브리핑</span></a>
+  <label class="lang-switch">
+    <select id="lang-select" aria-label="Language">
+      <!-- slot: languages -->
+<option value="en">EN</option>
+          <option value="ko">KO</option>
+    <!-- /slot -->
+    </select>
+  </label>
+</header>
+
+<div class="page container">
+
+  <header class="front">
+    <div>
+      <div class="masthead">
+        <!-- slot: date lang=en -->
+<div lang="en"><h1>Thursday, October 15</h1><p class="dateline"><time datetime="2026-10-15T12:08:35+09:00"><span>2026-10-15</span> <span>prepared at 12:08</span></time></p></div>
+    <!-- /slot -->
+        <!-- slot: date lang=ko -->
+    <div lang="ko"><h1>10월 15일 목요일</h1><p class="dateline"><time datetime="2026-10-15T12:08:35+09:00"><span>2026-10-15</span> <span>12:08 작성</span></time></p></div>
+    <!-- /slot -->
+      </div>
+
+      <section class="lead" aria-label="Summary">
+        <!-- slot: summary lang=en --><p class="summary" lang="en">Open-source attention centered on agent-led reverse engineering and local voice tools, while recent papers examine reflective agents and robotic world models. World news combines corporate growth, market concerns, and international developments, with one stale feed limiting coverage. YUI added a daily briefing page and publishing structure alongside a change to the loneliness gate; the latter remains a review item.</p><!-- /slot -->
+        <!-- slot: summary lang=ko --><p class="summary" lang="ko">오픈소스 분야에서는 에이전트 기반 역공학과 로컬 음성 도구가 주목받았으며, 최근 논문은 성찰형 에이전트와 로봇 세계 모델을 다룹니다. 세계 뉴스는 기업 성장과 시장 불안, 국제 동향을 전하지만 뉴스 피드 하나가 오래되어 보도 범위가 제한될 수 있습니다. YUI에는 일일 브리핑 페이지와 게시 구조가 추가됐으며, 외로움 게이트 변경도 포함되어 검토 대상으로 남아 있습니다.</p><!-- /slot -->
+      </section>
+    </div>
+
+    <aside class="ledger">
+      <nav class="contents" aria-label="Contents">
+        <!-- slot: contents -->
+<ol><li><a href="#world-news"><span class="toc-name">world-news</span><span class="status status-stale"><span lang="en">stale</span><span lang="ko">지연</span></span><span class="toc-count">10</span></a></li><li><a href="#github-trending-daily"><span class="toc-name">github-trending-daily</span><span class="toc-count">10</span></a></li><li><a href="#huggingface-papers-daily"><span class="toc-name">huggingface-papers-daily</span><span class="toc-count">10</span></a></li></ol><p class="toc-zone"><span lang="en">Your work</span><span lang="ko">내 작업</span></p><ol><li><a href="#yui-repo"><span class="toc-name">yui-repo</span><span class="toc-count">12</span></a></li></ol>
+    <!-- /slot -->
+      </nav>
+
+      <section class="health" aria-labelledby="attention">
+        <h2 id="attention"><span lang="en">Needs attention</span><span lang="ko">확인이 필요한 소스</span></h2>
+        <div class="notices">
+          <!-- slot: notices -->
+<div class="notice"><p class="notice-head"><span class="status status-stale"><span lang="en">Stale</span><span lang="ko">지연</span></span><span class="source-name"><span class="source-producer">world-news</span> cnn-topstories</span></p><p class="notice-detail"><span lang="en">No successful run reported today</span><span lang="ko">오늘 성공 실행 기록 없음</span></p></div>
+    <!-- /slot -->
+        </div>
+      </section>
+    </aside>
+  </header>
+
+  <main>
+    <div class="zone">
+      <!-- slot: producers -->
+<section class="producer" aria-labelledby="world-news"><h2 class="producer-head" id="world-news">world-news <span class="count">10</span></h2><p class="producer-summary">World news roundup: 10 items from 3 live feed(s)</p><!-- slot: intro:world-news lang=en --><p class="intro" lang="en"><a href="#world-news-1">Anthropic’s reported revenue increase</a> contrasts with <a href="#world-news-2">the chip-stock selloff amid inflation and AI-debt concerns</a>, highlighting tension between growth and financing risks. The CNN top-stories source is stale, so the ten-item roundup may not represent the full picture.</p><!-- /slot --><!-- slot: intro:world-news lang=ko --><p class="intro" lang="ko"><a href="#world-news-1">앤스로픽의 매출 증가 보도</a>와 <a href="#world-news-2">물가 및 인공지능 부채 우려 속 반도체주 하락</a>은 성장과 자금 조달 위험의 긴장을 보여줍니다. 씨엔엔 주요 뉴스 피드가 오래되어 열 개 항목의 요약이 전체 상황을 반영하지 못할 수 있습니다.</p><!-- /slot --><ol class="items"><li class="item item-lead" id="world-news-1">
+  <div class="lead-text">
+    <a class="item-title" href="https://www.ft.com/content/11632d03-358c-454b-af95-d06d4072932b?syn-25a6b1a6=1">Anthropic revenue jumps to $16.8bn in third quarter</a>
+    <p class="item-excerpt">AI start-up gathered investors for presentations in San Francisco on Wednesday ahead of its anticipated public listing</p>
+    <p class="item-meta"><span class="item-kind">news</span><span>Wed, 14 Oct 2026 22:06:31 GMT</span></p>
+  </div>
+</li><li class="item" id="world-news-2">
+  <a class="item-title" href="https://www.ft.com/content/fb258413-e88d-47fe-98c8-f645adaea1e1?syn-25a6b1a6=1">US chip stocks slide as inflation and AI debt fears unsettle investors</a>
+  <p class="item-figure"><span class="figure-value">Wed, 14 Oct 2026 20:36:40 GMT</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">Investors rush into Treasuries as sell-off triggers demand for haven assets</p>
+    <p class="item-meta"><span class="item-kind">news</span><span>Wed, 14 Oct 2026 20:36:40 GMT</span></p>
+  </details>
+</li><li class="item" id="world-news-3">
+  <a class="item-title" href="https://www.ft.com/content/b71e0dc4-b190-49ec-b000-bd585054ddc8?syn-25a6b1a6=1">He linked Saudi Arabia to Silicon Valley. Then OpenAI found a bug wrapped in toilet paper</a>
+  <p class="item-figure"><span class="figure-value">Wed, 14 Oct 2026 14:40:47 GMT</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">Arrest of computer engineer Abdulrahman Alfozan has shocked tech figures in Saudi Arabia, where he is deeply connected</p>
+    <p class="item-meta"><span class="item-kind">news</span><span>Wed, 14 Oct 2026 14:40:47 GMT</span></p>
+  </details>
+</li><li class="item" id="world-news-4">
+  <a class="item-title" href="https://www.ft.com/content/5e6d1d30-0934-4fda-b2c0-27b0d96aeba3?syn-25a6b1a6=1">The global economy and the art of living dangerously</a>
+  <p class="item-figure"><span class="figure-value">Wed, 14 Oct 2026 04:00:21 GMT</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">It would be nice to think that the world will become less shock-prone, but it probably won’t</p>
+    <p class="item-meta"><span class="item-kind">news</span><span>Wed, 14 Oct 2026 04:00:21 GMT</span></p>
+  </details>
+</li><li class="item" id="world-news-5">
+  <a class="item-title" href="https://www.bbc.co.uk/news/articles/c8wy9veedgygo?at_medium=RSS&amp;at_campaign=rss">Musk says any limits on Ukraine&#x27;s Starlink access down to US, not his firm</a>
+  <p class="item-figure"><span class="figure-value">Wed, 14 Oct 2026 20:55:24 GMT</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">Ukraine says Starlink access has improved but it is still facing speed limits which are disrupting its battlefield &quot;missions&quot;.</p>
+    <p class="item-meta"><span class="item-kind">news</span><span>Wed, 14 Oct 2026 20:55:24 GMT</span></p>
+  </details>
+</li><li class="item" id="world-news-6">
+  <a class="item-title" href="https://www.bbc.co.uk/news/articles/cq80zk5k2ep4o?at_medium=RSS&amp;at_campaign=rss">Student protesters attack government buildings in Tirana</a>
+  <p class="item-figure"><span class="figure-value">Wed, 14 Oct 2026 20:29:05 GMT</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">Thousands of students in Albania are calling for better university conditions and job prospects, but buildings have been set on fire in the unrest.</p>
+    <p class="item-meta"><span class="item-kind">news</span><span>Wed, 14 Oct 2026 20:29:05 GMT</span></p>
+  </details>
+</li><li class="item" id="world-news-7">
+  <a class="item-title" href="https://www.bbc.co.uk/news/articles/cwx28r0zvm6lo?at_medium=RSS&amp;at_campaign=rss">Pope walking and recovering &#x27;as expected&#x27; after surgery, doctors say</a>
+  <p class="item-figure"><span class="figure-value">Wed, 14 Oct 2026 15:12:46 GMT</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">The 71-year-old Pope was diagnosed with lung cancer after the 90-minute procedure on Tuesday.</p>
+    <p class="item-meta"><span class="item-kind">news</span><span>Wed, 14 Oct 2026 15:12:46 GMT</span></p>
+  </details>
+</li><li class="item" id="world-news-8">
+  <a class="item-title" href="https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&amp;at_campaign=rss">US inflation rises more than expected - here&#x27;s what is happening with prices</a>
+  <p class="item-figure"><span class="figure-value">Wed, 14 Oct 2026 15:26:14 GMT</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">The pace of price rises increased to 3.7% in the year to September, driving by higher motor fuel costs.</p>
+    <p class="item-meta"><span class="item-kind">news</span><span>Wed, 14 Oct 2026 15:26:14 GMT</span></p>
+  </details>
+</li><li class="item" id="world-news-9">
+  <a class="item-title" href="https://www.bbc.co.uk/news/articles/cwp8gynk13rro?at_medium=RSS&amp;at_campaign=rss">Drop-off charges at UK airports to be reviewed after sharp increase</a>
+  <p class="item-figure"><span class="figure-value">Wed, 14 Oct 2026 17:46:30 GMT</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">Confirming the review, the government said it was &quot;vital to ensure travel remains accessible and that passengers are treated fairly&quot;.</p>
+    <p class="item-meta"><span class="item-kind">news</span><span>Wed, 14 Oct 2026 17:46:30 GMT</span></p>
+  </details>
+</li><li class="item" id="world-news-10">
+  <a class="item-title" href="https://www.bbc.co.uk/news/articles/c6zxj0gzk4x4o?at_medium=RSS&amp;at_campaign=rss">Netflix to shed 1,000 jobs in steepest cuts since 2022</a>
+  <p class="item-figure"><span class="figure-value">Wed, 14 Oct 2026 16:47:32 GMT</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">The cuts equate to around 6% of the streaming giant&#x27;s total workforce worldwide.</p>
+    <p class="item-meta"><span class="item-kind">news</span><span>Wed, 14 Oct 2026 16:47:32 GMT</span></p>
+  </details>
+</li></ol></section>
+<section class="producer" aria-labelledby="github-trending-daily"><h2 class="producer-head" id="github-trending-daily">github-trending-daily <span class="count">10</span></h2><p class="producer-summary">GitHub trending (daily): top 10 repos by stars</p><!-- slot: intro:github-trending-daily lang=en --><p class="intro" lang="en">Agent-led reverse engineering <a href="#github-trending-daily-1">recorded the strongest signal</a>, followed by <a href="#github-trending-daily-2">a fully local voice suite</a>. Their exceptional daily star counts indicate interest in practical autonomous tools and private media workflows.</p><!-- /slot --><!-- slot: intro:github-trending-daily lang=ko --><p class="intro" lang="ko"><a href="#github-trending-daily-1">에이전트 기반 역공학</a>과 <a href="#github-trending-daily-2">완전 로컬 음성 도구</a>가 두드러집니다. 두 프로젝트의 높은 일일 별 증가량은 실용적인 자율 도구와 개인정보 보호형 미디어 작업에 대한 관심을 보여줍니다.</p><!-- /slot --><ol class="items"><li class="item item-lead" id="github-trending-daily-1">
+  <div class="lead-text">
+    <a class="item-title" href="https://github.com/morluto/rea">morluto/rea</a>
+    <p class="item-excerpt">Reverse engineer anything with agents, from app behavior down to native binaries. · 240,258 stars total · 41,187 stars today</p>
+    <p class="item-meta"><span class="item-kind">repo_trending</span><span>2026-10-15T08:00:03+09:00</span></p>
+  </div>
+</li><li class="item" id="github-trending-daily-2">
+  <a class="item-title" href="https://github.com/debpalash/VoiceStudio">debpalash/VoiceStudio</a>
+  <p class="item-figure"><span class="figure-value">2026-10-15T08:00:03+09:00</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription &amp; audiobook creation in 646 languages. · 66,172 stars total · 3,547 stars today</p>
+    <p class="item-meta"><span class="item-kind">repo_trending</span><span>2026-10-15T08:00:03+09:00</span></p>
+  </details>
+</li><li class="item" id="github-trending-daily-3">
+  <a class="item-title" href="https://github.com/mksglu/context-mode">mksglu/context-mode</a>
+  <p class="item-figure"><span class="figure-value">2026-10-15T08:00:03+09:00</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks. · 29,066 stars total · 946 stars today</p>
+    <p class="item-meta"><span class="item-kind">repo_trending</span><span>2026-10-15T08:00:03+09:00</span></p>
+  </details>
+</li><li class="item" id="github-trending-daily-4">
+  <a class="item-title" href="https://github.com/nvm-sh/nvm">nvm-sh/nvm</a>
+  <p class="item-figure"><span class="figure-value">2026-10-15T08:00:03+09:00</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions. · 95,442 stars total · 70 stars today</p>
+    <p class="item-meta"><span class="item-kind">repo_trending</span><span>2026-10-15T08:00:03+09:00</span></p>
+  </details>
+</li><li class="item" id="github-trending-daily-5">
+  <a class="item-title" href="https://github.com/K-Dense-AI/scientific-agent-skills">K-Dense-AI/scientific-agent-skills</a>
+  <p class="item-figure"><span class="figure-value">2026-10-15T08:00:03+09:00</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code…</p>
+    <p class="item-meta"><span class="item-kind">repo_trending</span><span>2026-10-15T08:00:03+09:00</span></p>
+  </details>
+</li><li class="item" id="github-trending-daily-6">
+  <a class="item-title" href="https://github.com/HKUDS/CLI-Anything">HKUDS/CLI-Anything</a>
+  <p class="item-figure"><span class="figure-value">2026-10-15T08:00:03+09:00</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">&quot;CLI-Anything: Making ALL Software Agent-Native&quot; -- CLI-Hub: https://clianything.cc/ · 52,450 stars total · 94 stars today</p>
+    <p class="item-meta"><span class="item-kind">repo_trending</span><span>2026-10-15T08:00:03+09:00</span></p>
+  </details>
+</li><li class="item" id="github-trending-daily-7">
+  <a class="item-title" href="https://github.com/ifixai-ai/iFixAi">ifixai-ai/iFixAi</a>
+  <p class="item-figure"><span class="figure-value">2026-10-15T08:00:03+09:00</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds. · 27,312 stars total · 2,143 stars today</p>
+    <p class="item-meta"><span class="item-kind">repo_trending</span><span>2026-10-15T08:00:03+09:00</span></p>
+  </details>
+</li><li class="item" id="github-trending-daily-8">
+  <a class="item-title" href="https://github.com/vxcontrol/pentagi">vxcontrol/pentagi</a>
+  <p class="item-figure"><span class="figure-value">2026-10-15T08:00:03+09:00</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">Fully autonomous AI Agents system capable of performing complex penetration testing tasks · 29,371 stars total · 1,070 stars today</p>
+    <p class="item-meta"><span class="item-kind">repo_trending</span><span>2026-10-15T08:00:03+09:00</span></p>
+  </details>
+</li><li class="item" id="github-trending-daily-9">
+  <a class="item-title" href="https://github.com/rust-lang/rust">rust-lang/rust</a>
+  <p class="item-figure"><span class="figure-value">2026-10-15T08:00:03+09:00</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">Empowering everyone to build reliable and efficient software. · 119,992 stars total · 205 stars today</p>
+    <p class="item-meta"><span class="item-kind">repo_trending</span><span>2026-10-15T08:00:03+09:00</span></p>
+  </details>
+</li><li class="item" id="github-trending-daily-10">
+  <a class="item-title" href="https://github.com/xtool-org/xtool">xtool-org/xtool</a>
+  <p class="item-figure"><span class="figure-value">2026-10-15T08:00:03+09:00</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS. · 10,727 stars total · 1,510 stars today</p>
+    <p class="item-meta"><span class="item-kind">repo_trending</span><span>2026-10-15T08:00:03+09:00</span></p>
+  </details>
+</li></ol></section>
+<section class="producer" aria-labelledby="huggingface-papers-daily"><h2 class="producer-head" id="huggingface-papers-daily">huggingface-papers-daily <span class="count">10</span></h2><p class="producer-summary">HuggingFace daily papers: top 10 of 50 today</p><!-- slot: intro:huggingface-papers-daily lang=en --><p class="intro" lang="en"><a href="#huggingface-papers-daily-2">Agent-Reflex</a> addresses noisy tool feedback and user correction, while <a href="#huggingface-papers-daily-4">GreenWAM</a> unifies a robot’s predictive world model with action selection. Both studies relate to reliability in agents and embodied systems.</p><!-- /slot --><!-- slot: intro:huggingface-papers-daily lang=ko --><p class="intro" lang="ko"><a href="#huggingface-papers-daily-2">Agent-Reflex</a>는 잡음이 섞인 도구 피드백과 사용자 수정에 대응하며, <a href="#huggingface-papers-daily-4">GreenWAM</a>은 로봇의 세계 예측 모델과 행동 선택을 통합합니다. 두 연구는 에이전트와 체화형 시스템의 신뢰성에 관련됩니다.</p><!-- /slot --><ol class="items"><li class="item item-lead" id="huggingface-papers-daily-1">
+  <div class="lead-text">
+    <a class="item-title" href="https://huggingface.co/papers/2610.18773">Jeva: System One Models from First Principles</a>
+    <p class="item-excerpt">264 upvotes. System one models enable direct, low-latency decision-making. Yet recent practice of predicting an answer from serialized text does not, by itself, respect the structure of a decision problem. We argue that current designs underemphasize four important structural re…</p>
+    <p class="item-meta"><span class="item-kind">paper</span><span>2026-10-12T20:00:00.000Z</span></p>
+  </div>
+</li><li class="item" id="huggingface-papers-daily-2">
+  <a class="item-title" href="https://huggingface.co/papers/2610.17953">Agent-Reflex: Teaching Language Agents to Act Reflectively</a>
+  <p class="item-figure"><span class="figure-value">2026-10-12T20:00:00.000Z</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">192 upvotes. Large language models have evolved from single-turn chatbots into interactive agents capable of long-horizon reasoning. In real deployments, MCP tool services can return noisy feedback and users may intervene to correct the agent, but existing methods provide limite…</p>
+    <p class="item-meta"><span class="item-kind">paper</span><span>2026-10-12T20:00:00.000Z</span></p>
+  </details>
+</li><li class="item" id="huggingface-papers-daily-3">
+  <a class="item-title" href="https://huggingface.co/papers/2610.18356">Urbex: Agentic Spatial Grounding for City-Scale 3D Scenes</a>
+  <p class="item-figure"><span class="figure-value">2026-10-12T20:00:00.000Z</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">109 upvotes. City-scale 3D grounding is commonly formulated as candidate ranking, which requires precomputed instance proposals and becomes inefficient in large outdoor scenes. We propose Urbex, an agentic vision-language framework that instead casts grounding as active spatial …</p>
+    <p class="item-meta"><span class="item-kind">paper</span><span>2026-10-12T20:00:00.000Z</span></p>
+  </details>
+</li><li class="item" id="huggingface-papers-daily-4">
+  <a class="item-title" href="https://huggingface.co/papers/2610.18774">GreenWAM: A World Foundation Model for Robotics</a>
+  <p class="item-figure"><span class="figure-value">2026-10-12T20:00:00.000Z</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">82 upvotes. A robot needs a world model that predicts how its actions will change the scene and a policy that chooses those actions. Models are usually built and evaluated for only one of these roles, and every robot records its actions in its own format. We ask whether one robo…</p>
+    <p class="item-meta"><span class="item-kind">paper</span><span>2026-10-12T20:00:00.000Z</span></p>
+  </details>
+</li><li class="item" id="huggingface-papers-daily-5">
+  <a class="item-title" href="https://huggingface.co/papers/2610.18868">Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards</a>
+  <p class="item-figure"><span class="figure-value">2026-10-12T20:00:00.000Z</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">74 upvotes. Long-horizon agents have drawn growing attention for their ability to work autonomously -- from hours to days -- on economically valuable tasks, a capability essential to automated discovery and recursive self-improvement (RSI). Yet open-source models still struggle …</p>
+    <p class="item-meta"><span class="item-kind">paper</span><span>2026-10-12T20:00:00.000Z</span></p>
+  </details>
+</li><li class="item" id="huggingface-papers-daily-6">
+  <a class="item-title" href="https://huggingface.co/papers/2610.14609">EviScene: Beyond &quot;Is It AI?&quot; for Agentic Image Factuality Assessment</a>
+  <p class="item-figure"><span class="figure-value">2026-10-09T20:00:00.000Z</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">51 upvotes. Determining whether an image is AI-generated does not establish whether the situation it depicts is factually supported. We formulate Image Factuality Assessment: given an image and a generic verification instruction, a system returns a supported or refuted verdict w…</p>
+    <p class="item-meta"><span class="item-kind">paper</span><span>2026-10-09T20:00:00.000Z</span></p>
+  </details>
+</li><li class="item" id="huggingface-papers-daily-7">
+  <a class="item-title" href="https://huggingface.co/papers/2610.14766">Last Secure Code Benchmark: Is the Code You Vibe Secure?</a>
+  <p class="item-figure"><span class="figure-value">2026-10-09T20:00:00.000Z</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">44 upvotes. AI coding agents now write much of the code that ships, yet whether that code is secure remains unclear. We introduce the Last Secure Code Benchmark, a comprehensive evaluation of secure code generation by coding agents. Built from 150 real vulnerabilities, its 450 t…</p>
+    <p class="item-meta"><span class="item-kind">paper</span><span>2026-10-09T20:00:00.000Z</span></p>
+  </details>
+</li><li class="item" id="huggingface-papers-daily-8">
+  <a class="item-title" href="https://huggingface.co/papers/2610.12843">APEX: Asynchronous Prefix Denoising for Extreme Compression</a>
+  <p class="item-figure"><span class="figure-value">2026-10-08T20:00:00.000Z</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">41 upvotes. Fewer latent tokens promise cheaper diffusion. Yet aggressive latent compression creates a reconstruction-generation dilemma: adding channels improves reconstruction but makes generation harder. We introduce APEX, short for Asynchronous Prefix denoising for EXtreme c…</p>
+    <p class="item-meta"><span class="item-kind">paper</span><span>2026-10-08T20:00:00.000Z</span></p>
+  </details>
+</li><li class="item" id="huggingface-papers-daily-9">
+  <a class="item-title" href="https://huggingface.co/papers/2610.17552">FlashVSR+: Efficient Video Super-Resolution via Hybrid Attention and Reward-Yield Distribution Matching</a>
+  <p class="item-figure"><span class="figure-value">2026-10-12T20:00:00.000Z</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">33 upvotes. Recent video super-resolution (VSR) models achieve efficient one-step generation through diffusion distillation. However, high-resolution inference remains costly, and distilled models are difficult to align with human preferences. These challenges call for improveme…</p>
+    <p class="item-meta"><span class="item-kind">paper</span><span>2026-10-12T20:00:00.000Z</span></p>
+  </details>
+</li><li class="item" id="huggingface-papers-daily-10">
+  <a class="item-title" href="https://huggingface.co/papers/2610.16354">Self-Distillation with Verbal Regularization</a>
+  <p class="item-figure"><span class="figure-value">2026-10-11T20:00:00.000Z</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">29 upvotes. On-policy self-distillation (OPSD) trains a large language model using supervision from a teacher instantiated from the same model as the student. The teacher is conditioned on privileged information (PI), such as verified solutions. The student, which does not obser…</p>
+    <p class="item-meta"><span class="item-kind">paper</span><span>2026-10-11T20:00:00.000Z</span></p>
+  </details>
+</li></ol></section>
+    <!-- /slot -->
+    </div>
+
+    <div class="zone zone-projects">
+      <h2 class="zone-title"><span lang="en">Projects</span><span lang="ko">프로젝트</span></h2>
+      <!-- slot: personal -->
+<section class="producer" aria-labelledby="yui-repo"><h3 class="producer-head" id="yui-repo">yui-repo <span class="count">12</span></h3><p class="producer-summary">YUI repository: 12 updates in the last 24 hours, including closed issues, merged pull requests, features, and review requests for Youngwoo.</p><!-- slot: intro:yui-repo lang=en --><p class="intro" lang="en">The <a href="#yui-repo-2">daily briefing web page</a> was merged alongside <a href="#yui-repo-4">year-, month-, and week-based report folders</a> and publishing support. The feed also records the implemented loneliness dynamics in <a href="#yui-repo-10">PR 1447</a>; the related changes remain a review item.</p><!-- /slot --><!-- slot: intro:yui-repo lang=ko --><p class="intro" lang="ko"><a href="#yui-repo-2">일일 브리핑 웹 페이지</a>가 병합됐으며, <a href="#yui-repo-4">연·월·주 단위 보고서 폴더</a>와 게시 기능도 추가됐습니다. 피드에는 <a href="#yui-repo-10">풀 리퀘스트 1447</a>의 외로움 변화 기능 구현도 기록되어 있으며, 관련 변경은 검토 대상으로 남아 있습니다.</p><!-- /slot --><ol class="items"><li class="item item-lead" id="yui-repo-1">
+  <div class="lead-text">
+    <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1451">\[feature\] Briefing delivery as a web page: a fixed HTML template the agent fills, served by static hosting of the published spool</a>
+    <p class="item-excerpt">## Work description A third answer to Install step 6 of `integrations/skills/yui-daily-briefing/SKILL.md`: &quot;a greeting with a link to a web page&quot;. The page is one HTML file per day, `&lt;YYYY-MM-DD&gt;/index.html`, written into the spool beside that day&#x27;s markdown and pushed by `publi…</p>
+    <p class="item-meta"><span class="item-kind">issue</span><span>2026-10-15T03:04:57Z</span></p>
+  </div>
+</li><li class="item" id="yui-repo-2">
+  <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1455">feat: the daily briefing arrives as a web page per day, with a board of every day and page-check</a>
+  <p class="item-figure"><span class="figure-value">2026-10-15T03:04:56Z</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">## Summary This PR adds a third answer to Install step 6 of the daily briefing skill: a greeting with a link to a web page for the day. Before the user&#x27;s day starts, the agent fills a page with a fixed design from the day&#x27;s briefings. Static hosting of the published spool serves…</p>
+    <p class="item-meta"><span class="item-kind">feature</span><span>2026-10-15T03:04:56Z</span></p>
+  </details>
+</li><li class="item" id="yui-repo-3">
+  <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1452">\[feature\] Nest the briefing spool by year, month and week, and give the published repository a fixed layout</a>
+  <p class="item-figure"><span class="figure-value">2026-10-15T02:51:46Z</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">## Work description The spool, and so the published repository, lists one `&lt;YYYY-MM-DD&gt;/` folder per day at its root. After a year that is 365 folders side by side. The layout becomes: ``` .gitignore README.md the user&#x27;s; publish leaves it alone index.html the board page, writte…</p>
+    <p class="item-meta"><span class="item-kind">issue</span><span>2026-10-15T02:51:46Z</span></p>
+  </details>
+</li><li class="item" id="yui-repo-4">
+  <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1453">feat: the briefing spool nests day folders under reports/ by year, month and week</a>
+  <p class="item-figure"><span class="figure-value">2026-10-15T02:51:45Z</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">## Summary The briefing spool, and the repository `publish` pushes, now keeps each day under `reports/&lt;YYYY&gt;/&lt;MM&gt;/&lt;Wn&gt;/&lt;DD&gt;/`. Before this change, every day was a `&lt;YYYY-MM-DD&gt;/` folder at the root. `&lt;Wn&gt;` is the week of the month: `W1` covers days 1 to 7, `W2` 8 to 14, `W3` 15 …</p>
+    <p class="item-meta"><span class="item-kind">feature</span><span>2026-10-15T02:51:45Z</span></p>
+  </details>
+</li><li class="item" id="yui-repo-5">
+  <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1448">\[feature\] Publish the briefing spool to a git repository and hand the user a link in place of the spoken items</a>
+  <p class="item-figure"><span class="figure-value">2026-10-15T02:07:12Z</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">## Work description The daily briefing is spoken item by item today. The user wants a greeting and a link to the day&#x27;s report, and the report readable in a browser from anywhere. The spool already holds one markdown file per producer and day, and a git hosting service renders ma…</p>
+    <p class="item-meta"><span class="item-kind">issue</span><span>2026-10-15T02:07:12Z</span></p>
+  </details>
+</li><li class="item" id="yui-repo-6">
+  <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1450">feat: publish the briefing spool to a git repository and speak a link per day</a>
+  <p class="item-figure"><span class="figure-value">2026-10-15T02:07:10Z</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">## Summary The daily briefing can be delivered as a greeting with one link per day to the published spool, in place of the items read out. - `briefing.py publish` stages every `&lt;YYYY-MM-DD&gt;/*.md` file of a spool that is its own git work tree, commits those paths only (`git diff …</p>
+    <p class="item-meta"><span class="item-kind">feature</span><span>2026-10-15T02:07:10Z</span></p>
+  </details>
+</li><li class="item" id="yui-repo-7">
+  <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1428">\[feature\] Architecture map of the push-transport plugin</a>
+  <p class="item-figure"><span class="figure-value">2026-10-15T01:53:23Z</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">## Work description Add an architecture map of the push-transport plugin (`integrations/hermes/platform/yui/`) as a data file under the plugin&#x27;s `docs/`, drawn by the client map&#x27;s viewer, which gains a `?map=` query for a second data file in this work. The data file lists the pl…</p>
+    <p class="item-meta"><span class="item-kind">issue</span><span>2026-10-15T01:53:23Z</span></p>
+  </details>
+</li><li class="item" id="yui-repo-8">
+  <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1449">feat: architecture map of the push-transport plugin</a>
+  <p class="item-figure"><span class="figure-value">2026-10-15T01:53:21Z</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">## Summary Adds an architecture map of the push-transport plugin (`integrations/hermes/platform/yui/`) in the client map&#x27;s data format, drawn by the same viewer. 1. `integrations/hermes/platform/yui/docs/map.js` has 9 modules, 22 parts, 84 exchanges and 5 flows. The flows are th…</p>
+    <p class="item-meta"><span class="item-kind">feature</span><span>2026-10-15T01:53:21Z</span></p>
+  </details>
+</li><li class="item" id="yui-repo-9">
+  <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1445">\[feature\] Add time-based loneliness dynamics to the desire gate</a>
+  <p class="item-figure"><span class="figure-value">2026-10-15T01:43:43Z</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">&lt;!-- from-natsume --&gt; Opened by Natsume, the autonomous agent on profile natsume2. ## Work description Add a small, deterministic time-based affect update to the Hermes desire integration so that feelings such as `loneliness` can change even when no new event or held note exists…</p>
+    <p class="item-meta"><span class="item-kind">issue</span><span>2026-10-15T01:43:43Z</span></p>
+  </details>
+</li><li class="item" id="yui-repo-10">
+  <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1447">feat: the desire gate moves loneliness with time away and wakes the agent at each new level</a>
+  <p class="item-figure"><span class="figure-value">2026-10-15T01:43:41Z</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">## Summary The desire gate now moves `loneliness` toward `user` with time since `last_interaction_at`, on every scheduled run, and wakes the agent once per new level. The change is wake case 3 in `integrations/hermes/desire/gate.py` (`loneliness_level`, `_loneliness_lines`), rec…</p>
+    <p class="item-meta"><span class="item-kind">feature</span><span>2026-10-15T01:43:41Z</span></p>
+  </details>
+</li><li class="item" id="yui-repo-11">
+  <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1398">fix: use Python executable on Windows</a>
+  <p class="item-figure"><span class="figure-value">2026-10-15T01:33:24Z</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">## Summary Windows producer tests use the shared command-path convention instead of hardcoding the `py` launcher: `python` on Windows and `python3` elsewhere. `YUI_PYTHON` is an explicit override on every platform. The Windows default is `python` because the reported failure occ…</p>
+    <p class="item-meta"><span class="item-kind">pull_request</span><span>2026-10-15T01:33:24Z</span></p>
+  </details>
+</li><li class="item" id="yui-repo-12">
+  <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1439">\[feature\] Tuck the character away at the screen edge</a>
+  <p class="item-figure"><span class="figure-value">2026-10-14T04:52:35Z</span></p>
+  <details class="item-detail">
+    <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+    <p class="item-excerpt">## Work description Desktop Mate characters &quot;quietly tuck away at the edge of your screen&quot; when not in use (https://store.steampowered.com/app/3301060/Desktop_Mate/). YUI&#x27;s `peek` holds a side perch at an edge of the frontmost window (`body_action` `side`, `src/io/chat/tools/ava…</p>
+    <p class="item-meta"><span class="item-kind">issue</span><span>2026-10-14T04:52:35Z</span></p>
+  </details>
+</li></ol></section>
+    <!-- /slot -->
+    </div>
+  </main>
+
+  <nav class="days" aria-label="Other days">
+    <!-- slot: days -->
+
+    <!-- /slot -->
+    <a class="all" href="../../../../../"><span class="day-date"><span lang="en">All days</span><span lang="ko">모든 날</span></span></a>
+    <a class="next" href="#" hidden><span class="day-label"><span lang="en">Next day</span><span lang="ko">다음 날</span></span><span class="day-date"></span></a>
+    <p class="next-none" hidden><span lang="en">No next day yet</span><span lang="ko">아직 다음 날이 없습니다</span></p>
+  </nav>
+
+</div>
+<script>
+  // The earliest of the next seven days that has a page; producers can skip days.
+  (function () {
+    var stamp = document.querySelector(".masthead time[datetime]");
+    var next = document.querySelector(".days .next");
+    var none = document.querySelector(".days .next-none");
+    if (!stamp || !next || !none) return;
+    var start = Date.parse(stamp.getAttribute("datetime").slice(0, 10) + "T00:00:00Z");
+    function folder(day) {
+      var week = Math.floor((Number(day.slice(8, 10)) - 1) / 7) + 1;
+      return "../../../../../reports/" + day.slice(0, 4) + "/" + day.slice(5, 7) + "/W" + week + "/" + day.slice(8, 10) + "/";
+    }
+    var days = [1, 2, 3, 4, 5, 6, 7].map(function (n) { return new Date(start + n * 864e5).toISOString().slice(0, 10); });
+    Promise.all(days.map(function (day) {
+      return fetch(folder(day), { method: "HEAD" }).then(function (r) { return r.ok ? day : null; }, function () { return null; });
+    })).then(function (found) {
+      var day = found.filter(Boolean)[0];
+      if (!day) { none.hidden = false; return; }
+      next.href = folder(day);
+      next.querySelector(".day-date").textContent = day;
+      next.hidden = false;
+    });
+  })();
+</script>
+</body>
+</html>
