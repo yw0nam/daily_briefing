@@ -5,44 +5,66 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <meta name="robots" content="noindex">
+<meta name="description" content="One day of the briefing, with the state of every source.">
 <!-- slot: title --><title>Briefing · 2026-10-24</title><!-- /slot -->
 <style id="lang-rule">body [lang]:not([lang="en"]) { display: none !important; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans+KR:wght@500;600&family=Noto+Serif+KR:wght@400;500&display=swap">
 <link rel="stylesheet" href="../../../../../src/style.css">
 <script src="../../../../../src/lang.js"></script>
 </head>
 <body>
-<div class="page">
-
-  <aside class="rail">
-
-  <header class="masthead">
-    <div class="masthead-top">
-      <p class="label"><span lang="en">Daily briefing</span><span lang="ko">오늘의 브리핑</span></p>
-      <label class="lang-switch">
-        <select id="lang-select" aria-label="Language">
-          <!-- slot: languages -->
+<header class="runner container">
+  <a class="wordmark" href="../../../../../"><span lang="en">Daily briefing</span><span lang="ko">오늘의 브리핑</span></a>
+  <label class="lang-switch">
+    <select id="lang-select" aria-label="Language">
+      <!-- slot: languages -->
           <option value="en">EN</option>
           <option value="ko">KO</option>
     <!-- /slot -->
-        </select>
-      </label>
-    </div>
-    <!-- slot: date lang=en -->
+    </select>
+  </label>
+</header>
+
+<div class="page container">
+
+  <header class="front">
+    <div>
+      <div class="masthead">
+        <!-- slot: date lang=en -->
     <div lang="en">
       <h1>Saturday, October 24</h1>
-      <p class="dateline"><time datetime="2026-10-24T08:15:53+09:00"><span>2026-10-24</span> <span>· prepared at 08:15</span></time></p>
+      <p class="dateline"><time datetime="2026-10-24T08:15:53+09:00"><span>2026-10-24</span> <span>prepared at 08:15</span></time></p>
     </div>
     <!-- /slot -->
-    <!-- slot: date lang=ko -->
+        <!-- slot: date lang=ko -->
     <div lang="ko">
       <h1>10월 24일 토요일</h1>
-      <p class="dateline"><time datetime="2026-10-24T08:15:53+09:00"><span>2026-10-24</span> <span>· 08:15 작성</span></time></p>
+      <p class="dateline"><time datetime="2026-10-24T08:15:53+09:00"><span>2026-10-24</span> <span>08:15 작성</span></time></p>
     </div>
     <!-- /slot -->
-  </header>
+      </div>
 
-  <nav class="contents" aria-label="Contents">
-    <!-- slot: contents -->
+      <section class="lead" aria-label="Summary">
+        <!-- slot: summary lang=en -->
+    <div lang="en">
+      <p>Energy and markets dominate the news: oil reached $117 on fears of renewed hostilities involving Iran, and gold fell below $4,000. The project's repository recorded 20 updates, centred on persona card import and export and on the signals pipeline, and two spike issues await a decision.</p>
+      <p>The trending and papers sections hold a security-audit skill for coding agents, an agent runtime, and a vision-language model with the most upvotes. One source needs a look: the cnn-topstories feed is stale and has no success on record, so news coverage may be incomplete.</p>
+    </div>
+    <!-- /slot -->
+        <!-- slot: summary lang=ko -->
+    <div lang="ko">
+      <p>뉴스는 에너지와 시장 소식이 중심입니다. 이란을 둘러싼 적대 행위 재발 우려로 유가가 117달러까지 올랐고, 금 가격은 4,000달러 아래로 떨어졌습니다. 프로젝트 저장소에는 20건의 업데이트가 있었으며 페르소나 카드 가져오기·내보내기와 시그널 파이프라인이 중심이고, 스파이크 이슈 두 건이 결정을 기다리고 있습니다.</p>
+      <p>트렌딩과 논문 섹션에는 코딩 에이전트용 보안 감사 스킬, 에이전트 런타임, 추천 수가 가장 많은 비전-언어 모델이 있습니다. 확인이 필요한 소스는 cnn-topstories 피드 하나로, 지연 상태이며 성공 기록이 없어 뉴스가 일부 빠졌을 수 있습니다.</p>
+    </div>
+    <!-- /slot -->
+      </section>
+    </div>
+
+    <aside class="ledger">
+      <nav class="contents" aria-label="Contents">
+        <!-- slot: contents -->
     <ol>
       <li><a href="#world-news"><span class="toc-name">world-news</span><span class="status status-stale"><span lang="en">stale</span><span lang="ko">지연</span></span><span class="toc-count">10</span></a></li>
       <li><a href="#github-trending-daily"><span class="toc-name">github-trending-daily</span><span class="toc-count">8</span></a></li>
@@ -53,359 +75,535 @@
       <li><a href="#yui-repo"><span class="toc-name">yui-repo</span><span class="toc-count">20</span></a></li>
     </ol>
     <!-- /slot -->
-  </nav>
+      </nav>
 
-  <section class="health" aria-labelledby="attention">
-    <h2 id="attention"><span lang="en">Needs attention</span><span lang="ko">확인이 필요한 소스</span></h2>
-    <div class="notices">
-      <!-- slot: notices -->
+      <section class="health" aria-labelledby="attention">
+        <h2 id="attention"><span lang="en">Needs attention</span><span lang="ko">확인이 필요한 소스</span></h2>
+        <div class="notices">
+          <!-- slot: notices -->
       <div class="notice">
         <p class="notice-head"><span class="status status-stale"><span lang="en">Stale</span><span lang="ko">지연</span></span><span class="source-name"><span class="source-producer">world-news</span> cnn-topstories</span></p>
         <p class="notice-detail"><span lang="en">No success on record</span><span lang="ko">성공 기록 없음</span></p>
       </div>
     <!-- /slot -->
-    </div>
-  </section>
-
-  </aside>
-
-  <section class="lead" aria-label="Summary">
-    <!-- slot: summary lang=en -->
-    <div lang="en">
-      <p>Energy and markets dominate the news: oil reached $117 on fears of renewed hostilities involving Iran, and gold fell below $4,000. The project's repository recorded 20 updates, centred on persona card import and export and on the signals pipeline, and two spike issues await a decision.</p>
-      <p>The trending and papers sections hold a security-audit skill for coding agents, an agent runtime, and a vision-language model with the most upvotes. One source needs a look: the cnn-topstories feed is stale and has no success on record, so news coverage may be incomplete.</p>
-    </div>
-    <!-- /slot -->
-    <!-- slot: summary lang=ko -->
-    <div lang="ko">
-      <p>뉴스는 에너지와 시장 소식이 중심입니다. 이란을 둘러싼 적대 행위 재발 우려로 유가가 117달러까지 올랐고, 금 가격은 4,000달러 아래로 떨어졌습니다. 프로젝트 저장소에는 20건의 업데이트가 있었으며 페르소나 카드 가져오기·내보내기와 시그널 파이프라인이 중심이고, 스파이크 이슈 두 건이 결정을 기다리고 있습니다.</p>
-      <p>트렌딩과 논문 섹션에는 코딩 에이전트용 보안 감사 스킬, 에이전트 런타임, 추천 수가 가장 많은 비전-언어 모델이 있습니다. 확인이 필요한 소스는 cnn-topstories 피드 하나로, 지연 상태이며 성공 기록이 없어 뉴스가 일부 빠졌을 수 있습니다.</p>
-    </div>
-    <!-- /slot -->
-  </section>
+        </div>
+      </section>
+    </aside>
+  </header>
 
   <main>
     <div class="zone">
       <!-- slot: producers -->
       <section class="producer" aria-labelledby="world-news">
-        <h2 class="producer-head" id="world-news">world-news <span class="count">10</span></h2>
-        <p class="producer-summary">World news roundup: 10 items from 3 live feed(s)</p>
-        <!-- slot: intro:world-news lang=en -->
-        <p class="intro" lang="en">Energy and markets lead the section: <a href="#world-news-1">oil rose to $117</a> on fears of renewed hostilities involving Iran, and <a href="#world-news-3">gold fell below $4,000</a> amid a broader sell-off. <a href="#world-news-2">A US envoy</a> stated that Washington is prepared for a long stand-off with Iran. One feed, cnn-topstories, is stale, so coverage may be incomplete.</p>
-        <!-- /slot -->
-        <!-- slot: intro:world-news lang=ko -->
-        <p class="intro" lang="ko">에너지와 시장 소식이 중심입니다. 이란을 둘러싼 적대 행위 재발 우려로 <a href="#world-news-1">유가가 117달러까지 올랐고</a>, 시장 전반의 매도세 속에서 <a href="#world-news-3">금 가격이 4,000달러 아래로 떨어졌습니다</a>. <a href="#world-news-2">미국 특사</a>는 이란과의 장기 대치에 대비하고 있다고 밝혔습니다. 피드 한 곳(cnn-topstories)이 지연 상태여서 빠진 소식이 있을 수 있습니다.</p>
-        <!-- /slot -->
+        <div class="producer-lede">
+          <div class="producer-top"><h2 class="producer-head" id="world-news">world-news</h2><span class="count">10</span></div>
+                  <p class="producer-summary">World news roundup: 10 items from 3 live feed(s)</p>
+          <!-- slot: intro:world-news lang=en -->
+          <p class="intro" lang="en">Energy and markets lead the section: <a href="#world-news-1">oil rose to $117</a> on fears of renewed hostilities involving Iran, and <a href="#world-news-3">gold fell below $4,000</a> amid a broader sell-off. <a href="#world-news-2">A US envoy</a> stated that Washington is prepared for a long stand-off with Iran. One feed, cnn-topstories, is stale, so coverage may be incomplete.</p>
+          <!-- /slot -->
+          <!-- slot: intro:world-news lang=ko -->
+          <p class="intro" lang="ko">에너지와 시장 소식이 중심입니다. 이란을 둘러싼 적대 행위 재발 우려로 <a href="#world-news-1">유가가 117달러까지 올랐고</a>, 시장 전반의 매도세 속에서 <a href="#world-news-3">금 가격이 4,000달러 아래로 떨어졌습니다</a>. <a href="#world-news-2">미국 특사</a>는 이란과의 장기 대치에 대비하고 있다고 밝혔습니다. 피드 한 곳(cnn-topstories)이 지연 상태여서 빠진 소식이 있을 수 있습니다.</p>
+          <!-- /slot -->
+        </div>
         <ol class="items">
-          <li class="item" id="world-news-1"><div>
-            <a class="item-title" href="https://www.ft.com/content/8948193b-438b-4d71-a0b1-31dff56fc308?syn-25a6b1a6=1">Oil hits $117 for first time since April on fears of flare-up in Iran hostilities</a>
-            <p class="item-meta">news · www.ft.com · <time datetime="2026-10-23T20:13:21Z">05:13</time></p>
-            <p class="item-excerpt">Rise in energy prices pushes US inflation expectations higher</p>
-          </div></li>
-          <li class="item" id="world-news-2"><div>
+          <li class="item item-lead" id="world-news-1">
+            <div class="lead-text">
+              <a class="item-title" href="https://www.ft.com/content/8948193b-438b-4d71-a0b1-31dff56fc308?syn-25a6b1a6=1">Oil hits $117 for first time since April on fears of flare-up in Iran hostilities</a>
+              <p class="item-excerpt">Rise in energy prices pushes US inflation expectations higher</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-23T20:13:21Z">05:13</time></p>
+            </div>
+          </li>
+          <li class="item" id="world-news-2">
             <a class="item-title" href="https://www.ft.com/content/70379a26-c20e-4501-aec9-a9a0089cdd3d?syn-25a6b1a6=1">US is prepared for long stand-off with Iran, says Trump envoy</a>
-            <p class="item-meta">news · www.ft.com · <time datetime="2026-10-23T04:00:37Z">10-23 13:00</time></p>
-            <p class="item-excerpt">Mike Waltz warns Tehran it must reach a ‘meaningful agreement’ on its nuclear programme</p>
-          </div></li>
-          <li class="item" id="world-news-3"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T04:00:37Z">10-23 13:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Mike Waltz warns Tehran it must reach a ‘meaningful agreement’ on its nuclear programme</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-23T04:00:37Z">10-23 13:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="world-news-3">
             <a class="item-title" href="https://www.ft.com/content/5a6e15e9-249d-4d59-a140-c51302930a9f?syn-25a6b1a6=1">Gold drops below $4,000 as ‘haven’ asset joins market sell-off</a>
-            <p class="item-meta">news · www.ft.com · <time datetime="2026-10-23T14:37:46Z">10-23 23:37</time></p>
-            <p class="item-excerpt">Price has plunged this week even as investors rush to safety of US Treasuries</p>
-          </div></li>
-          <li class="item" id="world-news-4"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T14:37:46Z">10-23 23:37</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Price has plunged this week even as investors rush to safety of US Treasuries</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-23T14:37:46Z">10-23 23:37</time></p>
+            </details>
+          </li>
+          <li class="item" id="world-news-4">
             <a class="item-title" href="https://www.ft.com/content/d11b743a-cd2c-4f0d-a464-8750aa8f4170?syn-25a6b1a6=1">Xi gathers China’s top cadres with focus on discipline</a>
-            <p class="item-meta">news · www.ft.com · <time datetime="2026-10-23T21:00:09Z">06:00</time></p>
-            <p class="item-excerpt">Central committee meeting to be closely watched ahead of party congress next year and leader’s expected fourth term</p>
-          </div></li>
-          <li class="item" id="world-news-5"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T21:00:09Z">06:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Central committee meeting to be closely watched ahead of party congress next year and leader’s expected fourth term</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-23T21:00:09Z">06:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="world-news-5">
             <a class="item-title" href="https://www.bbc.co.uk/news/articles/c6ev38dj1g8zo?at_medium=RSS&amp;at_campaign=rss">Deadly shooting near Paris is a &#x27;racist terrorist attack&#x27;, Macron says</a>
-            <p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-23T19:42:08Z">04:42</time></p>
-            <p class="item-excerpt">One person is killed and five wounded in a series of attacks and the suspected gunman has been apprehended.</p>
-          </div></li>
-          <li class="item" id="world-news-6"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T19:42:08Z">04:42</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">One person is killed and five wounded in a series of attacks and the suspected gunman has been apprehended.</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-23T19:42:08Z">04:42</time></p>
+            </details>
+          </li>
+          <li class="item" id="world-news-6">
             <a class="item-title" href="https://www.bbc.co.uk/news/articles/ck87zlpzny15o?at_medium=RSS&amp;at_campaign=rss">Seven shot dead by gunmen at church funeral in Jordan, officials say</a>
-            <p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-23T19:46:30Z">04:46</time></p>
-            <p class="item-excerpt">Thirty-four people are also injured in the attack in southern Karak governorate, and a manhunt is now under way.</p>
-          </div></li>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T19:46:30Z">04:46</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Thirty-four people are also injured in the attack in southern Karak governorate, and a manhunt is now under way.</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-23T19:46:30Z">04:46</time></p>
+            </details>
+          </li>
         </ol>
         <details class="more">
           <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
           <ol class="items" style="--start: 6">
-          <li class="item" id="world-news-7"><div>
+          <li class="item" id="world-news-7">
             <a class="item-title" href="https://www.bbc.co.uk/news/articles/cx7vpmn6qzmlo?at_medium=RSS&amp;at_campaign=rss">Freed US citizen was tortured in Russian jail, former Ukrainian prisoners say</a>
-            <p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-23T20:18:13Z">05:18</time></p>
-            <p class="item-excerpt">Ukrainians held alongside the American say they witnessed beatings and sexual humiliation by Russian guards during his detention.</p>
-          </div></li>
-          <li class="item" id="world-news-8"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T20:18:13Z">05:18</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Ukrainians held alongside the American say they witnessed beatings and sexual humiliation by Russian guards during his detention.</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-23T20:18:13Z">05:18</time></p>
+            </details>
+          </li>
+          <li class="item" id="world-news-8">
             <a class="item-title" href="https://www.bbc.co.uk/news/articles/cq4g1p974wxko?at_medium=RSS&amp;at_campaign=rss">Israeli forces begin demolishing Palestinian buildings in Hebron after two Israeli soldiers shot dead</a>
-            <p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-23T15:37:07Z">00:37</time></p>
-            <p class="item-excerpt">The soldiers were killed in an attack by two Palestinian gunmen at a checkpoint outside the West Bank city on Friday morning.</p>
-          </div></li>
-          <li class="item" id="world-news-9"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T15:37:07Z">00:37</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">The soldiers were killed in an attack by two Palestinian gunmen at a checkpoint outside the West Bank city on Friday morning.</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-23T15:37:07Z">00:37</time></p>
+            </details>
+          </li>
+          <li class="item" id="world-news-9">
             <a class="item-title" href="https://www.bbc.co.uk/news/articles/c6lykzwjkj1eo?at_medium=RSS&amp;at_campaign=rss">Civil servant who juggled five jobs says he was &#x27;surprised&#x27; to be charged with fraud</a>
-            <p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-23T15:15:13Z">00:15</time></p>
-            <p class="item-excerpt">Kashim Chowdhury denied being dishonest when not telling employers he had other jobs.</p>
-          </div></li>
-          <li class="item" id="world-news-10"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T15:15:13Z">00:15</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Kashim Chowdhury denied being dishonest when not telling employers he had other jobs.</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-23T15:15:13Z">00:15</time></p>
+            </details>
+          </li>
+          <li class="item" id="world-news-10">
             <a class="item-title" href="https://www.bbc.co.uk/news/articles/c60qk573yzz8o?at_medium=RSS&amp;at_campaign=rss">White House lifts tariffs on some Canadian goods as midterm elections loom</a>
-            <p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-23T22:54:57Z">07:54</time></p>
-            <p class="item-excerpt">From 30 October, tariffs will be eased on some products, including certain machinery, and placed on others, such as carpets.</p>
-          </div></li>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T22:54:57Z">07:54</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">From 30 October, tariffs will be eased on some products, including certain machinery, and placed on others, such as carpets.</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-23T22:54:57Z">07:54</time></p>
+            </details>
+          </li>
           </ol>
         </details>
       </section>
 
       <section class="producer" aria-labelledby="github-trending-daily">
-        <h2 class="producer-head" id="github-trending-daily">github-trending-daily <span class="count">8</span></h2>
-        <p class="producer-summary">GitHub trending (daily): top 8 repos by stars</p>
-        <!-- slot: intro:github-trending-daily lang=en -->
-        <p class="intro" lang="en">Two entries stand out: <a href="#github-trending-daily-1">a coding-agent skill for security audits</a> gained the most stars today, and <a href="#github-trending-daily-4">a runtime for autonomous AI agents</a> follows with a strong daily increase. The sixth entry carries no star counts in the source file.</p>
-        <!-- /slot -->
-        <!-- slot: intro:github-trending-daily lang=ko -->
-        <p class="intro" lang="ko">눈에 띄는 항목은 두 가지입니다. <a href="#github-trending-daily-1">보안 감사용 코딩 에이전트 스킬</a>이 오늘 가장 많은 스타를 얻었고, <a href="#github-trending-daily-4">자율 AI 에이전트용 런타임</a>이 뒤를 이었습니다. 여섯 번째 항목은 원본 파일에 스타 수가 없습니다.</p>
-        <!-- /slot -->
+        <div class="producer-lede">
+          <div class="producer-top"><h2 class="producer-head" id="github-trending-daily">github-trending-daily</h2><span class="count">8</span></div>
+                  <p class="producer-summary">GitHub trending (daily): top 8 repos by stars</p>
+          <!-- slot: intro:github-trending-daily lang=en -->
+          <p class="intro" lang="en">Two entries stand out: <a href="#github-trending-daily-1">a coding-agent skill for security audits</a> gained the most stars today, and <a href="#github-trending-daily-4">a runtime for autonomous AI agents</a> follows with a strong daily increase. The sixth entry carries no star counts in the source file.</p>
+          <!-- /slot -->
+          <!-- slot: intro:github-trending-daily lang=ko -->
+          <p class="intro" lang="ko">눈에 띄는 항목은 두 가지입니다. <a href="#github-trending-daily-1">보안 감사용 코딩 에이전트 스킬</a>이 오늘 가장 많은 스타를 얻었고, <a href="#github-trending-daily-4">자율 AI 에이전트용 런타임</a>이 뒤를 이었습니다. 여섯 번째 항목은 원본 파일에 스타 수가 없습니다.</p>
+          <!-- /slot -->
+        </div>
         <ol class="items">
-          <li class="item" id="github-trending-daily-1"><div>
-            <a class="item-title" href="https://github.com/cloudflare/security-audit-skill">cloudflare/security-audit-skill</a>
-            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-23T23:00:03Z">08:00</time></p>
-            <p class="item-excerpt">A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings · 42,041 stars total · 2,706 stars today</p>
-          </div></li>
-          <li class="item" id="github-trending-daily-2"><div>
+          <li class="item item-lead" id="github-trending-daily-1">
+            <div class="lead-text">
+              <a class="item-title" href="https://github.com/cloudflare/security-audit-skill">cloudflare/security-audit-skill</a>
+              <p class="item-excerpt">A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings · 42,041 stars total · 2,706 stars today</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-23T23:00:03Z">08:00</time></p>
+            </div>
+          </li>
+          <li class="item" id="github-trending-daily-2">
             <a class="item-title" href="https://github.com/php/php-src">php/php-src</a>
-            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-23T23:00:03Z">08:00</time></p>
-            <p class="item-excerpt">The PHP Interpreter · 41,547 stars total · 722 stars today</p>
-          </div></li>
-          <li class="item" id="github-trending-daily-3"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T23:00:03Z">08:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">The PHP Interpreter · 41,547 stars total · 722 stars today</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-23T23:00:03Z">08:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="github-trending-daily-3">
             <a class="item-title" href="https://github.com/anthropics/knowledge-work-plugins">anthropics/knowledge-work-plugins</a>
-            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-23T23:00:03Z">08:00</time></p>
-            <p class="item-excerpt">Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork · 32,184 stars total · 643 stars today</p>
-          </div></li>
-          <li class="item" id="github-trending-daily-4"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T23:00:03Z">08:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork · 32,184 stars total · 643 stars today</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-23T23:00:03Z">08:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="github-trending-daily-4">
             <a class="item-title" href="https://github.com/NVIDIA/OpenShell">NVIDIA/OpenShell</a>
-            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-23T23:00:03Z">08:00</time></p>
-            <p class="item-excerpt">OpenShell is the safe, private runtime for autonomous AI agents. · 18,746 stars total · 1,240 stars today</p>
-          </div></li>
-          <li class="item" id="github-trending-daily-5"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T23:00:03Z">08:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">OpenShell is the safe, private runtime for autonomous AI agents. · 18,746 stars total · 1,240 stars today</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-23T23:00:03Z">08:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="github-trending-daily-5">
             <a class="item-title" href="https://github.com/Renhuai123/ziwei-doushu">Renhuai123/ziwei-doushu</a>
-            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-23T23:00:03Z">08:00</time></p>
-            <p class="item-excerpt">紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据 · 6,836 stars total · 547 stars today</p>
-          </div></li>
-          <li class="item" id="github-trending-daily-6"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T23:00:03Z">08:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据 · 6,836 stars total · 547 stars today</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-23T23:00:03Z">08:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="github-trending-daily-6">
             <a class="item-title" href="https://github.com/SnailSploit/Claude-Red">SnailSploit/Claude-Red</a>
-            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-23T23:00:03Z">08:00</time></p>
-            <p class="item-excerpt">claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit developmen…</p>
-          </div></li>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T23:00:03Z">08:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit developmen…</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-23T23:00:03Z">08:00</time></p>
+            </details>
+          </li>
         </ol>
         <details class="more">
           <summary><span>2<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
           <ol class="items" style="--start: 6">
-          <li class="item" id="github-trending-daily-7"><div>
+          <li class="item" id="github-trending-daily-7">
             <a class="item-title" href="https://github.com/OpenBMB/VoxCPM">OpenBMB/VoxCPM</a>
-            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-23T23:00:03Z">08:00</time></p>
-            <p class="item-excerpt">VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning · 40,230 stars total · 144 stars today</p>
-          </div></li>
-          <li class="item" id="github-trending-daily-8"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T23:00:03Z">08:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning · 40,230 stars total · 144 stars today</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-23T23:00:03Z">08:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="github-trending-daily-8">
             <a class="item-title" href="https://github.com/nodejs/node">nodejs/node</a>
-            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-23T23:00:03Z">08:00</time></p>
-            <p class="item-excerpt">Node.js JavaScript runtime ✨🐢🚀✨ · 122,837 stars total · 93 stars today</p>
-          </div></li>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T23:00:03Z">08:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Node.js JavaScript runtime ✨🐢🚀✨ · 122,837 stars total · 93 stars today</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-23T23:00:03Z">08:00</time></p>
+            </details>
+          </li>
           </ol>
         </details>
       </section>
 
       <section class="producer" aria-labelledby="huggingface-papers-daily">
-        <h2 class="producer-head" id="huggingface-papers-daily">huggingface-papers-daily <span class="count">10</span></h2>
-        <p class="producer-summary">HuggingFace daily papers: top 10 of 50 today</p>
-        <!-- slot: intro:huggingface-papers-daily lang=en -->
-        <p class="intro" lang="en">The most upvoted paper is <a href="#huggingface-papers-daily-1">a vision-language model that unifies object-level and pixel-level perception</a>. Two further papers address agents: <a href="#huggingface-papers-daily-3">an evaluation of deep search on the open web</a> and <a href="#huggingface-papers-daily-5">a sparse mixture-of-experts model for agentic command-line systems</a>.</p>
-        <!-- /slot -->
-        <!-- slot: intro:huggingface-papers-daily lang=ko -->
-        <p class="intro" lang="ko">추천 수가 가장 많은 논문은 <a href="#huggingface-papers-daily-1">객체 수준과 픽셀 수준 인식을 통합한 비전-언어 모델</a>입니다. 에이전트를 다룬 논문도 두 편 있습니다. <a href="#huggingface-papers-daily-3">실제 웹 환경에서의 딥 서치 평가</a>와 <a href="#huggingface-papers-daily-5">에이전트형 명령줄 시스템용 희소 전문가 혼합 모델</a>입니다.</p>
-        <!-- /slot -->
+        <div class="producer-lede">
+          <div class="producer-top"><h2 class="producer-head" id="huggingface-papers-daily">huggingface-papers-daily</h2><span class="count">10</span></div>
+                  <p class="producer-summary">HuggingFace daily papers: top 10 of 50 today</p>
+          <!-- slot: intro:huggingface-papers-daily lang=en -->
+          <p class="intro" lang="en">The most upvoted paper is <a href="#huggingface-papers-daily-1">a vision-language model that unifies object-level and pixel-level perception</a>. Two further papers address agents: <a href="#huggingface-papers-daily-3">an evaluation of deep search on the open web</a> and <a href="#huggingface-papers-daily-5">a sparse mixture-of-experts model for agentic command-line systems</a>.</p>
+          <!-- /slot -->
+          <!-- slot: intro:huggingface-papers-daily lang=ko -->
+          <p class="intro" lang="ko">추천 수가 가장 많은 논문은 <a href="#huggingface-papers-daily-1">객체 수준과 픽셀 수준 인식을 통합한 비전-언어 모델</a>입니다. 에이전트를 다룬 논문도 두 편 있습니다. <a href="#huggingface-papers-daily-3">실제 웹 환경에서의 딥 서치 평가</a>와 <a href="#huggingface-papers-daily-5">에이전트형 명령줄 시스템용 희소 전문가 혼합 모델</a>입니다.</p>
+          <!-- /slot -->
+        </div>
         <ol class="items">
-          <li class="item" id="huggingface-papers-daily-1"><div>
-            <a class="item-title" href="https://huggingface.co/papers/2610.31329">WeVisOne-VL: Unified Visual Perception from Objects to Pixels</a>
-            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-21T20:00:00Z">10-22 05:00</time></p>
-            <p class="item-excerpt">221 upvotes. Existing vision-language models (VLMs) remain unreliable for fine-grained visual perception. In this report, we present WeVisOne-VL (WeChat Vision All-in-One), a powerful VLM that unifies object-level and pixel-level perception through structured next-token predicti…</p>
-          </div></li>
-          <li class="item" id="huggingface-papers-daily-2"><div>
+          <li class="item item-lead" id="huggingface-papers-daily-1">
+            <div class="lead-text">
+              <a class="item-title" href="https://huggingface.co/papers/2610.31329">WeVisOne-VL: Unified Visual Perception from Objects to Pixels</a>
+              <p class="item-excerpt">221 upvotes. Existing vision-language models (VLMs) remain unreliable for fine-grained visual perception. In this report, we present WeVisOne-VL (WeChat Vision All-in-One), a powerful VLM that unifies object-level and pixel-level perception through structured next-token predicti…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-21T20:00:00Z">10-22 05:00</time></p>
+            </div>
+          </li>
+          <li class="item" id="huggingface-papers-daily-2">
             <a class="item-title" href="https://huggingface.co/papers/2610.30926">Making MLLM Latents Matter: Factor-Aware Predictive Learning for Cinematic Video Generation</a>
-            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-22T04:43:48Z">10-22 13:43</time></p>
-            <p class="item-excerpt">163 upvotes. Cinematic video generation requires both temporal inference from limited inputs (i.e., sparse rather than frame-by-frame guidance) and factor-aware control of character, scene, action, and camera. Multimodal large language models (MLLMs) offer useful priors for both…</p>
-          </div></li>
-          <li class="item" id="huggingface-papers-daily-3"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-22T04:43:48Z">10-22 13:43</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">163 upvotes. Cinematic video generation requires both temporal inference from limited inputs (i.e., sparse rather than frame-by-frame guidance) and factor-aware control of character, scene, action, and camera. Multimodal large language models (MLLMs) offer useful priors for both…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-22T04:43:48Z">10-22 13:43</time></p>
+            </details>
+          </li>
+          <li class="item" id="huggingface-papers-daily-3">
             <a class="item-title" href="https://huggingface.co/papers/2610.30181">Deep Search in Real-World Web Environments</a>
-            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></p>
-            <p class="item-excerpt">149 upvotes. Despite substantial progress in Deep Search agents, their ability to conduct end-to-end research in real-world open Web environments remains insufficiently evaluated. Unlike static retrieval settings, information on the real-world Web is distributed across diverse s…</p>
-          </div></li>
-          <li class="item" id="huggingface-papers-daily-4"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">149 upvotes. Despite substantial progress in Deep Search agents, their ability to conduct end-to-end research in real-world open Web environments remains insufficiently evaluated. Unlike static retrieval settings, information on the real-world Web is distributed across diverse s…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="huggingface-papers-daily-4">
             <a class="item-title" href="https://huggingface.co/papers/2610.24738">Editing Images into Reusable Layers via Compositional Edit-Prior Distillation</a>
-            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-16T20:00:00Z">10-17 05:00</time></p>
-            <p class="item-excerpt">73 upvotes. High-quality image editing requires precise modification of target regions while preserving the content of unrelated regions. Existing editing models produce flattened outputs that limit precise local manipulation and layer reuse, while decomposition methods typicall…</p>
-          </div></li>
-          <li class="item" id="huggingface-papers-daily-5"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-16T20:00:00Z">10-17 05:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">73 upvotes. High-quality image editing requires precise modification of target regions while preserving the content of unrelated regions. Existing editing models produce flattened outputs that limit precise local manipulation and layer reuse, while decomposition methods typicall…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-16T20:00:00Z">10-17 05:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="huggingface-papers-daily-5">
             <a class="item-title" href="https://huggingface.co/papers/2610.30949">IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems</a>
-            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-21T20:00:00Z">10-22 05:00</time></p>
-            <p class="item-excerpt">53 upvotes. We present IQuest-Q1, a sparse Mixture-of-Experts (MoE) agentic foundation model with 320B total parameters (15B activated). IQuest-Q1 is developed through a three-stage process: (1) stable and efficient pre-training, combining Stable SplitNorm, Muon, and muP with a …</p>
-          </div></li>
-          <li class="item" id="huggingface-papers-daily-6"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-21T20:00:00Z">10-22 05:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">53 upvotes. We present IQuest-Q1, a sparse Mixture-of-Experts (MoE) agentic foundation model with 320B total parameters (15B activated). IQuest-Q1 is developed through a three-stage process: (1) stable and efficient pre-training, combining Stable SplitNorm, Muon, and muP with a …</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-21T20:00:00Z">10-22 05:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="huggingface-papers-daily-6">
             <a class="item-title" href="https://huggingface.co/papers/2610.29677">Toward Recursive Self-Improvement in Physical AI</a>
-            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-20T20:00:00Z">10-21 05:00</time></p>
-            <p class="item-excerpt">46 upvotes. Recursive self-improvement (RSI) describes a system that improves not only its behavior but also the process by which it improves. Recent digital agents test this idea by rewriting their own code and checking each version with executable tests. Bringing these mechani…</p>
-          </div></li>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T20:00:00Z">10-21 05:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">46 upvotes. Recursive self-improvement (RSI) describes a system that improves not only its behavior but also the process by which it improves. Recent digital agents test this idea by rewriting their own code and checking each version with executable tests. Bringing these mechani…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-20T20:00:00Z">10-21 05:00</time></p>
+            </details>
+          </li>
         </ol>
         <details class="more">
           <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
           <ol class="items" style="--start: 6">
-          <li class="item" id="huggingface-papers-daily-7"><div>
+          <li class="item" id="huggingface-papers-daily-7">
             <a class="item-title" href="https://huggingface.co/papers/2610.28889">Policy-Mask: Budget-Aware Adaptation of Diffusion Features to Discriminative Tasks</a>
-            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-19T20:00:00Z">10-20 05:00</time></p>
-            <p class="item-excerpt">43 upvotes. Selecting intermediate features from a frozen diffusion model for discriminative tasks is non-trivial because the useful signal is distributed across the denoising trajectory, network depth, and channels. In practice, this requires choosing a timestep, a block, and a…</p>
-          </div></li>
-          <li class="item" id="huggingface-papers-daily-8"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-19T20:00:00Z">10-20 05:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">43 upvotes. Selecting intermediate features from a frozen diffusion model for discriminative tasks is non-trivial because the useful signal is distributed across the denoising trajectory, network depth, and channels. In practice, this requires choosing a timestep, a block, and a…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-19T20:00:00Z">10-20 05:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="huggingface-papers-daily-8">
             <a class="item-title" href="https://huggingface.co/papers/2610.25100">Deep Fusion Memory: A Chunk-Level Parametric Memory for Large Language Models</a>
-            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-17T20:00:00Z">10-18 05:00</time></p>
-            <p class="item-excerpt">39 upvotes. Large language models need effective ways to acquire and use external knowledge beyond what they retain from pretraining. Continued pretraining risks catastrophic forgetting, while retrieval at inference time can add substantial overhead. External parametric memory a…</p>
-          </div></li>
-          <li class="item" id="huggingface-papers-daily-9"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-17T20:00:00Z">10-18 05:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">39 upvotes. Large language models need effective ways to acquire and use external knowledge beyond what they retain from pretraining. Continued pretraining risks catastrophic forgetting, while retrieval at inference time can add substantial overhead. External parametric memory a…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-17T20:00:00Z">10-18 05:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="huggingface-papers-daily-9">
             <a class="item-title" href="https://huggingface.co/papers/2610.23987">What Generation Knows: Unlocking Fine-Grained Understanding in Unified Multimodal Models</a>
-            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-13T20:00:00Z">10-14 05:00</time></p>
-            <p class="item-excerpt">32 upvotes. Fine-grained visual understanding requires distinguishing subtle differences in local attributes and spatial relations, yet remains challenging for existing vision-language models. Unified multimodal models (UMMs) offer a new opportunity through generation pathways t…</p>
-          </div></li>
-          <li class="item" id="huggingface-papers-daily-10"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-13T20:00:00Z">10-14 05:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">32 upvotes. Fine-grained visual understanding requires distinguishing subtle differences in local attributes and spatial relations, yet remains challenging for existing vision-language models. Unified multimodal models (UMMs) offer a new opportunity through generation pathways t…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-13T20:00:00Z">10-14 05:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="huggingface-papers-daily-10">
             <a class="item-title" href="https://huggingface.co/papers/2610.27851">LaLa-World: Scaling Latent World Models with Natural Language Actions</a>
-            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-20T20:00:00Z">10-21 05:00</time></p>
-            <p class="item-excerpt">27 upvotes. This paper shows that JEPA-style latent world models (LWMs) can learn across diverse domains and data sources by adopting the language-conditioned interface of video generation models. We establish this approach as an effective and efficient basis for planning with i…</p>
-          </div></li>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T20:00:00Z">10-21 05:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">27 upvotes. This paper shows that JEPA-style latent world models (LWMs) can learn across diverse domains and data sources by adopting the language-conditioned interface of video generation models. We establish this approach as an effective and efficient basis for planning with i…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-20T20:00:00Z">10-21 05:00</time></p>
+            </details>
+          </li>
           </ol>
         </details>
       </section>
     <!-- /slot -->
     </div>
 
-    <div class="zone">
+    <div class="zone zone-projects">
       <h2 class="zone-title"><span lang="en">Projects</span><span lang="ko">프로젝트</span></h2>
       <!-- slot: personal -->
       <section class="producer" aria-labelledby="yui-repo">
-        <h3 class="producer-head" id="yui-repo">yui-repo <span class="count">20</span></h3>
-        <p class="producer-summary">YUI repository: 20 updates in the last 24 hours, including closed issues, merged pull requests, features, and review requests for Youngwoo.</p>
-        <!-- slot: intro:yui-repo lang=en -->
-        <p class="intro" lang="en">The project's main thread is persona cards: <a href="#yui-repo-2">card import and export</a> and the <a href="#yui-repo-7">card per preset</a> were both submitted, with the <a href="#yui-repo-8">supporting documentation change</a>. The second thread is the signals pipeline, with <a href="#yui-repo-5">source lines on the speech bubble</a>, <a href="#yui-repo-11">a notification plugin for coding agents</a> and <a href="#yui-repo-15">a revised signals contract</a>. Two spike issues, <a href="#yui-repo-12">batched signals</a> and <a href="#yui-repo-13">on-demand signal detail</a>, await a decision.</p>
-        <!-- /slot -->
-        <!-- slot: intro:yui-repo lang=ko -->
-        <p class="intro" lang="ko">프로젝트의 중심 작업은 페르소나 카드입니다. <a href="#yui-repo-2">카드 가져오기와 내보내기</a>, <a href="#yui-repo-7">프리셋별 카드</a>가 제출되었고 <a href="#yui-repo-8">관련 문서 변경</a>이 함께 올라왔습니다. 두 번째 흐름은 시그널 파이프라인입니다. <a href="#yui-repo-5">말풍선의 출처 표시</a>, <a href="#yui-repo-11">코딩 에이전트용 알림 플러그인</a>, <a href="#yui-repo-15">개정된 시그널 계약</a>이 포함됩니다. 스파이크 이슈 두 건, <a href="#yui-repo-12">묶음 시그널</a>과 <a href="#yui-repo-13">필요 시 시그널 상세 조회</a>는 결정을 기다리고 있습니다.</p>
-        <!-- /slot -->
+        <div class="producer-lede">
+          <div class="producer-top"><h3 class="producer-head" id="yui-repo">yui-repo</h3><span class="count">20</span></div>
+                  <p class="producer-summary">YUI repository: 20 updates in the last 24 hours, including closed issues, merged pull requests, features, and review requests for Youngwoo.</p>
+          <!-- slot: intro:yui-repo lang=en -->
+          <p class="intro" lang="en">The project's main thread is persona cards: <a href="#yui-repo-2">card import and export</a> and the <a href="#yui-repo-7">card per preset</a> were both submitted, with the <a href="#yui-repo-8">supporting documentation change</a>. The second thread is the signals pipeline, with <a href="#yui-repo-5">source lines on the speech bubble</a>, <a href="#yui-repo-11">a notification plugin for coding agents</a> and <a href="#yui-repo-15">a revised signals contract</a>. Two spike issues, <a href="#yui-repo-12">batched signals</a> and <a href="#yui-repo-13">on-demand signal detail</a>, await a decision.</p>
+          <!-- /slot -->
+          <!-- slot: intro:yui-repo lang=ko -->
+          <p class="intro" lang="ko">프로젝트의 중심 작업은 페르소나 카드입니다. <a href="#yui-repo-2">카드 가져오기와 내보내기</a>, <a href="#yui-repo-7">프리셋별 카드</a>가 제출되었고 <a href="#yui-repo-8">관련 문서 변경</a>이 함께 올라왔습니다. 두 번째 흐름은 시그널 파이프라인입니다. <a href="#yui-repo-5">말풍선의 출처 표시</a>, <a href="#yui-repo-11">코딩 에이전트용 알림 플러그인</a>, <a href="#yui-repo-15">개정된 시그널 계약</a>이 포함됩니다. 스파이크 이슈 두 건, <a href="#yui-repo-12">묶음 시그널</a>과 <a href="#yui-repo-13">필요 시 시그널 상세 조회</a>는 결정을 기다리고 있습니다.</p>
+          <!-- /slot -->
+        </div>
         <ol class="items">
-          <li class="item" id="yui-repo-1"><div>
-            <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1565">[feature] Card import and export: Tavern V2/V3 JSON and PNG in, V2 JSON out, PNG thumbnail on the preset</a>
-            <p class="item-meta">issue · github.com · <time datetime="2026-10-23T15:02:48Z">00:02</time></p>
-            <p class="item-excerpt">## Work description Import a Tavern character card into a new preset and export a preset&#x27;s card. Builds on the card storage of #1564. Decision record: #1563. Owner decisions: - **Import formats.** JSON (`chara_card_v2` and `chara_card_v3`) and PNG (the `chara` tEXt chunk holding…</p>
-          </div></li>
-          <li class="item" id="yui-repo-2"><div>
+          <li class="item item-lead" id="yui-repo-1">
+            <div class="lead-text">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1565">[feature] Card import and export: Tavern V2/V3 JSON and PNG in, V2 JSON out, PNG thumbnail on the preset</a>
+              <p class="item-excerpt">## Work description Import a Tavern character card into a new preset and export a preset&#x27;s card. Builds on the card storage of #1564. Decision record: #1563. Owner decisions: - **Import formats.** JSON (`chara_card_v2` and `chara_card_v3`) and PNG (the `chara` tEXt chunk holding…</p>
+              <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-23T15:02:48Z">00:02</time></p>
+            </div>
+          </li>
+          <li class="item" id="yui-repo-2">
             <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1570">feat: card import and export: Tavern V2/V3 JSON and PNG in, V2 JSON out, a PNG thumbnail on the preset, and one greeting at the imported preset&#x27;s first boot</a>
-            <p class="item-meta">feature · github.com · <time datetime="2026-10-23T15:02:46Z">00:02</time></p>
-            <p class="item-excerpt">## Summary A Tavern card imports as a new preset, and a preset&#x27;s card exports as V2 JSON. The two OS dialogs open in Rust, so the webview never names a file path. ``` Talk tab · Card section (below the Send card body) [Import card…] [Export card] JSON or PNG card in · V2 JSON ou…</p>
-          </div></li>
-          <li class="item" id="yui-repo-3"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T15:02:46Z">00:02</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Summary A Tavern card imports as a new preset, and a preset&#x27;s card exports as V2 JSON. The two OS dialogs open in Rust, so the webview never names a file path. ``` Talk tab · Card section (below the Send card body) [Import card…] [Export card] JSON or PNG card in · V2 JSON ou…</p>
+              <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-10-23T15:02:46Z">00:02</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-3">
             <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1569">chore: CI fails when a bare class selector is declared in two stylesheets</a>
-            <p class="item-meta">pull_request · github.com · <time datetime="2026-10-23T14:37:27Z">10-23 23:37</time></p>
-            <p class="item-excerpt">## Summary `pnpm css:check` (`scripts/ci/css-selectors.mjs`) fails when the same bare class selector (`.yui-x {`) is declared in two stylesheets under `src/`, and runs in the `web` CI job after `map:check`. Why: on #1568 the new `.yui-source` block inherited `display: none` from…</p>
-          </div></li>
-          <li class="item" id="yui-repo-4"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T14:37:27Z">10-23 23:37</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Summary `pnpm css:check` (`scripts/ci/css-selectors.mjs`) fails when the same bare class selector (`.yui-x {`) is declared in two stylesheets under `src/`, and runs in the `web` CI job after `map:check`. Why: on #1568 the new `.yui-source` block inherited `display: none` from…</p>
+              <p class="item-meta"><span class="item-kind">pull_request</span><span class="item-host">github.com</span><time datetime="2026-10-23T14:37:27Z">10-23 23:37</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-4">
             <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1552">[feature] Signal source lines on the speech bubble, and History records every signal</a>
-            <p class="item-meta">issue · github.com · <time datetime="2026-10-23T14:17:15Z">10-23 23:17</time></p>
-            <p class="item-excerpt">Part of #1549 ## Work description On a background turn that carries signals, the speech bubble shows where each signal came from, and History records every signal, whether the backend spoke or stayed silent. Mock: https://claude.ai/artifact/WeGX6hhRtQaifn6aqqzxLt (private to the…</p>
-          </div></li>
-          <li class="item" id="yui-repo-5"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T14:17:15Z">10-23 23:17</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Part of #1549 ## Work description On a background turn that carries signals, the speech bubble shows where each signal came from, and History records every signal, whether the backend spoke or stayed silent. Mock: https://claude.ai/artifact/WeGX6hhRtQaifn6aqqzxLt (private to the…</p>
+              <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-23T14:17:15Z">10-23 23:17</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-5">
             <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1568">feat: signal source lines on the speech bubble, and History records every signal, spoken or silent</a>
-            <p class="item-meta">feature · github.com · <time datetime="2026-10-23T14:17:13Z">10-23 23:17</time></p>
-            <p class="item-excerpt">## Summary A turn that carries signal groups now says where they came from, and History keeps every signal, spoken or silent. ``` POST /signals ──► inbox ──► turn(trigger.signals) ──► backend │ │ reply / [SILENT] ├─ recordSentTurn ─────┤─► transcript (assistant row, turn_id; non…</p>
-          </div></li>
-          <li class="item" id="yui-repo-6"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T14:17:13Z">10-23 23:17</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Summary A turn that carries signal groups now says where they came from, and History keeps every signal, spoken or silent. ``` POST /signals ──► inbox ──► turn(trigger.signals) ──► backend │ │ reply / [SILENT] ├─ recordSentTurn ─────┤─► transcript (assistant row, turn_id; non…</p>
+              <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-10-23T14:17:13Z">10-23 23:17</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-6">
             <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1564">[feature] Card per preset: Tavern V2 persona text, language defaults, send switch, editor, greeting replay</a>
-            <p class="item-meta">issue · github.com · <time datetime="2026-10-23T13:12:57Z">10-23 22:12</time></p>
-            <p class="item-excerpt">## Work description Each preset carries a **Card**: its persona text in Tavern Card V2 shape. On the request transports the client sends the card as the first system message, ahead of `chat_instructions`. Push presets have no card section. Decision record: #1563. Owner decisions…</p>
-          </div></li>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T13:12:57Z">10-23 22:12</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Work description Each preset carries a **Card**: its persona text in Tavern Card V2 shape. On the request transports the client sends the card as the first system message, ahead of `chat_instructions`. Push presets have no card section. Decision record: #1563. Owner decisions…</p>
+              <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-23T13:12:57Z">10-23 22:12</time></p>
+            </details>
+          </li>
         </ol>
         <details class="more">
           <summary><span>14<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
           <ol class="items" style="--start: 6">
-          <li class="item" id="yui-repo-7"><div>
+          <li class="item" id="yui-repo-7">
             <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1567">feat: a card per preset: Tavern V2 persona text as the system message, language defaults, a send switch, the Talk-tab editor, and a greeting after Start fresh</a>
-            <p class="item-meta">feature · github.com · <time datetime="2026-10-23T13:12:56Z">10-23 22:12</time></p>
-            <p class="item-excerpt">## Summary Each preset carries a **Card**: its persona text in Tavern Card V2 shape. On the request transports the client sends the assembled card as the first system message (Chat Completions) or `instructions` (Responses), followed by `chat_instructions`; push presets send non…</p>
-          </div></li>
-          <li class="item" id="yui-repo-8"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T13:12:56Z">10-23 22:12</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Summary Each preset carries a **Card**: its persona text in Tavern Card V2 shape. On the request transports the client sends the assembled card as the first system message (Chat Completions) or `instructions` (Responses), followed by `chat_instructions`; push presets send non…</p>
+              <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-10-23T13:12:56Z">10-23 22:12</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-8">
             <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1563">[feature] Docs: persona text moves to the client, two-tier backend recommendation, OpenAI-only quickstart</a>
-            <p class="item-meta">issue · github.com · <time datetime="2026-10-23T11:54:46Z">10-23 20:54</time></p>
-            <p class="item-excerpt">## Work description Product decision: the persona **text** (who the character is, how she talks) is client-side configuration that the client sends as the system message on the request transports. Judgment stays in the backend: how to act the text, and whether to speak at all. `…</p>
-          </div></li>
-          <li class="item" id="yui-repo-9"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T11:54:46Z">10-23 20:54</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Work description Product decision: the persona **text** (who the character is, how she talks) is client-side configuration that the client sends as the system message on the request transports. Judgment stays in the backend: how to act the text, and whether to speak at all. `…</p>
+              <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-23T11:54:46Z">10-23 20:54</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-9">
             <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1566">docs: persona text is client configuration; backends recommended by capability; one-key OpenAI quickstart</a>
-            <p class="item-meta">pull_request · github.com · <time datetime="2026-10-23T11:54:45Z">10-23 20:54</time></p>
-            <p class="item-excerpt">## Summary Product decision recorded in the docs ahead of the code (#1564, #1565): the persona text (who the character is, how she talks) is client configuration, sent as the first system message on Chat Completions and as `instructions` on Responses, never on push. Judgment sta…</p>
-          </div></li>
-          <li class="item" id="yui-repo-10"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T11:54:45Z">10-23 20:54</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Summary Product decision recorded in the docs ahead of the code (#1564, #1565): the persona text (who the character is, how she talks) is client configuration, sent as the first system message on Chat Completions and as `instructions` on Responses, never on push. Judgment sta…</p>
+              <p class="item-meta"><span class="item-kind">pull_request</span><span class="item-host">github.com</span><time datetime="2026-10-23T11:54:45Z">10-23 20:54</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-10">
             <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1551">[feature] yui-notify plugin: Claude Code and Codex hooks post done and needs-input signals, with a setup skill</a>
-            <p class="item-meta">issue · github.com · <time datetime="2026-10-23T11:53:06Z">10-23 20:53</time></p>
-            <p class="item-excerpt">Part of #1549 ## Work description A plugin that Claude Code and Codex both install, whose hooks post `agent.done` and `agent.needs_input` signals to YUI, and whose `setup` skill configures it by conversation. It assumes nothing about the user&#x27;s machines: every value comes from s…</p>
-          </div></li>
-          <li class="item" id="yui-repo-11"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T11:53:06Z">10-23 20:53</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Part of #1549 ## Work description A plugin that Claude Code and Codex both install, whose hooks post `agent.done` and `agent.needs_input` signals to YUI, and whose `setup` skill configures it by conversation. It assumes nothing about the user&#x27;s machines: every value comes from s…</p>
+              <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-23T11:53:06Z">10-23 20:53</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-11">
             <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1562">feat: yui-notify plugin: Claude Code and Codex hooks post done and needs-input signals, with a setup skill</a>
-            <p class="item-meta">feature · github.com · <time datetime="2026-10-23T11:53:04Z">10-23 20:53</time></p>
-            <p class="item-excerpt">## Summary A plugin that Claude Code and Codex both install. Its hooks post `agent.done` and `agent.needs_input` signals to `POST /signals`, and its user-invoked `setup` skill configures it by conversation. ``` .claude-plugin/marketplace.json marketplace &quot;yui&quot; → ./integrations/y…</p>
-          </div></li>
-          <li class="item" id="yui-repo-12"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T11:53:04Z">10-23 20:53</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Summary A plugin that Claude Code and Codex both install. Its hooks post `agent.done` and `agent.needs_input` signals to `POST /signals`, and its user-invoked `setup` skill configures it by conversation. ``` .claude-plugin/marketplace.json marketplace &quot;yui&quot; → ./integrations/y…</p>
+              <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-10-23T11:53:04Z">10-23 20:53</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-12">
             <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1556">[spike] Batched signals after a missed deadline and after a reload</a>
-            <p class="item-meta">issue · github.com · <time datetime="2026-10-23T06:40:32Z">10-23 15:40</time></p>
-            <p class="item-excerpt">## Uncertainty / question Two buffer behaviours in `src/dispatcher/sources/inbox/signals-source.ts` lose or hold signals. Decide whether to change each, and how. 1. When the batched timer fires and the group cannot go out (user away, pipeline busy, signals off), the timer is not…</p>
-          </div></li>
-          <li class="item" id="yui-repo-13"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T06:40:32Z">10-23 15:40</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Uncertainty / question Two buffer behaviours in `src/dispatcher/sources/inbox/signals-source.ts` lose or hold signals. Decide whether to change each, and how. 1. When the batched timer fires and the group cannot go out (user away, pipeline busy, signals off), the timer is not…</p>
+              <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-23T06:40:32Z">10-23 15:40</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-13">
             <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1555">[spike] Backend pulls signal and session detail on demand instead of receiving it</a>
-            <p class="item-meta">issue · github.com · <time datetime="2026-10-23T06:40:29Z">10-23 15:40</time></p>
-            <p class="item-excerpt">## Uncertainty / question Should the backend receive only a short signal and pull the details when it needs them? Two cases: 1. A signal store the backend can query through a client tool (items, history), so the prompt carries a short line and not the full item. 2. For coding-ag…</p>
-          </div></li>
-          <li class="item" id="yui-repo-14"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T06:40:29Z">10-23 15:40</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Uncertainty / question Should the backend receive only a short signal and pull the details when it needs them? Two cases: 1. A signal store the backend can query through a client tool (items, history), so the prompt carries a short line and not the full item. 2. For coding-ag…</p>
+              <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-23T06:40:29Z">10-23 15:40</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-14">
             <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1550">[feature] Signals contract: urgent tier, replace by event_id, 16 KiB item cap, envelope label, deprecate immediate and /agent-event</a>
-            <p class="item-meta">issue · github.com · <time datetime="2026-10-23T06:35:07Z">10-23 15:35</time></p>
-            <p class="item-excerpt">Part of #1549 ## Work description The `/signals` contract change that every other child builds on: the `urgent` tier, replacement by `event_id`, the item size cap, the envelope `label`, two deprecations, and the docs and product principle that go with them. ## Acceptance criteri…</p>
-          </div></li>
-          <li class="item" id="yui-repo-15"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T06:35:07Z">10-23 15:35</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Part of #1549 ## Work description The `/signals` contract change that every other child builds on: the `urgent` tier, replacement by `event_id`, the item size cap, the envelope `label`, two deprecations, and the docs and product principle that go with them. ## Acceptance criteri…</p>
+              <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-23T06:35:07Z">10-23 15:35</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-15">
             <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1559">feat: signals contract: urgent delivery class, replace by event_id, 16 KiB item cap, envelope label, and deprecate immediate and /agent-event</a>
-            <p class="item-meta">feature · github.com · <time datetime="2026-10-23T06:35:05Z">10-23 15:35</time></p>
-            <p class="item-excerpt">## Summary The `/signals` contract that the other #1549 children build on. ``` producer ──POST /signals──► shell/agent-ingress (Rust) └ any item &gt; 16 KiB → 400, whole request ──signals-inbox──► dispatcher/sources/inbox/signals-source (TS) ├ validEnvelope: delivery urgent | batch…</p>
-          </div></li>
-          <li class="item" id="yui-repo-16"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T06:35:05Z">10-23 15:35</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Summary The `/signals` contract that the other #1549 children build on. ``` producer ──POST /signals──► shell/agent-ingress (Rust) └ any item &gt; 16 KiB → 400, whole request ──signals-inbox──► dispatcher/sources/inbox/signals-source (TS) ├ validEnvelope: delivery urgent | batch…</p>
+              <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-10-23T06:35:05Z">10-23 15:35</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-16">
             <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1547">[feature] The relation line scales: the matrix goes, chips sort by strength and fold closed presets, and an empty line replaces the hidden one</a>
-            <p class="item-meta">issue · github.com · <time datetime="2026-10-23T02:41:07Z">10-23 11:41</time></p>
-            <p class="item-excerpt">## Work description The relations matrix under the preset row does not scale: its table is N rows by N+1 columns in a 25rem panel, so from six presets the cells squeeze and names truncate, and most cells are dashes. Every shipped product shows relationships as an ego view instea…</p>
-          </div></li>
-          <li class="item" id="yui-repo-17"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T02:41:07Z">10-23 11:41</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Work description The relations matrix under the preset row does not scale: its table is N rows by N+1 columns in a 25rem panel, so from six presets the cells squeeze and names truncate, and most cells are dashes. Every shipped product shows relationships as an ego view instea…</p>
+              <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-23T02:41:07Z">10-23 11:41</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-17">
             <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1548">feat: the relation line scales: the matrix goes, chips sort by strength and fold closed presets, and an empty line replaces the hidden one</a>
-            <p class="item-meta">feature · github.com · <time datetime="2026-10-23T02:41:06Z">10-23 11:41</time></p>
-            <p class="item-excerpt">## Summary The relations matrix under the preset row goes, and the relation line becomes the one relation view: its chips sort by strength after &quot;you&quot;, rated targets whose preset window is closed fold into one trailing `+N` chip, and an unrated preset shows &quot;No one rated yet&quot; in…</p>
-          </div></li>
-          <li class="item" id="yui-repo-18"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T02:41:06Z">10-23 11:41</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Summary The relations matrix under the preset row goes, and the relation line becomes the one relation view: its chips sort by strength after &quot;you&quot;, rated targets whose preset window is closed fold into one trailing `+N` chip, and an unrated preset shows &quot;No one rated yet&quot; in…</p>
+              <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-10-23T02:41:06Z">10-23 11:41</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-18">
             <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1544">chore: the relay kill test drops its racing clock check, and CI rejects a PR body with an AI attribution line</a>
-            <p class="item-meta">pull_request · github.com · <time datetime="2026-10-23T00:53:55Z">10-23 09:53</time></p>
-            <p class="item-excerpt">## Summary Two retro items from the #1543 session. - `src-tauri/src/browser/relay.rs`: the test `run_kills_a_script_that_never_yields_to_its_deadline` asserted `started.elapsed() &lt; kill_after + 1 s` after the `tokio::time::timeout` with the same bound had already resolved, so a …</p>
-          </div></li>
-          <li class="item" id="yui-repo-19"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T00:53:55Z">10-23 09:53</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Summary Two retro items from the #1543 session. - `src-tauri/src/browser/relay.rs`: the test `run_kills_a_script_that_never_yields_to_its_deadline` asserted `started.elapsed() &lt; kill_after + 1 s` after the `tokio::time::timeout` with the same bound had already resolved, so a …</p>
+              <p class="item-meta"><span class="item-kind">pull_request</span><span class="item-host">github.com</span><time datetime="2026-10-23T00:53:55Z">10-23 09:53</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-19">
             <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1538">[feature] Relation values per character: client store, rate_relation tool, ingress route, stance line, band glyph</a>
-            <p class="item-meta">issue · github.com · <time datetime="2026-10-23T00:53:45Z">10-23 09:53</time></p>
-            <p class="item-excerpt">## Work description The client stores each character&#x27;s stance toward the user and toward every other preset, lets the backend move it through a client tool, lets an external memory read and write it over the ingress, renders the character&#x27;s own stance into `client_context`, and …</p>
-          </div></li>
-          <li class="item" id="yui-repo-20"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T00:53:45Z">10-23 09:53</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Work description The client stores each character&#x27;s stance toward the user and toward every other preset, lets the backend move it through a client tool, lets an external memory read and write it over the ingress, renders the character&#x27;s own stance into `client_context`, and …</p>
+              <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-23T00:53:45Z">10-23 09:53</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-20">
             <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1543">feat: relation values per character: rate_relation, the relation line in client_context, GET/PUT /relations, and the relation line in the preset strip</a>
-            <p class="item-meta">feature · github.com · <time datetime="2026-10-23T00:53:44Z">10-23 09:53</time></p>
-            <p class="item-excerpt">## Summary A character keeps a one-axis relation toward the user and toward each other open character. The backend moves it through a `rate_relation` tool, the next turn&#x27;s `client_context` carries it as a `relation:` line, an external engine can read and replace it over the ingr…</p>
-          </div></li>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-23T00:53:44Z">10-23 09:53</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Summary A character keeps a one-axis relation toward the user and toward each other open character. The backend moves it through a `rate_relation` tool, the next turn&#x27;s `client_context` carries it as a `relation:` line, an external engine can read and replace it over the ingr…</p>
+              <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-10-23T00:53:44Z">10-23 09:53</time></p>
+            </details>
+          </li>
           </ol>
         </details>
       </section>
     <!-- /slot -->
     </div>
-
   </main>
 
   <nav class="days" aria-label="Other days">

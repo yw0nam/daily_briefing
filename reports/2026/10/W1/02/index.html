@@ -5,121 +5,129 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <meta name="robots" content="noindex">
+<meta name="description" content="One day of the briefing, with the state of every source.">
 <!-- slot: title -->
 <title>Briefing · 2026-10-02</title>
 <!-- /slot -->
 <style id="lang-rule">body [lang]:not([lang="en"]) { display: none !important; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans+KR:wght@500;600&family=Noto+Serif+KR:wght@400;500&display=swap">
 <link rel="stylesheet" href="../../../../../src/style.css">
 <script src="../../../../../src/lang.js"></script>
 </head>
 <body>
-<div class="page">
-
-  <aside class="rail">
-
-  <header class="masthead">
-    <div class="masthead-top">
-      <p class="label"><span lang="en">Daily briefing</span><span lang="ko">오늘의 브리핑</span></p>
-      <label class="lang-switch">
-        <select id="lang-select" aria-label="Language">
-          <!-- slot: languages -->
+<header class="runner container">
+  <a class="wordmark" href="../../../../../"><span lang="en">Daily briefing</span><span lang="ko">오늘의 브리핑</span></a>
+  <label class="lang-switch">
+    <select id="lang-select" aria-label="Language">
+      <!-- slot: languages -->
 <option value="en">EN</option>
 <option value="ko">KO</option>
 <!-- /slot -->
-        </select>
-      </label>
-    </div>
-    <!-- slot: date lang=en -->
+    </select>
+  </label>
+</header>
+
+<div class="page container">
+
+  <header class="front">
+    <div>
+      <div class="masthead">
+        <!-- slot: date lang=en -->
 <div lang="en">
 <h1>Friday, October 2</h1>
-<p class="dateline"><time datetime="2026-10-02T15:20:53+09:00"><span>2026-10-02</span> <span>· prepared at 15:20</span></time></p>
+<p class="dateline"><time datetime="2026-10-02T15:20:53+09:00"><span>2026-10-02</span> <span>prepared at 15:20</span></time></p>
 </div>
 <!-- /slot -->
-<!-- slot: date lang=ko -->
+        <!-- slot: date lang=ko -->
 <div lang="ko">
 <h1>10월 2일 금요일</h1>
-<p class="dateline"><time datetime="2026-10-02T15:20:53+09:00"><span>2026-10-02</span> <span>· 15:20 작성</span></time></p>
+<p class="dateline"><time datetime="2026-10-02T15:20:53+09:00"><span>2026-10-02</span> <span>15:20 작성</span></time></p>
 </div>
 <!-- /slot -->
-  </header>
+      </div>
 
-  <nav class="contents" aria-label="Contents">
-    <!-- slot: contents -->
-<ol>
-<li><a href="#world-news"><span class="toc-name">world-news</span><span class="status status-stale"><span lang="en">stale</span><span lang="ko">지연</span></span><span class="toc-count">10</span></a></li>
-</ol>
-<!-- /slot -->
-  </nav>
-
-  <section class="health" aria-labelledby="attention">
-    <h2 id="attention"><span lang="en">Needs attention</span><span lang="ko">확인이 필요한 소스</span></h2>
-    <div class="notices">
-      <!-- slot: notices -->
-<div class="notice">
-<p class="notice-head"><span class="status status-stale"><span lang="en">Stale</span><span lang="ko">지연</span></span><span class="source-name"><span class="source-producer">world-news</span> cnn-topstories</span></p>
-<p class="notice-detail"><span lang="en">No success on record</span><span lang="ko">성공 기록 없음</span></p>
-</div>
-<!-- /slot -->
-    </div>
-  </section>
-
-  </aside>
-
-  <section class="lead" aria-label="Summary">
-    <!-- slot: summary lang=en -->
+      <section class="lead" aria-label="Summary">
+        <!-- slot: summary lang=en -->
 <div lang="en">
 <p>The first day holds a single section, world news with ten items. Two threads run through it: the war in Ukraine, where the Ukrainian president told the FT that Russian commanders were ordered to abandon the rules of war, and the US threat to ban diesel exports, which prompted pressure on Europe over its strategic reserves. The cost of AI tools and a prisoner-of-war dispute between Seoul and Kyiv also appear.</p>
 <p>One source needs a look. The cnn-topstories feed is stale and has no successful run on record, so the roundup rests on the three remaining feeds.</p>
 </div>
 <!-- /slot -->
-<!-- slot: summary lang=ko -->
+        <!-- slot: summary lang=ko -->
 <div lang="ko">
 <p>첫날에는 세계 뉴스 한 섹션에 항목 열 개가 있습니다. 두 가지 흐름이 이어집니다. 하나는 우크라이나 전쟁으로, 우크라이나 대통령이 러시아 지휘관들에게 전쟁 규칙을 버리라는 지시가 내려졌다고 파이낸셜 타임스에 밝혔습니다. 다른 하나는 미국의 디젤 수출 금지 위협으로, 유럽에 전략 비축분을 두고 압박이 가해졌습니다. 인공지능 도구의 비용 문제와 서울과 키이우 사이의 포로 문제 논란도 실렸습니다.</p>
 <p>확인이 필요한 소스가 하나 있습니다. cnn-topstories 피드가 지연 상태이고 성공 기록이 없어, 이 모음은 나머지 피드 세 곳에 근거합니다.</p>
 </div>
 <!-- /slot -->
-  </section>
+      </section>
+    </div>
+
+    <aside class="ledger">
+      <nav class="contents" aria-label="Contents">
+        <!-- slot: contents -->
+<ol>
+<li><a href="#world-news"><span class="toc-name">world-news</span><span class="status status-stale"><span lang="en">stale</span><span lang="ko">지연</span></span><span class="toc-count">10</span></a></li>
+</ol>
+<!-- /slot -->
+      </nav>
+
+      <section class="health" aria-labelledby="attention">
+        <h2 id="attention"><span lang="en">Needs attention</span><span lang="ko">확인이 필요한 소스</span></h2>
+        <div class="notices">
+          <!-- slot: notices -->
+<div class="notice">
+<p class="notice-head"><span class="status status-stale"><span lang="en">Stale</span><span lang="ko">지연</span></span><span class="source-name"><span class="source-producer">world-news</span> cnn-topstories</span></p>
+<p class="notice-detail"><span lang="en">No success on record</span><span lang="ko">성공 기록 없음</span></p>
+</div>
+<!-- /slot -->
+        </div>
+      </section>
+    </aside>
+  </header>
 
   <main>
     <div class="zone">
       <!-- slot: producers -->
 <section class="producer" aria-labelledby="world-news">
-<h2 class="producer-head" id="world-news">world-news <span class="count">10</span></h2>
-<p class="producer-summary">World news roundup: 10 items from 3 live feed(s)</p>
-<!-- slot: intro:world-news lang=en -->
-<p class="intro" lang="en">The most weighty item is <a href="#world-news-1">the Ukrainian president’s account of an order that “there are no rules now”</a>. The diesel story runs alongside it: <a href="#world-news-5">US pressure on Europe over diesel reserves</a> follows the export-ban threat, and <a href="#world-news-3">the soyabean precedent</a> explains why such a ban can cost more than it saves. The cnn-topstories feed is stale, so some stories may be missing.</p>
-<!-- /slot -->
-<!-- slot: intro:world-news lang=ko -->
-<p class="intro" lang="ko">가장 무게 있는 항목은 <a href="#world-news-1">“이제 규칙은 없다”는 지시가 내려졌다는 우크라이나 대통령의 설명</a>입니다. 디젤 이야기가 나란히 이어집니다. <a href="#world-news-5">유럽의 디젤 비축분을 두고 가해진 미국의 압박</a>은 수출 금지 위협에서 나왔고, <a href="#world-news-3">대두 사례</a>는 그런 금지가 얻는 것보다 잃는 것이 클 수 있는 이유를 보여 줍니다. cnn-topstories 피드가 지연 상태이므로 빠진 기사가 있을 수 있습니다.</p>
-<!-- /slot -->
+<div class="producer-lede">
+  <div class="producer-top"><h2 class="producer-head" id="world-news">world-news</h2><span class="count">10</span></div>
+  <p class="producer-summary">World news roundup: 10 items from 3 live feed(s)</p>
+  <!-- slot: intro:world-news lang=en -->
+  <p class="intro" lang="en">The most weighty item is <a href="#world-news-1">the Ukrainian president’s account of an order that “there are no rules now”</a>. The diesel story runs alongside it: <a href="#world-news-5">US pressure on Europe over diesel reserves</a> follows the export-ban threat, and <a href="#world-news-3">the soyabean precedent</a> explains why such a ban can cost more than it saves. The cnn-topstories feed is stale, so some stories may be missing.</p>
+  <!-- /slot -->
+  <!-- slot: intro:world-news lang=ko -->
+  <p class="intro" lang="ko">가장 무게 있는 항목은 <a href="#world-news-1">“이제 규칙은 없다”는 지시가 내려졌다는 우크라이나 대통령의 설명</a>입니다. 디젤 이야기가 나란히 이어집니다. <a href="#world-news-5">유럽의 디젤 비축분을 두고 가해진 미국의 압박</a>은 수출 금지 위협에서 나왔고, <a href="#world-news-3">대두 사례</a>는 그런 금지가 얻는 것보다 잃는 것이 클 수 있는 이유를 보여 줍니다. cnn-topstories 피드가 지연 상태이므로 빠진 기사가 있을 수 있습니다.</p>
+  <!-- /slot -->
+</div>
 <ol class="items">
-<li class="item" id="world-news-1"><div><a class="item-title" href="https://www.ft.com/content/c2ad4cd1-a08a-4f55-8d57-fa83dbfa98af?syn-25a6b1a6=1">Putin has told military leaders to abandon rules of war, Zelenskyy says</a><p class="item-meta">news · www.ft.com · <time datetime="2026-10-02T04:00:33Z">13:00</time></p><p class="item-excerpt">Ukrainian leader tells FT his Russian counterpart has given the order that ‘there are no rules now’</p></div></li>
-<li class="item" id="world-news-2"><div><a class="item-title" href="https://ig.ft.com/ai-tokens/?syn-25a6b1a6=1">AI got smarter. The bills got harder to control</a><p class="item-meta">news · ig.ft.com · <time datetime="2026-10-02T04:00:05Z">13:00</time></p><p class="item-excerpt">Powerful AI tools are burning through budgets, prompting a rethink of how the technology is priced ahead of frontier lab IPOs</p></div></li>
-<li class="item" id="world-news-3"><div><a class="item-title" href="https://www.ft.com/content/3ae16f02-bb00-46a4-abba-6bfea7f2b1ac?syn-25a6b1a6=1">Trump’s diesel threats could go very wrong — just look at the soyabean</a><p class="item-meta">news · www.ft.com · <time datetime="2026-10-02T04:00:23Z">13:00</time></p><p class="item-excerpt">Yes, Nixon’s export ban did briefly suppress domestic prices but it had a huge long-term cost</p></div></li>
-<li class="item" id="world-news-4"><div><a class="item-title" href="https://www.ft.com/content/7b8336a1-6ac4-4f55-a987-b5f7cf6f4983">No, AI is not similar to the Manhattan Project</a><p class="item-meta">news · www.ft.com · <time datetime="2026-10-02T04:00:23Z">13:00</time></p><p class="item-excerpt">What is singular and novel about the current threat is that it was born out of the private sector</p></div></li>
-<li class="item" id="world-news-5"><div><a class="item-title" href="https://www.bbc.co.uk/news/articles/c5zjzjgdeneeo?at_medium=RSS&amp;at_campaign=rss">US pressures Europe over diesel reserves as Trump threatens export ban</a><p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-02T05:26:06Z">14:26</time></p><p class="item-excerpt">President Donald Trump has threatened to ban diesel exports in a bid to ease prices in the US ahead of the November elections.</p></div></li>
-<li class="item" id="world-news-6"><div><a class="item-title" href="https://www.bbc.co.uk/news/articles/cmn4540d4z87o?at_medium=RSS&amp;at_campaign=rss">Christa Pike in critical condition after surviving two lethal injections, lawyer says</a><p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-01T22:28:45Z">07:28</time></p><p class="item-excerpt">Pike’s lawyers have asked for her death sentence to be commuted following the botched execution.</p></div></li>
+<li class="item" id="world-news-1"><a class="item-title" href="https://www.ft.com/content/c2ad4cd1-a08a-4f55-8d57-fa83dbfa98af?syn-25a6b1a6=1">Putin has told military leaders to abandon rules of war, Zelenskyy says</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-02T04:00:33Z">13:00</time></p><p class="item-excerpt">Ukrainian leader tells FT his Russian counterpart has given the order that ‘there are no rules now’</p></div></li>
+<li class="item" id="world-news-2"><a class="item-title" href="https://ig.ft.com/ai-tokens/?syn-25a6b1a6=1">AI got smarter. The bills got harder to control</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">ig.ft.com</span><time datetime="2026-10-02T04:00:05Z">13:00</time></p><p class="item-excerpt">Powerful AI tools are burning through budgets, prompting a rethink of how the technology is priced ahead of frontier lab IPOs</p></div></li>
+<li class="item" id="world-news-3"><a class="item-title" href="https://www.ft.com/content/3ae16f02-bb00-46a4-abba-6bfea7f2b1ac?syn-25a6b1a6=1">Trump’s diesel threats could go very wrong — just look at the soyabean</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-02T04:00:23Z">13:00</time></p><p class="item-excerpt">Yes, Nixon’s export ban did briefly suppress domestic prices but it had a huge long-term cost</p></div></li>
+<li class="item" id="world-news-4"><a class="item-title" href="https://www.ft.com/content/7b8336a1-6ac4-4f55-a987-b5f7cf6f4983">No, AI is not similar to the Manhattan Project</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-02T04:00:23Z">13:00</time></p><p class="item-excerpt">What is singular and novel about the current threat is that it was born out of the private sector</p></div></li>
+<li class="item" id="world-news-5"><a class="item-title" href="https://www.bbc.co.uk/news/articles/c5zjzjgdeneeo?at_medium=RSS&amp;at_campaign=rss">US pressures Europe over diesel reserves as Trump threatens export ban</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-02T05:26:06Z">14:26</time></p><p class="item-excerpt">President Donald Trump has threatened to ban diesel exports in a bid to ease prices in the US ahead of the November elections.</p></div></li>
+<li class="item" id="world-news-6"><a class="item-title" href="https://www.bbc.co.uk/news/articles/cmn4540d4z87o?at_medium=RSS&amp;at_campaign=rss">Christa Pike in critical condition after surviving two lethal injections, lawyer says</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-01T22:28:45Z">07:28</time></p><p class="item-excerpt">Pike’s lawyers have asked for her death sentence to be commuted following the botched execution.</p></div></li>
 </ol>
 <details class="more">
 <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
 <ol class="items" style="--start: 6">
-<li class="item" id="world-news-7"><div><a class="item-title" href="https://www.bbc.co.uk/news/articles/cr1585y0y90go?at_medium=RSS&amp;at_campaign=rss">NY&#x27;s governor appoints special prosecutor in Cornell frat rape investigation</a><p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-02T02:49:44Z">11:49</time></p><p class="item-excerpt">The governor said she&#x27;d lost faith in prosecutors overseeing the case and handed it over to New York Attorney General Letitia James.</p></div></li>
-<li class="item" id="world-news-8"><div><a class="item-title" href="https://www.bbc.co.uk/news/articles/cm1dld14weero?at_medium=RSS&amp;at_campaign=rss">Seoul warns &#x27;further action&#x27; if Ukraine does not apologise over prisoner-of-war row</a><p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-02T03:09:13Z">12:09</time></p><p class="item-excerpt">President Lee Jae Myung also accused Kyiv of &quot;attempting to provoke a war on the Korean Peninsula&quot;.</p></div></li>
-<li class="item" id="world-news-9"><div><a class="item-title" href="https://www.bbc.co.uk/news/articles/c6y9z9r4ejzwo?at_medium=RSS&amp;at_campaign=rss">OpenAI fires workers for mishandling &#x27;sensitive information&#x27;</a><p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-02T01:34:56Z">10:34</time></p><p class="item-excerpt">The former employees were investigated for sharing data with an outside AI evaluation group.</p></div></li>
-<li class="item" id="world-news-10"><div><a class="item-title" href="https://www.bbc.co.uk/news/articles/c68xk0ndqz8jo?at_medium=RSS&amp;at_campaign=rss">&#x27;It could cost me £10k but I need the money now&#x27;: Why Gen Z are opting out of pensions</a><p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-01T23:00:06Z">08:00</time></p><p class="item-excerpt">A growing number of people are opting out of these schemes due to cost-of-living pressures.</p></div></li>
+<li class="item" id="world-news-7"><a class="item-title" href="https://www.bbc.co.uk/news/articles/cr1585y0y90go?at_medium=RSS&amp;at_campaign=rss">NY&#x27;s governor appoints special prosecutor in Cornell frat rape investigation</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-02T02:49:44Z">11:49</time></p><p class="item-excerpt">The governor said she&#x27;d lost faith in prosecutors overseeing the case and handed it over to New York Attorney General Letitia James.</p></div></li>
+<li class="item" id="world-news-8"><a class="item-title" href="https://www.bbc.co.uk/news/articles/cm1dld14weero?at_medium=RSS&amp;at_campaign=rss">Seoul warns &#x27;further action&#x27; if Ukraine does not apologise over prisoner-of-war row</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-02T03:09:13Z">12:09</time></p><p class="item-excerpt">President Lee Jae Myung also accused Kyiv of &quot;attempting to provoke a war on the Korean Peninsula&quot;.</p></div></li>
+<li class="item" id="world-news-9"><a class="item-title" href="https://www.bbc.co.uk/news/articles/c6y9z9r4ejzwo?at_medium=RSS&amp;at_campaign=rss">OpenAI fires workers for mishandling &#x27;sensitive information&#x27;</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-02T01:34:56Z">10:34</time></p><p class="item-excerpt">The former employees were investigated for sharing data with an outside AI evaluation group.</p></div></li>
+<li class="item" id="world-news-10"><a class="item-title" href="https://www.bbc.co.uk/news/articles/c68xk0ndqz8jo?at_medium=RSS&amp;at_campaign=rss">&#x27;It could cost me £10k but I need the money now&#x27;: Why Gen Z are opting out of pensions</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-01T23:00:06Z">08:00</time></p><p class="item-excerpt">A growing number of people are opting out of these schemes due to cost-of-living pressures.</p></div></li>
 </ol>
 </details>
 </section>
 <!-- /slot -->
     </div>
 
-    <div class="zone">
+    <div class="zone zone-projects">
       <h2 class="zone-title"><span lang="en">Projects</span><span lang="ko">프로젝트</span></h2>
       <!-- slot: personal -->
 
 <!-- /slot -->
     </div>
-
   </main>
 
   <nav class="days" aria-label="Other days">

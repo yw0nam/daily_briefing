@@ -5,179 +5,191 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <meta name="robots" content="noindex">
+<meta name="description" content="One day of the briefing, with the state of every source.">
 <!-- slot: title -->
 <title>Briefing · 2026-10-04</title>
 <!-- /slot -->
 <style id="lang-rule">body [lang]:not([lang="en"]) { display: none !important; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans+KR:wght@500;600&family=Noto+Serif+KR:wght@400;500&display=swap">
 <link rel="stylesheet" href="../../../../../src/style.css">
 <script src="../../../../../src/lang.js"></script>
 </head>
 <body>
-<div class="page">
-
-  <aside class="rail">
-
-  <header class="masthead">
-    <div class="masthead-top">
-      <p class="label"><span lang="en">Daily briefing</span><span lang="ko">오늘의 브리핑</span></p>
-      <label class="lang-switch">
-        <select id="lang-select" aria-label="Language">
-          <!-- slot: languages -->
+<header class="runner container">
+  <a class="wordmark" href="../../../../../"><span lang="en">Daily briefing</span><span lang="ko">오늘의 브리핑</span></a>
+  <label class="lang-switch">
+    <select id="lang-select" aria-label="Language">
+      <!-- slot: languages -->
 <option value="en">EN</option>
 <option value="ko">KO</option>
 <!-- /slot -->
-        </select>
-      </label>
-    </div>
-    <!-- slot: date lang=en -->
+    </select>
+  </label>
+</header>
+
+<div class="page container">
+
+  <header class="front">
+    <div>
+      <div class="masthead">
+        <!-- slot: date lang=en -->
 <div lang="en">
 <h1>Sunday, October 4</h1>
-<p class="dateline"><time datetime="2026-10-04T08:00:03+09:00"><span>2026-10-04</span> <span>· prepared at 08:00</span></time></p>
+<p class="dateline"><time datetime="2026-10-04T08:00:03+09:00"><span>2026-10-04</span> <span>prepared at 08:00</span></time></p>
 </div>
 <!-- /slot -->
-<!-- slot: date lang=ko -->
+        <!-- slot: date lang=ko -->
 <div lang="ko">
 <h1>10월 4일 일요일</h1>
-<p class="dateline"><time datetime="2026-10-04T08:00:03+09:00"><span>2026-10-04</span> <span>· 08:00 작성</span></time></p>
+<p class="dateline"><time datetime="2026-10-04T08:00:03+09:00"><span>2026-10-04</span> <span>08:00 작성</span></time></p>
 </div>
 <!-- /slot -->
-  </header>
+      </div>
 
-  <nav class="contents" aria-label="Contents">
-    <!-- slot: contents -->
+      <section class="lead" aria-label="Summary">
+        <!-- slot: summary lang=en -->
+<div lang="en">
+<p>Aviation security led the news: a Flydubai co-pilot is reported to have attacked the captain with an axe on a flight to Tel Aviv, and the FT looked at how airlines screen pilots. Russia struck a second major bridge in Kyiv, tens of thousands protested over housing in Spain, and the Tennessee prison chief is to resign after the failed execution of Christa Pike.</p>
+<p>On GitHub, Agent-Reach gained 1,683 stars, the most on the list and up from 683 the day before. In papers, the distillation study rose to second place with 153 upvotes. One source needs a look: the cnn-topstories feed remains stale.</p>
+</div>
+<!-- /slot -->
+        <!-- slot: summary lang=ko -->
+<div lang="ko">
+<p>항공 보안이 뉴스의 중심이었습니다. 두바이 항공사 플라이두바이의 부기장이 텔아비브행 비행기에서 기장을 도끼로 공격했다고 보도되었고, 파이낸셜 타임스는 항공사가 조종사를 어떻게 걸러내는지 살폈습니다. 러시아가 키이우의 두 번째 주요 다리를 공격했고, 스페인에서는 주택 위기를 두고 수만 명이 시위했으며, 테네시주 교정 책임자는 크리스타 파이크 사형 집행 실패로 사임합니다.</p>
+<p>깃허브에서는 Agent-Reach가 별 1,683개를 얻어 목록에서 가장 많았고, 전날의 683개에서 늘었습니다. 논문에서는 증류 연구가 추천 153개로 2위로 올랐습니다. 확인이 필요한 소스는 cnn-topstories 피드 하나이며, 계속 지연 상태입니다.</p>
+</div>
+<!-- /slot -->
+      </section>
+    </div>
+
+    <aside class="ledger">
+      <nav class="contents" aria-label="Contents">
+        <!-- slot: contents -->
 <ol>
 <li><a href="#github-trending-daily"><span class="toc-name">github-trending-daily</span><span class="toc-count">10</span></a></li>
 <li><a href="#huggingface-papers-daily"><span class="toc-name">huggingface-papers-daily</span><span class="toc-count">10</span></a></li>
 <li><a href="#world-news"><span class="toc-name">world-news</span><span class="status status-stale"><span lang="en">stale</span><span lang="ko">지연</span></span><span class="toc-count">10</span></a></li>
 </ol>
 <!-- /slot -->
-  </nav>
+      </nav>
 
-  <section class="health" aria-labelledby="attention">
-    <h2 id="attention"><span lang="en">Needs attention</span><span lang="ko">확인이 필요한 소스</span></h2>
-    <div class="notices">
-      <!-- slot: notices -->
+      <section class="health" aria-labelledby="attention">
+        <h2 id="attention"><span lang="en">Needs attention</span><span lang="ko">확인이 필요한 소스</span></h2>
+        <div class="notices">
+          <!-- slot: notices -->
 <div class="notice">
 <p class="notice-head"><span class="status status-stale"><span lang="en">Stale</span><span lang="ko">지연</span></span><span class="source-name"><span class="source-producer">world-news</span> cnn-topstories</span></p>
 <p class="notice-detail"><span lang="en">No success on record</span><span lang="ko">성공 기록 없음</span></p>
 </div>
 <!-- /slot -->
-    </div>
-  </section>
-
-  </aside>
-
-  <section class="lead" aria-label="Summary">
-    <!-- slot: summary lang=en -->
-<div lang="en">
-<p>Aviation security led the news: a Flydubai co-pilot is reported to have attacked the captain with an axe on a flight to Tel Aviv, and the FT looked at how airlines screen pilots. Russia struck a second major bridge in Kyiv, tens of thousands protested over housing in Spain, and the Tennessee prison chief is to resign after the failed execution of Christa Pike.</p>
-<p>On GitHub, Agent-Reach gained 1,683 stars, the most on the list and up from 683 the day before. In papers, the distillation study rose to second place with 153 upvotes. One source needs a look: the cnn-topstories feed remains stale.</p>
-</div>
-<!-- /slot -->
-<!-- slot: summary lang=ko -->
-<div lang="ko">
-<p>항공 보안이 뉴스의 중심이었습니다. 두바이 항공사 플라이두바이의 부기장이 텔아비브행 비행기에서 기장을 도끼로 공격했다고 보도되었고, 파이낸셜 타임스는 항공사가 조종사를 어떻게 걸러내는지 살폈습니다. 러시아가 키이우의 두 번째 주요 다리를 공격했고, 스페인에서는 주택 위기를 두고 수만 명이 시위했으며, 테네시주 교정 책임자는 크리스타 파이크 사형 집행 실패로 사임합니다.</p>
-<p>깃허브에서는 Agent-Reach가 별 1,683개를 얻어 목록에서 가장 많았고, 전날의 683개에서 늘었습니다. 논문에서는 증류 연구가 추천 153개로 2위로 올랐습니다. 확인이 필요한 소스는 cnn-topstories 피드 하나이며, 계속 지연 상태입니다.</p>
-</div>
-<!-- /slot -->
-  </section>
+        </div>
+      </section>
+    </aside>
+  </header>
 
   <main>
     <div class="zone">
       <!-- slot: producers -->
 <section class="producer" aria-labelledby="github-trending-daily">
-<h2 class="producer-head" id="github-trending-daily">github-trending-daily <span class="count">10</span></h2>
-<p class="producer-summary">GitHub trending (daily): top 10 repos by stars</p>
-<!-- slot: intro:github-trending-daily lang=en -->
-<p class="intro" lang="en"><a href="#github-trending-daily-6">Agent-Reach</a> gained 1,683 stars, the most of the day, and <a href="#github-trending-daily-1">ponytail</a> added 1,289. <a href="#github-trending-daily-9">cloudflare/cloudflare-os</a> is a new entry, an agent workspace on Cloudflare Workers, though with the smallest gain on the list.</p>
-<!-- /slot -->
-<!-- slot: intro:github-trending-daily lang=ko -->
-<p class="intro" lang="ko"><a href="#github-trending-daily-6">Agent-Reach</a>가 별 1,683개로 하루 증가량 1위이고, <a href="#github-trending-daily-1">ponytail</a>이 1,289개를 더했습니다. <a href="#github-trending-daily-9">cloudflare/cloudflare-os</a>는 Cloudflare Workers 위의 에이전트 작업 공간으로 새로 올랐으나 증가량은 목록에서 가장 적습니다.</p>
-<!-- /slot -->
+<div class="producer-lede">
+  <div class="producer-top"><h2 class="producer-head" id="github-trending-daily">github-trending-daily</h2><span class="count">10</span></div>
+  <p class="producer-summary">GitHub trending (daily): top 10 repos by stars</p>
+  <!-- slot: intro:github-trending-daily lang=en -->
+  <p class="intro" lang="en"><a href="#github-trending-daily-6">Agent-Reach</a> gained 1,683 stars, the most of the day, and <a href="#github-trending-daily-1">ponytail</a> added 1,289. <a href="#github-trending-daily-9">cloudflare/cloudflare-os</a> is a new entry, an agent workspace on Cloudflare Workers, though with the smallest gain on the list.</p>
+  <!-- /slot -->
+  <!-- slot: intro:github-trending-daily lang=ko -->
+  <p class="intro" lang="ko"><a href="#github-trending-daily-6">Agent-Reach</a>가 별 1,683개로 하루 증가량 1위이고, <a href="#github-trending-daily-1">ponytail</a>이 1,289개를 더했습니다. <a href="#github-trending-daily-9">cloudflare/cloudflare-os</a>는 Cloudflare Workers 위의 에이전트 작업 공간으로 새로 올랐으나 증가량은 목록에서 가장 적습니다.</p>
+  <!-- /slot -->
+</div>
 <ol class="items">
-<li class="item" id="github-trending-daily-1"><div><a class="item-title" href="https://github.com/DietrichGebert/ponytail">DietrichGebert/ponytail</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-03T23:00:03Z">08:00</time></p><p class="item-excerpt">Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote. · 153,322 stars total · 1,289 stars today</p></div></li>
-<li class="item" id="github-trending-daily-2"><div><a class="item-title" href="https://github.com/pbakaus/impeccable">pbakaus/impeccable</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-03T23:00:03Z">08:00</time></p><p class="item-excerpt">The design language that makes your AI harness better at design. · 75,253 stars total · 705 stars today</p></div></li>
-<li class="item" id="github-trending-daily-3"><div><a class="item-title" href="https://github.com/affaan-m/ECC">affaan-m/ECC</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-03T23:00:03Z">08:00</time></p><p class="item-excerpt">The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. · 272,204 stars total · 954 stars today</p></div></li>
-<li class="item" id="github-trending-daily-4"><div><a class="item-title" href="https://github.com/Effect-TS/effect">Effect-TS/effect</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-03T23:00:03Z">08:00</time></p><p class="item-excerpt">Build production-ready applications in TypeScript · 16,798 stars total · 302 stars today</p></div></li>
-<li class="item" id="github-trending-daily-5"><div><a class="item-title" href="https://github.com/JuliusBrussee/caveman">JuliusBrussee/caveman</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-03T23:00:03Z">08:00</time></p><p class="item-excerpt">🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman. · 109,515 stars total · 505 stars today</p></div></li>
-<li class="item" id="github-trending-daily-6"><div><a class="item-title" href="https://github.com/Panniantong/Agent-Reach">Panniantong/Agent-Reach</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-03T23:00:03Z">08:00</time></p><p class="item-excerpt">Give your AI agent eyes to see the entire internet. Read &amp; search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees. · 89,750 stars total · 1,683 stars today</p></div></li>
+<li class="item" id="github-trending-daily-1"><a class="item-title" href="https://github.com/DietrichGebert/ponytail">DietrichGebert/ponytail</a><p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-03T23:00:03Z">08:00</time></p><p class="item-excerpt">Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote. · 153,322 stars total · 1,289 stars today</p></div></li>
+<li class="item" id="github-trending-daily-2"><a class="item-title" href="https://github.com/pbakaus/impeccable">pbakaus/impeccable</a><p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-03T23:00:03Z">08:00</time></p><p class="item-excerpt">The design language that makes your AI harness better at design. · 75,253 stars total · 705 stars today</p></div></li>
+<li class="item" id="github-trending-daily-3"><a class="item-title" href="https://github.com/affaan-m/ECC">affaan-m/ECC</a><p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-03T23:00:03Z">08:00</time></p><p class="item-excerpt">The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. · 272,204 stars total · 954 stars today</p></div></li>
+<li class="item" id="github-trending-daily-4"><a class="item-title" href="https://github.com/Effect-TS/effect">Effect-TS/effect</a><p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-03T23:00:03Z">08:00</time></p><p class="item-excerpt">Build production-ready applications in TypeScript · 16,798 stars total · 302 stars today</p></div></li>
+<li class="item" id="github-trending-daily-5"><a class="item-title" href="https://github.com/JuliusBrussee/caveman">JuliusBrussee/caveman</a><p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-03T23:00:03Z">08:00</time></p><p class="item-excerpt">🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman. · 109,515 stars total · 505 stars today</p></div></li>
+<li class="item" id="github-trending-daily-6"><a class="item-title" href="https://github.com/Panniantong/Agent-Reach">Panniantong/Agent-Reach</a><p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-03T23:00:03Z">08:00</time></p><p class="item-excerpt">Give your AI agent eyes to see the entire internet. Read &amp; search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees. · 89,750 stars total · 1,683 stars today</p></div></li>
 </ol>
 <details class="more">
 <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
 <ol class="items" style="--start: 6">
-<li class="item" id="github-trending-daily-7"><div><a class="item-title" href="https://github.com/pingdotgg/t3code">pingdotgg/t3code</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-03T23:00:03Z">08:00</time></p><p class="item-excerpt">24,657 stars total · 251 stars today</p></div></li>
-<li class="item" id="github-trending-daily-8"><div><a class="item-title" href="https://github.com/thedotmack/claude-mem">thedotmack/claude-mem</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-03T23:00:03Z">08:00</time></p><p class="item-excerpt">Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More · 95,550 sta…</p></div></li>
-<li class="item" id="github-trending-daily-9"><div><a class="item-title" href="https://github.com/cloudflare/cloudflare-os">cloudflare/cloudflare-os</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-03T23:00:03Z">08:00</time></p><p class="item-excerpt">Agent workspace built on Cloudflare Workers for creating documents, building apps, and running agents with your company’s context and systems. · 10,548 stars total · 84 stars today</p></div></li>
-<li class="item" id="github-trending-daily-10"><div><a class="item-title" href="https://github.com/addyosmani/agent-skills">addyosmani/agent-skills</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-03T23:00:03Z">08:00</time></p><p class="item-excerpt">Production-grade engineering skills for AI coding agents. · 100,821 stars total · 305 stars today</p></div></li>
+<li class="item" id="github-trending-daily-7"><a class="item-title" href="https://github.com/pingdotgg/t3code">pingdotgg/t3code</a><p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-03T23:00:03Z">08:00</time></p><p class="item-excerpt">24,657 stars total · 251 stars today</p></div></li>
+<li class="item" id="github-trending-daily-8"><a class="item-title" href="https://github.com/thedotmack/claude-mem">thedotmack/claude-mem</a><p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-03T23:00:03Z">08:00</time></p><p class="item-excerpt">Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More · 95,550 sta…</p></div></li>
+<li class="item" id="github-trending-daily-9"><a class="item-title" href="https://github.com/cloudflare/cloudflare-os">cloudflare/cloudflare-os</a><p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-03T23:00:03Z">08:00</time></p><p class="item-excerpt">Agent workspace built on Cloudflare Workers for creating documents, building apps, and running agents with your company’s context and systems. · 10,548 stars total · 84 stars today</p></div></li>
+<li class="item" id="github-trending-daily-10"><a class="item-title" href="https://github.com/addyosmani/agent-skills">addyosmani/agent-skills</a><p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-03T23:00:03Z">08:00</time></p><p class="item-excerpt">Production-grade engineering skills for AI coding agents. · 100,821 stars total · 305 stars today</p></div></li>
 </ol>
 </details>
 </section>
 
 <section class="producer" aria-labelledby="huggingface-papers-daily">
-<h2 class="producer-head" id="huggingface-papers-daily">huggingface-papers-daily <span class="count">10</span></h2>
-<p class="producer-summary">HuggingFace daily papers: top 10 of 50 today</p>
-<!-- slot: intro:huggingface-papers-daily lang=en -->
-<p class="intro" lang="en"><a href="#huggingface-papers-daily-1">OneStreamer</a> stays first with 160 upvotes, and <a href="#huggingface-papers-daily-2">the on-policy versus off-policy distillation study</a> jumped from 114 to 153. <a href="#huggingface-papers-daily-3">The paper on transformers that stop thinking too early</a> is new on the list and proposes a rank-8 LoRA as the fix.</p>
-<!-- /slot -->
-<!-- slot: intro:huggingface-papers-daily lang=ko -->
-<p class="intro" lang="ko"><a href="#huggingface-papers-daily-1">OneStreamer</a>가 추천 160개로 1위를 지켰고, <a href="#huggingface-papers-daily-2">온폴리시와 오프폴리시 증류 비교 연구</a>는 114개에서 153개로 뛰었습니다. <a href="#huggingface-papers-daily-3">트랜스포머가 너무 일찍 생각을 멈춘다는 논문</a>은 목록에 새로 올랐고, 해법으로 랭크 8의 LoRA를 제안합니다.</p>
-<!-- /slot -->
+<div class="producer-lede">
+  <div class="producer-top"><h2 class="producer-head" id="huggingface-papers-daily">huggingface-papers-daily</h2><span class="count">10</span></div>
+  <p class="producer-summary">HuggingFace daily papers: top 10 of 50 today</p>
+  <!-- slot: intro:huggingface-papers-daily lang=en -->
+  <p class="intro" lang="en"><a href="#huggingface-papers-daily-1">OneStreamer</a> stays first with 160 upvotes, and <a href="#huggingface-papers-daily-2">the on-policy versus off-policy distillation study</a> jumped from 114 to 153. <a href="#huggingface-papers-daily-3">The paper on transformers that stop thinking too early</a> is new on the list and proposes a rank-8 LoRA as the fix.</p>
+  <!-- /slot -->
+  <!-- slot: intro:huggingface-papers-daily lang=ko -->
+  <p class="intro" lang="ko"><a href="#huggingface-papers-daily-1">OneStreamer</a>가 추천 160개로 1위를 지켰고, <a href="#huggingface-papers-daily-2">온폴리시와 오프폴리시 증류 비교 연구</a>는 114개에서 153개로 뛰었습니다. <a href="#huggingface-papers-daily-3">트랜스포머가 너무 일찍 생각을 멈춘다는 논문</a>은 목록에 새로 올랐고, 해법으로 랭크 8의 LoRA를 제안합니다.</p>
+  <!-- /slot -->
+</div>
 <ol class="items">
-<li class="item" id="huggingface-papers-daily-1"><div><a class="item-title" href="https://huggingface.co/papers/2610.01762">OneStreamer: Unifying Perception, Memory, and Proactive Response in Streaming Video Interaction</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-09-30T20:00:00Z">10-01 05:00</time></p><p class="item-excerpt">160 upvotes. Streaming video LLMs must retain evidence before its relevance to future tasks is known and respond when sufficient evidence becomes available. The challenge is to form reusable factual memory without compromising real-time perception. We introduce OneStreamer, whic…</p></div></li>
-<li class="item" id="huggingface-papers-daily-2"><div><a class="item-title" href="https://huggingface.co/papers/2609.35259">On-Policy or Off-Policy Learning? A Systematic Study of Distillation Dynamics</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-09-27T20:00:00Z">09-28 05:00</time></p><p class="item-excerpt">153 upvotes. On-policy learning has been argued to reduce catastrophic forgetting, produce sparser parameter updates, and improve generalisation. However, existing comparisons between supervised fine-tuning and reinforcement learning vary many factors simultaneously, making the …</p></div></li>
-<li class="item" id="huggingface-papers-daily-3"><div><a class="item-title" href="https://huggingface.co/papers/2609.36585">Transformers Stop Thinking Too Early, and a Tiny LoRA Fixes It</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-09-28T20:00:00Z">09-29 05:00</time></p><p class="item-excerpt">62 upvotes. Pretrained transformers use little of their depth to follow references in context. Thirteen base models reliably follow only 1.4-3.6 lines, and extra pretrained loops add little. A task-trained rank-8 LoRA at one early layer extends this computation with all model we…</p></div></li>
-<li class="item" id="huggingface-papers-daily-4"><div><a class="item-title" href="https://huggingface.co/papers/2609.37533">E-MoE: Enhanced Mixture-of-Experts for Non-Factorized Diffusion Language Models</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-09-28T20:00:00Z">09-29 05:00</time></p><p class="item-excerpt">57 upvotes. Masked diffusion models (MDMs) generate sequences by progressively unmasking several tokens per denoising step, but their reverse process is typically factorized over positions, limiting sample quality in the few-step regime where diffusion&#x27;s speed advantage over aut…</p></div></li>
-<li class="item" id="huggingface-papers-daily-5"><div><a class="item-title" href="https://huggingface.co/papers/2610.00574">Make Sparse Rewards Count: Density-Aware Reward Aggregation for Multi-Reward RL</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-09-29T20:00:00Z">09-30 05:00</time></p><p class="item-excerpt">49 upvotes. Multi-reward reinforcement learning trains large language models to satisfy multiple behavioral objectives simultaneously. Reward-wise normalization, as used in GDPO, preserves reward-specific relative information within rollout groups, but different objectives can s…</p></div></li>
-<li class="item" id="huggingface-papers-daily-6"><div><a class="item-title" href="https://huggingface.co/papers/2610.00812">Video Generation Models: A Survey of Post-Training and Alignment</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-09-29T20:00:00Z">09-30 05:00</time></p><p class="item-excerpt">44 upvotes. Video generation has rapidly progressed from short, low-quality clips to high-resolution, long-duration sequences with complex spatiotemporal dynamics. Despite strong generative priors learned through large-scale pretraining, pretrained video models often fail to rel…</p></div></li>
+<li class="item" id="huggingface-papers-daily-1"><a class="item-title" href="https://huggingface.co/papers/2610.01762">OneStreamer: Unifying Perception, Memory, and Proactive Response in Streaming Video Interaction</a><p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-09-30T20:00:00Z">10-01 05:00</time></p><p class="item-excerpt">160 upvotes. Streaming video LLMs must retain evidence before its relevance to future tasks is known and respond when sufficient evidence becomes available. The challenge is to form reusable factual memory without compromising real-time perception. We introduce OneStreamer, whic…</p></div></li>
+<li class="item" id="huggingface-papers-daily-2"><a class="item-title" href="https://huggingface.co/papers/2609.35259">On-Policy or Off-Policy Learning? A Systematic Study of Distillation Dynamics</a><p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-09-27T20:00:00Z">09-28 05:00</time></p><p class="item-excerpt">153 upvotes. On-policy learning has been argued to reduce catastrophic forgetting, produce sparser parameter updates, and improve generalisation. However, existing comparisons between supervised fine-tuning and reinforcement learning vary many factors simultaneously, making the …</p></div></li>
+<li class="item" id="huggingface-papers-daily-3"><a class="item-title" href="https://huggingface.co/papers/2609.36585">Transformers Stop Thinking Too Early, and a Tiny LoRA Fixes It</a><p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-09-28T20:00:00Z">09-29 05:00</time></p><p class="item-excerpt">62 upvotes. Pretrained transformers use little of their depth to follow references in context. Thirteen base models reliably follow only 1.4-3.6 lines, and extra pretrained loops add little. A task-trained rank-8 LoRA at one early layer extends this computation with all model we…</p></div></li>
+<li class="item" id="huggingface-papers-daily-4"><a class="item-title" href="https://huggingface.co/papers/2609.37533">E-MoE: Enhanced Mixture-of-Experts for Non-Factorized Diffusion Language Models</a><p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-09-28T20:00:00Z">09-29 05:00</time></p><p class="item-excerpt">57 upvotes. Masked diffusion models (MDMs) generate sequences by progressively unmasking several tokens per denoising step, but their reverse process is typically factorized over positions, limiting sample quality in the few-step regime where diffusion&#x27;s speed advantage over aut…</p></div></li>
+<li class="item" id="huggingface-papers-daily-5"><a class="item-title" href="https://huggingface.co/papers/2610.00574">Make Sparse Rewards Count: Density-Aware Reward Aggregation for Multi-Reward RL</a><p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-09-29T20:00:00Z">09-30 05:00</time></p><p class="item-excerpt">49 upvotes. Multi-reward reinforcement learning trains large language models to satisfy multiple behavioral objectives simultaneously. Reward-wise normalization, as used in GDPO, preserves reward-specific relative information within rollout groups, but different objectives can s…</p></div></li>
+<li class="item" id="huggingface-papers-daily-6"><a class="item-title" href="https://huggingface.co/papers/2610.00812">Video Generation Models: A Survey of Post-Training and Alignment</a><p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-09-29T20:00:00Z">09-30 05:00</time></p><p class="item-excerpt">44 upvotes. Video generation has rapidly progressed from short, low-quality clips to high-resolution, long-duration sequences with complex spatiotemporal dynamics. Despite strong generative priors learned through large-scale pretraining, pretrained video models often fail to rel…</p></div></li>
 </ol>
 <details class="more">
 <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
 <ol class="items" style="--start: 6">
-<li class="item" id="huggingface-papers-daily-7"><div><a class="item-title" href="https://huggingface.co/papers/2609.39378">EgoTools: Towards Tool-Centric Reasoning in Real-World Egocentric Videos</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-09-29T20:00:00Z">09-30 05:00</time></p><p class="item-excerpt">44 upvotes. Real-world embodied tasks, from everyday activities to professional procedures, require agents to act under physical constraints while tracking evolving object and task states. Tool use sits at the heart of such tasks, as many everyday and professional activities are…</p></div></li>
-<li class="item" id="huggingface-papers-daily-8"><div><a class="item-title" href="https://huggingface.co/papers/2610.02196">InterEvolve: Test-Time Evolution of Reward Programs for Humanoid Loco-Manipulation</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-09-30T20:00:00Z">10-01 05:00</time></p><p class="item-excerpt">43 upvotes. We study test-time evolution for humanoid loco-manipulation: solving tasks that a controller was never trained for by repurposing its existing skills, improving from its own attempts, and retaining what it learns, without retraining. Our key insight is that a broad c…</p></div></li>
-<li class="item" id="huggingface-papers-daily-9"><div><a class="item-title" href="https://huggingface.co/papers/2609.32019">Decentralized Master-Mind: Joint Action Refinement through Iterative Intent Denoising in Multi-Agent Pathfinding</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-09-24T20:00:00Z">09-25 05:00</time></p><p class="item-excerpt">41 upvotes. Decentralized multi-agent path finding (MAPF) with communication requires agents to reach individual goals without collisions under partial observability. Learnable policies trained on expert data provide an effective approach to this problem. However, when several c…</p></div></li>
-<li class="item" id="huggingface-papers-daily-10"><div><a class="item-title" href="https://huggingface.co/papers/2609.36388">Persona Dosing: Calibrated Activation Steering for Graded Trait Control</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-09-27T20:00:00Z">09-28 05:00</time></p><p class="item-excerpt">40 upvotes. An activation-steering coefficient sets intervention strength, but requesting a particular degree of persona expression requires a behavioral scale. We study persona dosing: controlling a language model through a trait description and a requested mean intensity. Pers…</p></div></li>
+<li class="item" id="huggingface-papers-daily-7"><a class="item-title" href="https://huggingface.co/papers/2609.39378">EgoTools: Towards Tool-Centric Reasoning in Real-World Egocentric Videos</a><p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-09-29T20:00:00Z">09-30 05:00</time></p><p class="item-excerpt">44 upvotes. Real-world embodied tasks, from everyday activities to professional procedures, require agents to act under physical constraints while tracking evolving object and task states. Tool use sits at the heart of such tasks, as many everyday and professional activities are…</p></div></li>
+<li class="item" id="huggingface-papers-daily-8"><a class="item-title" href="https://huggingface.co/papers/2610.02196">InterEvolve: Test-Time Evolution of Reward Programs for Humanoid Loco-Manipulation</a><p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-09-30T20:00:00Z">10-01 05:00</time></p><p class="item-excerpt">43 upvotes. We study test-time evolution for humanoid loco-manipulation: solving tasks that a controller was never trained for by repurposing its existing skills, improving from its own attempts, and retaining what it learns, without retraining. Our key insight is that a broad c…</p></div></li>
+<li class="item" id="huggingface-papers-daily-9"><a class="item-title" href="https://huggingface.co/papers/2609.32019">Decentralized Master-Mind: Joint Action Refinement through Iterative Intent Denoising in Multi-Agent Pathfinding</a><p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-09-24T20:00:00Z">09-25 05:00</time></p><p class="item-excerpt">41 upvotes. Decentralized multi-agent path finding (MAPF) with communication requires agents to reach individual goals without collisions under partial observability. Learnable policies trained on expert data provide an effective approach to this problem. However, when several c…</p></div></li>
+<li class="item" id="huggingface-papers-daily-10"><a class="item-title" href="https://huggingface.co/papers/2609.36388">Persona Dosing: Calibrated Activation Steering for Graded Trait Control</a><p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-09-27T20:00:00Z">09-28 05:00</time></p><p class="item-excerpt">40 upvotes. An activation-steering coefficient sets intervention strength, but requesting a particular degree of persona expression requires a behavioral scale. We study persona dosing: controlling a language model through a trait description and a requested mean intensity. Pers…</p></div></li>
 </ol>
 </details>
 </section>
 
 <section class="producer" aria-labelledby="world-news">
-<h2 class="producer-head" id="world-news">world-news <span class="count">10</span></h2>
-<p class="producer-summary">World news roundup: 10 items from 3 live feed(s)</p>
-<!-- slot: intro:world-news lang=en -->
-<p class="intro" lang="en">Two stories matter most: <a href="#world-news-1">the FT report of the Flydubai co-pilot’s axe attack</a>, with the BBC account in <a href="#world-news-6">item 6</a>, and <a href="#world-news-7">the Russian strike on a second Kyiv bridge</a>. <a href="#world-news-8">The Spanish housing protests</a> and <a href="#world-news-4">the FT’s reading of that crisis</a> belong together. The cnn-topstories feed is stale.</p>
-<!-- /slot -->
-<!-- slot: intro:world-news lang=ko -->
-<p class="intro" lang="ko">가장 중요한 기사는 두 건입니다. <a href="#world-news-1">플라이두바이 부기장의 도끼 공격에 대한 파이낸셜 타임스 보도</a>가 하나이고, BBC의 설명은 <a href="#world-news-6">6번 항목</a>에 있습니다. 다른 하나는 <a href="#world-news-7">키이우 두 번째 다리에 대한 러시아의 공격</a>입니다. <a href="#world-news-8">스페인의 주택 시위</a>와 <a href="#world-news-4">그 위기에 대한 파이낸셜 타임스의 해석</a>은 함께 읽을 만합니다. cnn-topstories 피드는 지연 상태입니다.</p>
-<!-- /slot -->
+<div class="producer-lede">
+  <div class="producer-top"><h2 class="producer-head" id="world-news">world-news</h2><span class="count">10</span></div>
+  <p class="producer-summary">World news roundup: 10 items from 3 live feed(s)</p>
+  <!-- slot: intro:world-news lang=en -->
+  <p class="intro" lang="en">Two stories matter most: <a href="#world-news-1">the FT report of the Flydubai co-pilot’s axe attack</a>, with the BBC account in <a href="#world-news-6">item 6</a>, and <a href="#world-news-7">the Russian strike on a second Kyiv bridge</a>. <a href="#world-news-8">The Spanish housing protests</a> and <a href="#world-news-4">the FT’s reading of that crisis</a> belong together. The cnn-topstories feed is stale.</p>
+  <!-- /slot -->
+  <!-- slot: intro:world-news lang=ko -->
+  <p class="intro" lang="ko">가장 중요한 기사는 두 건입니다. <a href="#world-news-1">플라이두바이 부기장의 도끼 공격에 대한 파이낸셜 타임스 보도</a>가 하나이고, BBC의 설명은 <a href="#world-news-6">6번 항목</a>에 있습니다. 다른 하나는 <a href="#world-news-7">키이우 두 번째 다리에 대한 러시아의 공격</a>입니다. <a href="#world-news-8">스페인의 주택 시위</a>와 <a href="#world-news-4">그 위기에 대한 파이낸셜 타임스의 해석</a>은 함께 읽을 만합니다. cnn-topstories 피드는 지연 상태입니다.</p>
+  <!-- /slot -->
+</div>
 <ol class="items">
-<li class="item" id="world-news-1"><div><a class="item-title" href="https://www.ft.com/content/36b90fa1-f61e-4563-8622-127cdb471101?syn-25a6b1a6=1">Co-pilot used axe to carry out ‘terrorist act’ on Flydubai flight</a><p class="item-meta">news · www.ft.com · <time datetime="2026-10-03T17:21:11Z">02:21</time></p><p class="item-excerpt">Flight 1073 was heading to Tel Aviv when the attack was launched in the cockpit</p></div></li>
-<li class="item" id="world-news-2"><div><a class="item-title" href="https://www.ft.com/content/3e976e07-d85c-4ee3-8dff-208296684ca0?syn-25a6b1a6=1">How airlines try to weed out rogue pilots</a><p class="item-meta">news · www.ft.com · <time datetime="2026-10-03T08:05:08Z">10-03 17:05</time></p><p class="item-excerpt">Background checks and psychological testing aim to ensure that only those fit to fly take the controls</p></div></li>
-<li class="item" id="world-news-3"><div><a class="item-title" href="https://www.ft.com/content/8869caf9-3cd1-4300-aeb3-828a4d9da4f9?syn-25a6b1a6=1">China, America and the new Great Game</a><p class="item-meta">news · www.ft.com · <time datetime="2026-10-03T04:00:30Z">10-03 13:00</time></p><p class="item-excerpt">Which power will prevail? As in the 19th-century struggle between the UK and Russia, the answer may depend on forces beyond either’s control</p></div></li>
-<li class="item" id="world-news-4"><div><a class="item-title" href="https://www.ft.com/content/437ca3f0-9db4-4511-a441-ab7763d8f65c?syn-25a6b1a6=1">The right and wrong lessons to learn from Spain’s housing crisis</a><p class="item-meta">news · www.ft.com · <time datetime="2026-10-03T04:00:48Z">10-03 13:00</time></p><p class="item-excerpt">Evictions and spiralling rents are the symptom, not the underlying disease</p></div></li>
-<li class="item" id="world-news-5"><div><a class="item-title" href="https://www.bbc.co.uk/news/articles/c8zxl62yzxzxo?at_medium=RSS&amp;at_campaign=rss">Tennessee prison chief to resign after Christa Pike&#x27;s failed execution</a><p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-03T17:48:42Z">02:48</time></p><p class="item-excerpt">Pike&#x27;s lawyers said the failure &quot;goes far beyond any one person&quot;. Pike is in critical condition after surviving two lethal injections.</p></div></li>
-<li class="item" id="world-news-6"><div><a class="item-title" href="https://www.bbc.co.uk/news/articles/c61wv7lgex13o?at_medium=RSS&amp;at_campaign=rss">Flydubai co-pilot attacked captain with axe, UAE official says</a><p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-03T14:27:33Z">10-03 23:27</time></p><p class="item-excerpt">The man accused of trying to take over the Israel-bound jet is named as Hamam al-Hammami by several media outlets.</p></div></li>
+<li class="item" id="world-news-1"><a class="item-title" href="https://www.ft.com/content/36b90fa1-f61e-4563-8622-127cdb471101?syn-25a6b1a6=1">Co-pilot used axe to carry out ‘terrorist act’ on Flydubai flight</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-03T17:21:11Z">02:21</time></p><p class="item-excerpt">Flight 1073 was heading to Tel Aviv when the attack was launched in the cockpit</p></div></li>
+<li class="item" id="world-news-2"><a class="item-title" href="https://www.ft.com/content/3e976e07-d85c-4ee3-8dff-208296684ca0?syn-25a6b1a6=1">How airlines try to weed out rogue pilots</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-03T08:05:08Z">10-03 17:05</time></p><p class="item-excerpt">Background checks and psychological testing aim to ensure that only those fit to fly take the controls</p></div></li>
+<li class="item" id="world-news-3"><a class="item-title" href="https://www.ft.com/content/8869caf9-3cd1-4300-aeb3-828a4d9da4f9?syn-25a6b1a6=1">China, America and the new Great Game</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-03T04:00:30Z">10-03 13:00</time></p><p class="item-excerpt">Which power will prevail? As in the 19th-century struggle between the UK and Russia, the answer may depend on forces beyond either’s control</p></div></li>
+<li class="item" id="world-news-4"><a class="item-title" href="https://www.ft.com/content/437ca3f0-9db4-4511-a441-ab7763d8f65c?syn-25a6b1a6=1">The right and wrong lessons to learn from Spain’s housing crisis</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-03T04:00:48Z">10-03 13:00</time></p><p class="item-excerpt">Evictions and spiralling rents are the symptom, not the underlying disease</p></div></li>
+<li class="item" id="world-news-5"><a class="item-title" href="https://www.bbc.co.uk/news/articles/c8zxl62yzxzxo?at_medium=RSS&amp;at_campaign=rss">Tennessee prison chief to resign after Christa Pike&#x27;s failed execution</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-03T17:48:42Z">02:48</time></p><p class="item-excerpt">Pike&#x27;s lawyers said the failure &quot;goes far beyond any one person&quot;. Pike is in critical condition after surviving two lethal injections.</p></div></li>
+<li class="item" id="world-news-6"><a class="item-title" href="https://www.bbc.co.uk/news/articles/c61wv7lgex13o?at_medium=RSS&amp;at_campaign=rss">Flydubai co-pilot attacked captain with axe, UAE official says</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-03T14:27:33Z">10-03 23:27</time></p><p class="item-excerpt">The man accused of trying to take over the Israel-bound jet is named as Hamam al-Hammami by several media outlets.</p></div></li>
 </ol>
 <details class="more">
 <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
 <ol class="items" style="--start: 6">
-<li class="item" id="world-news-7"><div><a class="item-title" href="https://www.bbc.co.uk/news/articles/c83vqxzdg1yko?at_medium=RSS&amp;at_campaign=rss">Russia hits second major bridge in Ukraine&#x27;s capital Kyiv</a><p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-03T16:16:49Z">01:16</time></p><p class="item-excerpt">The strike on the Pivnichnyi (Northern) Bridge comes after repeat attacks on another major bridge in Ukraine&#x27;s capital.</p></div></li>
-<li class="item" id="world-news-8"><div><a class="item-title" href="https://www.bbc.co.uk/news/articles/cm2kej47095no?at_medium=RSS&amp;at_campaign=rss">&#x27;Anger in the streets&#x27;: Tens of thousands protest in Spain over housing crisis</a><p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-03T13:34:11Z">10-03 22:34</time></p><p class="item-excerpt">More than 50 protests took place on Saturday after the government failed to get emergency legislation through parliament.</p></div></li>
-<li class="item" id="world-news-9"><div><a class="item-title" href="https://www.bbc.co.uk/news/articles/ck87zg8jnwngo?at_medium=RSS&amp;at_campaign=rss">G7 to release millions of barrels of oil and diesel after Trump threat</a><p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-03T04:38:31Z">10-03 13:38</time></p><p class="item-excerpt">The co-ordinated release is aimed at heading off further price spikes and avoiding a ban on US diesel exports.</p></div></li>
-<li class="item" id="world-news-10"><div><a class="item-title" href="https://www.bbc.co.uk/news/articles/cq0ld88kzxw8o?at_medium=RSS&amp;at_campaign=rss">Suppliers pile pressure on government over energy bills</a><p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-03T08:58:44Z">10-03 17:58</time></p><p class="item-excerpt">Immediate action is needed to help households struggling with bills this winter, says trade body Energy UK.</p></div></li>
+<li class="item" id="world-news-7"><a class="item-title" href="https://www.bbc.co.uk/news/articles/c83vqxzdg1yko?at_medium=RSS&amp;at_campaign=rss">Russia hits second major bridge in Ukraine&#x27;s capital Kyiv</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-03T16:16:49Z">01:16</time></p><p class="item-excerpt">The strike on the Pivnichnyi (Northern) Bridge comes after repeat attacks on another major bridge in Ukraine&#x27;s capital.</p></div></li>
+<li class="item" id="world-news-8"><a class="item-title" href="https://www.bbc.co.uk/news/articles/cm2kej47095no?at_medium=RSS&amp;at_campaign=rss">&#x27;Anger in the streets&#x27;: Tens of thousands protest in Spain over housing crisis</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-03T13:34:11Z">10-03 22:34</time></p><p class="item-excerpt">More than 50 protests took place on Saturday after the government failed to get emergency legislation through parliament.</p></div></li>
+<li class="item" id="world-news-9"><a class="item-title" href="https://www.bbc.co.uk/news/articles/ck87zg8jnwngo?at_medium=RSS&amp;at_campaign=rss">G7 to release millions of barrels of oil and diesel after Trump threat</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-03T04:38:31Z">10-03 13:38</time></p><p class="item-excerpt">The co-ordinated release is aimed at heading off further price spikes and avoiding a ban on US diesel exports.</p></div></li>
+<li class="item" id="world-news-10"><a class="item-title" href="https://www.bbc.co.uk/news/articles/cq0ld88kzxw8o?at_medium=RSS&amp;at_campaign=rss">Suppliers pile pressure on government over energy bills</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-03T08:58:44Z">10-03 17:58</time></p><p class="item-excerpt">Immediate action is needed to help households struggling with bills this winter, says trade body Energy UK.</p></div></li>
 </ol>
 </details>
 </section>
 <!-- /slot -->
     </div>
 
-    <div class="zone">
+    <div class="zone zone-projects">
       <h2 class="zone-title"><span lang="en">Projects</span><span lang="ko">프로젝트</span></h2>
       <!-- slot: personal -->
 
 <!-- /slot -->
     </div>
-
   </main>
 
   <nav class="days" aria-label="Other days">

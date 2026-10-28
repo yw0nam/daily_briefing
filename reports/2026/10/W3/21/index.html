@@ -5,44 +5,66 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <meta name="robots" content="noindex">
+<meta name="description" content="One day of the briefing, with the state of every source.">
 <!-- slot: title --><title>Briefing · 2026-10-21</title><!-- /slot -->
 <style id="lang-rule">body [lang]:not([lang="en"]) { display: none !important; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans+KR:wght@500;600&family=Noto+Serif+KR:wght@400;500&display=swap">
 <link rel="stylesheet" href="../../../../../src/style.css">
 <script src="../../../../../src/lang.js"></script>
 </head>
 <body>
-<div class="page">
-
-  <aside class="rail">
-
-  <header class="masthead">
-    <div class="masthead-top">
-      <p class="label"><span lang="en">Daily briefing</span><span lang="ko">오늘의 브리핑</span></p>
-      <label class="lang-switch">
-        <select id="lang-select" aria-label="Language">
-          <!-- slot: languages -->
+<header class="runner container">
+  <a class="wordmark" href="../../../../../"><span lang="en">Daily briefing</span><span lang="ko">오늘의 브리핑</span></a>
+  <label class="lang-switch">
+    <select id="lang-select" aria-label="Language">
+      <!-- slot: languages -->
           <option value="en">EN</option>
           <option value="ko">KO</option>
           <!-- /slot -->
-        </select>
-      </label>
-    </div>
-    <!-- slot: date lang=en -->
+    </select>
+  </label>
+</header>
+
+<div class="page container">
+
+  <header class="front">
+    <div>
+      <div class="masthead">
+        <!-- slot: date lang=en -->
     <div lang="en">
       <h1>Wednesday, October 21</h1>
-      <p class="dateline"><time datetime="2026-10-21T08:16:54+09:00"><span>2026-10-21</span> <span>· prepared at 08:16</span></time></p>
+      <p class="dateline"><time datetime="2026-10-21T08:16:54+09:00"><span>2026-10-21</span> <span>prepared at 08:16</span></time></p>
     </div>
     <!-- /slot -->
-    <!-- slot: date lang=ko -->
+        <!-- slot: date lang=ko -->
     <div lang="ko">
       <h1>10월 21일 수요일</h1>
-      <p class="dateline"><time datetime="2026-10-21T08:16:54+09:00"><span>2026-10-21</span> <span>· 08:16 작성</span></time></p>
+      <p class="dateline"><time datetime="2026-10-21T08:16:54+09:00"><span>2026-10-21</span> <span>08:16 작성</span></time></p>
     </div>
     <!-- /slot -->
-  </header>
+      </div>
 
-  <nav class="contents" aria-label="Contents">
-    <!-- slot: contents -->
+      <section class="lead" aria-label="Summary">
+        <!-- slot: summary lang=en -->
+    <div lang="en">
+      <p>The repository's Factorio companion work dominated the last 24 hours, with the game Mod, body lifecycle, job queue and several job types merged, alongside character presets and a layout fix. One design spike, on running several pet windows at once, is open for input.</p>
+      <p>World news centres on a possible SpaceX and Tesla merger and on Ukraine–United States talks in Oslo. Papers and trending repositories lean towards agent memory and coding-agent tooling. One source, cnn-topstories, reads stale and has no success on record, so the news section may be incomplete.</p>
+    </div>
+    <!-- /slot -->
+        <!-- slot: summary lang=ko -->
+    <div lang="ko">
+      <p>최근 24시간 동안 저장소에서는 팩토리오 동반자 작업이 중심이었습니다. 게임 Mod, 몸체 생명주기, 작업 큐와 여러 작업 종류가 병합되었고, 캐릭터 프리셋과 레이아웃 수정도 함께 반영되었습니다. 여러 펫 창을 동시에 띄우는 설계 스파이크 한 건은 의견을 기다리고 있습니다.</p>
+      <p>뉴스는 스페이스X와 테슬라의 합병 검토, 오슬로에서 열린 우크라이나와 미국의 협의가 중심입니다. 논문과 인기 저장소는 에이전트 메모리와 코딩 에이전트 도구 쪽으로 기울어 있습니다. 소스 한 곳인 cnn-topstories가 지연 상태이며 성공 기록이 없어 뉴스 섹션에 빠진 소식이 있을 수 있습니다.</p>
+    </div>
+    <!-- /slot -->
+      </section>
+    </div>
+
+    <aside class="ledger">
+      <nav class="contents" aria-label="Contents">
+        <!-- slot: contents -->
     <ol>
       <li><a href="#world-news"><span class="toc-name">world-news</span><span class="status status-stale"><span lang="en">stale</span><span lang="ko">지연</span></span><span class="toc-count">10</span></a></li>
       <li><a href="#github-trending-daily"><span class="toc-name">github-trending-daily</span><span class="toc-count">10</span></a></li>
@@ -53,240 +75,345 @@
       <li><a href="#yui-repo"><span class="toc-name">yui-repo</span><span class="toc-count">24</span></a></li>
     </ol>
     <!-- /slot -->
-  </nav>
+      </nav>
 
-  <section class="health" aria-labelledby="attention">
-    <h2 id="attention"><span lang="en">Needs attention</span><span lang="ko">확인이 필요한 소스</span></h2>
-    <div class="notices">
-    <!-- slot: notices -->
+      <section class="health" aria-labelledby="attention">
+        <h2 id="attention"><span lang="en">Needs attention</span><span lang="ko">확인이 필요한 소스</span></h2>
+        <div class="notices">
+          <!-- slot: notices -->
       <div class="notice">
         <p class="notice-head"><span class="status status-stale"><span lang="en">Stale</span><span lang="ko">지연</span></span><span class="source-name"><span class="source-producer">world-news</span> cnn-topstories</span></p>
         <p class="notice-detail"><span lang="en">No success on record</span><span lang="ko">성공 기록 없음</span></p>
       </div>
     <!-- /slot -->
-    </div>
-  </section>
-
-  </aside>
-
-  <section class="lead" aria-label="Summary">
-    <!-- slot: summary lang=en -->
-    <div lang="en">
-      <p>The repository's Factorio companion work dominated the last 24 hours, with the game Mod, body lifecycle, job queue and several job types merged, alongside character presets and a layout fix. One design spike, on running several pet windows at once, is open for input.</p>
-      <p>World news centres on a possible SpaceX and Tesla merger and on Ukraine–United States talks in Oslo. Papers and trending repositories lean towards agent memory and coding-agent tooling. One source, cnn-topstories, reads stale and has no success on record, so the news section may be incomplete.</p>
-    </div>
-    <!-- /slot -->
-    <!-- slot: summary lang=ko -->
-    <div lang="ko">
-      <p>최근 24시간 동안 저장소에서는 팩토리오 동반자 작업이 중심이었습니다. 게임 Mod, 몸체 생명주기, 작업 큐와 여러 작업 종류가 병합되었고, 캐릭터 프리셋과 레이아웃 수정도 함께 반영되었습니다. 여러 펫 창을 동시에 띄우는 설계 스파이크 한 건은 의견을 기다리고 있습니다.</p>
-      <p>뉴스는 스페이스X와 테슬라의 합병 검토, 오슬로에서 열린 우크라이나와 미국의 협의가 중심입니다. 논문과 인기 저장소는 에이전트 메모리와 코딩 에이전트 도구 쪽으로 기울어 있습니다. 소스 한 곳인 cnn-topstories가 지연 상태이며 성공 기록이 없어 뉴스 섹션에 빠진 소식이 있을 수 있습니다.</p>
-    </div>
-    <!-- /slot -->
-  </section>
+        </div>
+      </section>
+    </aside>
+  </header>
 
   <main>
     <div class="zone">
       <!-- slot: producers -->
       <section class="producer" aria-labelledby="world-news">
-        <h2 class="producer-head" id="world-news">world-news <span class="count">10</span></h2>
-        <p class="producer-summary">World news roundup: 10 items from 3 live feed(s)</p>
-        <!-- slot: intro:world-news lang=en -->
-        <p class="intro" lang="en">Two stories overlap across feeds: the <a href="#world-news-1">possible SpaceX and Tesla merger</a> (also at <a href="#world-news-9">item 9</a>) and the talks on <a href="#world-news-5">intelligence sharing between Ukraine and the United States</a>. <a href="#world-news-2">Rising credit default swap trading tied to large technology groups</a> is the market item of note. One of four feeds reads stale, so coverage may be incomplete.</p>
-        <!-- /slot -->
-        <!-- slot: intro:world-news lang=ko -->
-        <p class="intro" lang="ko">두 가지 소식이 여러 피드에 겹쳐 나타납니다. <a href="#world-news-1">스페이스X와 테슬라의 합병 검토</a>(<a href="#world-news-9">9번 항목</a>에도 있음)와 <a href="#world-news-5">우크라이나와 미국의 정보 공유 협의</a>입니다. 시장 관련으로는 <a href="#world-news-2">대형 기술 기업 연계 신용부도스왑 거래 급증</a>이 눈에 띕니다. 피드 네 곳 중 한 곳이 지연 상태여서 일부 소식이 빠졌을 수 있습니다.</p>
-        <!-- /slot -->
+        <div class="producer-lede">
+          <div class="producer-top"><h2 class="producer-head" id="world-news">world-news</h2><span class="count">10</span></div>
+                  <p class="producer-summary">World news roundup: 10 items from 3 live feed(s)</p>
+          <!-- slot: intro:world-news lang=en -->
+          <p class="intro" lang="en">Two stories overlap across feeds: the <a href="#world-news-1">possible SpaceX and Tesla merger</a> (also at <a href="#world-news-9">item 9</a>) and the talks on <a href="#world-news-5">intelligence sharing between Ukraine and the United States</a>. <a href="#world-news-2">Rising credit default swap trading tied to large technology groups</a> is the market item of note. One of four feeds reads stale, so coverage may be incomplete.</p>
+          <!-- /slot -->
+          <!-- slot: intro:world-news lang=ko -->
+          <p class="intro" lang="ko">두 가지 소식이 여러 피드에 겹쳐 나타납니다. <a href="#world-news-1">스페이스X와 테슬라의 합병 검토</a>(<a href="#world-news-9">9번 항목</a>에도 있음)와 <a href="#world-news-5">우크라이나와 미국의 정보 공유 협의</a>입니다. 시장 관련으로는 <a href="#world-news-2">대형 기술 기업 연계 신용부도스왑 거래 급증</a>이 눈에 띕니다. 피드 네 곳 중 한 곳이 지연 상태여서 일부 소식이 빠졌을 수 있습니다.</p>
+          <!-- /slot -->
+        </div>
         <ol class="items">
-          <li class="item" id="world-news-1"><div>
-            <a class="item-title" href="https://www.ft.com/content/f2a2a578-5a2e-42ff-b4c9-8bafff271b37?syn-25a6b1a6=1">SpaceX and Tesla boards are exploring potential merger</a>
-            <p class="item-meta">news · www.ft.com · <time datetime="2026-10-20T21:56:34Z">06:56</time></p>
-            <p class="item-excerpt">Elon Musk says combining his two public companies would be a ‘good idea’ as the world approaches an AI singularity</p>
-          </div></li>
-          <li class="item" id="world-news-2"><div>
+          <li class="item item-lead" id="world-news-1">
+            <div class="lead-text">
+              <a class="item-title" href="https://www.ft.com/content/f2a2a578-5a2e-42ff-b4c9-8bafff271b37?syn-25a6b1a6=1">SpaceX and Tesla boards are exploring potential merger</a>
+              <p class="item-excerpt">Elon Musk says combining his two public companies would be a ‘good idea’ as the world approaches an AI singularity</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-20T21:56:34Z">06:56</time></p>
+            </div>
+          </li>
+          <li class="item" id="world-news-2">
             <a class="item-title" href="https://www.ft.com/content/6dd31584-064c-4015-bf5d-e5747799ccd5?syn-25a6b1a6=1">AI debt worries spark surge in default insurance trading</a>
-            <p class="item-meta">news · www.ft.com · <time datetime="2026-10-20T04:00:19Z">10-20 13:00</time></p>
-            <p class="item-excerpt">Volumes of credit default swaps linked to big tech groups soar as investors seek protection against boom unravelling</p>
-          </div></li>
-          <li class="item" id="world-news-3"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T04:00:19Z">10-20 13:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Volumes of credit default swaps linked to big tech groups soar as investors seek protection against boom unravelling</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-20T04:00:19Z">10-20 13:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="world-news-3">
             <a class="item-title" href="https://www.ft.com/content/f97755f2-8b07-47bf-9c14-7963a701c9c3?syn-25a6b1a6=1">Who are the Black Bloc?</a>
-            <p class="item-meta">news · www.ft.com · <time datetime="2026-10-20T18:15:43Z">03:15</time></p>
-            <p class="item-excerpt">French government says agitators from the far left helped transform peaceful protests into riots</p>
-          </div></li>
-          <li class="item" id="world-news-4"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T18:15:43Z">03:15</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">French government says agitators from the far left helped transform peaceful protests into riots</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-20T18:15:43Z">03:15</time></p>
+            </details>
+          </li>
+          <li class="item" id="world-news-4">
             <a class="item-title" href="https://www.ft.com/content/f2261796-20d1-4c90-ab3e-246d4aff504f?syn-25a6b1a6=1">Putin’s American friends</a>
-            <p class="item-meta">news · www.ft.com · <time datetime="2026-10-20T10:26:19Z">10-20 19:26</time></p>
-            <p class="item-excerpt">‘Realist’ critics of Nato echo Moscow’s talking points on Ukraine</p>
-          </div></li>
-          <li class="item" id="world-news-5"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T10:26:19Z">10-20 19:26</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">‘Realist’ critics of Nato echo Moscow’s talking points on Ukraine</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-20T10:26:19Z">10-20 19:26</time></p>
+            </details>
+          </li>
+          <li class="item" id="world-news-5">
             <a class="item-title" href="https://www.bbc.co.uk/news/articles/cq5ynkx3xy11o?at_medium=RSS&amp;at_campaign=rss">Zelensky says US intelligence sharing 'works now' after talks with Trump envoy in Oslo</a>
-            <p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-20T21:27:39Z">06:27</time></p>
-            <p class="item-excerpt">Ukraine had accused the US of withholding key intelligence - a claim rejected as &quot;scandalous&quot; by Washington.</p>
-          </div></li>
-          <li class="item" id="world-news-6"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T21:27:39Z">06:27</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Ukraine had accused the US of withholding key intelligence - a claim rejected as &quot;scandalous&quot; by Washington.</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-20T21:27:39Z">06:27</time></p>
+            </details>
+          </li>
+          <li class="item" id="world-news-6">
             <a class="item-title" href="https://www.bbc.co.uk/news/articles/cm5ynkk570pno?at_medium=RSS&amp;at_campaign=rss">Marseille braces for more unrest after protests give way to 'apocalyptic' disorder</a>
-            <p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-20T12:08:06Z">10-20 21:08</time></p>
-            <p class="item-excerpt">France's second city saw some of the worst violence as chaos gripped the country on Saturday.</p>
-          </div></li>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T12:08:06Z">10-20 21:08</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">France's second city saw some of the worst violence as chaos gripped the country on Saturday.</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-20T12:08:06Z">10-20 21:08</time></p>
+            </details>
+          </li>
         </ol>
         <details class="more">
           <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
           <ol class="items" style="--start: 6">
-            <li class="item" id="world-news-7"><div>
+            <li class="item" id="world-news-7">
               <a class="item-title" href="https://www.bbc.co.uk/news/articles/c678pnn9mpgno?at_medium=RSS&amp;at_campaign=rss">Man charged with attack on Australia MP to face court</a>
-              <p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-20T11:25:35Z">10-20 20:25</time></p>
-              <p class="item-excerpt">Brendan Nugent's family say they have known Helen Haines, who remains in a critical condition, for more than 20 years.</p>
-            </div></li>
-            <li class="item" id="world-news-8"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T11:25:35Z">10-20 20:25</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Brendan Nugent's family say they have known Helen Haines, who remains in a critical condition, for more than 20 years.</p>
+                <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-20T11:25:35Z">10-20 20:25</time></p>
+              </details>
+            </li>
+            <li class="item" id="world-news-8">
               <a class="item-title" href="https://www.bbc.co.uk/news/articles/ckrey51jrgnro?at_medium=RSS&amp;at_campaign=rss">Trump and Zelensky appear at loggerheads despite Oslo optimism</a>
-              <p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-20T20:00:57Z">05:00</time></p>
-              <p class="item-excerpt">The Ukrainian leader's hug with Steve Witkoff in the Norwegian capital is unlikely to dispel misgivings about US policy towards his country, writes Paul Adams.</p>
-            </div></li>
-            <li class="item" id="world-news-9"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T20:00:57Z">05:00</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">The Ukrainian leader's hug with Steve Witkoff in the Norwegian capital is unlikely to dispel misgivings about US policy towards his country, writes Paul Adams.</p>
+                <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-20T20:00:57Z">05:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="world-news-9">
               <a class="item-title" href="https://www.bbc.co.uk/news/articles/cmlyl09xjke4o?at_medium=RSS&amp;at_campaign=rss">Elon Musk says Tesla-SpaceX merger being considered</a>
-              <p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-20T22:43:56Z">07:43</time></p>
-              <p class="item-excerpt">Musk says special committees within both companies have been formed to look a possible mega-merger.</p>
-            </div></li>
-            <li class="item" id="world-news-10"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T22:43:56Z">07:43</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Musk says special committees within both companies have been formed to look a possible mega-merger.</p>
+                <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-20T22:43:56Z">07:43</time></p>
+              </details>
+            </li>
+            <li class="item" id="world-news-10">
               <a class="item-title" href="https://www.bbc.co.uk/news/articles/cxdd8mm6qy4mo?at_medium=RSS&amp;at_campaign=rss">Google resolves cloud outage affecting UK banks and websites</a>
-              <p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-20T18:03:19Z">03:03</time></p>
-              <p class="item-excerpt">Revolut was one of the hardest hit, with banking services going down for many customers.</p>
-            </div></li>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T18:03:19Z">03:03</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Revolut was one of the hardest hit, with banking services going down for many customers.</p>
+                <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-20T18:03:19Z">03:03</time></p>
+              </details>
+            </li>
           </ol>
         </details>
       </section>
 
       <section class="producer" aria-labelledby="github-trending-daily">
-        <h2 class="producer-head" id="github-trending-daily">github-trending-daily <span class="count">10</span></h2>
-        <p class="producer-summary">GitHub trending (daily): top 10 repos by stars</p>
-        <!-- slot: intro:github-trending-daily lang=en -->
-        <p class="intro" lang="en">Several of today's top repositories are tooling for coding agents, such as <a href="#github-trending-daily-2">a security audit skill</a>, <a href="#github-trending-daily-3">an agent fleet manager</a> and <a href="#github-trending-daily-10">a token compression proxy</a>. <a href="#github-trending-daily-1">The AI job search framework</a> gained the most stars in a day.</p>
-        <!-- /slot -->
-        <!-- slot: intro:github-trending-daily lang=ko -->
-        <p class="intro" lang="ko">오늘 상위 저장소 가운데 상당수가 코딩 에이전트용 도구입니다. <a href="#github-trending-daily-2">보안 감사 스킬</a>, <a href="#github-trending-daily-3">에이전트 군집 관리 도구</a>, <a href="#github-trending-daily-10">토큰 압축 프록시</a> 등입니다. 하루 동안 별을 가장 많이 얻은 곳은 <a href="#github-trending-daily-1">AI 구직 프레임워크</a>입니다.</p>
-        <!-- /slot -->
+        <div class="producer-lede">
+          <div class="producer-top"><h2 class="producer-head" id="github-trending-daily">github-trending-daily</h2><span class="count">10</span></div>
+                  <p class="producer-summary">GitHub trending (daily): top 10 repos by stars</p>
+          <!-- slot: intro:github-trending-daily lang=en -->
+          <p class="intro" lang="en">Several of today's top repositories are tooling for coding agents, such as <a href="#github-trending-daily-2">a security audit skill</a>, <a href="#github-trending-daily-3">an agent fleet manager</a> and <a href="#github-trending-daily-10">a token compression proxy</a>. <a href="#github-trending-daily-1">The AI job search framework</a> gained the most stars in a day.</p>
+          <!-- /slot -->
+          <!-- slot: intro:github-trending-daily lang=ko -->
+          <p class="intro" lang="ko">오늘 상위 저장소 가운데 상당수가 코딩 에이전트용 도구입니다. <a href="#github-trending-daily-2">보안 감사 스킬</a>, <a href="#github-trending-daily-3">에이전트 군집 관리 도구</a>, <a href="#github-trending-daily-10">토큰 압축 프록시</a> 등입니다. 하루 동안 별을 가장 많이 얻은 곳은 <a href="#github-trending-daily-1">AI 구직 프레임워크</a>입니다.</p>
+          <!-- /slot -->
+        </div>
         <ol class="items">
-          <li class="item" id="github-trending-daily-1"><div>
-            <a class="item-title" href="https://github.com/MadsLorentzen/ai-job-search">MadsLorentzen/ai-job-search</a>
-            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-20T23:00:03Z">08:00</time></p>
-            <p class="item-excerpt">The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it. · 60,415 stars total · 3,890 stars today</p>
-          </div></li>
-          <li class="item" id="github-trending-daily-2"><div>
+          <li class="item item-lead" id="github-trending-daily-1">
+            <div class="lead-text">
+              <a class="item-title" href="https://github.com/MadsLorentzen/ai-job-search">MadsLorentzen/ai-job-search</a>
+              <p class="item-excerpt">The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it. · 60,415 stars total · 3,890 stars today</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-20T23:00:03Z">08:00</time></p>
+            </div>
+          </li>
+          <li class="item" id="github-trending-daily-2">
             <a class="item-title" href="https://github.com/cloudflare/security-audit-skill">cloudflare/security-audit-skill</a>
-            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-20T23:00:03Z">08:00</time></p>
-            <p class="item-excerpt">A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings · 34,042 stars total · 1,680 stars today</p>
-          </div></li>
-          <li class="item" id="github-trending-daily-3"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T23:00:03Z">08:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings · 34,042 stars total · 1,680 stars today</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-20T23:00:03Z">08:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="github-trending-daily-3">
             <a class="item-title" href="https://github.com/stablyai/orca">stablyai/orca</a>
-            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-20T23:00:03Z">08:00</time></p>
-            <p class="item-excerpt">Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime. · 99,673 stars total · 1,559 stars today</p>
-          </div></li>
-          <li class="item" id="github-trending-daily-4"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T23:00:03Z">08:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime. · 99,673 stars total · 1,559 stars today</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-20T23:00:03Z">08:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="github-trending-daily-4">
             <a class="item-title" href="https://github.com/DietrichGebert/ponytail">DietrichGebert/ponytail</a>
-            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-20T23:00:03Z">08:00</time></p>
-            <p class="item-excerpt">Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote. · 169,557 stars total · 1,396 stars today</p>
-          </div></li>
-          <li class="item" id="github-trending-daily-5"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T23:00:03Z">08:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote. · 169,557 stars total · 1,396 stars today</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-20T23:00:03Z">08:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="github-trending-daily-5">
             <a class="item-title" href="https://github.com/Comfy-Org/ComfyUI">Comfy-Org/ComfyUI</a>
-            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-20T23:00:03Z">08:00</time></p>
-            <p class="item-excerpt">The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world. · 140,713 stars total · 1,201 stars today</p>
-          </div></li>
-          <li class="item" id="github-trending-daily-6"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T23:00:03Z">08:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world. · 140,713 stars total · 1,201 stars today</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-20T23:00:03Z">08:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="github-trending-daily-6">
             <a class="item-title" href="https://github.com/ruvnet/ruflo">ruvnet/ruflo</a>
-            <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-20T23:00:03Z">08:00</time></p>
-            <p class="item-excerpt">🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many …</p>
-          </div></li>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T23:00:03Z">08:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many …</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-20T23:00:03Z">08:00</time></p>
+            </details>
+          </li>
         </ol>
         <details class="more">
           <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
           <ol class="items" style="--start: 6">
-            <li class="item" id="github-trending-daily-7"><div>
+            <li class="item" id="github-trending-daily-7">
               <a class="item-title" href="https://github.com/Graphify-Labs/graphify">Graphify-Labs/graphify</a>
-              <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-20T23:00:03Z">08:00</time></p>
-              <p class="item-excerpt">Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store. · 130,168 stars total · 906 stars today</p>
-            </div></li>
-            <li class="item" id="github-trending-daily-8"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T23:00:03Z">08:00</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store. · 130,168 stars total · 906 stars today</p>
+                <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-20T23:00:03Z">08:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="github-trending-daily-8">
               <a class="item-title" href="https://github.com/anomalyco/opencode">anomalyco/opencode</a>
-              <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-20T23:00:03Z">08:00</time></p>
-              <p class="item-excerpt">The open source coding agent. · 218,864 stars total · 1,256 stars today</p>
-            </div></li>
-            <li class="item" id="github-trending-daily-9"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T23:00:03Z">08:00</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">The open source coding agent. · 218,864 stars total · 1,256 stars today</p>
+                <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-20T23:00:03Z">08:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="github-trending-daily-9">
               <a class="item-title" href="https://github.com/msitarzewski/agency-agents">msitarzewski/agency-agents</a>
-              <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-20T23:00:03Z">08:00</time></p>
-              <p class="item-excerpt">A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables. · 162,296 stars total · 590 stars today</p>
-            </div></li>
-            <li class="item" id="github-trending-daily-10"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T23:00:03Z">08:00</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables. · 162,296 stars total · 590 stars today</p>
+                <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-20T23:00:03Z">08:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="github-trending-daily-10">
               <a class="item-title" href="https://github.com/headroomlabs-ai/headroom">headroomlabs-ai/headroom</a>
-              <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-20T23:00:03Z">08:00</time></p>
-              <p class="item-excerpt">Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server. · 76,727 stars total · 555 stars today</p>
-            </div></li>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T23:00:03Z">08:00</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server. · 76,727 stars total · 555 stars today</p>
+                <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-20T23:00:03Z">08:00</time></p>
+              </details>
+            </li>
           </ol>
         </details>
       </section>
 
       <section class="producer" aria-labelledby="huggingface-papers-daily">
-        <h2 class="producer-head" id="huggingface-papers-daily">huggingface-papers-daily <span class="count">10</span></h2>
-        <p class="producer-summary">HuggingFace daily papers: top 10 of 50 today</p>
-        <!-- slot: intro:huggingface-papers-daily lang=en -->
-        <p class="intro" lang="en">Two papers address agent and model memory: <a href="#huggingface-papers-daily-2">MemT-1.0</a> and <a href="#huggingface-papers-daily-8">MemPilot</a>. <a href="#huggingface-papers-daily-1">The brain encoding fine-tuning study</a> leads the list with 231 upvotes.</p>
-        <!-- /slot -->
-        <!-- slot: intro:huggingface-papers-daily lang=ko -->
-        <p class="intro" lang="ko">에이전트와 모델의 메모리를 다룬 논문이 두 편 있습니다. <a href="#huggingface-papers-daily-2">MemT-1.0</a>과 <a href="#huggingface-papers-daily-8">MemPilot</a>입니다. 추천 231표를 얻은 <a href="#huggingface-papers-daily-1">뇌 인코딩 미세조정 연구</a>가 목록 맨 위에 있습니다.</p>
-        <!-- /slot -->
+        <div class="producer-lede">
+          <div class="producer-top"><h2 class="producer-head" id="huggingface-papers-daily">huggingface-papers-daily</h2><span class="count">10</span></div>
+                  <p class="producer-summary">HuggingFace daily papers: top 10 of 50 today</p>
+          <!-- slot: intro:huggingface-papers-daily lang=en -->
+          <p class="intro" lang="en">Two papers address agent and model memory: <a href="#huggingface-papers-daily-2">MemT-1.0</a> and <a href="#huggingface-papers-daily-8">MemPilot</a>. <a href="#huggingface-papers-daily-1">The brain encoding fine-tuning study</a> leads the list with 231 upvotes.</p>
+          <!-- /slot -->
+          <!-- slot: intro:huggingface-papers-daily lang=ko -->
+          <p class="intro" lang="ko">에이전트와 모델의 메모리를 다룬 논문이 두 편 있습니다. <a href="#huggingface-papers-daily-2">MemT-1.0</a>과 <a href="#huggingface-papers-daily-8">MemPilot</a>입니다. 추천 231표를 얻은 <a href="#huggingface-papers-daily-1">뇌 인코딩 미세조정 연구</a>가 목록 맨 위에 있습니다.</p>
+          <!-- /slot -->
+        </div>
         <ol class="items">
-          <li class="item" id="huggingface-papers-daily-1"><div>
-            <a class="item-title" href="https://huggingface.co/papers/2610.26802">Scaling Parameter-Efficient Fine-Tuning for Brain Encoding</a>
-            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></p>
-            <p class="item-excerpt">231 upvotes. Brain encoding models aim to predict neural responses to stimuli. The most widely used approach fits readouts from frozen pretrained backbones. Using neural data to train large models from scratch or fully fine-tune them after task-pretraining has proven difficult b…</p>
-          </div></li>
-          <li class="item" id="huggingface-papers-daily-2"><div>
+          <li class="item item-lead" id="huggingface-papers-daily-1">
+            <div class="lead-text">
+              <a class="item-title" href="https://huggingface.co/papers/2610.26802">Scaling Parameter-Efficient Fine-Tuning for Brain Encoding</a>
+              <p class="item-excerpt">231 upvotes. Brain encoding models aim to predict neural responses to stimuli. The most widely used approach fits readouts from frozen pretrained backbones. Using neural data to train large models from scratch or fully fine-tune them after task-pretraining has proven difficult b…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></p>
+            </div>
+          </li>
+          <li class="item" id="huggingface-papers-daily-2">
             <a class="item-title" href="https://huggingface.co/papers/2610.26825">MemT-1.0: Towards Memory-Native Evolution</a>
-            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></p>
-            <p class="item-excerpt">146 upvotes. Memory-native evolution requires making memory an intrinsic capability of foundation models, enabling them to continuously accumulate and utilize information. To this end, we introduce MemT-1.0, a new architecture of memory foundation models that internalize memory …</p>
-          </div></li>
-          <li class="item" id="huggingface-papers-daily-3"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">146 upvotes. Memory-native evolution requires making memory an intrinsic capability of foundation models, enabling them to continuously accumulate and utilize information. To this end, we introduce MemT-1.0, a new architecture of memory foundation models that internalize memory …</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="huggingface-papers-daily-3">
             <a class="item-title" href="https://huggingface.co/papers/2610.26549">Holi-World: Building Holistic World Intelligence from Human-Ego Experience</a>
-            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></p>
-            <p class="item-excerpt">109 upvotes. Human egocentric experience offers a rich foundation for learning how the world is organized and how it changes through interaction. Realizing this potential at scale requires turning growing volumes of recordings into learning resources that connect scene structure…</p>
-          </div></li>
-          <li class="item" id="huggingface-papers-daily-4"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">109 upvotes. Human egocentric experience offers a rich foundation for learning how the world is organized and how it changes through interaction. Realizing this potential at scale requires turning growing volumes of recordings into learning resources that connect scene structure…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="huggingface-papers-daily-4">
             <a class="item-title" href="https://huggingface.co/papers/2610.25736">Learning from Fleet Experience: A Collective Learning Paradigm for Robots</a>
-            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></p>
-            <p class="item-excerpt">107 upvotes. Experience generated during deployment offers an opportunity for robots to improve policy reliability through learning from their own executions. However, learning through human corrections requires teleoperators to monitor execution and intervene when policies fail…</p>
-          </div></li>
-          <li class="item" id="huggingface-papers-daily-5"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">107 upvotes. Experience generated during deployment offers an opportunity for robots to improve policy reliability through learning from their own executions. However, learning through human corrections requires teleoperators to monitor execution and intervene when policies fail…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="huggingface-papers-daily-5">
             <a class="item-title" href="https://huggingface.co/papers/2610.26824">SpecMRL: Redesign Matryoshka Representation Learning within Parametric Spectrum</a>
-            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></p>
-            <p class="item-excerpt">81 upvotes. Matryoshka Representation Learning (MRL) is designed to support flexible representation sizes by jointly optimizing nested prefixes. While effective, this design lacks an explicit constraint to ensure that the leading portion provides a suitable compact encoding. To …</p>
-          </div></li>
-          <li class="item" id="huggingface-papers-daily-6"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">81 upvotes. Matryoshka Representation Learning (MRL) is designed to support flexible representation sizes by jointly optimizing nested prefixes. While effective, this design lacks an explicit constraint to ensure that the leading portion provides a suitable compact encoding. To …</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="huggingface-papers-daily-6">
             <a class="item-title" href="https://huggingface.co/papers/2610.26834">Kronecker Delta Rule for Long Context Linear Attention</a>
-            <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></p>
-            <p class="item-excerpt">28 upvotes. We propose KronLSTM, a linear attention architecture based on the Kronecker Delta Rule, a novel update rule for associative matrix memories. KronLSTM extends the xLSTM family with a memory-revision mechanism that corrects targeted associations while modifying the mem…</p>
-          </div></li>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">28 upvotes. We propose KronLSTM, a linear attention architecture based on the Kronecker Delta Rule, a novel update rule for associative matrix memories. KronLSTM extends the xLSTM family with a memory-revision mechanism that corrects targeted associations while modifying the mem…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></p>
+            </details>
+          </li>
         </ol>
         <details class="more">
           <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
           <ol class="items" style="--start: 6">
-            <li class="item" id="huggingface-papers-daily-7"><div>
+            <li class="item" id="huggingface-papers-daily-7">
               <a class="item-title" href="https://huggingface.co/papers/2610.25950">AdaExploreBench: Benchmarking LLM Agents for Proactive Exploration and Test-time Adaptation in Evolving Environments</a>
-              <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></p>
-              <p class="item-excerpt">27 upvotes. Large Language Model (LLM) agents are increasingly deployed in unfamiliar and evolving environments, requiring them to proactively explore, understand, and adapt to environmental dynamics. However, existing benchmarks rarely test whether agents can proactively discov…</p>
-            </div></li>
-            <li class="item" id="huggingface-papers-daily-8"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">27 upvotes. Large Language Model (LLM) agents are increasingly deployed in unfamiliar and evolving environments, requiring them to proactively explore, understand, and adapt to environmental dynamics. However, existing benchmarks rarely test whether agents can proactively discov…</p>
+                <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="huggingface-papers-daily-8">
               <a class="item-title" href="https://huggingface.co/papers/2610.06830">MemPilot: Orchestrating On-Demand Multimodal Memory Curation for LLM Agents</a>
-              <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-04T20:00:00Z">10-05 05:00</time></p>
-              <p class="item-excerpt">25 upvotes. Memory has become integral to the LLM agent ecosystem, supporting information retention and reuse across interactions. However, most existing agent memory systems construct memory in a query-agnostic manner, which can incur unnecessary preprocessing cost and discard …</p>
-            </div></li>
-            <li class="item" id="huggingface-papers-daily-9"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-04T20:00:00Z">10-05 05:00</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">25 upvotes. Memory has become integral to the LLM agent ecosystem, supporting information retention and reuse across interactions. However, most existing agent memory systems construct memory in a query-agnostic manner, which can incur unnecessary preprocessing cost and discard …</p>
+                <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-04T20:00:00Z">10-05 05:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="huggingface-papers-daily-9">
               <a class="item-title" href="https://huggingface.co/papers/2610.26853">InfiniDream: Open-Ended Photorealistic 3D Worlds Through Procedural Generation</a>
-              <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></p>
-              <p class="item-excerpt">25 upvotes. Procedural generation plays a key role in synthetic data creation and game development, offering greater controllability, editability, and diversity than static mesh representations. However, VLM-based code generation often produces relatively simple 3D assets, while…</p>
-            </div></li>
-            <li class="item" id="huggingface-papers-daily-10"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">25 upvotes. Procedural generation plays a key role in synthetic data creation and game development, offering greater controllability, editability, and diversity than static mesh representations. However, VLM-based code generation often produces relatively simple 3D assets, while…</p>
+                <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="huggingface-papers-daily-10">
               <a class="item-title" href="https://huggingface.co/papers/2610.26663">RoboValue: A Fine-Grained Sim-and-Real Benchmark for Unified Evaluation of Robotic Value Models</a>
-              <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></p>
-              <p class="item-excerpt">23 upvotes. Robotic value models assess task execution from visual observations and instructions, providing feedback for policy learning and execution monitoring. However, existing evaluations cover only selected aspects of execution understanding, leaving the reliability of val…</p>
-            </div></li>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">23 upvotes. Robotic value models assess task execution from visual observations and instructions, providing feedback for policy learning and execution monitoring. However, existing evaluations cover only selected aspects of execution understanding, leaving the reliability of val…</p>
+                <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-18T20:00:00Z">10-19 05:00</time></p>
+              </details>
+            </li>
           </ol>
         </details>
       </section>
@@ -294,149 +421,244 @@
       <!-- /slot -->
     </div>
 
-    <div class="zone">
+    <div class="zone zone-projects">
       <h2 class="zone-title"><span lang="en">Projects</span><span lang="ko">프로젝트</span></h2>
       <!-- slot: personal -->
       <section class="producer" aria-labelledby="yui-repo">
-        <h3 class="producer-head" id="yui-repo">yui-repo <span class="count">24</span></h3>
-        <p class="producer-summary">YUI repository: 24 updates in the last 24 hours, including closed issues, merged pull requests, features, and review requests for the maintainer.</p>
-        <!-- slot: intro:yui-repo lang=en -->
-        <p class="intro" lang="en">Activity centres on the Factorio companion work: the <a href="#yui-repo-24">Mod that polls the game over RCON</a>, the body lifecycle, job queue and the mine, deliver and idle jobs, plus <a href="#yui-repo-5">threat safety and retreat</a> and <a href="#yui-repo-2">the companion skill</a>. Separately, <a href="#yui-repo-15">character presets</a> merged, and a <a href="#yui-repo-1">spike on running several pet windows at once</a> is open for design input. A <a href="#yui-repo-13">narrow-window layout fix</a> in the Connection tab was also made.</p>
-        <!-- /slot -->
-        <!-- slot: intro:yui-repo lang=ko -->
-        <p class="intro" lang="ko">활동은 팩토리오 동반자 작업에 집중되어 있습니다. <a href="#yui-repo-24">RCON으로 게임을 조회하는 Mod</a>, 몸체 생명주기, 작업 큐, 채굴·전달·대기 작업, <a href="#yui-repo-5">위협 대응과 후퇴</a>, <a href="#yui-repo-2">동반자 스킬</a>이 포함됩니다. 그 밖에 <a href="#yui-repo-15">캐릭터 프리셋</a>이 병합되었고, <a href="#yui-repo-1">여러 펫 창을 동시에 띄우는 설계 검토(스파이크)</a>가 의견을 기다리고 있습니다. 연결 탭의 <a href="#yui-repo-13">좁은 창 레이아웃 수정</a>도 있었습니다.</p>
-        <!-- /slot -->
+        <div class="producer-lede">
+          <div class="producer-top"><h3 class="producer-head" id="yui-repo">yui-repo</h3><span class="count">24</span></div>
+                  <p class="producer-summary">YUI repository: 24 updates in the last 24 hours, including closed issues, merged pull requests, features, and review requests for the maintainer.</p>
+          <!-- slot: intro:yui-repo lang=en -->
+          <p class="intro" lang="en">Activity centres on the Factorio companion work: the <a href="#yui-repo-24">Mod that polls the game over RCON</a>, the body lifecycle, job queue and the mine, deliver and idle jobs, plus <a href="#yui-repo-5">threat safety and retreat</a> and <a href="#yui-repo-2">the companion skill</a>. Separately, <a href="#yui-repo-15">character presets</a> merged, and a <a href="#yui-repo-1">spike on running several pet windows at once</a> is open for design input. A <a href="#yui-repo-13">narrow-window layout fix</a> in the Connection tab was also made.</p>
+          <!-- /slot -->
+          <!-- slot: intro:yui-repo lang=ko -->
+          <p class="intro" lang="ko">활동은 팩토리오 동반자 작업에 집중되어 있습니다. <a href="#yui-repo-24">RCON으로 게임을 조회하는 Mod</a>, 몸체 생명주기, 작업 큐, 채굴·전달·대기 작업, <a href="#yui-repo-5">위협 대응과 후퇴</a>, <a href="#yui-repo-2">동반자 스킬</a>이 포함됩니다. 그 밖에 <a href="#yui-repo-15">캐릭터 프리셋</a>이 병합되었고, <a href="#yui-repo-1">여러 펫 창을 동시에 띄우는 설계 검토(스파이크)</a>가 의견을 기다리고 있습니다. 연결 탭의 <a href="#yui-repo-13">좁은 창 레이아웃 수정</a>도 있었습니다.</p>
+          <!-- /slot -->
+        </div>
         <ol class="items">
-          <li class="item" id="yui-repo-1"><div>
-            <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1508">[spike] Several pet windows at once, one per preset: owner-window design for hotkey, tray, microphone, signals and avatar RPC</a>
-            <p class="item-meta">issue · github.com · <time datetime="2026-10-20T08:28:41Z">10-20 17:28</time></p>
-            <p class="item-excerpt">## Uncertainty / question Can the client run **two or more pet windows at once, one per preset** (one character per window), on top of the preset feature from #1503? Presets already namespace every per-character key, so the open question is the window side: which behaviours assu…</p>
-          </div></li>
-          <li class="item" id="yui-repo-2"><div>
+          <li class="item item-lead" id="yui-repo-1">
+            <div class="lead-text">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1508">[spike] Several pet windows at once, one per preset: owner-window design for hotkey, tray, microphone, signals and avatar RPC</a>
+              <p class="item-excerpt">## Uncertainty / question Can the client run **two or more pet windows at once, one per preset** (one character per window), on top of the preset feature from #1503? Presets already namespace every per-character key, so the open question is the window side: which behaviours assu…</p>
+              <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-20T08:28:41Z">10-20 17:28</time></p>
+            </div>
+          </li>
+          <li class="item" id="yui-repo-2">
             <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1497">[feature] Factorio P1: companion skill for the backend agent</a>
-            <p class="item-meta">issue · github.com · <time datetime="2026-10-20T08:05:49Z">10-20 17:05</time></p>
-            <p class="item-excerpt">Part of #1490 ## Work description Companion skill `integrations/skills/factorio-companion/SKILL.md` for any backend agent that speaks the YUI contract (backend-agnostic: no agent name, no install route of one agent). Content, in STE (one sentence per fact): 1. **Setup for the ow…</p>
-          </div></li>
-          <li class="item" id="yui-repo-3"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T08:05:49Z">10-20 17:05</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Part of #1490 ## Work description Companion skill `integrations/skills/factorio-companion/SKILL.md` for any backend agent that speaks the YUI contract (backend-agnostic: no agent name, no install route of one agent). Content, in STE (one sentence per fact): 1. **Setup for the ow…</p>
+              <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-20T08:05:49Z">10-20 17:05</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-3">
             <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1515">docs: align the Factorio companion skill with the P1 tools and name the skills toolset</a>
-            <p class="item-meta">pull_request · github.com · <time datetime="2026-10-20T08:05:48Z">10-20 17:05</time></p>
-            <p class="item-excerpt">## Summary Final pass on `integrations/skills/factorio-companion/SKILL.md`: the skill now matches the shipped P1 contract word for word (13 tools with their argument shapes, five job kinds with defaults, 13 reason codes, every event kind and the default wake set, idle and threat…</p>
-          </div></li>
-          <li class="item" id="yui-repo-4"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T08:05:48Z">10-20 17:05</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Summary Final pass on `integrations/skills/factorio-companion/SKILL.md`: the skill now matches the shipped P1 contract word for word (13 tools with their argument shapes, five job kinds with defaults, 13 reason codes, every event kind and the default wake set, idle and threat…</p>
+              <p class="item-meta"><span class="item-kind">pull_request</span><span class="item-host">github.com</span><time datetime="2026-10-20T08:05:48Z">10-20 17:05</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-4">
             <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1495">[feature] Factorio P1: threat safety and retreat</a>
-            <p class="item-meta">issue · github.com · <time datetime="2026-10-20T07:25:16Z">10-20 16:25</time></p>
-            <p class="item-excerpt">Part of #1490 ## Work description Mechanical threat safety for the body in `coop-agent`: new module `scripts/threat.lua`, hooked into the walker and the job runner of child 2. Safe radius: mod setting `safe radius`, default 48 tiles. Enemy means a military entity of a force that…</p>
-          </div></li>
-          <li class="item" id="yui-repo-5"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T07:25:16Z">10-20 16:25</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Part of #1490 ## Work description Mechanical threat safety for the body in `coop-agent`: new module `scripts/threat.lua`, hooked into the walker and the job runner of child 2. Safe radius: mod setting `safe radius`, default 48 tiles. Enemy means a military entity of a force that…</p>
+              <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-20T07:25:16Z">10-20 16:25</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-5">
             <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1514">feat: Factorio game mod threat safety with target, route and body checks and a retreat to the host</a>
-            <p class="item-meta">feature · github.com · <time datetime="2026-10-20T07:25:14Z">10-20 16:25</time></p>
-            <p class="item-excerpt">## Summary The `coop-agent` game mod gains mechanical threat safety: the body never walks into enemies, and it retreats to the host when enemies come to it. Waking is not acting: the backend hears `body_threat` and `body_damaged` (opt-in wake kinds), and the body never attacks. …</p>
-          </div></li>
-          <li class="item" id="yui-repo-6"><div>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T07:25:14Z">10-20 16:25</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Summary The `coop-agent` game mod gains mechanical threat safety: the body never walks into enemies, and it retreats to the host when enemies come to it. Waking is not acting: the backend hears `body_threat` and `body_damaged` (opt-in wake kinds), and the body never attacks. …</p>
+              <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-10-20T07:25:14Z">10-20 16:25</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-6">
             <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1496">[feature] Factorio P1: Mods/factorio job, idle and stop tools</a>
-            <p class="item-meta">issue · github.com · <time datetime="2026-10-20T07:01:35Z">10-20 16:01</time></p>
-            <p class="item-excerpt">Part of #1490 ## Work description P1 tools in the Python Mod `Mods/factorio` (FastMCP, port 9003), one tool per new game op, in a new module `factorio/tools/body.py` registered through the existing `ToolDeps`: | Tool | Game op | Notes | |---|---|---| | `factorio_jobs()` | `jobs`…</p>
-          </div></li>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T07:01:35Z">10-20 16:01</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Part of #1490 ## Work description P1 tools in the Python Mod `Mods/factorio` (FastMCP, port 9003), one tool per new game op, in a new module `factorio/tools/body.py` registered through the existing `ToolDeps`: | Tool | Game op | Notes | |---|---|---| | `factorio_jobs()` | `jobs`…</p>
+              <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-20T07:01:35Z">10-20 16:01</time></p>
+            </details>
+          </li>
         </ol>
         <details class="more">
           <summary><span>18<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
           <ol class="items" style="--start: 6">
-            <li class="item" id="yui-repo-7"><div>
+            <li class="item" id="yui-repo-7">
               <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1513">feat: Factorio Mod job, idle and stop tools with the P1 wake set</a>
-              <p class="item-meta">feature · github.com · <time datetime="2026-10-20T07:01:33Z">10-20 16:01</time></p>
-              <p class="item-excerpt">## Summary The Python Mod `Mods/factorio` gains the P1 body tools and the P1 wake set, so a backend agent can drive the body through the same MCP server that already reads the game. - **Tools** (new module `factorio/tools/body.py`, registered through the one `ToolDeps`): `factor…</p>
-            </div></li>
-            <li class="item" id="yui-repo-8"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T07:01:33Z">10-20 16:01</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary The Python Mod `Mods/factorio` gains the P1 body tools and the P1 wake set, so a backend agent can drive the body through the same MCP server that already reads the game. - **Tools** (new module `factorio/tools/body.py`, registered through the one `ToolDeps`): `factor…</p>
+                <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-10-20T07:01:33Z">10-20 16:01</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-8">
               <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1492">[feature] Factorio P1: idle modes follow/stay and idle_set</a>
-              <p class="item-meta">issue · github.com · <time datetime="2026-10-20T06:28:29Z">10-20 15:28</time></p>
-              <p class="item-excerpt">Part of #1490 ## Work description Idle behaviour of the body in `coop-agent`: new module `scripts/idle.lua` and the op `scripts/ops/idle_set.lua`. - **Modes.** `follow` (default from the mod setting `idle start`): keep 10 to 15 tiles from the host with repeated short walker step…</p>
-            </div></li>
-            <li class="item" id="yui-repo-9"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T06:28:29Z">10-20 15:28</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Part of #1490 ## Work description Idle behaviour of the body in `coop-agent`: new module `scripts/idle.lua` and the op `scripts/ops/idle_set.lua`. - **Modes.** `follow` (default from the mod setting `idle start`): keep 10 to 15 tiles from the host with repeated short walker step…</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-20T06:28:29Z">10-20 15:28</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-9">
               <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1512">feat: Factorio game mod idle modes follow and stay with idle_set and the follow job</a>
-              <p class="item-meta">feature · github.com · <time datetime="2026-10-20T06:28:28Z">10-20 15:28</time></p>
-              <p class="item-excerpt">## Summary The `coop-agent` game mod gains idle behaviour: what the body does when the queue is empty. - **Modes.** `follow` keeps the body 10 to 15 tiles from the host with short steps through the one walker; a step is cancelled when the host comes within 10 tiles. Beyond a 64-…</p>
-            </div></li>
-            <li class="item" id="yui-repo-10"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T06:28:28Z">10-20 15:28</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary The `coop-agent` game mod gains idle behaviour: what the body does when the queue is empty. - **Modes.** `follow` keeps the body 10 to 15 tiles from the host with short steps through the one walker; a step is cancelled when the host comes within 10 tiles. Beyond a 64-…</p>
+                <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-10-20T06:28:28Z">10-20 15:28</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-10">
               <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1494">[feature] Factorio P1: deliver job (spill at the host, to_be_looted)</a>
-              <p class="item-meta">issue · github.com · <time datetime="2026-10-20T05:45:37Z">10-20 14:45</time></p>
-              <p class="item-excerpt">Part of #1490 ## Work description The `deliver{item, count}` job in `coop-agent`: new module `scripts/jobs/deliver.lua`. - Walk to within 3 tiles of the host. - Remove `count` of `item` from the body inventory first (`inventory.remove` returns the removed count; fewer than `coun…</p>
-            </div></li>
-            <li class="item" id="yui-repo-11"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T05:45:37Z">10-20 14:45</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Part of #1490 ## Work description The `deliver{item, count}` job in `coop-agent`: new module `scripts/jobs/deliver.lua`. - Walk to within 3 tiles of the host. - Remove `count` of `item` from the body inventory first (`inventory.remove` returns the removed count; fewer than `coun…</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-20T05:45:37Z">10-20 14:45</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-11">
               <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1511">feat: Factorio game mod deliver job that leaves the pile at the host's feet</a>
-              <p class="item-meta">feature · github.com · <time datetime="2026-10-20T05:45:35Z">10-20 14:45</time></p>
-              <p class="item-excerpt">## Summary The `coop-agent` game mod gains the `deliver{item, count}` job: the body brings `count` of `item` to the host and leaves the pile at the host's feet as looted ground items, which the host's character picks up by walking over them. - **Flow.** `no_item{item, count, hel…</p>
-            </div></li>
-            <li class="item" id="yui-repo-12"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T05:45:35Z">10-20 14:45</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary The `coop-agent` game mod gains the `deliver{item, count}` job: the body brings `count` of `item` to the host and leaves the pile at the host's feet as looted ground items, which the host's character picks up by walking over them. - **Flow.** `no_item{item, count, hel…</p>
+                <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-10-20T05:45:35Z">10-20 14:45</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-12">
               <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1507">[bug] Connection tab: Broker section title and its state text overlap in a narrow settings window</a>
-              <p class="item-meta">issue · github.com · <time datetime="2026-10-20T04:46:41Z">10-20 13:46</time></p>
-              <p class="item-excerpt">## Symptoms In the settings window's Connection tab, the **Broker** section title and the state text to its right (&quot;MCP streamable-http, deprecated, removed in v0.6.0&quot;) draw on top of each other when the window is narrow. The hint also runs past the panel's right edge. ## Steps …</p>
-            </div></li>
-            <li class="item" id="yui-repo-13"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T04:46:41Z">10-20 13:46</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Symptoms In the settings window's Connection tab, the **Broker** section title and the state text to its right (&quot;MCP streamable-http, deprecated, removed in v0.6.0&quot;) draw on top of each other when the window is narrow. The hint also runs past the panel's right edge. ## Steps …</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-20T04:46:41Z">10-20 13:46</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-13">
               <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1510">fix: keep the Connection section title beside its state text in a narrow panel</a>
-              <p class="item-meta">pull_request · github.com · <time datetime="2026-10-20T04:46:39Z">10-20 13:46</time></p>
-              <p class="item-excerpt">## Summary In a narrow settings window the Connection tab's **Broker** section title and the state text at its right (&quot;MCP streamable-http, deprecated, removed in v0.6.0&quot;) drew over each other, and the text ran past the panel edge. `.yui-endpoints__hint` had `flex: none` with no…</p>
-            </div></li>
-            <li class="item" id="yui-repo-14"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T04:46:39Z">10-20 13:46</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary In a narrow settings window the Connection tab's **Broker** section title and the state text at its right (&quot;MCP streamable-http, deprecated, removed in v0.6.0&quot;) drew over each other, and the text ran past the panel edge. `.yui-endpoints__hint` had `flex: none` with no…</p>
+                <p class="item-meta"><span class="item-kind">pull_request</span><span class="item-host">github.com</span><time datetime="2026-10-20T04:46:39Z">10-20 13:46</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-14">
               <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1503">[feature] Character presets: per-preset connection, voice, history, VRM, and filler with a switch in the quick-controls panel</a>
-              <p class="item-meta">issue · github.com · <time datetime="2026-10-20T04:38:03Z">10-20 13:38</time></p>
-              <p class="item-excerpt">## Work description A **preset** bundles the per-character state of the client so the user can keep several characters (for example `natsume`, `perlica`) on one machine and switch between them without restarting the app. Selecting a preset swaps the backend connection, the TTS v…</p>
-            </div></li>
-            <li class="item" id="yui-repo-15"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T04:38:03Z">10-20 13:38</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Work description A **preset** bundles the per-character state of the client so the user can keep several characters (for example `natsume`, `perlica`) on one machine and switch between them without restarting the app. Selecting a preset swaps the backend connection, the TTS v…</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-20T04:38:03Z">10-20 13:38</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-15">
               <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1506">feat: character presets with per-preset connection, voice, history, VRM, and filler</a>
-              <p class="item-meta">feature · github.com · <time datetime="2026-10-20T04:38:02Z">10-20 13:38</time></p>
-              <p class="item-excerpt">## Summary A **preset** bundles the per-character state of the client so one machine can keep several characters and switch between them without restarting the app. The active preset decides which copy of the connection, voice-output, conversation, VRM-selection and filler keys …</p>
-            </div></li>
-            <li class="item" id="yui-repo-16"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T04:38:02Z">10-20 13:38</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary A **preset** bundles the per-character state of the client so one machine can keep several characters and switch between them without restarting the app. The active preset decides which copy of the connection, voice-output, conversation, VRM-selection and filler keys …</p>
+                <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-10-20T04:38:02Z">10-20 13:38</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-16">
               <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1493">[feature] Factorio P1: mine job (native mining with timed fallback)</a>
-              <p class="item-meta">issue · github.com · <time datetime="2026-10-20T04:27:53Z">10-20 13:27</time></p>
-              <p class="item-excerpt">Part of #1490 ## Work description The `mine{name, count}` job in `coop-agent`: new module `scripts/jobs/mine.lua`. - **Target.** The nearest entity within 64 tiles of the body that yields `name` and is allowed: resources, trees, rocks, entities the body built, and entities the h…</p>
-            </div></li>
-            <li class="item" id="yui-repo-17"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T04:27:53Z">10-20 13:27</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Part of #1490 ## Work description The `mine{name, count}` job in `coop-agent`: new module `scripts/jobs/mine.lua`. - **Target.** The nearest entity within 64 tiles of the body that yields `name` and is allowed: resources, trees, rocks, entities the body built, and entities the h…</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-20T04:27:53Z">10-20 13:27</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-17">
               <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1505">feat: Factorio game mod mine job with native mining and a timed fallback</a>
-              <p class="item-meta">feature · github.com · <time datetime="2026-10-20T04:27:52Z">10-20 13:27</time></p>
-              <p class="item-excerpt">## Summary The `coop-agent` game mod gains the `mine{name, count, entity?}` job: the body walks to the nearest entity that yields `name`, mines it natively, and ends when it has gained `count` of that item. - **Target.** The nearest allowed entity within 64 tiles whose `mineable…</p>
-            </div></li>
-            <li class="item" id="yui-repo-18"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T04:27:52Z">10-20 13:27</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary The `coop-agent` game mod gains the `mine{name, count, entity?}` job: the body walks to the nearest entity that yields `name`, mines it natively, and ends when it has gained `count` of that item. - **Target.** The nearest allowed entity within 64 tiles whose `mineable…</p>
+                <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-10-20T04:27:52Z">10-20 13:27</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-18">
               <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1491">[feature] Factorio P1: job queue, walker, walk_to and wait</a>
-              <p class="item-meta">issue · github.com · <time datetime="2026-10-20T03:52:27Z">10-20 12:52</time></p>
-              <p class="item-excerpt">Part of #1490 ## Work description Job queue, walker, and the first two jobs in `coop-agent`: new modules `scripts/jobs.lua` (queue and runner), `scripts/walker.lua` (the one path walker every movement uses), `scripts/ops/jobs.lua`, `scripts/ops/jobs_enqueue.lua`, `scripts/ops/jo…</p>
-            </div></li>
-            <li class="item" id="yui-repo-19"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T03:52:27Z">10-20 12:52</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Part of #1490 ## Work description Job queue, walker, and the first two jobs in `coop-agent`: new modules `scripts/jobs.lua` (queue and runner), `scripts/walker.lua` (the one path walker every movement uses), `scripts/ops/jobs.lua`, `scripts/ops/jobs_enqueue.lua`, `scripts/ops/jo…</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-20T03:52:27Z">10-20 12:52</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-19">
               <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1504">feat: Factorio game mod job queue, path walker, walk_to and wait</a>
-              <p class="item-meta">feature · github.com · <time datetime="2026-10-20T03:52:26Z">10-20 12:52</time></p>
-              <p class="item-excerpt">## Summary The `coop-agent` game mod gains the job queue, the one path walker every movement uses, and the first two job kinds. The backend queues work through RCON; the mod runs it tick by tick behind the body's execution gate. - **Queue.** FIFO in `storage.jobs`, at most 16 qu…</p>
-            </div></li>
-            <li class="item" id="yui-repo-20"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T03:52:26Z">10-20 12:52</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary The `coop-agent` game mod gains the job queue, the one path walker every movement uses, and the first two job kinds. The backend queues work through RCON; the mod runs it tick by tick behind the body's execution gate. - **Queue.** FIFO in `storage.jobs`, at most 16 qu…</p>
+                <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-10-20T03:52:26Z">10-20 12:52</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-20">
               <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1498">[feature] Factorio P1: body lifecycle (spawn, kit, status line, death/respawn, stop)</a>
-              <p class="item-meta">issue · github.com · <time datetime="2026-10-20T02:55:57Z">10-20 11:55</time></p>
-              <p class="item-excerpt">Part of #1490 ## Work description Body lifecycle in the game mod `coop-agent` (`Mods/factorio/game-mod/coop-agent/`), as a new module `scripts/body.lua` wired at the root of `control.lua`. - **Spawn.** When the mod setting `body enabled` is on, the host is connected, and no live…</p>
-            </div></li>
-            <li class="item" id="yui-repo-21"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T02:55:57Z">10-20 11:55</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Part of #1490 ## Work description Body lifecycle in the game mod `coop-agent` (`Mods/factorio/game-mod/coop-agent/`), as a new module `scripts/body.lua` wired at the root of `control.lua`. - **Spawn.** When the mod setting `body enabled` is on, the host is connected, and no live…</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-20T02:55:57Z">10-20 11:55</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-21">
               <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1502">feat: Factorio game mod body lifecycle with stop latch, execution gate and status line</a>
-              <p class="item-meta">feature · github.com · <time datetime="2026-10-20T02:55:56Z">10-20 11:55</time></p>
-              <p class="item-excerpt">## Summary The `coop-agent` game mod gains the body: one playerless `character` that the mod keeps beside the host while the mod setting `body enabled` is on. This PR is the lifecycle only (spawn, kit, color, status line, death and respawn, stop latch and execution gate); the jo…</p>
-            </div></li>
-            <li class="item" id="yui-repo-22"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T02:55:56Z">10-20 11:55</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary The `coop-agent` game mod gains the body: one playerless `character` that the mod keeps beside the host while the mod setting `body enabled` is on. This PR is the lifecycle only (spawn, kit, color, status line, death and respawn, stop latch and execution gate); the jo…</p>
+                <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-10-20T02:55:56Z">10-20 11:55</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-22">
               <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1501">docs: add the Factorio companion skill</a>
-              <p class="item-meta">pull_request · github.com · <time datetime="2026-10-20T02:35:52Z">10-20 11:35</time></p>
-              <p class="item-excerpt">## Summary Adds `integrations/skills/factorio-companion/SKILL.md`, the backend-agnostic skill a backend agent loads to play Factorio through the `factorio` Mod. It covers the owner setup steps, how a `game.wake` live signal is read and paged, every event kind and which ones wake…</p>
-            </div></li>
-            <li class="item" id="yui-repo-23"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T02:35:52Z">10-20 11:35</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary Adds `integrations/skills/factorio-companion/SKILL.md`, the backend-agnostic skill a backend agent loads to play Factorio through the `factorio` Mod. It covers the owner setup steps, how a `game.wake` live signal is read and paged, every event kind and which ones wake…</p>
+                <p class="item-meta"><span class="item-kind">pull_request</span><span class="item-host">github.com</span><time datetime="2026-10-20T02:35:52Z">10-20 11:35</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-23">
               <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1485">[feature] Mods/factorio P0: RCON poll, event cache, factorio_* tools, live doorbell</a>
-              <p class="item-meta">issue · github.com · <time datetime="2026-10-20T00:39:09Z">10-20 09:39</time></p>
-              <p class="item-excerpt">## Work description P0 of `Mods/factorio`: a YUI Mod (uv project, FastMCP ≥ 3.4.3, HTTP on `127.0.0.1:9003` with `host_origin_protection=True`, router key `factorio`) that connects the Factorio game mod to any backend agent and to the YUI client. **RCON client.** Source RCON ove…</p>
-            </div></li>
-            <li class="item" id="yui-repo-24"><div>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T00:39:09Z">10-20 09:39</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Work description P0 of `Mods/factorio`: a YUI Mod (uv project, FastMCP ≥ 3.4.3, HTTP on `127.0.0.1:9003` with `host_origin_protection=True`, router key `factorio`) that connects the Factorio game mod to any backend agent and to the YUI client. **RCON client.** Source RCON ove…</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-20T00:39:09Z">10-20 09:39</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-24">
               <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1489">feat: Factorio MCP Mod that polls the game mod over RCON and rings the live doorbell</a>
-              <p class="item-meta">feature · github.com · <time datetime="2026-10-20T00:39:08Z">10-20 09:39</time></p>
-              <p class="item-excerpt">## Summary `Mods/factorio`, the Python MCP Mod (FastMCP, port 9003, router key `factorio`, `host_origin_protection=True`) that bridges the in-tree Factorio game mod (`Mods/factorio/game-mod/`) to the backend agent and to the YUI client. It runs host-native beside the game and re…</p>
-            </div></li>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-20T00:39:08Z">10-20 09:39</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary `Mods/factorio`, the Python MCP Mod (FastMCP, port 9003, router key `factorio`, `host_origin_protection=True`) that bridges the in-tree Factorio game mod (`Mods/factorio/game-mod/`) to the backend agent and to the YUI client. It runs host-native beside the game and re…</p>
+                <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-10-20T00:39:08Z">10-20 09:39</time></p>
+              </details>
+            </li>
           </ol>
         </details>
       </section>
       <!-- /slot -->
     </div>
-
   </main>
 
   <nav class="days" aria-label="Other days">

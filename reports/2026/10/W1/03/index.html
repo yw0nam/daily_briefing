@@ -5,179 +5,191 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <meta name="robots" content="noindex">
+<meta name="description" content="One day of the briefing, with the state of every source.">
 <!-- slot: title -->
 <title>Briefing · 2026-10-03</title>
 <!-- /slot -->
 <style id="lang-rule">body [lang]:not([lang="en"]) { display: none !important; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans+KR:wght@500;600&family=Noto+Serif+KR:wght@400;500&display=swap">
 <link rel="stylesheet" href="../../../../../src/style.css">
 <script src="../../../../../src/lang.js"></script>
 </head>
 <body>
-<div class="page">
-
-  <aside class="rail">
-
-  <header class="masthead">
-    <div class="masthead-top">
-      <p class="label"><span lang="en">Daily briefing</span><span lang="ko">오늘의 브리핑</span></p>
-      <label class="lang-switch">
-        <select id="lang-select" aria-label="Language">
-          <!-- slot: languages -->
+<header class="runner container">
+  <a class="wordmark" href="../../../../../"><span lang="en">Daily briefing</span><span lang="ko">오늘의 브리핑</span></a>
+  <label class="lang-switch">
+    <select id="lang-select" aria-label="Language">
+      <!-- slot: languages -->
 <option value="en">EN</option>
 <option value="ko">KO</option>
 <!-- /slot -->
-        </select>
-      </label>
-    </div>
-    <!-- slot: date lang=en -->
+    </select>
+  </label>
+</header>
+
+<div class="page container">
+
+  <header class="front">
+    <div>
+      <div class="masthead">
+        <!-- slot: date lang=en -->
 <div lang="en">
 <h1>Saturday, October 3</h1>
-<p class="dateline"><time datetime="2026-10-03T08:00:03+09:00"><span>2026-10-03</span> <span>· prepared at 08:00</span></time></p>
+<p class="dateline"><time datetime="2026-10-03T08:00:03+09:00"><span>2026-10-03</span> <span>prepared at 08:00</span></time></p>
 </div>
 <!-- /slot -->
-<!-- slot: date lang=ko -->
+        <!-- slot: date lang=ko -->
 <div lang="ko">
 <h1>10월 3일 토요일</h1>
-<p class="dateline"><time datetime="2026-10-03T08:00:03+09:00"><span>2026-10-03</span> <span>· 08:00 작성</span></time></p>
+<p class="dateline"><time datetime="2026-10-03T08:00:03+09:00"><span>2026-10-03</span> <span>08:00 작성</span></time></p>
 </div>
 <!-- /slot -->
-  </header>
+      </div>
 
-  <nav class="contents" aria-label="Contents">
-    <!-- slot: contents -->
+      <section class="lead" aria-label="Summary">
+        <!-- slot: summary lang=en -->
+<div lang="en">
+<p>The fuel dispute moved on. The United States backed down from its diesel export ban threat after the G7 agreed to release 100 million barrels, and UK pump prices passed £2 a litre for the first time. A sharp slowdown in US hiring and protests in France over schools complete the news.</p>
+<p>On GitHub, agent skills and agent tooling again dominate the trending list, led by ponytail with 1,429 new stars. In papers, OneStreamer, on streaming video models that answer proactively, leads with 145 upvotes. One source needs a look: the cnn-topstories feed remains stale.</p>
+</div>
+<!-- /slot -->
+        <!-- slot: summary lang=ko -->
+<div lang="ko">
+<p>연료 분쟁이 한 단계 진전되었습니다. 주요 7개국이 원유와 디젤 1억 배럴을 방출하기로 합의하자 미국은 디젤 수출 금지 위협에서 물러섰고, 영국의 주유소 디젤 가격은 처음으로 리터당 2파운드를 넘었습니다. 미국 고용 시장의 급격한 둔화와 프랑스의 교육 시위가 나머지 뉴스를 이룹니다.</p>
+<p>깃허브 인기 목록은 이번에도 에이전트 스킬과 에이전트 도구가 차지했고, ponytail이 새 별 1,429개로 선두입니다. 논문에서는 능동적으로 응답하는 스트리밍 영상 모델을 다룬 OneStreamer가 추천 145개로 1위입니다. 확인이 필요한 소스는 cnn-topstories 피드 하나이며, 계속 지연 상태입니다.</p>
+</div>
+<!-- /slot -->
+      </section>
+    </div>
+
+    <aside class="ledger">
+      <nav class="contents" aria-label="Contents">
+        <!-- slot: contents -->
 <ol>
 <li><a href="#github-trending-daily"><span class="toc-name">github-trending-daily</span><span class="toc-count">10</span></a></li>
 <li><a href="#huggingface-papers-daily"><span class="toc-name">huggingface-papers-daily</span><span class="toc-count">10</span></a></li>
 <li><a href="#world-news"><span class="toc-name">world-news</span><span class="status status-stale"><span lang="en">stale</span><span lang="ko">지연</span></span><span class="toc-count">10</span></a></li>
 </ol>
 <!-- /slot -->
-  </nav>
+      </nav>
 
-  <section class="health" aria-labelledby="attention">
-    <h2 id="attention"><span lang="en">Needs attention</span><span lang="ko">확인이 필요한 소스</span></h2>
-    <div class="notices">
-      <!-- slot: notices -->
+      <section class="health" aria-labelledby="attention">
+        <h2 id="attention"><span lang="en">Needs attention</span><span lang="ko">확인이 필요한 소스</span></h2>
+        <div class="notices">
+          <!-- slot: notices -->
 <div class="notice">
 <p class="notice-head"><span class="status status-stale"><span lang="en">Stale</span><span lang="ko">지연</span></span><span class="source-name"><span class="source-producer">world-news</span> cnn-topstories</span></p>
 <p class="notice-detail"><span lang="en">No success on record</span><span lang="ko">성공 기록 없음</span></p>
 </div>
 <!-- /slot -->
-    </div>
-  </section>
-
-  </aside>
-
-  <section class="lead" aria-label="Summary">
-    <!-- slot: summary lang=en -->
-<div lang="en">
-<p>The fuel dispute moved on. The United States backed down from its diesel export ban threat after the G7 agreed to release 100 million barrels, and UK pump prices passed £2 a litre for the first time. A sharp slowdown in US hiring and protests in France over schools complete the news.</p>
-<p>On GitHub, agent skills and agent tooling again dominate the trending list, led by ponytail with 1,429 new stars. In papers, OneStreamer, on streaming video models that answer proactively, leads with 145 upvotes. One source needs a look: the cnn-topstories feed remains stale.</p>
-</div>
-<!-- /slot -->
-<!-- slot: summary lang=ko -->
-<div lang="ko">
-<p>연료 분쟁이 한 단계 진전되었습니다. 주요 7개국이 원유와 디젤 1억 배럴을 방출하기로 합의하자 미국은 디젤 수출 금지 위협에서 물러섰고, 영국의 주유소 디젤 가격은 처음으로 리터당 2파운드를 넘었습니다. 미국 고용 시장의 급격한 둔화와 프랑스의 교육 시위가 나머지 뉴스를 이룹니다.</p>
-<p>깃허브 인기 목록은 이번에도 에이전트 스킬과 에이전트 도구가 차지했고, ponytail이 새 별 1,429개로 선두입니다. 논문에서는 능동적으로 응답하는 스트리밍 영상 모델을 다룬 OneStreamer가 추천 145개로 1위입니다. 확인이 필요한 소스는 cnn-topstories 피드 하나이며, 계속 지연 상태입니다.</p>
-</div>
-<!-- /slot -->
-  </section>
+        </div>
+      </section>
+    </aside>
+  </header>
 
   <main>
     <div class="zone">
       <!-- slot: producers -->
 <section class="producer" aria-labelledby="github-trending-daily">
-<h2 class="producer-head" id="github-trending-daily">github-trending-daily <span class="count">10</span></h2>
-<p class="producer-summary">GitHub trending (daily): top 10 repos by stars</p>
-<!-- slot: intro:github-trending-daily lang=en -->
-<p class="intro" lang="en"><a href="#github-trending-daily-4">ponytail</a> gained the most stars today, 1,429, and <a href="#github-trending-daily-6">mattpocock/skills</a> followed with 955 while already above 270,000 in total. <a href="#github-trending-daily-7">NVIDIA/OpenShell</a>, a runtime for autonomous agents, is the one entry from a large hardware vendor.</p>
-<!-- /slot -->
-<!-- slot: intro:github-trending-daily lang=ko -->
-<p class="intro" lang="ko">오늘 별을 가장 많이 얻은 저장소는 1,429개를 얻은 <a href="#github-trending-daily-4">ponytail</a>이고, 누적 27만 개를 넘은 <a href="#github-trending-daily-6">mattpocock/skills</a>가 955개로 뒤를 이었습니다. 자율 에이전트용 실행 환경인 <a href="#github-trending-daily-7">NVIDIA/OpenShell</a>은 대형 하드웨어 업체에서 나온 유일한 항목입니다.</p>
-<!-- /slot -->
+<div class="producer-lede">
+  <div class="producer-top"><h2 class="producer-head" id="github-trending-daily">github-trending-daily</h2><span class="count">10</span></div>
+  <p class="producer-summary">GitHub trending (daily): top 10 repos by stars</p>
+  <!-- slot: intro:github-trending-daily lang=en -->
+  <p class="intro" lang="en"><a href="#github-trending-daily-4">ponytail</a> gained the most stars today, 1,429, and <a href="#github-trending-daily-6">mattpocock/skills</a> followed with 955 while already above 270,000 in total. <a href="#github-trending-daily-7">NVIDIA/OpenShell</a>, a runtime for autonomous agents, is the one entry from a large hardware vendor.</p>
+  <!-- /slot -->
+  <!-- slot: intro:github-trending-daily lang=ko -->
+  <p class="intro" lang="ko">오늘 별을 가장 많이 얻은 저장소는 1,429개를 얻은 <a href="#github-trending-daily-4">ponytail</a>이고, 누적 27만 개를 넘은 <a href="#github-trending-daily-6">mattpocock/skills</a>가 955개로 뒤를 이었습니다. 자율 에이전트용 실행 환경인 <a href="#github-trending-daily-7">NVIDIA/OpenShell</a>은 대형 하드웨어 업체에서 나온 유일한 항목입니다.</p>
+  <!-- /slot -->
+</div>
 <ol class="items">
-<li class="item" id="github-trending-daily-1"><div><a class="item-title" href="https://github.com/Panniantong/Agent-Reach">Panniantong/Agent-Reach</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-02T23:00:03Z">08:00</time></p><p class="item-excerpt">Give your AI agent eyes to see the entire internet. Read &amp; search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees. · 88,558 stars total · 683 stars today</p></div></li>
-<li class="item" id="github-trending-daily-2"><div><a class="item-title" href="https://github.com/JuliusBrussee/caveman">JuliusBrussee/caveman</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-02T23:00:03Z">08:00</time></p><p class="item-excerpt">🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman. · 109,074 stars total · 271 stars today</p></div></li>
-<li class="item" id="github-trending-daily-3"><div><a class="item-title" href="https://github.com/obra/superpowers">obra/superpowers</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-02T23:00:03Z">08:00</time></p><p class="item-excerpt">An agentic skills framework &amp; software development methodology that works. · 294,433 stars total · 561 stars today</p></div></li>
-<li class="item" id="github-trending-daily-4"><div><a class="item-title" href="https://github.com/DietrichGebert/ponytail">DietrichGebert/ponytail</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-02T23:00:03Z">08:00</time></p><p class="item-excerpt">Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote. · 151,726 stars total · 1,429 stars today</p></div></li>
-<li class="item" id="github-trending-daily-5"><div><a class="item-title" href="https://github.com/pbakaus/impeccable">pbakaus/impeccable</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-02T23:00:03Z">08:00</time></p><p class="item-excerpt">The design language that makes your AI harness better at design. · 74,281 stars total · 717 stars today</p></div></li>
-<li class="item" id="github-trending-daily-6"><div><a class="item-title" href="https://github.com/mattpocock/skills">mattpocock/skills</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-02T23:00:03Z">08:00</time></p><p class="item-excerpt">Skills for Real Engineers. Straight from my .agents directory. · 274,672 stars total · 955 stars today</p></div></li>
+<li class="item" id="github-trending-daily-1"><a class="item-title" href="https://github.com/Panniantong/Agent-Reach">Panniantong/Agent-Reach</a><p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-02T23:00:03Z">08:00</time></p><p class="item-excerpt">Give your AI agent eyes to see the entire internet. Read &amp; search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees. · 88,558 stars total · 683 stars today</p></div></li>
+<li class="item" id="github-trending-daily-2"><a class="item-title" href="https://github.com/JuliusBrussee/caveman">JuliusBrussee/caveman</a><p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-02T23:00:03Z">08:00</time></p><p class="item-excerpt">🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman. · 109,074 stars total · 271 stars today</p></div></li>
+<li class="item" id="github-trending-daily-3"><a class="item-title" href="https://github.com/obra/superpowers">obra/superpowers</a><p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-02T23:00:03Z">08:00</time></p><p class="item-excerpt">An agentic skills framework &amp; software development methodology that works. · 294,433 stars total · 561 stars today</p></div></li>
+<li class="item" id="github-trending-daily-4"><a class="item-title" href="https://github.com/DietrichGebert/ponytail">DietrichGebert/ponytail</a><p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-02T23:00:03Z">08:00</time></p><p class="item-excerpt">Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote. · 151,726 stars total · 1,429 stars today</p></div></li>
+<li class="item" id="github-trending-daily-5"><a class="item-title" href="https://github.com/pbakaus/impeccable">pbakaus/impeccable</a><p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-02T23:00:03Z">08:00</time></p><p class="item-excerpt">The design language that makes your AI harness better at design. · 74,281 stars total · 717 stars today</p></div></li>
+<li class="item" id="github-trending-daily-6"><a class="item-title" href="https://github.com/mattpocock/skills">mattpocock/skills</a><p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-02T23:00:03Z">08:00</time></p><p class="item-excerpt">Skills for Real Engineers. Straight from my .agents directory. · 274,672 stars total · 955 stars today</p></div></li>
 </ol>
 <details class="more">
 <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
 <ol class="items" style="--start: 6">
-<li class="item" id="github-trending-daily-7"><div><a class="item-title" href="https://github.com/NVIDIA/OpenShell">NVIDIA/OpenShell</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-02T23:00:03Z">08:00</time></p><p class="item-excerpt">OpenShell is the safe, private runtime for autonomous AI agents. · 14,413 stars total · 584 stars today</p></div></li>
-<li class="item" id="github-trending-daily-8"><div><a class="item-title" href="https://github.com/coreyhaines31/marketingskills">coreyhaines31/marketingskills</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-02T23:00:03Z">08:00</time></p><p class="item-excerpt">Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering. · 52,388 stars total · 139 stars today</p></div></li>
-<li class="item" id="github-trending-daily-9"><div><a class="item-title" href="https://github.com/heygen-com/hyperframes">heygen-com/hyperframes</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-02T23:00:03Z">08:00</time></p><p class="item-excerpt">Write HTML. Render video. Built for agents. · 55,864 stars total · 584 stars today</p></div></li>
-<li class="item" id="github-trending-daily-10"><div><a class="item-title" href="https://github.com/mksglu/context-mode">mksglu/context-mode</a><p class="item-meta">repo_trending · github.com · <time datetime="2026-10-02T23:00:03Z">08:00</time></p><p class="item-excerpt">Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks. · 25,017 stars total · 276 stars today</p></div></li>
+<li class="item" id="github-trending-daily-7"><a class="item-title" href="https://github.com/NVIDIA/OpenShell">NVIDIA/OpenShell</a><p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-02T23:00:03Z">08:00</time></p><p class="item-excerpt">OpenShell is the safe, private runtime for autonomous AI agents. · 14,413 stars total · 584 stars today</p></div></li>
+<li class="item" id="github-trending-daily-8"><a class="item-title" href="https://github.com/coreyhaines31/marketingskills">coreyhaines31/marketingskills</a><p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-02T23:00:03Z">08:00</time></p><p class="item-excerpt">Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering. · 52,388 stars total · 139 stars today</p></div></li>
+<li class="item" id="github-trending-daily-9"><a class="item-title" href="https://github.com/heygen-com/hyperframes">heygen-com/hyperframes</a><p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-02T23:00:03Z">08:00</time></p><p class="item-excerpt">Write HTML. Render video. Built for agents. · 55,864 stars total · 584 stars today</p></div></li>
+<li class="item" id="github-trending-daily-10"><a class="item-title" href="https://github.com/mksglu/context-mode">mksglu/context-mode</a><p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-02T23:00:03Z">08:00</time></p><p class="item-excerpt">Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks. · 25,017 stars total · 276 stars today</p></div></li>
 </ol>
 </details>
 </section>
 
 <section class="producer" aria-labelledby="huggingface-papers-daily">
-<h2 class="producer-head" id="huggingface-papers-daily">huggingface-papers-daily <span class="count">10</span></h2>
-<p class="producer-summary">HuggingFace daily papers: top 10 of 50 today</p>
-<!-- slot: intro:huggingface-papers-daily lang=en -->
-<p class="intro" lang="en"><a href="#huggingface-papers-daily-1">OneStreamer</a> leads with 145 upvotes; it addresses streaming video models that must keep evidence in memory and respond on their own. <a href="#huggingface-papers-daily-2">The systematic study of on-policy and off-policy distillation</a> follows with 114, and <a href="#huggingface-papers-daily-9">the robot agent paper</a> reports 14% higher success with 65% fewer tokens.</p>
-<!-- /slot -->
-<!-- slot: intro:huggingface-papers-daily lang=ko -->
-<p class="intro" lang="ko"><a href="#huggingface-papers-daily-1">OneStreamer</a>가 추천 145개로 선두입니다. 증거를 기억에 두었다가 스스로 응답해야 하는 스트리밍 영상 모델을 다룹니다. <a href="#huggingface-papers-daily-2">온폴리시와 오프폴리시 증류를 체계적으로 비교한 연구</a>가 114개로 뒤를 잇고, <a href="#huggingface-papers-daily-9">로봇 에이전트 논문</a>은 성공률이 14% 높고 토큰이 65% 적다고 보고합니다.</p>
-<!-- /slot -->
+<div class="producer-lede">
+  <div class="producer-top"><h2 class="producer-head" id="huggingface-papers-daily">huggingface-papers-daily</h2><span class="count">10</span></div>
+  <p class="producer-summary">HuggingFace daily papers: top 10 of 50 today</p>
+  <!-- slot: intro:huggingface-papers-daily lang=en -->
+  <p class="intro" lang="en"><a href="#huggingface-papers-daily-1">OneStreamer</a> leads with 145 upvotes; it addresses streaming video models that must keep evidence in memory and respond on their own. <a href="#huggingface-papers-daily-2">The systematic study of on-policy and off-policy distillation</a> follows with 114, and <a href="#huggingface-papers-daily-9">the robot agent paper</a> reports 14% higher success with 65% fewer tokens.</p>
+  <!-- /slot -->
+  <!-- slot: intro:huggingface-papers-daily lang=ko -->
+  <p class="intro" lang="ko"><a href="#huggingface-papers-daily-1">OneStreamer</a>가 추천 145개로 선두입니다. 증거를 기억에 두었다가 스스로 응답해야 하는 스트리밍 영상 모델을 다룹니다. <a href="#huggingface-papers-daily-2">온폴리시와 오프폴리시 증류를 체계적으로 비교한 연구</a>가 114개로 뒤를 잇고, <a href="#huggingface-papers-daily-9">로봇 에이전트 논문</a>은 성공률이 14% 높고 토큰이 65% 적다고 보고합니다.</p>
+  <!-- /slot -->
+</div>
 <ol class="items">
-<li class="item" id="huggingface-papers-daily-1"><div><a class="item-title" href="https://huggingface.co/papers/2610.01762">OneStreamer: Unifying Perception, Memory, and Proactive Response in Streaming Video Interaction</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-09-30T20:00:00Z">10-01 05:00</time></p><p class="item-excerpt">145 upvotes. Streaming video LLMs must retain evidence before its relevance to future tasks is known and respond when sufficient evidence becomes available. The challenge is to form reusable factual memory without compromising real-time perception. We introduce OneStreamer, whic…</p></div></li>
-<li class="item" id="huggingface-papers-daily-2"><div><a class="item-title" href="https://huggingface.co/papers/2609.35259">On-Policy or Off-Policy Learning? A Systematic Study of Distillation Dynamics</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-09-27T20:00:00Z">09-28 05:00</time></p><p class="item-excerpt">114 upvotes. On-policy learning has been argued to reduce catastrophic forgetting, produce sparser parameter updates, and improve generalisation. However, existing comparisons between supervised fine-tuning and reinforcement learning vary many factors simultaneously, making the …</p></div></li>
-<li class="item" id="huggingface-papers-daily-3"><div><a class="item-title" href="https://huggingface.co/papers/2609.39027">A Missing Piece for Trustworthy AI Reviewers: From Benchmarking Rhetorical Robustness to SciCore Review</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-09-29T20:00:00Z">09-30 05:00</time></p><p class="item-excerpt">64 upvotes. AI reviewers can assign different judgments to manuscripts that report the same science in different wording, potentially rewarding rhetorical optimization over scientific improvement. We formulate Rhetorical Robustness as the joint requirement of stability across co…</p></div></li>
-<li class="item" id="huggingface-papers-daily-4"><div><a class="item-title" href="https://huggingface.co/papers/2609.37533">E-MoE: Enhanced Mixture-of-Experts for Non-Factorized Diffusion Language Models</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-09-28T20:00:00Z">09-29 05:00</time></p><p class="item-excerpt">49 upvotes. Masked diffusion models (MDMs) generate sequences by progressively unmasking several tokens per denoising step, but their reverse process is typically factorized over positions, limiting sample quality in the few-step regime where diffusion&#x27;s speed advantage over aut…</p></div></li>
-<li class="item" id="huggingface-papers-daily-5"><div><a class="item-title" href="https://huggingface.co/papers/2610.00574">Make Sparse Rewards Count: Density-Aware Reward Aggregation for Multi-Reward RL</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-09-29T20:00:00Z">09-30 05:00</time></p><p class="item-excerpt">41 upvotes. Multi-reward reinforcement learning trains large language models to satisfy multiple behavioral objectives simultaneously. Reward-wise normalization, as used in GDPO, preserves reward-specific relative information within rollout groups, but different objectives can s…</p></div></li>
-<li class="item" id="huggingface-papers-daily-6"><div><a class="item-title" href="https://huggingface.co/papers/2609.32019">Decentralized Master-Mind: Joint Action Refinement through Iterative Intent Denoising in Multi-Agent Pathfinding</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-09-24T20:00:00Z">09-25 05:00</time></p><p class="item-excerpt">36 upvotes. Decentralized multi-agent path finding (MAPF) with communication requires agents to reach individual goals without collisions under partial observability. Learnable policies trained on expert data provide an effective approach to this problem. However, when several c…</p></div></li>
+<li class="item" id="huggingface-papers-daily-1"><a class="item-title" href="https://huggingface.co/papers/2610.01762">OneStreamer: Unifying Perception, Memory, and Proactive Response in Streaming Video Interaction</a><p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-09-30T20:00:00Z">10-01 05:00</time></p><p class="item-excerpt">145 upvotes. Streaming video LLMs must retain evidence before its relevance to future tasks is known and respond when sufficient evidence becomes available. The challenge is to form reusable factual memory without compromising real-time perception. We introduce OneStreamer, whic…</p></div></li>
+<li class="item" id="huggingface-papers-daily-2"><a class="item-title" href="https://huggingface.co/papers/2609.35259">On-Policy or Off-Policy Learning? A Systematic Study of Distillation Dynamics</a><p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-09-27T20:00:00Z">09-28 05:00</time></p><p class="item-excerpt">114 upvotes. On-policy learning has been argued to reduce catastrophic forgetting, produce sparser parameter updates, and improve generalisation. However, existing comparisons between supervised fine-tuning and reinforcement learning vary many factors simultaneously, making the …</p></div></li>
+<li class="item" id="huggingface-papers-daily-3"><a class="item-title" href="https://huggingface.co/papers/2609.39027">A Missing Piece for Trustworthy AI Reviewers: From Benchmarking Rhetorical Robustness to SciCore Review</a><p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-09-29T20:00:00Z">09-30 05:00</time></p><p class="item-excerpt">64 upvotes. AI reviewers can assign different judgments to manuscripts that report the same science in different wording, potentially rewarding rhetorical optimization over scientific improvement. We formulate Rhetorical Robustness as the joint requirement of stability across co…</p></div></li>
+<li class="item" id="huggingface-papers-daily-4"><a class="item-title" href="https://huggingface.co/papers/2609.37533">E-MoE: Enhanced Mixture-of-Experts for Non-Factorized Diffusion Language Models</a><p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-09-28T20:00:00Z">09-29 05:00</time></p><p class="item-excerpt">49 upvotes. Masked diffusion models (MDMs) generate sequences by progressively unmasking several tokens per denoising step, but their reverse process is typically factorized over positions, limiting sample quality in the few-step regime where diffusion&#x27;s speed advantage over aut…</p></div></li>
+<li class="item" id="huggingface-papers-daily-5"><a class="item-title" href="https://huggingface.co/papers/2610.00574">Make Sparse Rewards Count: Density-Aware Reward Aggregation for Multi-Reward RL</a><p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-09-29T20:00:00Z">09-30 05:00</time></p><p class="item-excerpt">41 upvotes. Multi-reward reinforcement learning trains large language models to satisfy multiple behavioral objectives simultaneously. Reward-wise normalization, as used in GDPO, preserves reward-specific relative information within rollout groups, but different objectives can s…</p></div></li>
+<li class="item" id="huggingface-papers-daily-6"><a class="item-title" href="https://huggingface.co/papers/2609.32019">Decentralized Master-Mind: Joint Action Refinement through Iterative Intent Denoising in Multi-Agent Pathfinding</a><p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-09-24T20:00:00Z">09-25 05:00</time></p><p class="item-excerpt">36 upvotes. Decentralized multi-agent path finding (MAPF) with communication requires agents to reach individual goals without collisions under partial observability. Learnable policies trained on expert data provide an effective approach to this problem. However, when several c…</p></div></li>
 </ol>
 <details class="more">
 <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
 <ol class="items" style="--start: 6">
-<li class="item" id="huggingface-papers-daily-7"><div><a class="item-title" href="https://huggingface.co/papers/2610.02196">InterEvolve: Test-Time Evolution of Reward Programs for Humanoid Loco-Manipulation</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-09-30T20:00:00Z">10-01 05:00</time></p><p class="item-excerpt">36 upvotes. We study test-time evolution for humanoid loco-manipulation: solving tasks that a controller was never trained for by repurposing its existing skills, improving from its own attempts, and retaining what it learns, without retraining. Our key insight is that a broad c…</p></div></li>
-<li class="item" id="huggingface-papers-daily-8"><div><a class="item-title" href="https://huggingface.co/papers/2609.39378">EgoTools: Towards Tool-Centric Reasoning in Real-World Egocentric Videos</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-09-29T20:00:00Z">09-30 05:00</time></p><p class="item-excerpt">33 upvotes. Real-world embodied tasks, from everyday activities to professional procedures, require agents to act under physical constraints while tracking evolving object and task states. Tool use sits at the heart of such tasks, as many everyday and professional activities are…</p></div></li>
-<li class="item" id="huggingface-papers-daily-9"><div><a class="item-title" href="https://huggingface.co/papers/2610.01939">Fewer Tokens, Better Action: GPT-6 Astra Robot Agents with 14% Higher Success Rate but 65% Fewer Tokens</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-09-30T20:00:00Z">10-01 05:00</time></p><p class="item-excerpt">24 upvotes. Vision language model (VLM) agents can control robots through visual feedback and action primitives, but repeated model invocations and redundant observations incur substantial token overhead. We introduce PyRUA-Lean, an interactive code-execution framework that coup…</p></div></li>
-<li class="item" id="huggingface-papers-daily-10"><div><a class="item-title" href="https://huggingface.co/papers/2610.02185">Decoding Looped Transformers Better for (Almost) Free</a><p class="item-meta">paper · huggingface.co · <time datetime="2026-09-30T20:00:00Z">10-01 05:00</time></p><p class="item-excerpt">18 upvotes. Looped Transformers achieve parameter efficiency by repeatedly executing a shared block across recurrent loops. Each loop yields an intermediate representation decodable for the same next token, yet standard decoding discards earlier states. Because earlier loops emb…</p></div></li>
+<li class="item" id="huggingface-papers-daily-7"><a class="item-title" href="https://huggingface.co/papers/2610.02196">InterEvolve: Test-Time Evolution of Reward Programs for Humanoid Loco-Manipulation</a><p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-09-30T20:00:00Z">10-01 05:00</time></p><p class="item-excerpt">36 upvotes. We study test-time evolution for humanoid loco-manipulation: solving tasks that a controller was never trained for by repurposing its existing skills, improving from its own attempts, and retaining what it learns, without retraining. Our key insight is that a broad c…</p></div></li>
+<li class="item" id="huggingface-papers-daily-8"><a class="item-title" href="https://huggingface.co/papers/2609.39378">EgoTools: Towards Tool-Centric Reasoning in Real-World Egocentric Videos</a><p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-09-29T20:00:00Z">09-30 05:00</time></p><p class="item-excerpt">33 upvotes. Real-world embodied tasks, from everyday activities to professional procedures, require agents to act under physical constraints while tracking evolving object and task states. Tool use sits at the heart of such tasks, as many everyday and professional activities are…</p></div></li>
+<li class="item" id="huggingface-papers-daily-9"><a class="item-title" href="https://huggingface.co/papers/2610.01939">Fewer Tokens, Better Action: GPT-6 Astra Robot Agents with 14% Higher Success Rate but 65% Fewer Tokens</a><p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-09-30T20:00:00Z">10-01 05:00</time></p><p class="item-excerpt">24 upvotes. Vision language model (VLM) agents can control robots through visual feedback and action primitives, but repeated model invocations and redundant observations incur substantial token overhead. We introduce PyRUA-Lean, an interactive code-execution framework that coup…</p></div></li>
+<li class="item" id="huggingface-papers-daily-10"><a class="item-title" href="https://huggingface.co/papers/2610.02185">Decoding Looped Transformers Better for (Almost) Free</a><p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-09-30T20:00:00Z">10-01 05:00</time></p><p class="item-excerpt">18 upvotes. Looped Transformers achieve parameter efficiency by repeatedly executing a shared block across recurrent loops. Each loop yields an intermediate representation decodable for the same next token, yet standard decoding discards earlier states. Because earlier loops emb…</p></div></li>
 </ol>
 </details>
 </section>
 
 <section class="producer" aria-labelledby="world-news">
-<h2 class="producer-head" id="world-news">world-news <span class="count">10</span></h2>
-<p class="producer-summary">World news roundup: 10 items from 3 live feed(s)</p>
-<!-- slot: intro:world-news lang=en -->
-<p class="intro" lang="en">The lead story is that <a href="#world-news-1">the United States backed down from the fuel export ban threat as the G7 agreed to release 100 million barrels</a>; the BBC carries the same release as <a href="#world-news-5">item 5</a>. <a href="#world-news-9">UK diesel above £2 a litre</a> shows the price pressure that prompted it, and <a href="#world-news-10">the sharp slowdown in US hiring</a> is the main economic signal. The cnn-topstories feed is stale.</p>
-<!-- /slot -->
-<!-- slot: intro:world-news lang=ko -->
-<p class="intro" lang="ko">주요 기사는 <a href="#world-news-1">주요 7개국이 1억 배럴 방출에 합의하자 미국이 연료 수출 금지 위협에서 물러섰다는 소식</a>이며, BBC는 같은 방출을 <a href="#world-news-5">5번 항목</a>으로 전합니다. <a href="#world-news-9">영국 디젤 가격의 리터당 2파운드 돌파</a>는 방출을 부른 가격 압력을 보여 주고, <a href="#world-news-10">미국 고용의 급격한 둔화</a>가 핵심 경제 신호입니다. cnn-topstories 피드는 지연 상태입니다.</p>
-<!-- /slot -->
+<div class="producer-lede">
+  <div class="producer-top"><h2 class="producer-head" id="world-news">world-news</h2><span class="count">10</span></div>
+  <p class="producer-summary">World news roundup: 10 items from 3 live feed(s)</p>
+  <!-- slot: intro:world-news lang=en -->
+  <p class="intro" lang="en">The lead story is that <a href="#world-news-1">the United States backed down from the fuel export ban threat as the G7 agreed to release 100 million barrels</a>; the BBC carries the same release as <a href="#world-news-5">item 5</a>. <a href="#world-news-9">UK diesel above £2 a litre</a> shows the price pressure that prompted it, and <a href="#world-news-10">the sharp slowdown in US hiring</a> is the main economic signal. The cnn-topstories feed is stale.</p>
+  <!-- /slot -->
+  <!-- slot: intro:world-news lang=ko -->
+  <p class="intro" lang="ko">주요 기사는 <a href="#world-news-1">주요 7개국이 1억 배럴 방출에 합의하자 미국이 연료 수출 금지 위협에서 물러섰다는 소식</a>이며, BBC는 같은 방출을 <a href="#world-news-5">5번 항목</a>으로 전합니다. <a href="#world-news-9">영국 디젤 가격의 리터당 2파운드 돌파</a>는 방출을 부른 가격 압력을 보여 주고, <a href="#world-news-10">미국 고용의 급격한 둔화</a>가 핵심 경제 신호입니다. cnn-topstories 피드는 지연 상태입니다.</p>
+  <!-- /slot -->
+</div>
 <ol class="items">
-<li class="item" id="world-news-1"><div><a class="item-title" href="https://www.ft.com/content/97200b07-755c-40ce-a50b-b51666bd4b7e?syn-25a6b1a6=1">US backs down from fuel export ban threat as G7 agrees to release 100mn barrels</a><p class="item-meta">news · www.ft.com · <time datetime="2026-10-02T20:31:49Z">05:31</time></p><p class="item-excerpt">Donald Trump calls decision by European nations to release diesel from strategic reserves a ‘great thing’</p></div></li>
-<li class="item" id="world-news-2"><div><a class="item-title" href="https://www.ft.com/content/3ae16f02-bb00-46a4-abba-6bfea7f2b1ac?syn-25a6b1a6=1">Trump’s short-sighted diesel gamble</a><p class="item-meta">news · www.ft.com · <time datetime="2026-10-02T04:00:23Z">10-02 13:00</time></p><p class="item-excerpt">Yes, Nixon’s export ban did briefly suppress domestic prices but it had a huge long-term cost</p></div></li>
-<li class="item" id="world-news-3"><div><a class="item-title" href="https://www.ft.com/content/118785e7-8637-46ad-a60c-286e51370848?syn-25a6b1a6=1">US refiners reap windfall profits as wars push up fuel prices for consumers</a><p class="item-meta">news · www.ft.com · <time datetime="2026-10-02T04:00:15Z">10-02 13:00</time></p><p class="item-excerpt">Oil producer income has drawn scrutiny but lower-profile refiners have posted a fourfold increase in margins</p></div></li>
-<li class="item" id="world-news-4"><div><a class="item-title" href="https://www.ft.com/content/83e9a7cb-95b4-48a8-9cdc-88d3fa8f03c0?syn-25a6b1a6=1">Black voters rally against redrawn electoral maps</a><p class="item-meta">news · www.ft.com · <time datetime="2026-10-02T04:15:08Z">10-02 13:15</time></p><p class="item-excerpt">African Americans in Louisiana predict a backlash over a Supreme Court ruling that authorised constituency changes</p></div></li>
-<li class="item" id="world-news-5"><div><a class="item-title" href="https://www.bbc.co.uk/news/articles/ck87zg8jnwngo?at_medium=RSS&amp;at_campaign=rss">G7 to release 100 million barrels of oil and diesel after Trump export ban threat</a><p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-02T20:25:19Z">05:25</time></p><p class="item-excerpt">The coordinated release is aimed at heading off further price spikes and avoiding a ban on US diesel exports.</p></div></li>
-<li class="item" id="world-news-6"><div><a class="item-title" href="https://www.bbc.co.uk/news/articles/ck3r5dxxwqzpo?at_medium=RSS&amp;at_campaign=rss">Riot police clash with students as education protests rage in France</a><p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-02T21:13:27Z">06:13</time></p><p class="item-excerpt">About 735 schools have faced disruption as violent protests over standards and lack of teachers continue.</p></div></li>
+<li class="item" id="world-news-1"><a class="item-title" href="https://www.ft.com/content/97200b07-755c-40ce-a50b-b51666bd4b7e?syn-25a6b1a6=1">US backs down from fuel export ban threat as G7 agrees to release 100mn barrels</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-02T20:31:49Z">05:31</time></p><p class="item-excerpt">Donald Trump calls decision by European nations to release diesel from strategic reserves a ‘great thing’</p></div></li>
+<li class="item" id="world-news-2"><a class="item-title" href="https://www.ft.com/content/3ae16f02-bb00-46a4-abba-6bfea7f2b1ac?syn-25a6b1a6=1">Trump’s short-sighted diesel gamble</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-02T04:00:23Z">10-02 13:00</time></p><p class="item-excerpt">Yes, Nixon’s export ban did briefly suppress domestic prices but it had a huge long-term cost</p></div></li>
+<li class="item" id="world-news-3"><a class="item-title" href="https://www.ft.com/content/118785e7-8637-46ad-a60c-286e51370848?syn-25a6b1a6=1">US refiners reap windfall profits as wars push up fuel prices for consumers</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-02T04:00:15Z">10-02 13:00</time></p><p class="item-excerpt">Oil producer income has drawn scrutiny but lower-profile refiners have posted a fourfold increase in margins</p></div></li>
+<li class="item" id="world-news-4"><a class="item-title" href="https://www.ft.com/content/83e9a7cb-95b4-48a8-9cdc-88d3fa8f03c0?syn-25a6b1a6=1">Black voters rally against redrawn electoral maps</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-02T04:15:08Z">10-02 13:15</time></p><p class="item-excerpt">African Americans in Louisiana predict a backlash over a Supreme Court ruling that authorised constituency changes</p></div></li>
+<li class="item" id="world-news-5"><a class="item-title" href="https://www.bbc.co.uk/news/articles/ck87zg8jnwngo?at_medium=RSS&amp;at_campaign=rss">G7 to release 100 million barrels of oil and diesel after Trump export ban threat</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-02T20:25:19Z">05:25</time></p><p class="item-excerpt">The coordinated release is aimed at heading off further price spikes and avoiding a ban on US diesel exports.</p></div></li>
+<li class="item" id="world-news-6"><a class="item-title" href="https://www.bbc.co.uk/news/articles/ck3r5dxxwqzpo?at_medium=RSS&amp;at_campaign=rss">Riot police clash with students as education protests rage in France</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-02T21:13:27Z">06:13</time></p><p class="item-excerpt">About 735 schools have faced disruption as violent protests over standards and lack of teachers continue.</p></div></li>
 </ol>
 <details class="more">
 <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
 <ol class="items" style="--start: 6">
-<li class="item" id="world-news-7"><div><a class="item-title" href="https://www.bbc.co.uk/news/articles/c3kgqw7zvz47o?at_medium=RSS&amp;at_campaign=rss">US murderer Christa Pike unconscious and on ventilator after failed execution, lawyers say</a><p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-02T20:32:07Z">05:32</time></p><p class="item-excerpt">As of Thursday night, Pike remained critically ill and is being treated at a hospital in Nashville, Tennessee.</p></div></li>
-<li class="item" id="world-news-8"><div><a class="item-title" href="https://www.bbc.co.uk/news/articles/cqvg04718lr9o?at_medium=RSS&amp;at_campaign=rss">Woman at centre of Cornell rape inquiry was &#x27;failed&#x27; by officials, says New York governor</a><p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-02T17:44:08Z">02:44</time></p><p class="item-excerpt">The woman, known as Jane Doe, alleges she was raped by seven students at a fraternity house at the university in 2024.</p></div></li>
-<li class="item" id="world-news-9"><div><a class="item-title" href="https://www.bbc.co.uk/news/articles/crn8e86y5n0zo?at_medium=RSS&amp;at_campaign=rss">UK diesel prices top £2 a litre for first time, RAC says</a><p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-02T15:50:05Z">00:50</time></p><p class="item-excerpt">The rise in global oil prices has been pushing up the pump prices of petrol and diesel in the UK.</p></div></li>
-<li class="item" id="world-news-10"><div><a class="item-title" href="https://www.bbc.co.uk/news/articles/cm2d6gg0642yo?at_medium=RSS&amp;at_campaign=rss">US jobs market sees sharp slowdown ahead of midterm elections</a><p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-02T14:30:48Z">10-02 23:30</time></p><p class="item-excerpt">Unemployment rose slightly as American employers paused hiring with midterm elections just a month away.</p></div></li>
+<li class="item" id="world-news-7"><a class="item-title" href="https://www.bbc.co.uk/news/articles/c3kgqw7zvz47o?at_medium=RSS&amp;at_campaign=rss">US murderer Christa Pike unconscious and on ventilator after failed execution, lawyers say</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-02T20:32:07Z">05:32</time></p><p class="item-excerpt">As of Thursday night, Pike remained critically ill and is being treated at a hospital in Nashville, Tennessee.</p></div></li>
+<li class="item" id="world-news-8"><a class="item-title" href="https://www.bbc.co.uk/news/articles/cqvg04718lr9o?at_medium=RSS&amp;at_campaign=rss">Woman at centre of Cornell rape inquiry was &#x27;failed&#x27; by officials, says New York governor</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-02T17:44:08Z">02:44</time></p><p class="item-excerpt">The woman, known as Jane Doe, alleges she was raped by seven students at a fraternity house at the university in 2024.</p></div></li>
+<li class="item" id="world-news-9"><a class="item-title" href="https://www.bbc.co.uk/news/articles/crn8e86y5n0zo?at_medium=RSS&amp;at_campaign=rss">UK diesel prices top £2 a litre for first time, RAC says</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-02T15:50:05Z">00:50</time></p><p class="item-excerpt">The rise in global oil prices has been pushing up the pump prices of petrol and diesel in the UK.</p></div></li>
+<li class="item" id="world-news-10"><a class="item-title" href="https://www.bbc.co.uk/news/articles/cm2d6gg0642yo?at_medium=RSS&amp;at_campaign=rss">US jobs market sees sharp slowdown ahead of midterm elections</a><p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-02T14:30:48Z">10-02 23:30</time></p><p class="item-excerpt">Unemployment rose slightly as American employers paused hiring with midterm elections just a month away.</p></div></li>
 </ol>
 </details>
 </section>
 <!-- /slot -->
     </div>
 
-    <div class="zone">
+    <div class="zone zone-projects">
       <h2 class="zone-title"><span lang="en">Projects</span><span lang="ko">프로젝트</span></h2>
       <!-- slot: personal -->
 
 <!-- /slot -->
     </div>
-
   </main>
 
   <nav class="days" aria-label="Other days">

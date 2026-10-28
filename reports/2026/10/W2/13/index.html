@@ -5,291 +5,413 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <meta name="robots" content="noindex">
+<meta name="description" content="One day of the briefing, with the state of every source.">
 <!-- slot: title --><title>Briefing · 2026-10-13</title><!-- /slot -->
 <style id="lang-rule">body [lang]:not([lang="en"]) { display: none !important; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans+KR:wght@500;600&family=Noto+Serif+KR:wght@400;500&display=swap">
 <link rel="stylesheet" href="../../../../../src/style.css">
 <script src="../../../../../src/lang.js"></script>
 </head>
 <body>
-<div class="page">
-
-  <aside class="rail">
-
-  <header class="masthead">
-    <div class="masthead-top">
-      <p class="label"><span lang="en">Daily briefing</span><span lang="ko">오늘의 브리핑</span></p>
-      <label class="lang-switch">
-        <select id="lang-select" aria-label="Language">
-          <!-- slot: languages -->
+<header class="runner container">
+  <a class="wordmark" href="../../../../../"><span lang="en">Daily briefing</span><span lang="ko">오늘의 브리핑</span></a>
+  <label class="lang-switch">
+    <select id="lang-select" aria-label="Language">
+      <!-- slot: languages -->
           <option value="en">EN</option>
           <option value="ko">KO</option>
           <!-- /slot -->
-        </select>
-      </label>
-    </div>
-    <!-- slot: date lang=en -->
+    </select>
+  </label>
+</header>
+
+<div class="page container">
+
+  <header class="front">
+    <div>
+      <div class="masthead">
+        <!-- slot: date lang=en -->
     <div lang="en">
       <h1>Tuesday, October 13</h1>
-      <p class="dateline"><time datetime="2026-10-13T08:00:03+09:00"><span>2026-10-13</span> <span>· prepared at 08:00</span></time></p>
+      <p class="dateline"><time datetime="2026-10-13T08:00:03+09:00"><span>2026-10-13</span> <span>prepared at 08:00</span></time></p>
     </div>
     <!-- /slot -->
-    <!-- slot: date lang=ko -->
+        <!-- slot: date lang=ko -->
     <div lang="ko">
       <h1>10월 13일 화요일</h1>
-      <p class="dateline"><time datetime="2026-10-13T08:00:03+09:00"><span>2026-10-13</span> <span>· 08:00 작성</span></time></p>
+      <p class="dateline"><time datetime="2026-10-13T08:00:03+09:00"><span>2026-10-13</span> <span>08:00 작성</span></time></p>
     </div>
     <!-- /slot -->
-  </header>
+      </div>
 
-  <nav class="contents" aria-label="Contents">
-    <!-- slot: contents -->
+      <section class="lead" aria-label="Summary">
+        <!-- slot: summary lang=en -->
+    <div lang="en">
+      <p>The trending list is again led by the reverse-engineering tool, now at about 45,000 stars in a day, with <a href="#github-trending-daily-8">BitNet</a> and <a href="#github-trending-daily-5">Open WebUI</a> among the model-serving entries. The papers are a fresh set, topped by <a href="#huggingface-papers-daily-1">a reinforcement method for diffusion models</a> and <a href="#huggingface-papers-daily-2">a study of spatial reasoning in multimodal models</a>. In the news, <a href="#world-news-2">Houthi attacks on Saudi airports</a> and <a href="#world-news-5">Russian strikes on Ukrainian energy sites after the announced ceasefire</a> lead.</p>
+      <p>One source needs a look: the CNN top-stories feed behind the news roundup remains stale. No item awaits a decision.</p>
+    </div>
+    <!-- /slot -->
+        <!-- slot: summary lang=ko -->
+    <div lang="ko">
+      <p>인기 목록은 이번에도 역공학 도구가 선두이며 하루 별 약 45,000개를 얻었고, 모델 구동 쪽에서는 <a href="#github-trending-daily-8">BitNet</a>과 <a href="#github-trending-daily-5">Open WebUI</a>가 눈에 띕니다. 논문은 새 묶음으로, <a href="#huggingface-papers-daily-1">확산 모델 강화학습 방법</a>과 <a href="#huggingface-papers-daily-2">멀티모달 모델의 공간 추론 연구</a>가 앞섭니다. 뉴스에서는 <a href="#world-news-2">사우디 공항에 대한 후티 공격</a>과 <a href="#world-news-5">휴전 발표 이후 러시아의 우크라이나 에너지 시설 공격</a>이 중심입니다.</p>
+      <p>확인이 필요한 소스는 하나입니다. 뉴스 요약의 CNN 주요 뉴스 피드가 계속 오래된 상태입니다. 결정을 기다리는 항목은 없습니다.</p>
+    </div>
+    <!-- /slot -->
+      </section>
+    </div>
+
+    <aside class="ledger">
+      <nav class="contents" aria-label="Contents">
+        <!-- slot: contents -->
     <ol>
       <li><a href="#huggingface-papers-daily"><span class="toc-name">huggingface-papers-daily</span><span class="toc-count">10</span></a></li>
       <li><a href="#world-news"><span class="toc-name">world-news</span><span class="status status-stale"><span lang="en">stale</span><span lang="ko">지연</span></span><span class="toc-count">10</span></a></li>
       <li><a href="#github-trending-daily"><span class="toc-name">github-trending-daily</span><span class="toc-count">9</span></a></li>
     </ol>
     <!-- /slot -->
-  </nav>
+      </nav>
 
-  <section class="health" aria-labelledby="attention">
-    <h2 id="attention"><span lang="en">Needs attention</span><span lang="ko">확인이 필요한 소스</span></h2>
-    <div class="notices">
-      <!-- slot: notices -->
+      <section class="health" aria-labelledby="attention">
+        <h2 id="attention"><span lang="en">Needs attention</span><span lang="ko">확인이 필요한 소스</span></h2>
+        <div class="notices">
+          <!-- slot: notices -->
       <div class="notice">
         <p class="notice-head"><span class="status status-stale"><span lang="en">Stale</span><span lang="ko">지연</span></span><span class="source-name"><span class="source-producer">world-news</span> cnn-topstories</span></p>
         <p class="notice-detail"><span lang="en">No success on record</span><span lang="ko">성공 기록 없음</span></p>
       </div>
       <!-- /slot -->
-    </div>
-  </section>
-
-  </aside>
-
-  <section class="lead" aria-label="Summary">
-    <!-- slot: summary lang=en -->
-    <div lang="en">
-      <p>The trending list is again led by the reverse-engineering tool, now at about 45,000 stars in a day, with <a href="#github-trending-daily-8">BitNet</a> and <a href="#github-trending-daily-5">Open WebUI</a> among the model-serving entries. The papers are a fresh set, topped by <a href="#huggingface-papers-daily-1">a reinforcement method for diffusion models</a> and <a href="#huggingface-papers-daily-2">a study of spatial reasoning in multimodal models</a>. In the news, <a href="#world-news-2">Houthi attacks on Saudi airports</a> and <a href="#world-news-5">Russian strikes on Ukrainian energy sites after the announced ceasefire</a> lead.</p>
-      <p>One source needs a look: the CNN top-stories feed behind the news roundup remains stale. No item awaits a decision.</p>
-    </div>
-    <!-- /slot -->
-    <!-- slot: summary lang=ko -->
-    <div lang="ko">
-      <p>인기 목록은 이번에도 역공학 도구가 선두이며 하루 별 약 45,000개를 얻었고, 모델 구동 쪽에서는 <a href="#github-trending-daily-8">BitNet</a>과 <a href="#github-trending-daily-5">Open WebUI</a>가 눈에 띕니다. 논문은 새 묶음으로, <a href="#huggingface-papers-daily-1">확산 모델 강화학습 방법</a>과 <a href="#huggingface-papers-daily-2">멀티모달 모델의 공간 추론 연구</a>가 앞섭니다. 뉴스에서는 <a href="#world-news-2">사우디 공항에 대한 후티 공격</a>과 <a href="#world-news-5">휴전 발표 이후 러시아의 우크라이나 에너지 시설 공격</a>이 중심입니다.</p>
-      <p>확인이 필요한 소스는 하나입니다. 뉴스 요약의 CNN 주요 뉴스 피드가 계속 오래된 상태입니다. 결정을 기다리는 항목은 없습니다.</p>
-    </div>
-    <!-- /slot -->
-  </section>
+        </div>
+      </section>
+    </aside>
+  </header>
 
   <main>
     <div class="zone">
       <!-- slot: producers -->
       <section class="producer" aria-labelledby="huggingface-papers-daily">
-        <h2 class="producer-head" id="huggingface-papers-daily">huggingface-papers-daily <span class="count">10</span></h2>
-        <p class="producer-summary">HuggingFace daily papers: top 10 of 50 today</p>
-        <!-- slot: intro:huggingface-papers-daily lang=en -->
+        <div class="producer-lede">
+          <div class="producer-top"><h2 class="producer-head" id="huggingface-papers-daily">huggingface-papers-daily</h2><span class="count">10</span></div>
+                  <p class="producer-summary">HuggingFace daily papers: top 10 of 50 today</p>
+          <!-- slot: intro:huggingface-papers-daily lang=en -->
   <p class="intro" lang="en">The list changes completely. <a href="#huggingface-papers-daily-1">DiffusionART</a> leads with 228 upvotes, <a href="#huggingface-papers-daily-2">S-Space</a> follows with 201, and <a href="#huggingface-papers-daily-4">SoftwareGym</a> and <a href="#huggingface-papers-daily-8">Work2Skill</a> both address training computer-use agents.</p>
   <!-- /slot -->
-        <!-- slot: intro:huggingface-papers-daily lang=ko -->
+          <!-- slot: intro:huggingface-papers-daily lang=ko -->
   <p class="intro" lang="ko">목록이 완전히 바뀌었습니다. <a href="#huggingface-papers-daily-1">DiffusionART</a>가 추천 228건으로 선두이고 <a href="#huggingface-papers-daily-2">S-Space</a>가 201건으로 뒤를 잇습니다. <a href="#huggingface-papers-daily-4">SoftwareGym</a>과 <a href="#huggingface-papers-daily-8">Work2Skill</a>은 모두 컴퓨터 사용 에이전트의 학습을 다룹니다.</p>
   <!-- /slot -->
+        </div>
         <ol class="items">
-          <li class="item" id="huggingface-papers-daily-1"><div>
-      <a class="item-title" href="https://huggingface.co/papers/2610.12572">DiffusionART: Efficient, Stable and Scalable Reinforcement of Diffusion Models</a>
-      <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-07T20:00:00Z">10-08 05:00</time></p>
-      <p class="item-excerpt">228 upvotes. Online reinforcement learning (RL) fine-tunes diffusion models with black-box rewards, but reverse-process methods such as Flow-GRPO are limited in efficiency by poor credit assignment, while forward-process methods such as DiffusionNFT are efficient yet unstable wi…</p>
-    </div></li>
-          <li class="item" id="huggingface-papers-daily-2"><div>
-      <a class="item-title" href="https://huggingface.co/papers/2610.13527">S-Space: Exploring Spatial Workspace in Multimodal Language Models</a>
-      <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-09T08:48:41Z">10-09 17:48</time></p>
-      <p class="item-excerpt">201 upvotes. Multimodal language models (MLLMs) exhibit promising spatial reasoning capabilities, yet the internal mechanisms supporting them remain poorly understood. We uncover S-Space, a linear representation subspace in which object-token representations encode continuous co…</p>
-    </div></li>
-          <li class="item" id="huggingface-papers-daily-3"><div>
-      <a class="item-title" href="https://huggingface.co/papers/2610.12772">Reflex: Visually Grounded Reactive Humanoid Control</a>
-      <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-07T20:00:00Z">10-08 05:00</time></p>
-      <p class="item-excerpt">129 upvotes. Humans effortlessly react to the world; they adeptly return a tennis shot, catch a falling cup, step aside from a passing cart, or pass a box tossed during truck unloading. These everyday actions require anticipating a moving target and reflexively responding with t…</p>
-    </div></li>
-          <li class="item" id="huggingface-papers-daily-4"><div>
-      <a class="item-title" href="https://huggingface.co/papers/2610.12611">SoftwareGym: Scaling Computer-Use Agent Training with Diverse Synthesized Software Environments</a>
-      <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-07T20:00:00Z">10-08 05:00</time></p>
-      <p class="item-excerpt">83 upvotes. Computer-use agents (CUAs) are rapidly improving, yet synthesizing diverse and reliable software environments at scale remains challenging. Native application environments require substantial construction and integration effort, which limits application coverage and …</p>
-    </div></li>
-          <li class="item" id="huggingface-papers-daily-5"><div>
-      <a class="item-title" href="https://huggingface.co/papers/2610.07987">VisionWeave: Weaving Elastic Visual Representations as a Native Capability of MLLMs</a>
-      <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-05T20:00:00Z">10-06 05:00</time></p>
-      <p class="item-excerpt">57 upvotes. Multimodal large language models have become the dominant paradigm for visual understanding, but incur substantial costs by encoding inputs into dense, fixed-size patch tokens. However, visual information is unevenly distributed: some regions require fine-grained det…</p>
-    </div></li>
-          <li class="item" id="huggingface-papers-daily-6"><div>
-      <a class="item-title" href="https://huggingface.co/papers/2610.12341">Can AI Agents Learn Their Way to the Top? Evaluating Heuristic Learning in a Long-Running Game Agent Competition</a>
-      <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-07T20:00:00Z">10-08 05:00</time></p>
-      <p class="item-excerpt">42 upvotes. Adversarial games have driven advances from heuristic search to reinforcement learning, yet learning and adapting strategies from limited samples remain challenging. AI agents offer an alternative by turning game experience into revisions of executable policies. Buil…</p>
-    </div></li>
+          <li class="item item-lead" id="huggingface-papers-daily-1">
+            <div class="lead-text">
+              <a class="item-title" href="https://huggingface.co/papers/2610.12572">DiffusionART: Efficient, Stable and Scalable Reinforcement of Diffusion Models</a>
+              <p class="item-excerpt">228 upvotes. Online reinforcement learning (RL) fine-tunes diffusion models with black-box rewards, but reverse-process methods such as Flow-GRPO are limited in efficiency by poor credit assignment, while forward-process methods such as DiffusionNFT are efficient yet unstable wi…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-07T20:00:00Z">10-08 05:00</time></p>
+            </div>
+          </li>
+          <li class="item" id="huggingface-papers-daily-2">
+            <a class="item-title" href="https://huggingface.co/papers/2610.13527">S-Space: Exploring Spatial Workspace in Multimodal Language Models</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-09T08:48:41Z">10-09 17:48</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">201 upvotes. Multimodal language models (MLLMs) exhibit promising spatial reasoning capabilities, yet the internal mechanisms supporting them remain poorly understood. We uncover S-Space, a linear representation subspace in which object-token representations encode continuous co…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-09T08:48:41Z">10-09 17:48</time></p>
+            </details>
+          </li>
+          <li class="item" id="huggingface-papers-daily-3">
+            <a class="item-title" href="https://huggingface.co/papers/2610.12772">Reflex: Visually Grounded Reactive Humanoid Control</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-07T20:00:00Z">10-08 05:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">129 upvotes. Humans effortlessly react to the world; they adeptly return a tennis shot, catch a falling cup, step aside from a passing cart, or pass a box tossed during truck unloading. These everyday actions require anticipating a moving target and reflexively responding with t…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-07T20:00:00Z">10-08 05:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="huggingface-papers-daily-4">
+            <a class="item-title" href="https://huggingface.co/papers/2610.12611">SoftwareGym: Scaling Computer-Use Agent Training with Diverse Synthesized Software Environments</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-07T20:00:00Z">10-08 05:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">83 upvotes. Computer-use agents (CUAs) are rapidly improving, yet synthesizing diverse and reliable software environments at scale remains challenging. Native application environments require substantial construction and integration effort, which limits application coverage and …</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-07T20:00:00Z">10-08 05:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="huggingface-papers-daily-5">
+            <a class="item-title" href="https://huggingface.co/papers/2610.07987">VisionWeave: Weaving Elastic Visual Representations as a Native Capability of MLLMs</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-05T20:00:00Z">10-06 05:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">57 upvotes. Multimodal large language models have become the dominant paradigm for visual understanding, but incur substantial costs by encoding inputs into dense, fixed-size patch tokens. However, visual information is unevenly distributed: some regions require fine-grained det…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-05T20:00:00Z">10-06 05:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="huggingface-papers-daily-6">
+            <a class="item-title" href="https://huggingface.co/papers/2610.12341">Can AI Agents Learn Their Way to the Top? Evaluating Heuristic Learning in a Long-Running Game Agent Competition</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-07T20:00:00Z">10-08 05:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">42 upvotes. Adversarial games have driven advances from heuristic search to reinforcement learning, yet learning and adapting strategies from limited samples remain challenging. AI agents offer an alternative by turning game experience into revisions of executable policies. Buil…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-07T20:00:00Z">10-08 05:00</time></p>
+            </details>
+          </li>
         </ol>
         <details class="more">
     <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
     <ol class="items" style="--start: 6">
-            <li class="item" id="huggingface-papers-daily-7"><div>
-        <a class="item-title" href="https://huggingface.co/papers/2610.13113">Continually Post-training Small Models via Synthetic Self-distillation</a>
-        <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-08T20:00:00Z">10-09 05:00</time></p>
-        <p class="item-excerpt">41 upvotes. Continual post-training faces a dual challenge of acquisition and retention: models must learn new capabilities while preserving prior knowledge. While Self-Distillation Fine-Tuning (SDFT) mitigates this using self-supervision with in-context demonstrations, it relie…</p>
-      </div></li>
-            <li class="item" id="huggingface-papers-daily-8"><div>
-        <a class="item-title" href="https://huggingface.co/papers/2610.12984">Work2Skill: Capturing Human GUI Experience for Reusable Agent Skill Induction</a>
-        <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-08T20:00:00Z">10-09 05:00</time></p>
-        <p class="item-excerpt">39 upvotes. Computer-use agents can perform increasingly complex GUI tasks, yet unfamiliar software and workflows requiring human domain knowledge remain challenging. Human demonstrations convey procedural knowledge through the same GUI interaction space, but reuse requires inte…</p>
-      </div></li>
-            <li class="item" id="huggingface-papers-daily-9"><div>
-        <a class="item-title" href="https://huggingface.co/papers/2610.11361">SepGen: Multi-Stem Audio-Video Separation and Generation in a Single Model</a>
-        <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-07T20:00:00Z">10-08 05:00</time></p>
-        <p class="item-excerpt">38 upvotes. A 4D audio-visual scene comprises a video, the dynamic geometry it depicts, and the sound sources that populate it, each with its own position and trajectory. Rendering such a scene from a novel viewpoint requires that every source be available as an individual wavef…</p>
-      </div></li>
-            <li class="item" id="huggingface-papers-daily-10"><div>
-        <a class="item-title" href="https://huggingface.co/papers/2610.12570">Contextual Correction of Parallel Draftsfor Speculative Decoding</a>
-        <p class="item-meta">paper · huggingface.co · <time datetime="2026-10-07T20:00:00Z">10-08 05:00</time></p>
-        <p class="item-excerpt">26 upvotes. Speculative decoding accelerates large language model inference by using a lightweight drafter to propose multiple tokens that are subsequently verified in parallel by the target model. Recent diffusion-based drafters make this paradigm particularly attractive: deep …</p>
-      </div></li>
+            <li class="item" id="huggingface-papers-daily-7">
+              <a class="item-title" href="https://huggingface.co/papers/2610.13113">Continually Post-training Small Models via Synthetic Self-distillation</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-08T20:00:00Z">10-09 05:00</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">41 upvotes. Continual post-training faces a dual challenge of acquisition and retention: models must learn new capabilities while preserving prior knowledge. While Self-Distillation Fine-Tuning (SDFT) mitigates this using self-supervision with in-context demonstrations, it relie…</p>
+                <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-08T20:00:00Z">10-09 05:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="huggingface-papers-daily-8">
+              <a class="item-title" href="https://huggingface.co/papers/2610.12984">Work2Skill: Capturing Human GUI Experience for Reusable Agent Skill Induction</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-08T20:00:00Z">10-09 05:00</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">39 upvotes. Computer-use agents can perform increasingly complex GUI tasks, yet unfamiliar software and workflows requiring human domain knowledge remain challenging. Human demonstrations convey procedural knowledge through the same GUI interaction space, but reuse requires inte…</p>
+                <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-08T20:00:00Z">10-09 05:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="huggingface-papers-daily-9">
+              <a class="item-title" href="https://huggingface.co/papers/2610.11361">SepGen: Multi-Stem Audio-Video Separation and Generation in a Single Model</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-07T20:00:00Z">10-08 05:00</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">38 upvotes. A 4D audio-visual scene comprises a video, the dynamic geometry it depicts, and the sound sources that populate it, each with its own position and trajectory. Rendering such a scene from a novel viewpoint requires that every source be available as an individual wavef…</p>
+                <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-07T20:00:00Z">10-08 05:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="huggingface-papers-daily-10">
+              <a class="item-title" href="https://huggingface.co/papers/2610.12570">Contextual Correction of Parallel Draftsfor Speculative Decoding</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-07T20:00:00Z">10-08 05:00</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">26 upvotes. Speculative decoding accelerates large language model inference by using a lightweight drafter to propose multiple tokens that are subsequently verified in parallel by the target model. Recent diffusion-based drafters make this paradigm particularly attractive: deep …</p>
+                <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-07T20:00:00Z">10-08 05:00</time></p>
+              </details>
+            </li>
           </ol>
   </details>
       </section>
 
       <section class="producer" aria-labelledby="world-news">
-        <h2 class="producer-head" id="world-news">world-news <span class="count">10</span></h2>
-        <p class="producer-summary">World news roundup: 10 items from 3 live feed(s)</p>
-        <!-- slot: intro:world-news lang=en -->
+        <div class="producer-lede">
+          <div class="producer-top"><h2 class="producer-head" id="world-news">world-news</h2><span class="count">10</span></div>
+                  <p class="producer-summary">World news roundup: 10 items from 3 live feed(s)</p>
+          <!-- slot: intro:world-news lang=en -->
   <p class="intro" lang="en"><a href="#world-news-5">Six Ukrainian energy sites hit since the ceasefire announcement</a> and <a href="#world-news-6">Moscow’s silence on the ceasefire</a> show the ceasefire has not held. <a href="#world-news-2">The Houthi assault on Saudi airports</a> draws <a href="#world-news-8">a vow of a serious response from a Saudi minister</a>. <a href="#world-news-9">A think tank’s £35bn shortfall estimate for the UK Budget</a> is the main domestic story. The CNN feed is stale.</p>
   <!-- /slot -->
-        <!-- slot: intro:world-news lang=ko -->
+          <!-- slot: intro:world-news lang=ko -->
   <p class="intro" lang="ko"><a href="#world-news-5">휴전 발표 이후 우크라이나 에너지 시설 여섯 곳 피격</a>과 <a href="#world-news-6">휴전에 대한 모스크바의 침묵</a>은 휴전이 지켜지지 않고 있음을 보여 줍니다. <a href="#world-news-2">사우디 공항에 대한 후티의 공격</a>에 <a href="#world-news-8">사우디 장관이 단호한 대응을 예고</a>했습니다. 국내 소식으로는 <a href="#world-news-9">한 연구기관이 추정한 영국 예산 350억 파운드 부족</a>이 가장 큽니다. CNN 피드는 오래된 상태입니다.</p>
   <!-- /slot -->
+        </div>
         <ol class="items">
-          <li class="item" id="world-news-1"><div>
-      <a class="item-title" href="https://www.ft.com/content/fca23e77-be57-4d7e-ae61-74ff299e25cb?syn-25a6b1a6=1">Zuckerberg says Meta has reached AI ‘frontier’</a>
-      <p class="item-meta">news · www.ft.com · <time datetime="2026-10-12T17:00:02Z">02:00</time></p>
-      <p class="item-excerpt">FT interview: tech billionaire touts release of new Muse Wonder model after vast spending to challenge rivals in AI race</p>
-    </div></li>
-          <li class="item" id="world-news-2"><div>
-      <a class="item-title" href="https://www.ft.com/content/bc7302fa-f8e4-43da-aad5-0abbfefca4f8?syn-25a6b1a6=1">Houthi assault on Saudi airports strikes at MBS’s economic vision</a>
-      <p class="item-meta">news · www.ft.com · <time datetime="2026-10-12T18:32:01Z">03:32</time></p>
-      <p class="item-excerpt">Deadly bombardment of Riyadh’s international airport threatens crown prince’s plans to turn kingdom into finance and events hub</p>
-    </div></li>
-          <li class="item" id="world-news-3"><div>
-      <a class="item-title" href="https://www.ft.com/content/076b9c64-d041-42f0-9abc-d7be75db9307">The diesel crisis is testing the limits of globalisation</a>
-      <p class="item-meta">news · www.ft.com · <time datetime="2026-10-12T17:14:19Z">02:14</time></p>
-      <p class="item-excerpt">Seemingly rational choices by individual states will weaken collective energy security and accelerate fragmentation</p>
-    </div></li>
-          <li class="item" id="world-news-4"><div>
-      <a class="item-title" href="https://www.ft.com/content/0a66d390-149d-4cdc-83b6-88015da1e835?syn-25a6b1a6=1">Britain, Brexit and the cat-flap option</a>
-      <p class="item-meta">news · www.ft.com · <time datetime="2026-10-12T10:59:07Z">10-12 19:59</time></p>
-      <p class="item-excerpt">The political, strategic and economic momentum for a reversal of Brexit is growing</p>
-    </div></li>
-          <li class="item" id="world-news-5"><div>
-      <a class="item-title" href="https://www.bbc.co.uk/news/articles/cvlyd4pdlwkxo?at_medium=RSS&amp;at_campaign=rss">Six Ukrainian energy sites hit by Russia since Trump announced ceasefire, Zelensky says</a>
-      <p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-12T21:20:51Z">06:20</time></p>
-      <p class="item-excerpt">Despite the US president announcing energy infrastructure would not be targeted strikes have continued, Ukraine says.</p>
-    </div></li>
-          <li class="item" id="world-news-6"><div>
-      <a class="item-title" href="https://www.bbc.co.uk/news/articles/cjx2359qekrdo?at_medium=RSS&amp;at_campaign=rss">Why Moscow is staying tight-lipped on Trump&#x27;s energy ceasefire</a>
-      <p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-12T20:17:37Z">05:17</time></p>
-      <p class="item-excerpt">While Ukraine&#x27;s Volodymyr Zelensky suggests he would sign up to a ceasefire on energy infrastructure, Russia has said little.</p>
-    </div></li>
+          <li class="item item-lead" id="world-news-1">
+            <div class="lead-text">
+              <a class="item-title" href="https://www.ft.com/content/fca23e77-be57-4d7e-ae61-74ff299e25cb?syn-25a6b1a6=1">Zuckerberg says Meta has reached AI ‘frontier’</a>
+              <p class="item-excerpt">FT interview: tech billionaire touts release of new Muse Wonder model after vast spending to challenge rivals in AI race</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-12T17:00:02Z">02:00</time></p>
+            </div>
+          </li>
+          <li class="item" id="world-news-2">
+            <a class="item-title" href="https://www.ft.com/content/bc7302fa-f8e4-43da-aad5-0abbfefca4f8?syn-25a6b1a6=1">Houthi assault on Saudi airports strikes at MBS’s economic vision</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-12T18:32:01Z">03:32</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Deadly bombardment of Riyadh’s international airport threatens crown prince’s plans to turn kingdom into finance and events hub</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-12T18:32:01Z">03:32</time></p>
+            </details>
+          </li>
+          <li class="item" id="world-news-3">
+            <a class="item-title" href="https://www.ft.com/content/076b9c64-d041-42f0-9abc-d7be75db9307">The diesel crisis is testing the limits of globalisation</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-12T17:14:19Z">02:14</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Seemingly rational choices by individual states will weaken collective energy security and accelerate fragmentation</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-12T17:14:19Z">02:14</time></p>
+            </details>
+          </li>
+          <li class="item" id="world-news-4">
+            <a class="item-title" href="https://www.ft.com/content/0a66d390-149d-4cdc-83b6-88015da1e835?syn-25a6b1a6=1">Britain, Brexit and the cat-flap option</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-12T10:59:07Z">10-12 19:59</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">The political, strategic and economic momentum for a reversal of Brexit is growing</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-12T10:59:07Z">10-12 19:59</time></p>
+            </details>
+          </li>
+          <li class="item" id="world-news-5">
+            <a class="item-title" href="https://www.bbc.co.uk/news/articles/cvlyd4pdlwkxo?at_medium=RSS&amp;at_campaign=rss">Six Ukrainian energy sites hit by Russia since Trump announced ceasefire, Zelensky says</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-12T21:20:51Z">06:20</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Despite the US president announcing energy infrastructure would not be targeted strikes have continued, Ukraine says.</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-12T21:20:51Z">06:20</time></p>
+            </details>
+          </li>
+          <li class="item" id="world-news-6">
+            <a class="item-title" href="https://www.bbc.co.uk/news/articles/cjx2359qekrdo?at_medium=RSS&amp;at_campaign=rss">Why Moscow is staying tight-lipped on Trump&#x27;s energy ceasefire</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-12T20:17:37Z">05:17</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">While Ukraine&#x27;s Volodymyr Zelensky suggests he would sign up to a ceasefire on energy infrastructure, Russia has said little.</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-12T20:17:37Z">05:17</time></p>
+            </details>
+          </li>
         </ol>
         <details class="more">
     <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
     <ol class="items" style="--start: 6">
-            <li class="item" id="world-news-7"><div>
-        <a class="item-title" href="https://www.bbc.co.uk/news/articles/c64g1l5389kvo?at_medium=RSS&amp;at_campaign=rss">Documents falsified to evade tax on Abramovich&#x27;s wealth, BBC finds</a>
-        <p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-12T05:00:52Z">10-12 14:00</time></p>
-        <p class="item-excerpt">Backdated paperwork also made the Russian oligarch’s yachts and mansions disappear from accounts, investigation finds.</p>
-      </div></li>
-            <li class="item" id="world-news-8"><div>
-        <a class="item-title" href="https://www.bbc.co.uk/news/articles/cjly0zqq27e4o?at_medium=RSS&amp;at_campaign=rss">Saudi minister vows &#x27;serious response&#x27; to Houthi attacks on airports</a>
-        <p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-12T20:54:09Z">05:54</time></p>
-        <p class="item-excerpt">It comes after the armed group hit Riyadh&#x27;s international airport and another facility, killing 13 people, in a significant escalation.</p>
-      </div></li>
-            <li class="item" id="world-news-9"><div>
-        <a class="item-title" href="https://www.bbc.co.uk/news/articles/cm78pwdp3n5qo?at_medium=RSS&amp;at_campaign=rss">Healey faces £35bn Budget challenge to meet spending pledges, says think tank</a>
-        <p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-12T08:50:22Z">10-12 17:50</time></p>
-        <p class="item-excerpt">The Institute for Fiscal Studies says the government will need a &quot;top-up&quot; of billions of pounds if it wants to meet its spending plans.</p>
-      </div></li>
-            <li class="item" id="world-news-10"><div>
-        <a class="item-title" href="https://www.bbc.co.uk/news/articles/c84g1xz1l9ddo?at_medium=RSS&amp;at_campaign=rss">How to avoid getting stung if you miss credit card payments</a>
-        <p class="item-meta">news · www.bbc.co.uk · <time datetime="2026-10-12T09:11:46Z">10-12 18:11</time></p>
-        <p class="item-excerpt">People are increasingly falling behind on credit card repayments, so here&#x27;s the best way to get debt advice.</p>
-      </div></li>
+            <li class="item" id="world-news-7">
+              <a class="item-title" href="https://www.bbc.co.uk/news/articles/c64g1l5389kvo?at_medium=RSS&amp;at_campaign=rss">Documents falsified to evade tax on Abramovich&#x27;s wealth, BBC finds</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-12T05:00:52Z">10-12 14:00</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Backdated paperwork also made the Russian oligarch’s yachts and mansions disappear from accounts, investigation finds.</p>
+                <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-12T05:00:52Z">10-12 14:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="world-news-8">
+              <a class="item-title" href="https://www.bbc.co.uk/news/articles/cjly0zqq27e4o?at_medium=RSS&amp;at_campaign=rss">Saudi minister vows &#x27;serious response&#x27; to Houthi attacks on airports</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-12T20:54:09Z">05:54</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">It comes after the armed group hit Riyadh&#x27;s international airport and another facility, killing 13 people, in a significant escalation.</p>
+                <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-12T20:54:09Z">05:54</time></p>
+              </details>
+            </li>
+            <li class="item" id="world-news-9">
+              <a class="item-title" href="https://www.bbc.co.uk/news/articles/cm78pwdp3n5qo?at_medium=RSS&amp;at_campaign=rss">Healey faces £35bn Budget challenge to meet spending pledges, says think tank</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-12T08:50:22Z">10-12 17:50</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">The Institute for Fiscal Studies says the government will need a &quot;top-up&quot; of billions of pounds if it wants to meet its spending plans.</p>
+                <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-12T08:50:22Z">10-12 17:50</time></p>
+              </details>
+            </li>
+            <li class="item" id="world-news-10">
+              <a class="item-title" href="https://www.bbc.co.uk/news/articles/c84g1xz1l9ddo?at_medium=RSS&amp;at_campaign=rss">How to avoid getting stung if you miss credit card payments</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-12T09:11:46Z">10-12 18:11</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">People are increasingly falling behind on credit card repayments, so here&#x27;s the best way to get debt advice.</p>
+                <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-12T09:11:46Z">10-12 18:11</time></p>
+              </details>
+            </li>
           </ol>
   </details>
       </section>
 
       <section class="producer" aria-labelledby="github-trending-daily">
-        <h2 class="producer-head" id="github-trending-daily">github-trending-daily <span class="count">9</span></h2>
-        <p class="producer-summary">GitHub trending (daily): top 9 repos by stars</p>
-        <!-- slot: intro:github-trending-daily lang=en -->
+        <div class="producer-lede">
+          <div class="producer-top"><h2 class="producer-head" id="github-trending-daily">github-trending-daily</h2><span class="count">9</span></div>
+                  <p class="producer-summary">GitHub trending (daily): top 9 repos by stars</p>
+          <!-- slot: intro:github-trending-daily lang=en -->
   <p class="intro" lang="en"><a href="#github-trending-daily-1">morluto/rea</a> gained 45,495 stars in a day, the highest figure of the days so far. <a href="#github-trending-daily-8">BitNet</a> offers inference for 1-bit models and <a href="#github-trending-daily-7">AirLLM</a> claims 2.8T-parameter inference on a 4GB GPU, so both bear on running large models locally. <a href="#github-trending-daily-9">free-claude-code</a> also trends.</p>
   <!-- /slot -->
-        <!-- slot: intro:github-trending-daily lang=ko -->
+          <!-- slot: intro:github-trending-daily lang=ko -->
   <p class="intro" lang="ko"><a href="#github-trending-daily-1">morluto/rea</a>가 하루 별 45,495개를 얻어 지금까지 중 가장 큰 수치입니다. <a href="#github-trending-daily-8">BitNet</a>은 1비트 모델 추론을, <a href="#github-trending-daily-7">AirLLM</a>은 4GB GPU로 2.8T 매개변수 모델 추론을 내세우므로 두 항목 모두 큰 모델의 로컬 실행과 관련됩니다. <a href="#github-trending-daily-9">free-claude-code</a>도 인기 목록에 있습니다.</p>
   <!-- /slot -->
+        </div>
         <ol class="items">
-          <li class="item" id="github-trending-daily-1"><div>
-      <a class="item-title" href="https://github.com/morluto/rea">morluto/rea</a>
-      <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-12T23:00:02Z">08:00</time></p>
-      <p class="item-excerpt">Reverse engineer anything with agents, from app behavior down to native binaries. · 154,185 stars total · 45,495 stars today</p>
-    </div></li>
-          <li class="item" id="github-trending-daily-2"><div>
-      <a class="item-title" href="https://github.com/bilawalsidhu/gods-eye-view">bilawalsidhu/gods-eye-view</a>
-      <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-12T23:00:02Z">08:00</time></p>
-      <p class="item-excerpt">A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe. · 53,567 stars total · 1,903 stars today</p>
-    </div></li>
-          <li class="item" id="github-trending-daily-3"><div>
-      <a class="item-title" href="https://github.com/mksglu/context-mode">mksglu/context-mode</a>
-      <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-12T23:00:02Z">08:00</time></p>
-      <p class="item-excerpt">Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks. · 27,240 stars total · 394 stars today</p>
-    </div></li>
-          <li class="item" id="github-trending-daily-4"><div>
-      <a class="item-title" href="https://github.com/storytold/artcraft">storytold/artcraft</a>
-      <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-12T23:00:02Z">08:00</time></p>
-      <p class="item-excerpt">ArtCraft is an intentional crafting engine for artists, designers, and filmmakers · 21,777 stars total · 4,106 stars today</p>
-    </div></li>
-          <li class="item" id="github-trending-daily-5"><div>
-      <a class="item-title" href="https://github.com/open-webui/open-webui">open-webui/open-webui</a>
-      <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-12T23:00:02Z">08:00</time></p>
-      <p class="item-excerpt">User-friendly AI Interface (Supports Ollama, OpenAI API, ...) · 154,922 stars total · 142 stars today</p>
-    </div></li>
-          <li class="item" id="github-trending-daily-6"><div>
-      <a class="item-title" href="https://github.com/cathrynlavery/diagram-design">cathrynlavery/diagram-design</a>
-      <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-12T23:00:02Z">08:00</time></p>
-      <p class="item-excerpt">Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. · 52,497 stars total · 2,100 stars today</p>
-    </div></li>
+          <li class="item item-lead" id="github-trending-daily-1">
+            <div class="lead-text">
+              <a class="item-title" href="https://github.com/morluto/rea">morluto/rea</a>
+              <p class="item-excerpt">Reverse engineer anything with agents, from app behavior down to native binaries. · 154,185 stars total · 45,495 stars today</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-12T23:00:02Z">08:00</time></p>
+            </div>
+          </li>
+          <li class="item" id="github-trending-daily-2">
+            <a class="item-title" href="https://github.com/bilawalsidhu/gods-eye-view">bilawalsidhu/gods-eye-view</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-12T23:00:02Z">08:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe. · 53,567 stars total · 1,903 stars today</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-12T23:00:02Z">08:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="github-trending-daily-3">
+            <a class="item-title" href="https://github.com/mksglu/context-mode">mksglu/context-mode</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-12T23:00:02Z">08:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks. · 27,240 stars total · 394 stars today</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-12T23:00:02Z">08:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="github-trending-daily-4">
+            <a class="item-title" href="https://github.com/storytold/artcraft">storytold/artcraft</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-12T23:00:02Z">08:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">ArtCraft is an intentional crafting engine for artists, designers, and filmmakers · 21,777 stars total · 4,106 stars today</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-12T23:00:02Z">08:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="github-trending-daily-5">
+            <a class="item-title" href="https://github.com/open-webui/open-webui">open-webui/open-webui</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-12T23:00:02Z">08:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">User-friendly AI Interface (Supports Ollama, OpenAI API, ...) · 154,922 stars total · 142 stars today</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-12T23:00:02Z">08:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="github-trending-daily-6">
+            <a class="item-title" href="https://github.com/cathrynlavery/diagram-design">cathrynlavery/diagram-design</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-12T23:00:02Z">08:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. · 52,497 stars total · 2,100 stars today</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-12T23:00:02Z">08:00</time></p>
+            </details>
+          </li>
         </ol>
         <details class="more">
     <summary><span>3<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
     <ol class="items" style="--start: 6">
-            <li class="item" id="github-trending-daily-7"><div>
-        <a class="item-title" href="https://github.com/lyogavin/airllm">lyogavin/airllm</a>
-        <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-12T23:00:02Z">08:00</time></p>
-        <p class="item-excerpt">AirLLM 2.8T LLM inference with single 4GB GPU · 37,488 stars total · 886 stars today</p>
-      </div></li>
-            <li class="item" id="github-trending-daily-8"><div>
-        <a class="item-title" href="https://github.com/microsoft/BitNet">microsoft/BitNet</a>
-        <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-12T23:00:02Z">08:00</time></p>
-        <p class="item-excerpt">Official inference framework for 1-bit LLMs · 40,889 stars total · 134 stars today</p>
-      </div></li>
-            <li class="item" id="github-trending-daily-9"><div>
-        <a class="item-title" href="https://github.com/Alishahryar1/free-claude-code">Alishahryar1/free-claude-code</a>
-        <p class="item-meta">repo_trending · github.com · <time datetime="2026-10-12T23:00:02Z">08:00</time></p>
-        <p class="item-excerpt">Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly) · 59,0…</p>
-      </div></li>
+            <li class="item" id="github-trending-daily-7">
+              <a class="item-title" href="https://github.com/lyogavin/airllm">lyogavin/airllm</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-12T23:00:02Z">08:00</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">AirLLM 2.8T LLM inference with single 4GB GPU · 37,488 stars total · 886 stars today</p>
+                <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-12T23:00:02Z">08:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="github-trending-daily-8">
+              <a class="item-title" href="https://github.com/microsoft/BitNet">microsoft/BitNet</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-12T23:00:02Z">08:00</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Official inference framework for 1-bit LLMs · 40,889 stars total · 134 stars today</p>
+                <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-12T23:00:02Z">08:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="github-trending-daily-9">
+              <a class="item-title" href="https://github.com/Alishahryar1/free-claude-code">Alishahryar1/free-claude-code</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-12T23:00:02Z">08:00</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly) · 59,0…</p>
+                <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-12T23:00:02Z">08:00</time></p>
+              </details>
+            </li>
           </ol>
   </details>
       </section>
       <!-- /slot -->
     </div>
 
-    <div class="zone">
+    <div class="zone zone-projects">
       <h2 class="zone-title"><span lang="en">Projects</span><span lang="ko">프로젝트</span></h2>
       <!-- slot: personal -->
       <!-- /slot -->
     </div>
-
   </main>
 
   <nav class="days" aria-label="Other days">
