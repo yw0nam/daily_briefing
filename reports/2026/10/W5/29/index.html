@@ -1,0 +1,755 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex">
+<meta name="description" content="One day of the briefing, with the state of every source.">
+<!-- slot: title --><title>Briefing · 2026-10-29</title><!-- /slot -->
+<style id="lang-rule">body [lang]:not([lang="en"]) { display: none !important; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans+KR:wght@500;600&family=Noto+Serif+KR:wght@400;500&display=swap">
+<link rel="stylesheet" href="../../../../../src/style.css">
+<script src="../../../../../src/lang.js"></script>
+</head>
+<body>
+<header class="runner container">
+  <a class="wordmark" href="../../../../../"><span lang="en">Daily briefing</span><span lang="ko">오늘의 브리핑</span></a>
+  <label class="lang-switch">
+    <select id="lang-select" aria-label="Language">
+      <!-- slot: languages -->
+      <option value="en">EN</option>
+      <option value="ko">KO</option>
+      <!-- /slot -->
+    </select>
+  </label>
+</header>
+
+<div class="page container">
+
+  <header class="front">
+    <div>
+      <div class="masthead">
+        <!-- slot: date lang=en -->
+    <div lang="en">
+      <h1>Thursday, October 29</h1>
+      <p class="dateline"><time datetime="2026-10-29T08:15:00+09:00"><span>2026-10-29</span> <span>prepared at 08:15</span></time></p>
+    </div>
+        <!-- /slot -->
+        <!-- slot: date lang=ko -->
+    <div lang="ko">
+      <h1>10월 29일 목요일</h1>
+      <p class="dateline"><time datetime="2026-10-29T08:15:00+09:00"><span>2026-10-29</span> <span>08:15 작성</span></time></p>
+    </div>
+        <!-- /slot -->
+      </div>
+
+      <section class="lead" aria-label="Summary">
+        <!-- slot: summary lang=en -->
+    <div lang="en">
+      <p>The project advanced its plugin system, with the Rust MCP host, catalog install and removal, and plugin bridge tools all merged; 30 of 56 updates from the last 24 hours are listed. No review request appears among the 30 listed items. Headlines include a Federal Reserve rate hold, a fatal train collision in Spain, and partial Israeli election results.</p>
+      <p>Agent tooling leads both the GitHub trending list and the daily papers. One source needs a look: the cnn-topstories feed in world-news is stale, so that section may miss stories.</p>
+    </div>
+        <!-- /slot -->
+        <!-- slot: summary lang=ko -->
+    <div lang="ko">
+      <p>프로젝트는 플러그인 시스템 작업을 진전시켜 Rust MCP 호스트, 카탈로그 설치·제거, 플러그인 브리지 도구를 모두 병합했으며, 최근 24시간의 56건 중 30건이 수록되어 있습니다. 수록된 30건 가운데 검토 요청 항목은 없습니다. 주요 뉴스는 연방준비제도의 금리 동결, 스페인의 열차 충돌 참사, 이스라엘 총선 부분 개표 결과입니다.</p>
+      <p>GitHub 트렌딩과 일간 논문 모두 에이전트 도구가 앞서 있습니다. 확인이 필요한 소스는 한 곳으로, world-news의 cnn-topstories 피드가 지연 상태여서 해당 섹션에 빠진 기사가 있을 수 있습니다.</p>
+    </div>
+        <!-- /slot -->
+      </section>
+    </div>
+
+    <aside class="ledger">
+      <nav class="contents" aria-label="Contents">
+        <!-- slot: contents -->
+    <ol>
+      <li><a href="#world-news"><span class="toc-name">world-news</span><span class="status status-stale"><span lang="en">stale</span><span lang="ko">지연</span></span><span class="toc-count">10</span></a></li>
+      <li><a href="#github-trending-daily"><span class="toc-name">github-trending-daily</span><span class="toc-count">10</span></a></li>
+      <li><a href="#huggingface-papers-daily"><span class="toc-name">huggingface-papers-daily</span><span class="toc-count">10</span></a></li>
+    </ol>
+    <p class="toc-zone"><span lang="en">Projects</span><span lang="ko">프로젝트</span></p>
+    <ol>
+      <li><a href="#yui-repo"><span class="toc-name">yui-repo</span><span class="toc-count">30</span></a></li>
+    </ol>
+      <!-- /slot -->
+      </nav>
+
+      <section class="health" aria-labelledby="attention">
+        <h2 id="attention"><span lang="en">Needs attention</span><span lang="ko">확인이 필요한 소스</span></h2>
+        <div class="notices">
+          <!-- slot: notices -->
+      <div class="notice">
+        <p class="notice-head"><span class="status status-stale"><span lang="en">Stale</span><span lang="ko">지연</span></span><span class="source-name"><span class="source-producer">world-news</span> cnn-topstories</span></p>
+        <p class="notice-detail"><span lang="en">No success on record</span><span lang="ko">성공 기록 없음</span></p>
+      </div>
+      <!-- /slot -->
+        </div>
+      </section>
+    </aside>
+  </header>
+
+  <main>
+    <div class="zone">
+      <!-- slot: producers -->
+      <section class="producer" aria-labelledby="world-news">
+        <div class="producer-lede">
+          <div class="producer-top"><h2 class="producer-head" id="world-news">world-news</h2><span class="count">10</span></div>
+          <p class="producer-summary">World news roundup: 10 items from 3 live feed(s)</p>
+          <!-- slot: intro:world-news lang=en -->
+          <p class="intro" lang="en">The Federal Reserve held rates despite rising inflation (<a href="#world-news-2">item 2</a>), a high-speed train collision in Spain killed at least 68 people (<a href="#world-news-5">item 5</a>), and partial results in Israel show the governing bloc short of a majority (<a href="#world-news-8">item 8</a>). One of the four feeds, cnn-topstories, is stale, so coverage may be incomplete.</p>
+          <!-- /slot -->
+          <!-- slot: intro:world-news lang=ko -->
+          <p class="intro" lang="ko">미국 연방준비제도가 물가 상승에도 금리를 동결했고(<a href="#world-news-2">2번 항목</a>), 스페인에서 고속열차 충돌 사고로 최소 68명이 숨졌으며(<a href="#world-news-5">5번 항목</a>), 이스라엘 총선 부분 개표에서는 집권 블록이 과반에 못 미치고 있습니다(<a href="#world-news-8">8번 항목</a>). 피드 네 곳 중 cnn-topstories가 지연 상태여서 일부 기사가 빠졌을 수 있습니다.</p>
+          <!-- /slot -->
+        </div>
+        <ol class="items">
+          <li class="item item-lead" id="world-news-1">
+            <div class="lead-text">
+              <a class="item-title" href="https://www.ft.com/content/0476f216-0060-475c-962f-61d73d7d660b?syn-25a6b1a6=1">Weil leadership tells partners firm should be dissolved</a>
+              <p class="item-excerpt">Decision marks stunning downfall for near-century-old law firm that was among America’s largest and most prestigious</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-28T20:28:37Z">05:28</time></p>
+            </div>
+          </li>
+          <li class="item" id="world-news-2">
+            <a class="item-title" href="https://www.ft.com/content/f31fccd8-e9b6-4b01-989d-790ca6bb4d29?syn-25a6b1a6=1">Fed holds fire on interest rates despite intensifying inflation</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T21:32:08Z">06:32</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Central bank to vote on monetary policy seven times next year in shift from decades-old custom of having eight such meetings</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-28T21:32:08Z">06:32</time></p>
+            </details>
+          </li>
+          <li class="item" id="world-news-3">
+            <a class="item-title" href="https://www.ft.com/content/a89fa128-8fcb-4ff4-bd8b-6bb591ccd9c1?syn-25a6b1a6=1">The globetrotting Trump brothers</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T05:00:07Z">10-28 14:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">The president’s sons Donald Jr and Eric have met world leaders and foreign officials while building a lucrative web of financial interests</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-28T05:00:07Z">10-28 14:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="world-news-4">
+            <a class="item-title" href="https://www.ft.com/content/624f7138-96b0-4752-96f1-b54f2b18742b?syn-25a6b1a6=1">Why even America’s ‘haves’ are feeling the squeeze</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T10:00:04Z">10-28 19:00</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Rising costs everywhere from insurance to lawn care mean almost half of US homeowners lack financial breathing room</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-10-28T10:00:04Z">10-28 19:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="world-news-5">
+            <a class="item-title" href="https://www.bbc.co.uk/news/articles/c6p3g84kjqjlo?at_medium=RSS&amp;at_campaign=rss">High-speed train crash kills at least 68 people in Spain</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T21:38:54Z">06:38</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">The crash, between a moving train and another that was stopped further up the track, was caused by an &quot;inexplicable&quot; error, the transport minister said.</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-28T21:38:54Z">06:38</time></p>
+            </details>
+          </li>
+          <li class="item" id="world-news-6">
+            <a class="item-title" href="https://www.bbc.co.uk/news/articles/cm9qzd47ng98o?at_medium=RSS&amp;at_campaign=rss">Bloodied, dazed and angry - how passengers' rail journey turned to disaster in Spain</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T21:24:41Z">06:24</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Survivors of the train crash in Spain have spoken of their shock, panic and anger at the accident in Toledo province on Wednesday.</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-28T21:24:41Z">06:24</time></p>
+            </details>
+          </li>
+        </ol>
+        <details class="more">
+          <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
+          <ol class="items" style="--start: 6">
+            <li class="item" id="world-news-7">
+              <a class="item-title" href="https://www.bbc.co.uk/news/articles/c6kglwe4lxwzo?at_medium=RSS&amp;at_campaign=rss">Flávio Bolsonaro denies fleeing Brazil after landing in Miami</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T22:13:35Z">07:13</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">The defeated Brazilian candidate claims to be the victim of a coup d’état and political persecution, recycling unsubstantiated allegations of “electoral fraud”.</p>
+                <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-28T22:13:35Z">07:13</time></p>
+              </details>
+            </li>
+            <li class="item" id="world-news-8">
+              <a class="item-title" href="https://www.bbc.co.uk/news/articles/cmdx3knq1xexo?at_medium=RSS&amp;at_campaign=rss">Netanyahu's bloc leading Israel election but short of majority, partial results show</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T20:24:39Z">05:24</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">With 85% of ballots counted, Netanyahu's Likud party and its allies are set to win 53 seats in the 120-seat Knesset.</p>
+                <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-28T20:24:39Z">05:24</time></p>
+              </details>
+            </li>
+            <li class="item" id="world-news-9">
+              <a class="item-title" href="https://www.bbc.co.uk/news/articles/cqpvgxz3y49go?at_medium=RSS&amp;at_campaign=rss">Healey unveils £100 for energy bills and bank tax in first Budget</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T18:45:09Z">03:45</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">The chancellor targets the cost of living amid global economic turmoil but opposition parties say he has not been bold enough.</p>
+                <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-28T18:45:09Z">03:45</time></p>
+              </details>
+            </li>
+            <li class="item" id="world-news-10">
+              <a class="item-title" href="https://www.bbc.co.uk/news/articles/c9x28350ly07o?at_medium=RSS&amp;at_campaign=rss">What we now know about the UK economy in four charts</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T20:08:45Z">05:08</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">The Office for Budget Responsibility says higher energy prices will impact everything from prices and living standards to economic growth.</p>
+                <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-10-28T20:08:45Z">05:08</time></p>
+              </details>
+            </li>
+          </ol>
+        </details>
+      </section>
+
+      <section class="producer" aria-labelledby="github-trending-daily">
+        <div class="producer-lede">
+          <div class="producer-top"><h2 class="producer-head" id="github-trending-daily">github-trending-daily</h2><span class="count">10</span></div>
+          <p class="producer-summary">GitHub trending (daily): top 10 repos by stars</p>
+          <!-- slot: intro:github-trending-daily lang=en -->
+          <p class="intro" lang="en">Agent tooling dominates the list, with several design and coding-agent skill repositories among the top entries. <a href="#github-trending-daily-4">DeepTutor</a> gained the most stars today at 2,376, followed by <a href="#github-trending-daily-6">hallmark</a> at 2,109.</p>
+          <!-- /slot -->
+          <!-- slot: intro:github-trending-daily lang=ko -->
+          <p class="intro" lang="ko">에이전트 도구가 목록을 주도하며, 상위 항목에 디자인 및 코딩 에이전트 스킬 저장소가 여럿 포함되어 있습니다. 오늘 별을 가장 많이 얻은 곳은 2,376개의 <a href="#github-trending-daily-4">DeepTutor</a>이며, <a href="#github-trending-daily-6">hallmark</a>가 2,109개로 뒤를 이었습니다.</p>
+          <!-- /slot -->
+        </div>
+        <ol class="items">
+          <li class="item item-lead" id="github-trending-daily-1">
+            <div class="lead-text">
+              <a class="item-title" href="https://github.com/JetBrains/thinkrail">JetBrains/thinkrail</a>
+              <p class="item-figure"><span class="figure-value">1,075</span><span class="figure-label">stars today</span></p>
+              <p class="item-excerpt">Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need. 4,994 stars in all.</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-28T23:00:03Z">08:00</time></p>
+            </div>
+          </li>
+          <li class="item" id="github-trending-daily-2">
+            <a class="item-title" href="https://github.com/elayadesign/ai-design-skills">elayadesign/ai-design-skills</a>
+            <p class="item-figure"><span class="figure-value">1,938</span><span class="figure-label">stars today</span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">11,051 stars in all.</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-28T23:00:03Z">08:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="github-trending-daily-3">
+            <a class="item-title" href="https://github.com/obra/superpowers">obra/superpowers</a>
+            <p class="item-figure"><span class="figure-value">1,096</span><span class="figure-label">stars today</span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">An agentic skills framework &amp; software development methodology that works. 307,401 stars in all.</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-28T23:00:03Z">08:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="github-trending-daily-4">
+            <a class="item-title" href="https://github.com/HKUDS/DeepTutor">HKUDS/DeepTutor</a>
+            <p class="item-figure"><span class="figure-value">2,376</span><span class="figure-label">stars today</span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/ . 47,886 stars in all.</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-28T23:00:03Z">08:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="github-trending-daily-5">
+            <a class="item-title" href="https://github.com/macro-inc/macro">macro-inc/macro</a>
+            <p class="item-figure"><span class="figure-value">106</span><span class="figure-label">stars today</span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory. 5,392 stars in all.</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-28T23:00:03Z">08:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="github-trending-daily-6">
+            <a class="item-title" href="https://github.com/Nutlope/hallmark">Nutlope/hallmark</a>
+            <p class="item-figure"><span class="figure-value">2,109</span><span class="figure-label">stars today</span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Anti-AI-slop design skill for Claude Code, Cursor, and Codex. 40,638 stars in all.</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-28T23:00:03Z">08:00</time></p>
+            </details>
+          </li>
+        </ol>
+        <details class="more">
+          <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
+          <ol class="items" style="--start: 6">
+            <li class="item" id="github-trending-daily-7">
+              <a class="item-title" href="https://github.com/pbakaus/impeccable">pbakaus/impeccable</a>
+              <p class="item-figure"><span class="figure-value">1,471</span><span class="figure-label">stars today</span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships. 92,518 stars in all.</p>
+                <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-28T23:00:03Z">08:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="github-trending-daily-8">
+              <a class="item-title" href="https://github.com/makecindy/cindy">makecindy/cindy</a>
+              <p class="item-figure"><span class="figure-value">740</span><span class="figure-label">stars today</span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。 8,051 stars in all.</p>
+                <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-28T23:00:03Z">08:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="github-trending-daily-9">
+              <a class="item-title" href="https://github.com/nightly-labs/openbot">nightly-labs/openbot</a>
+              <p class="item-figure"><span class="figure-value">1,053</span><span class="figure-label">stars today</span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration. 3,200 stars in all.</p>
+                <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-28T23:00:03Z">08:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="github-trending-daily-10">
+              <a class="item-title" href="https://github.com/togg53192-cmd/jailbreaks">togg53192-cmd/jailbreaks</a>
+              <p class="item-figure"><span class="figure-value">1,478</span><span class="figure-label">stars today</span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">LIST OF ALL MY JAILBREAKS. 7,027 stars in all.</p>
+                <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-10-28T23:00:03Z">08:00</time></p>
+              </details>
+            </li>
+          </ol>
+        </details>
+      </section>
+
+      <section class="producer" aria-labelledby="huggingface-papers-daily">
+        <div class="producer-lede">
+          <div class="producer-top"><h2 class="producer-head" id="huggingface-papers-daily">huggingface-papers-daily</h2><span class="count">10</span></div>
+          <p class="producer-summary">HuggingFace daily papers: top 10 of 50 today</p>
+          <!-- slot: intro:huggingface-papers-daily lang=en -->
+          <p class="intro" lang="en">Agent research leads today. <a href="#huggingface-papers-daily-2">Multiscale Policy Optimization for long-horizon agents</a> and <a href="#huggingface-papers-daily-7">Memory Tax</a>, a study of the net value of agent memory, bear on agent design. The top entry is <a href="#huggingface-papers-daily-1">ChronoReplay</a> on streaming spatial intelligence, with 344 upvotes.</p>
+          <!-- /slot -->
+          <!-- slot: intro:huggingface-papers-daily lang=ko -->
+          <p class="intro" lang="ko">오늘은 에이전트 연구가 앞서 있습니다. <a href="#huggingface-papers-daily-2">장기 과제 에이전트를 위한 다중 스케일 정책 최적화</a>와 에이전트 메모리의 순가치를 따진 <a href="#huggingface-papers-daily-7">Memory Tax</a>가 에이전트 설계와 관련이 있습니다. 최상위 항목은 스트리밍 공간 지능을 다룬 <a href="#huggingface-papers-daily-1">ChronoReplay</a>로, 추천 344건을 받았습니다.</p>
+          <!-- /slot -->
+        </div>
+        <ol class="items">
+          <li class="item item-lead" id="huggingface-papers-daily-1">
+            <figure class="item-image"><img src="https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.34283.png" alt=""></figure>
+            <div class="lead-text">
+              <a class="item-title" href="https://huggingface.co/papers/2610.34283">ChronoReplay: One Answer Interface Is Not Enough for Streaming Spatial Intelligence</a>
+              <p class="item-figure"><span class="figure-value">344</span><span class="figure-label">upvotes</span></p>
+              <p class="item-excerpt">Training a spatial VLM to answer which side an object lies on does not require it to preserve the metric displacement that determines that answer, while supervision for a distance estimate may leave categorical relations largely unconstrained. When post-training emphasizes one r…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-24T20:00:00Z">10-25 05:00</time></p>
+            </div>
+          </li>
+          <li class="item" id="huggingface-papers-daily-2">
+            <a class="item-title" href="https://huggingface.co/papers/2610.35013">Multiscale Policy Optimization for Long-Horizon LLM Agents</a>
+            <p class="item-figure"><span class="figure-value">317</span><span class="figure-label">upvotes</span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Long-horizon LLM agents interact with their environments through complete assistant turns while generating each action token by token. We observe that critic values vary primarily across turns, motivating optimization anchored at turns with finer credit allocation among tokens. …</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-25T20:00:00Z">10-26 05:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="huggingface-papers-daily-3">
+            <a class="item-title" href="https://huggingface.co/papers/2610.36077">The Trinity:Capability-Driven Recursive Self-Improvement for Multimodal Agents</a>
+            <p class="item-figure"><span class="figure-value">311</span><span class="figure-label">upvotes</span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Multimodal intelligence can be viewed as human-guided co-evolution between worlds and agents through interaction. However, scaling this process faces two bottlenecks: constructing heterogeneous, verifiable environments is costly, and manual Harness iteration cannot keep pace wit…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-25T20:00:00Z">10-26 05:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="huggingface-papers-daily-4">
+            <a class="item-title" href="https://huggingface.co/papers/2610.35864">VibeVideoBench: Evaluating Multimodal Agents on Code-Driven Video Generation</a>
+            <p class="item-figure"><span class="figure-value">171</span><span class="figure-label">upvotes</span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Diffusion video models produce striking clips, but they cannot reliably render an exact formula, a correct chart, a rule-consistent game or narration synchronized to on-screen events. A different route is emerging: multimodal agents that write code to render every frame and synt…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-26T20:00:00Z">10-27 05:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="huggingface-papers-daily-5">
+            <a class="item-title" href="https://huggingface.co/papers/2610.37381">PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations</a>
+            <p class="item-figure"><span class="figure-value">138</span><span class="figure-label">upvotes</span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Vision--Language--Action (VLA) models generate robot actions from visual observations and language instructions, but their understanding of physical dynamics remains limited. Video world models can capture scene dynamics, yet generating future videos introduces high latency into…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-26T20:00:00Z">10-27 05:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="huggingface-papers-daily-6">
+            <a class="item-title" href="https://huggingface.co/papers/2610.36729">Hy-Nomas: Towards Free-form Interactive World Generation</a>
+            <p class="item-figure"><span class="figure-value">104</span><span class="figure-label">upvotes</span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Interactive world generation requires models to follow successive commands while preserving relevant history and action consequences. We present Hy-Nomas, a video world model with an 8B diffusion backbone that supports free-form text instructions and continuous camera control ac…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-26T20:00:00Z">10-27 05:00</time></p>
+            </details>
+          </li>
+        </ol>
+        <details class="more">
+          <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
+          <ol class="items" style="--start: 6">
+            <li class="item" id="huggingface-papers-daily-7">
+              <a class="item-title" href="https://huggingface.co/papers/2610.34073">Memory Tax: Dissecting the Net Value of Agent Memory</a>
+              <p class="item-figure"><span class="figure-value">99</span><span class="figure-label">upvotes</span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Memory is increasingly used in long-horizon agents, yet the net value of building memory over direct retrieval from raw history remains largely unclear. Through a large-scale evaluation across multiple benchmarks and model backbones, we find many dedicated memory systems underpe…</p>
+                <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-24T20:00:00Z">10-25 05:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="huggingface-papers-daily-8">
+              <a class="item-title" href="https://huggingface.co/papers/2610.37662">Can Discrete Tokens Serve as Semantically Lossless Representations of Visual Signals?</a>
+              <p class="item-figure"><span class="figure-value">88</span><span class="figure-label">upvotes</span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Discrete visual tokens represent vision in a discrete form analogous to language, offering a native interface for multimodal modeling under a shared next-token prediction objective. However, quantization error is widely assumed to cause unavoidable semantic loss, fundamentally l…</p>
+                <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-26T20:00:00Z">10-27 05:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="huggingface-papers-daily-9">
+              <a class="item-title" href="https://huggingface.co/papers/2610.24520">HABIT-Bench: Evaluating Habit Induction from Longitudinal Weak Evidence in Agent Memory</a>
+              <p class="item-figure"><span class="figure-value">78</span><span class="figure-label">upvotes</span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">In long-term interactions with large language model (LLM) agents, users reveal habits through their choices and actions. These habits capture implicit user information that agents must infer across conversations. However, individual observations may provide only partial evidence…</p>
+                <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-19T20:00:00Z">10-20 05:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="huggingface-papers-daily-10">
+              <a class="item-title" href="https://huggingface.co/papers/2610.32046">Can Test-Time Memory Evolution Outperform Test-Time Training for Scientific Discovery?</a>
+              <p class="item-figure"><span class="figure-value">61</span><span class="figure-label">upvotes</span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Recent test-time training (TTT) frameworks have enabled open-weight large language models (LLMs) to outperform inference-only frameworks powered by frontier models on scientific discovery tasks. However, TTT introduces additional computational cost for online weight updates duri…</p>
+                <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-22T20:00:00Z">10-23 05:00</time></p>
+              </details>
+            </li>
+          </ol>
+        </details>
+      </section>
+      <!-- /slot -->
+    </div>
+
+    <div class="zone zone-projects">
+      <h2 class="zone-title"><span lang="en">Projects</span><span lang="ko">프로젝트</span></h2>
+      <!-- slot: personal -->
+      <section class="producer" aria-labelledby="yui-repo">
+        <div class="producer-lede">
+          <div class="producer-top"><h3 class="producer-head" id="yui-repo">yui-repo</h3><span class="count">30</span></div>
+          <p class="producer-summary">YUI repository: 56 updates in the last 24 hours, including closed issues, merged pull requests, features, and review requests for Youngwoo.</p>
+          <!-- slot: intro:yui-repo lang=en -->
+          <p class="intro" lang="en">The project merged work on the plugin system: the <a href="#yui-repo-12">Rust MCP host</a>, <a href="#yui-repo-4">catalog install, update and removal</a>, and <a href="#yui-repo-2">bridge tools for plugin tools and skills</a>. Smaller fixes landed for the <a href="#yui-repo-8">signal details sheet</a> and the <a href="#yui-repo-10">macOS ad hoc signing</a>. The feed lists 30 of 56 updates from the last 24 hours.</p>
+          <!-- /slot -->
+          <!-- slot: intro:yui-repo lang=ko -->
+          <p class="intro" lang="ko">프로젝트에서 플러그인 시스템 작업이 병합되었습니다. <a href="#yui-repo-12">Rust MCP 호스트</a>, <a href="#yui-repo-4">카탈로그 설치·업데이트·제거</a>, <a href="#yui-repo-2">플러그인 도구와 스킬을 잇는 브리지 도구</a>입니다. <a href="#yui-repo-8">시그널 상세 시트</a>와 <a href="#yui-repo-10">macOS 애드혹 서명</a>에 대한 소규모 수정도 반영되었습니다. 이 피드는 최근 24시간의 56건 중 30건을 싣고 있습니다.</p>
+          <!-- /slot -->
+        </div>
+        <ol class="items">
+          <li class="item item-lead" id="yui-repo-1">
+            <div class="lead-text">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1666">Bridge tools and the plugin tools line</a>
+              <p class="item-excerpt">Part of #1657 ## Question Build the client side to the bridge contract fixed in &quot;Bridge contract details&quot; (#1664, resolution comment): `plugin_describe`, `plugin_call`, and `plugin_skill` as `ClientTool`s over the host, declared on every transport; the per-turn `plugin tools:` a…</p>
+              <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-28T15:21:45Z">00:21</time></p>
+            </div>
+          </li>
+          <li class="item" id="yui-repo-2">
+            <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1703">feat: bridge tools reach plugin tools and skills, and every turn lists them</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T15:21:44Z">00:21</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Summary The backend model can now find, describe and call the tools of an enabled YUI-hosted plugin, and read its skills. This works on every transport, through three bridge tools. Every turn also lists what is on offer. ``` pet window (Tauri only) createPetWindowTools ─┬─ … …</p>
+              <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-10-28T15:21:44Z">00:21</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-3">
+            <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1667">Install, update, and remove from the catalog</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T13:54:25Z">10-28 22:54</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Part of #1657 ## Question Start from the quarantine measurement in &quot;Quarantine on files the unsigned app writes and spawns&quot; (#1688). Build catalog fetch, install, update, and remove in the host to &quot;catalog.json schema and the release pipeline&quot;: download the platform asset, check…</p>
+              <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-28T13:54:25Z">10-28 22:54</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-4">
+            <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1702">feat: install, update, and remove plugins from the catalog</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T13:54:23Z">10-28 22:54</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Summary The MCP host installs, updates, and removes plugins from the Catalog (`plugins/catalog.json` on main). Before this PR it listed only plugins added from a folder; nothing downloaded or removed a plugin. ``` src-tauri/src/mcp_host/ catalog.rs new: fetch the Catalog (sch…</p>
+              <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-10-28T13:54:23Z">10-28 22:54</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-5">
+            <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1699">[feature] Reasoning effort Default: send no effort and let the model decide</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T07:46:26Z">10-28 16:46</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Work description The client always sends a reasoning effort: `reasoning_effort` on Chat Completions and `reasoning.effort` on Responses (`src/dispatcher/backend/backend-caller.ts:293`, `src/io/chat/stream/chat-completions-stream.ts:108`, `src/io/chat/stream/responses-stream.t…</p>
+              <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-28T07:46:26Z">10-28 16:46</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-6">
+            <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1700">feat!: reasoning effort Default sends no effort and is the new default</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T07:46:24Z">10-28 16:46</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Summary The reasoning-effort setting gains `Default`, its new starting value and first segment. With `Default` the client sends no `reasoning_effort` (Chat Completions) and no `reasoning` (Responses), so the backend applies the model's own default. `none`, `minimal`, `low`, `…</p>
+              <p class="item-meta"><span class="item-kind">pull_request</span><span class="item-host">github.com</span><time datetime="2026-10-28T07:46:24Z">10-28 16:46</time></p>
+            </details>
+          </li>
+        </ol>
+        <details class="more">
+          <summary><span>24<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
+          <ol class="items" style="--start: 6">
+            <li class="item" id="yui-repo-7">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1678">[bug] Signal details sheet is cut off in a short window, and opening it in the expanded list scrolls the page</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T07:34:36Z">10-28 16:34</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Symptoms Found while measuring #1634 (rung 1: the real pet page in headless Chromium, the real `createSignalChips` and `createDelegationChip` mounted into the app's chip column, 3 signal chips plus the delegation chip). 1. **The details sheet is cut at the bottom in a short w…</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-28T07:34:36Z">10-28 16:34</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-8">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1697">fix: signal details sheet stays inside the window and opening it never scrolls</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T07:34:35Z">10-28 16:34</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary The signal details sheet stays inside the pet window at any size, and opening it never scrolls the page. ```diff chip.open click openId = id; render() renderDetails() # sheet absolute under the whole chip column setVisible(true) + fitSheet(details.el) # lift so the bo…</p>
+                <p class="item-meta"><span class="item-kind">pull_request</span><span class="item-host">github.com</span><time datetime="2026-10-28T07:34:35Z">10-28 16:34</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-9">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1691">[bug] Unsigned macOS release is refused as damaged, and the release notes point to Open Anyway</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T07:30:11Z">10-28 16:30</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Symptoms The macOS app released without Apple secrets is refused as &quot;damaged&quot; when it carries `com.apple.quarantine` (a Safari download), and the dialog offers no way to open it. The release notes and the build guide tell users to allow it under **System Settings → Privacy &amp; …</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-28T07:30:11Z">10-28 16:30</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-10">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1696">fix: sign the macOS bundle ad hoc when no Developer ID certificate is set</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T07:30:10Z">10-28 16:30</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary The release workflow signs the macOS bundle ad hoc when no Developer ID certificate is registered. Today the shipped `YUI.app` is only linker-signed (`Sealed Resources=none`), so a downloaded copy is refused as &quot;damaged&quot; with no Open Anyway. With a sealed ad hoc signa…</p>
+                <p class="item-meta"><span class="item-kind">pull_request</span><span class="item-host">github.com</span><time datetime="2026-10-28T07:30:10Z">10-28 16:30</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-11">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1665">Build the Rust MCP host</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T07:25:40Z">10-28 16:25</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Part of #1657 ## Question Build `src-tauri/src/mcp_host/` to the decisions in #1648 and the P0 measurements: plugin → servers from `.mcp.json`; spawn with `${CLAUDE_PLUGIN_ROOT}` / `${CLAUDE_PLUGIN_DATA}` expansion and argv without a shell; startup deadline; bounded stderr tail;…</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-28T07:25:40Z">10-28 16:25</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-12">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1693">feat: Rust MCP host for local plugins</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T07:25:38Z">10-28 16:25</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary YUI now runs local plugins' MCP servers itself. A new Rust part, `src-tauri/src/mcp_host/`, starts each enabled plugin's servers, keeps enablement and consent on disk, publishes a revisioned snapshot to every window, and answers tool calls and skill reads. No TypeScri…</p>
+                <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-10-28T07:25:38Z">10-28 16:25</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-13">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1692">[feature] address_character description: hand off only when the user asks, and name handoff in the first sentence</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T07:24:11Z">10-28 16:24</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Work description `address_character`'s description decides when a backend model hands the user's message to another character. Today it says &quot;Use handoff when the user's message is better answered by that character&quot;, gives the sender no instruction for its own reply, and its …</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-28T07:24:11Z">10-28 16:24</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-14">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1695">feat: address_character hands off only when the user asks</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T07:24:09Z">10-28 16:24</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary `address_character`'s description now: - names both uses in its first sentence (`Talk to or hand off to another character: name who this reply is for.`), so a backend that lists deferred tools by their first sentence (Hermes `tool_search`) still shows that a handoff e…</p>
+                <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-10-28T07:24:09Z">10-28 16:24</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-15">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1694">chore: catalog browser v0.1.0</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T06:56:48Z">10-28 15:56</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary The checks do not start on a PR opened by GITHUB_TOKEN; before merging, run `gh pr close &lt;n&gt; &amp;&amp; gh pr reopen &lt;n&gt;` once. Lists browser 0.1.0 in the plugin catalog, from the release https://github.com/yw0nam/YUI/releases/tag/plugin-browser-v0.1.0. ## Related issues N/A …</p>
+                <p class="item-meta"><span class="item-kind">pull_request</span><span class="item-host">github.com</span><time datetime="2026-10-28T06:56:48Z">10-28 15:56</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-16">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1688">Quarantine on files the unsigned app writes and spawns</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T06:46:18Z">10-28 15:46</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Part of #1657 ## Question Measure on macOS, with the app as shipped (unsigned, un-notarized): when the app itself downloads a zip over HTTPS, unpacks it into its app data folder, and spawns the unpacked binary, does any written file carry `com.apple.quarantine`, and does the spa…</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-28T06:46:18Z">10-28 15:46</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-17">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1687">Browser MCP server crate in plugins/browser</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T06:43:21Z">10-28 15:43</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Part of #1657 ## Question Build the browser MCP server as the official plugin crate `plugins/browser/`, standalone from the host. Port the relay core from `src-tauri/src/browser/` (`relay.rs`, `script.rs`, `locate.rs`, `shots.rs`; only `mod.rs`'s two Tauri commands and `tauri::a…</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-28T06:43:21Z">10-28 15:43</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-18">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1690">feat: browser MCP server plugin crate in plugins/browser</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T06:43:19Z">10-28 15:43</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary A standalone MCP server crate for the ego lite browser, released as the official plugin `browser`. The app's own browser path is untouched; #1670 switches to this plugin and deletes it. ```text plugins/browser/ ├── Cargo.toml, Cargo.lock # package and bin `browser` 0.…</p>
+                <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-10-28T06:43:19Z">10-28 15:43</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-19">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1689">chore: generic example in the reading dictionary placeholder</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T06:35:29Z">10-28 15:35</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary The reading dictionary textarea placeholder showed two real game character names (`秧秧=ヤンヤン`, `穂穂=スイスイ`). It now shows generic examples of the same scripts: `小明=シャオミン` (a Chinese name read in katakana) and `東雲=しののめ` (a kanji word read in hiragana). `src/ui/quick-contro…</p>
+                <p class="item-meta"><span class="item-kind">pull_request</span><span class="item-host">github.com</span><time datetime="2026-10-28T06:35:29Z">10-28 15:35</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-20">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1684">[feature] Fixed schema for address_character and rate_relation: open characters go in the client context</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T06:05:49Z">10-28 15:05</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Work description `address_character`'s `to` and `rate_relation`'s `toward` carry an `enum` of the other open presets' names. The enum is read when the schema is built. On the push transport the schema goes out once, in `hello.tools` (`src/io/chat/push/push-socket.ts:402-410`)…</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-28T06:05:49Z">10-28 15:05</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-21">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1686">feat!: open characters go in the client context instead of the tool enum</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T06:05:48Z">10-28 15:05</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary `address_character.to` and `rate_relation.toward` no longer carry an `enum` of the other open presets. Each turn's client context lists them instead, on a new `open characters:` line. ``` before: open presets ──(read when the schema is built)──▶ tools[].to/toward enum…</p>
+                <p class="item-meta"><span class="item-kind">pull_request</span><span class="item-host">github.com</span><time datetime="2026-10-28T06:05:48Z">10-28 15:05</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-22">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1683">[feature] yui-notify: warn at session start when YUI is unreachable</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T05:55:41Z">10-28 14:55</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Work description A yui-notify hook that cannot reach YUI fails silently: it records `last-error.json` and the user hears nothing. Two gaps make this common for an agent on a remote host: 1. The setup's remote branch (`skills/setup/references/remote.md`) uses a per-connection …</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-28T05:55:41Z">10-28 14:55</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-23">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1685">feat: yui-notify warns at session start when YUI is unreachable</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T05:55:40Z">10-28 14:55</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary A yui-notify hook that cannot reach YUI failed silently. Two gaps made this common for an agent on a remote host: the remote setup used a per-connection `RemoteForward`, which an agent in tmux/screen outlives, and the setup probe ran through that same connection's tun…</p>
+                <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-10-28T05:55:40Z">10-28 14:55</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-24">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1664">Bridge contract details</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T05:22:58Z">10-28 14:22</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Part of #1657 ## Question Fix the bridge contract from the prototypes' measurements: final tool names (they must not collide with Hermes's `tool_search` / `tool_describe` / `tool_call`), the `plugin tools:` line format in `docs/reference/client-context.md`, what `plugin_describe…</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-28T05:22:58Z">10-28 14:22</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-25">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1669">Official catalog and plugin release assets in CI</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T05:20:29Z">10-28 14:20</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Part of #1657 ## Question Create `plugins/catalog.json` and the CI that builds each official plugin's binary per platform, attaches the assets to a release, and writes their urls and sha256 into the catalog, to the schema decided in &quot;catalog.json schema and the release pipeline&quot;…</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-28T05:20:29Z">10-28 14:20</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-26">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1677">ci: release official plugins and list them in the catalog</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T05:20:28Z">10-28 14:20</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary A tag `plugin-&lt;id&gt;-v&lt;version&gt;` now releases one official plugin and lists it in the catalog the app reads. ``` .github/workflows/plugin-release.yml meta tag -&gt; id, version; must match plugins/&lt;id&gt;/Cargo.toml and .claude-plugin/plugin.json build darwin-arm64 (macos-lat…</p>
+                <p class="item-meta"><span class="item-kind">pull_request</span><span class="item-host">github.com</span><time datetime="2026-10-28T05:20:28Z">10-28 14:20</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-27">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1642">[feature] project-structure.md file tree matches the source again</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T05:16:22Z">10-28 14:16</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Work description The file tree in `docs/agent-guide/project-structure.md` no longer matches the source at `f871dd4f`. Bring it up to date. Found by the v0.5.0 docs drift audit; deferred past the release because only contributors and agents read this page. Measured on `f871dd4…</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-28T05:16:22Z">10-28 14:16</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-28">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1681">docs: project-structure tree matches the source</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T05:16:21Z">10-28 14:16</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary The Directory Map in `docs/agent-guide/project-structure.md` matches the source again at `f35166ce`. A checker parses the tree block into paths and compares them with `git ls-files src src-tauri/src scripts` (test files and `*test-helpers.ts` excluded): | | before | a…</p>
+                <p class="item-meta"><span class="item-kind">pull_request</span><span class="item-host">github.com</span><time datetime="2026-10-28T05:16:21Z">10-28 14:16</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-29">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1680">ci: add the plugin catalog</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T05:11:22Z">10-28 14:11</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary Adds the empty plugin catalog on its own, ahead of #1677, so the plugin release workflow's catalog-PR step can run for real: that step branches from `main` and upserts `plugins/catalog.json`, and the probe run on #1677 failed there because the file did not exist on `m…</p>
+                <p class="item-meta"><span class="item-kind">pull_request</span><span class="item-host">github.com</span><time datetime="2026-10-28T05:11:22Z">10-28 14:11</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-30">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1634">[bug] Signal chips are cut off when the pet window is small</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-10-28T05:11:18Z">10-28 14:11</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Symptoms When the pet window is small, the Signal chips beside the character are cut off (reported by the owner on 2026-10-27, `pnpm tauri dev` on main `338a62f6`). ## Steps to reproduce 1. Turn on External signals and restart YUI. 2. Post two or three Signals (for example `y…</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-10-28T05:11:18Z">10-28 14:11</time></p>
+              </details>
+            </li>
+          </ol>
+        </details>
+      </section>
+      <!-- /slot -->
+    </div>
+  </main>
+
+  <nav class="days" aria-label="Other days">
+    <!-- slot: days -->
+    <a class="prev" href="../../../../../reports/2026/10/W4/28/"><span class="day-label"><span lang="en">Previous day</span><span lang="ko">이전 날</span></span><span class="day-date">2026-10-28</span></a>
+      <!-- /slot -->
+    <a class="all" href="../../../../../"><span class="day-date"><span lang="en">All days</span><span lang="ko">모든 날</span></span></a>
+    <a class="next" href="#" hidden><span class="day-label"><span lang="en">Next day</span><span lang="ko">다음 날</span></span><span class="day-date"></span></a>
+    <p class="next-none" hidden><span lang="en">No next day yet</span><span lang="ko">아직 다음 날이 없습니다</span></p>
+  </nav>
+
+</div>
+<script>
+  // The earliest of the next seven days that has a page; producers can skip days.
+  (function () {
+    var stamp = document.querySelector(".masthead time[datetime]");
+    var next = document.querySelector(".days .next");
+    var none = document.querySelector(".days .next-none");
+    if (!stamp || !next || !none) return;
+    var start = Date.parse(stamp.getAttribute("datetime").slice(0, 10) + "T00:00:00Z");
+    function folder(day) {
+      var week = Math.floor((Number(day.slice(8, 10)) - 1) / 7) + 1;
+      return "../../../../../reports/" + day.slice(0, 4) + "/" + day.slice(5, 7) + "/W" + week + "/" + day.slice(8, 10) + "/";
+    }
+    var days = [1, 2, 3, 4, 5, 6, 7].map(function (n) { return new Date(start + n * 864e5).toISOString().slice(0, 10); });
+    Promise.all(days.map(function (day) {
+      return fetch(folder(day), { method: "HEAD" }).then(function (r) { return r.ok ? day : null; }, function () { return null; });
+    })).then(function (found) {
+      var day = found.filter(Boolean)[0];
+      if (!day) { none.hidden = false; return; }
+      next.href = folder(day);
+      next.querySelector(".day-date").textContent = day;
+      next.hidden = false;
+    });
+  })();
+</script>
+</body>
+</html>
