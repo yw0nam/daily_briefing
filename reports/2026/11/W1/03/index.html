@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex">
+<meta name="description" content="One day of the briefing, with the state of every source.">
+<!-- slot: title -->
+<title>Briefing · 2026-11-03</title>
+    <!-- /slot -->
+<style id="lang-rule">body [lang]:not([lang="en"]) { display: none !important; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans+KR:wght@500;600&family=Noto+Serif+KR:wght@400;500&display=swap">
+<link rel="stylesheet" href="../../../../../src/style.css">
+<script src="../../../../../src/lang.js"></script>
+</head>
+<body>
+<header class="runner container">
+  <a class="wordmark" href="../../../../../"><span lang="en">Daily briefing</span><span lang="ko">오늘의 브리핑</span></a>
+  <label class="lang-switch">
+    <select id="lang-select" aria-label="Language">
+      <!-- slot: languages -->
+          <option value="en">EN</option>
+          <option value="ko">KO</option>
+         
+    <!-- /slot -->
+    </select>
+  </label>
+</header>
+
+<div class="page container">
+
+  <header class="front">
+    <div>
+      <div class="masthead">
+        <!-- slot: date lang=en -->
+    <div lang="en">
+      <h1>Tuesday, November 3</h1>
+      <p class="dateline"><time datetime="2026-11-03T08:20:00+09:00"><span>2026-11-03</span> <span>prepared at 08:20</span></time></p>
+    </div>
+    <!-- /slot -->
+        <!-- slot: date lang=ko -->
+    <div lang="ko">
+      <h1>11월 3일 화요일</h1>
+      <p class="dateline"><time datetime="2026-11-03T08:20:00+09:00"><span>2026-11-03</span> <span>08:20 작성</span></time></p>
+    </div>
+    <!-- /slot -->
+      </div>
+
+      <section class="lead" aria-label="Summary">
+        <!-- slot: summary lang=en -->
+    <div lang="en">
+      <p>The project recorded 24 updates overnight: a plain-language message for rate-limited turns and a Gemini chat preset were merged, together with a breaking fix to the Chat Completions tool loop on Gemini and a series of Threads window changes. No review request is pending.</p>
+      <p>The news centres on the eve of the US midterm elections and on renewed fighting in Ukraine. The daily trending list is led by agent tooling, and the top paper covers unified image generation. One news feed, cnn-topstories, is stale and has no success on record, so the news section may be incomplete.</p>
+    </div>
+    <!-- /slot -->
+        <!-- slot: summary lang=ko -->
+    <div lang="ko">
+      <p>프로젝트에서 밤사이 24건의 갱신이 기록되었습니다. 요청 제한에 걸린 턴의 안내 문구와 Gemini 채팅 프리셋이 병합되었고, Gemini용 Chat Completions 도구 루프의 호환되지 않는 수정과 Threads 창의 여러 변경도 함께 반영되었습니다. 대기 중인 검토 요청은 없습니다.</p>
+      <p>뉴스는 미국 중간선거 직전의 상황과 우크라이나의 전투 재개가 중심입니다. 일간 트렌딩 목록은 에이전트 도구가 선두를 차지했고, 최상위 논문은 통합 이미지 생성을 다룹니다. 뉴스 피드 cnn-topstories가 지연 상태이며 성공 기록이 없어 뉴스 섹션에 빠진 내용이 있을 수 있습니다.</p>
+    </div>
+    <!-- /slot -->
+      </section>
+    </div>
+
+    <aside class="ledger">
+      <nav class="contents" aria-label="Contents">
+        <!-- slot: contents -->
+    <ol>
+      <li><a href="#world-news"><span class="toc-name">world-news</span><span class="status status-stale"><span lang="en">stale</span><span lang="ko">지연</span></span><span class="toc-count">10</span></a></li>
+      <li><a href="#github-trending-daily"><span class="toc-name">github-trending-daily</span><span class="toc-count">10</span></a></li>
+      <li><a href="#huggingface-papers-daily"><span class="toc-name">huggingface-papers-daily</span><span class="toc-count">10</span></a></li>
+    </ol>
+    <p class="toc-zone"><span lang="en">Projects</span><span lang="ko">프로젝트</span></p>
+    <ol>
+      <li><a href="#yui-repo"><span class="toc-name">yui-repo</span><span class="toc-count">24</span></a></li>
+    </ol>
+    <!-- /slot -->
+      </nav>
+
+      <section class="health" aria-labelledby="attention">
+        <h2 id="attention"><span lang="en">Needs attention</span><span lang="ko">확인이 필요한 소스</span></h2>
+        <div class="notices">
+          <!-- slot: notices -->
+      <div class="notice">
+        <p class="notice-head"><span class="status status-stale"><span lang="en">Stale</span><span lang="ko">지연</span></span><span class="source-name"><span class="source-producer">world-news</span> cnn-topstories</span></p>
+        <p class="notice-detail"><span lang="en">No success on record</span><span lang="ko">성공 기록 없음</span></p>
+      </div>
+    <!-- /slot -->
+        </div>
+      </section>
+    </aside>
+  </header>
+
+  <main>
+    <div class="zone">
+      <!-- slot: producers -->
+      <section class="producer" aria-labelledby="world-news">
+        <div class="producer-lede">
+          <div class="producer-top"><h2 class="producer-head" id="world-news">world-news</h2><span class="count">10</span></div>
+          <p class="producer-summary">World news roundup: 10 items from 3 live feed(s)</p>
+          <!-- slot: intro:world-news lang=en -->
+          <p class="intro" lang="en">The midterm elections dominate: the <a href="#world-news-1">FT poll on inflation</a> and the <a href="#world-news-3">overview of key races</a> frame the final day of campaigning. Separately, <a href="#world-news-5">a bombing at a Ukrainian aid centre</a> and the <a href="#world-news-8">return of fighting in Kherson</a> follow the end of the longest ceasefire. One of four feeds is stale, so coverage may be incomplete.</p>
+          <!-- /slot -->
+          <!-- slot: intro:world-news lang=ko -->
+          <p class="intro" lang="ko">중간선거가 주요 소식입니다. <a href="#world-news-1">인플레이션에 관한 FT 여론조사</a>와 <a href="#world-news-3">주요 경합 지역 정리</a>가 선거 직전의 분위기를 보여 줍니다. 또한 <a href="#world-news-5">우크라이나 구호 센터 폭격</a>과 <a href="#world-news-8">헤르손 지역의 전투 재개</a>는 가장 긴 휴전이 끝난 뒤의 상황을 전합니다. 피드 네 곳 중 한 곳이 지연 상태여서 일부 기사가 빠졌을 수 있습니다.</p>
+          <!-- /slot -->
+        </div>
+        <ol class="items">
+          <li class="item item-lead" id="world-news-1">
+            <div class="lead-text">
+              <a class="item-title" href="https://www.ft.com/content/5ed63d08-66f3-4ad3-9ec7-2ec8b590fc85?syn-25a6b1a6=1">Big majority of US voters disapprove of Trump’s handling of inflation: FT poll</a>
+              <p class="item-excerpt">On the eve of the midterm elections, Americans say they want politicians who can better handle the economy</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-11-02T20:38:05Z">05:38</time></p>
+            </div>
+          </li>
+          <li class="item" id="world-news-2">
+            <a class="item-title" href="https://www.ft.com/content/17ea8ea2-a834-428b-8c93-bc1803ca4d9f?syn-25a6b1a6=1">Democrats close ranks after shock Michigan defection</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T21:35:58Z">06:35</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Haley Stevens’ support for Republican candidate instead of Abdul El-Sayed provokes a swift backlash</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-11-02T21:35:58Z">06:35</time></p>
+            </details>
+          </li>
+          <li class="item" id="world-news-3">
+            <a class="item-title" href="https://www.ft.com/content/1626b14d-524f-4d2a-94d1-860ae4a68692?syn-25a6b1a6=1">Key races that will decide the US midterm elections</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T20:12:26Z">05:12</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Will a Democratic ‘blue wave’ sweep Congress away from Republicans — and render the president a lame duck?</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-11-02T20:12:26Z">05:12</time></p>
+            </details>
+          </li>
+          <li class="item" id="world-news-4">
+            <a class="item-title" href="https://www.ft.com/content/7ee57da7-9687-4ceb-8057-d5afab78d728?syn-25a6b1a6=1">Donald Trump’s imperial presidency faces a popular uprising</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T16:18:15Z">01:18</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Voters have grown weary of the president’s monument-building at a time of high living costs</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.ft.com</span><time datetime="2026-11-02T16:18:15Z">01:18</time></p>
+            </details>
+          </li>
+          <li class="item" id="world-news-5">
+            <a class="item-title" href="https://www.bbc.co.uk/news/articles/cjy56dndlyz0o?at_medium=RSS&amp;at_campaign=rss">Russian bombing kills 26 people at Ukraine aid centre, Kyiv says</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T21:10:04Z">06:10</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Officials say at least nine 3,000kg aerial bombs hit a southern Ukrainian village in what the president called an &quot;utterly horrific&quot; attack.</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-11-02T21:10:04Z">06:10</time></p>
+            </details>
+          </li>
+          <li class="item" id="world-news-6">
+            <a class="item-title" href="https://www.bbc.co.uk/news/articles/cm369yy7lw73o?at_medium=RSS&amp;at_campaign=rss">Copilot in deadly Florida jet crash identified in reports as 20-year-old</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T19:58:34Z">04:58</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">In air traffic audio, a crew member can be heard shouting: &quot;We are going to crash into the ground!&quot;</p>
+              <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-11-02T19:58:34Z">04:58</time></p>
+            </details>
+          </li>
+        </ol>
+        <details class="more">
+          <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
+          <ol class="items" style="--start: 6">
+            <li class="item" id="world-news-7">
+              <a class="item-title" href="https://www.bbc.co.uk/news/articles/cq1kd1nee80eo?at_medium=RSS&amp;at_campaign=rss">Shop freezers in seven European countries hit by cyber-attack</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T17:38:11Z">02:38</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">The temperature of freezers in several shops across Europe reportedly rose to as high as 50C.</p>
+                <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-11-02T17:38:11Z">02:38</time></p>
+              </details>
+            </li>
+            <li class="item" id="world-news-8">
+              <a class="item-title" href="https://www.bbc.co.uk/news/articles/ckg5jlyp66jzo?at_medium=RSS&amp;at_campaign=rss">Fighting returns to Kherson region after longest Ukraine war ceasefire</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T17:33:19Z">02:33</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Though unprecedented, the six-day truce has done little to alter the wider trajectory of a war that continues to grinds on.</p>
+                <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-11-02T17:33:19Z">02:33</time></p>
+              </details>
+            </li>
+            <li class="item" id="world-news-9">
+              <a class="item-title" href="https://www.bbc.co.uk/news/articles/cr0qkve1x224o?at_medium=RSS&amp;at_campaign=rss">Ryanair says it may freeze workers' pay and raise airfares</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T12:22:10Z">11-02 21:22</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">The airline says fuel prices may rise by €2bn in 2028 unless there is an end to the US-Israel war with Iran.</p>
+                <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-11-02T12:22:10Z">11-02 21:22</time></p>
+              </details>
+            </li>
+            <li class="item" id="world-news-10">
+              <a class="item-title" href="https://www.bbc.co.uk/news/articles/ck1wv1j0xgywo?at_medium=RSS&amp;at_campaign=rss">Poundland's former owner offers to invest as minister prepares to meet board</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T13:40:36Z">11-02 22:40</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Wolverhampton's Steve Smith said he wants to put some money back into the firm he started.</p>
+                <p class="item-meta"><span class="item-kind">news</span><span class="item-host">www.bbc.co.uk</span><time datetime="2026-11-02T13:40:36Z">11-02 22:40</time></p>
+              </details>
+            </li>
+          </ol>
+        </details>
+      </section>
+
+      <section class="producer" aria-labelledby="github-trending-daily">
+        <div class="producer-lede">
+          <div class="producer-top"><h2 class="producer-head" id="github-trending-daily">github-trending-daily</h2><span class="count">10</span></div>
+          <p class="producer-summary">GitHub trending (daily): top 10 repos by stars</p>
+          <!-- slot: intro:github-trending-daily lang=en -->
+          <p class="intro" lang="en"><a href="#github-trending-daily-7">pingdotgg/t3code</a> gained the most stars today, followed by <a href="#github-trending-daily-1">vercel-labs/agent-desktop</a>, a computer-use CLI for agents. Agent tooling, including <a href="#github-trending-daily-2">persistent session context</a> and <a href="#github-trending-daily-5">a game-studio agent setup</a>, accounts for much of the list.</p>
+          <!-- /slot -->
+          <!-- slot: intro:github-trending-daily lang=ko -->
+          <p class="intro" lang="ko">오늘 별을 가장 많이 얻은 저장소는 <a href="#github-trending-daily-7">pingdotgg/t3code</a>이고, 그 뒤를 에이전트용 컴퓨터 사용 CLI인 <a href="#github-trending-daily-1">vercel-labs/agent-desktop</a>이 잇습니다. <a href="#github-trending-daily-2">세션 간 맥락 유지</a>와 <a href="#github-trending-daily-5">게임 스튜디오용 에이전트 구성</a>을 비롯해 에이전트 도구가 목록의 상당 부분을 차지합니다.</p>
+          <!-- /slot -->
+        </div>
+        <ol class="items">
+          <li class="item item-lead" id="github-trending-daily-1">
+            <div class="lead-text">
+              <a class="item-title" href="https://github.com/vercel-labs/agent-desktop">vercel-labs/agent-desktop</a>
+              <p class="item-figure"><span class="figure-value">2,243</span><span class="figure-label">stars today</span></p>
+              <p class="item-excerpt">Computer use CLI for AI agents. 9,460 stars in all.</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-11-02T23:00:03Z">08:00</time></p>
+            </div>
+          </li>
+          <li class="item" id="github-trending-daily-2">
+            <a class="item-title" href="https://github.com/thedotmack/claude-mem">thedotmack/claude-mem</a>
+            <p class="item-figure"><span class="figure-value">1,799</span><span class="figure-label">stars today</span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More. 110,688 sta…</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-11-02T23:00:03Z">08:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="github-trending-daily-3">
+            <a class="item-title" href="https://github.com/D4Vinci/Scrapling">D4Vinci/Scrapling</a>
+            <p class="item-figure"><span class="figure-value">858</span><span class="figure-label">stars today</span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev. 92,759 stars in all.</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-11-02T23:00:03Z">08:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="github-trending-daily-4">
+            <a class="item-title" href="https://github.com/hyprwm/Hyprland">hyprwm/Hyprland</a>
+            <p class="item-figure"><span class="figure-value">508</span><span class="figure-label">stars today</span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks. 39,886 stars in all.</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-11-02T23:00:03Z">08:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="github-trending-daily-5">
+            <a class="item-title" href="https://github.com/Donchitos/Claude-Code-Game-Studios">Donchitos/Claude-Code-Game-Studios</a>
+            <p class="item-figure"><span class="figure-value">1,380</span><span class="figure-label">stars today</span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy. 33,487 stars in all.</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-11-02T23:00:03Z">08:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="github-trending-daily-6">
+            <a class="item-title" href="https://github.com/FlashML-org/FreeToken">FlashML-org/FreeToken</a>
+            <p class="item-figure"><span class="figure-value">654</span><span class="figure-label">stars today</span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently. 16,010 stars in all.</p>
+              <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-11-02T23:00:03Z">08:00</time></p>
+            </details>
+          </li>
+        </ol>
+        <details class="more">
+          <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
+          <ol class="items" style="--start: 6">
+            <li class="item" id="github-trending-daily-7">
+              <a class="item-title" href="https://github.com/pingdotgg/t3code">pingdotgg/t3code</a>
+              <p class="item-figure"><span class="figure-value">3,216</span><span class="figure-label">stars today</span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">41,738 stars in all.</p>
+                <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-11-02T23:00:03Z">08:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="github-trending-daily-8">
+              <a class="item-title" href="https://github.com/shiyu-coder/Kronos">shiyu-coder/Kronos</a>
+              <p class="item-figure"><span class="figure-value">855</span><span class="figure-label">stars today</span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Kronos: A Foundation Model for the Language of Financial Markets. 45,979 stars in all.</p>
+                <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-11-02T23:00:03Z">08:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="github-trending-daily-9">
+              <a class="item-title" href="https://github.com/kornia/kornia">kornia/kornia</a>
+              <p class="item-figure"><span class="figure-value">412</span><span class="figure-label">stars today</span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">🐍 Geometric Computer Vision Library for Spatial AI. 12,115 stars in all.</p>
+                <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-11-02T23:00:03Z">08:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="github-trending-daily-10">
+              <a class="item-title" href="https://github.com/JustVugg/colibri">JustVugg/colibri</a>
+              <p class="item-figure"><span class="figure-value">655</span><span class="figure-label">stars today</span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦. 46,502 stars in all.</p>
+                <p class="item-meta"><span class="item-kind">repo_trending</span><span class="item-host">github.com</span><time datetime="2026-11-02T23:00:03Z">08:00</time></p>
+              </details>
+            </li>
+          </ol>
+        </details>
+      </section>
+
+      <section class="producer" aria-labelledby="huggingface-papers-daily">
+        <div class="producer-lede">
+          <div class="producer-top"><h2 class="producer-head" id="huggingface-papers-daily">huggingface-papers-daily</h2><span class="count">10</span></div>
+          <p class="producer-summary">HuggingFace daily papers: top 10 of 50 today</p>
+          <!-- slot: intro:huggingface-papers-daily lang=en -->
+          <p class="intro" lang="en">The <a href="#huggingface-papers-daily-1">unified image generation paper built on video foundation models</a> leads with 112 upvotes. Two papers touch agent systems: <a href="#huggingface-papers-daily-2">self-play orchestration</a> and <a href="#huggingface-papers-daily-5">an asynchronous embodied runtime</a>. The <a href="#huggingface-papers-daily-6">open speech and tool-use model</a> is relevant to voice assistants.</p>
+          <!-- /slot -->
+          <!-- slot: intro:huggingface-papers-daily lang=ko -->
+          <p class="intro" lang="ko"><a href="#huggingface-papers-daily-1">비디오 파운데이션 모델을 활용한 통합 이미지 생성 논문</a>이 추천 112개로 선두입니다. 에이전트 시스템을 다룬 논문으로는 <a href="#huggingface-papers-daily-2">자기 대결 기반 오케스트레이션</a>과 <a href="#huggingface-papers-daily-5">비동기 임바디드 런타임</a>이 있습니다. <a href="#huggingface-papers-daily-6">음성과 도구 사용을 아우르는 공개 모델</a>은 음성 비서와 관련이 깊습니다.</p>
+          <!-- /slot -->
+        </div>
+        <ol class="items">
+          <li class="item item-lead" id="huggingface-papers-daily-1">
+            <figure class="item-image"><img src="https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.36545.png" alt=""></figure>
+            <div class="lead-text">
+              <a class="item-title" href="https://huggingface.co/papers/2610.36545">FrameForge: Harnessing Priors of Video Foundation Models for Unified Image Generation</a>
+              <p class="item-figure"><span class="figure-value">112</span><span class="figure-label">upvotes</span></p>
+              <p class="item-excerpt">Unified conditional image generation requires a single model to preserve different aspects of a visual input while producing a target image that follows textual guidance. Pretrained video models provide a promising foundation by encoding visual transformations across time, yet e…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-26T20:00:00Z">10-27 05:00</time></p>
+            </div>
+          </li>
+          <li class="item" id="huggingface-papers-daily-2">
+            <a class="item-title" href="https://huggingface.co/papers/2610.22740">R^2Orch: Recursive Self-Improvement for Agent Orchestration via Self-Play within a Skill-Internalization Loop</a>
+            <p class="item-figure"><span class="figure-value">87</span><span class="figure-label">upvotes</span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">In recent years, agentic orchestration has been widely applied to solve complex human tasks. However, existing orchestration learning still faces key challenges, including hand-designed curricula, advantage collapse when a task's rollouts all reach the same outcome, and unreliab…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-21T20:00:00Z">10-22 05:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="huggingface-papers-daily-3">
+            <a class="item-title" href="https://huggingface.co/papers/2610.39302">Proving and Improving the Platonic Representation Hypothesis with JEPAs</a>
+            <p class="item-figure"><span class="figure-value">71</span><span class="figure-label">upvotes</span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Whether models trained on different modalities converge to the same representation of the world is central to AI. The Platonic Representation Hypothesis (PRH) conjectures that they do as they scale, but without a proof it offers neither a guarantee nor a recipe. We turn the hypo…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-28T20:00:00Z">10-29 05:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="huggingface-papers-daily-4">
+            <a class="item-title" href="https://huggingface.co/papers/2610.39497">Does Scaling Toward AGI Depend on What System-1 Lets System-2 Execute?</a>
+            <p class="item-figure"><span class="figure-value">59</span><span class="figure-label">upvotes</span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Progress toward artificial general intelligence (AGI) has largely relied on scaling a resource-intensive executive, System-2, through larger models, more data and compute, longer reasoning, and more agents. We ask whether the next stage may come instead from co-designing it with…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-28T20:00:00Z">10-29 05:00</time></p>
+            </details>
+          </li>
+          <li class="item" id="huggingface-papers-daily-5">
+            <a class="item-title" href="https://huggingface.co/papers/2610.42053">REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control</a>
+            <p class="item-figure"><span class="figure-value">44</span><span class="figure-label">upvotes</span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">Foundation models are becoming remarkably reliable at high-level reasoning, yet they remain too slow and costly to serve as fine-grained controllers. Conversely, fast policies like VLAs and whole-body controllers offer more efficient reflexes, but struggle to generalize. While p…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-30T13:18:13Z">10-30 22:18</time></p>
+            </details>
+          </li>
+          <li class="item" id="huggingface-papers-daily-6">
+            <a class="item-title" href="https://huggingface.co/papers/2610.40738">Apriel Voice 27B Preview: An Open Model for Speech, Reasoning, and Tool Use</a>
+            <p class="item-figure"><span class="figure-value">34</span><span class="figure-label">upvotes</span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">A capable voice assistant must do more than recognize words; it must understand requests, reason over context, sustain conversations, and act through tools. We present Apriel Voice 27B Preview, an open speech-language model that unifies these capabilities within a shared reasoni…</p>
+              <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-28T20:00:00Z">10-29 05:00</time></p>
+            </details>
+          </li>
+        </ol>
+        <details class="more">
+          <summary><span>4<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
+          <ol class="items" style="--start: 6">
+            <li class="item" id="huggingface-papers-daily-7">
+              <a class="item-title" href="https://huggingface.co/papers/2610.16927">WeFair: Fidelity-Aware Alignment from Human Feedback for Personalized Query Rewriting in Short-Video Search</a>
+              <p class="item-figure"><span class="figure-value">26</span><span class="figure-label">upvotes</span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Short-video search needs compact query rewriters that recover users' personalized intent from ambiguous queries under strict latency constraints. Existing LLM-based methods have improved rewriting by using synthetic reasoning and subsequent consumption-behavioral feedback. Howev…</p>
+                <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-29T20:00:00Z">10-30 05:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="huggingface-papers-daily-8">
+              <a class="item-title" href="https://huggingface.co/papers/2610.37481">Follow the Gradient: Tracing Safety Degradation Back to Training Data</a>
+              <p class="item-figure"><span class="figure-value">24</span><span class="figure-label">upvotes</span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Fine-tuning Large Language Models (LLMs) on instruction data can quietly erode their safety, even when no training example looks harmful. Because this safety-degrading data looks benign, standard content filters struggle to catch it. We tackle this problem by developing SimpleLo…</p>
+                <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-26T20:00:00Z">10-27 05:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="huggingface-papers-daily-9">
+              <a class="item-title" href="https://huggingface.co/papers/2610.42149">Latent Reasoning in Continuous Space for Unified Multimodal Models</a>
+              <p class="item-figure"><span class="figure-value">24</span><span class="figure-label">upvotes</span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Unified Multimodal Models (UMMs) achieve remarkable success on diverse multimodal understanding and generation tasks, yet they still struggle to effectively leverage language-based chain-of-thought reasoning for image generation. As a result, existing reasoning-augmented UMMs of…</p>
+                <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-29T20:00:00Z">10-30 05:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="huggingface-papers-daily-10">
+              <a class="item-title" href="https://huggingface.co/papers/2610.40339">Wizard: Manipulate Any World in Real Time via Agentic Control</a>
+              <p class="item-figure"><span class="figure-value">24</span><span class="figure-label">upvotes</span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">Recent advances in video world models have enabled the generation of increasingly realistic and interactive virtual environments, opening new possibilities for player-customizable gameplay. Agentic frameworks further advance this direction by decoupling explicit game logic and c…</p>
+                <p class="item-meta"><span class="item-kind">paper</span><span class="item-host">huggingface.co</span><time datetime="2026-10-28T20:00:00Z">10-29 05:00</time></p>
+              </details>
+            </li>
+          </ol>
+        </details>
+      </section>
+    <!-- /slot -->
+    </div>
+
+    <div class="zone zone-projects">
+      <h2 class="zone-title"><span lang="en">Projects</span><span lang="ko">프로젝트</span></h2>
+      <!-- slot: personal -->
+      <section class="producer" aria-labelledby="yui-repo">
+        <div class="producer-lede">
+          <div class="producer-top"><h3 class="producer-head" id="yui-repo">yui-repo</h3><span class="count">24</span></div>
+          <p class="producer-summary">YUI repository: 24 updates in the last 24 hours, including closed issues, merged pull requests, features, and review requests for Youngwoo.</p>
+          <!-- slot: intro:yui-repo lang=en -->
+          <p class="intro" lang="en">The project merged a rate-limit message for HTTP 429 turns (<a href="#yui-repo-2">pull request</a>) and a Gemini chat preset (<a href="#yui-repo-4">pull request</a>), alongside <a href="#yui-repo-6">a fix for the Chat Completions tool loop on Gemini</a>, which is a breaking change. The Threads window received several changes, among them <a href="#yui-repo-18">distinct surfaces and a full-width transcript</a>, and macOS 26.2 cursor fixes. Twelve issues and twelve changes were recorded; no review request is listed.</p>
+          <!-- /slot -->
+          <!-- slot: intro:yui-repo lang=ko -->
+          <p class="intro" lang="ko">프로젝트에서 HTTP 429 응답 안내 문구(<a href="#yui-repo-2">풀 리퀘스트</a>)와 Gemini 채팅 프리셋(<a href="#yui-repo-4">풀 리퀘스트</a>)이 병합되었고, 호환되지 않는 변경인 <a href="#yui-repo-6">Gemini용 Chat Completions 도구 루프 수정</a>도 함께 반영되었습니다. Threads 창에는 <a href="#yui-repo-18">구역별 표면 구분과 전체 폭 대화 기록</a>을 비롯한 여러 변경이 들어갔고, macOS 26.2 커서 수정도 포함되었습니다. 이슈 12건과 변경 12건이 기록되었으며 검토 요청은 없습니다.</p>
+          <!-- /slot -->
+        </div>
+        <ol class="items">
+          <li class="item item-lead" id="yui-repo-1">
+            <div class="lead-text">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1800">[feature] A rate-limited turn says so in plain words</a>
+              <p class="item-excerpt">## Work description A free hosted chat tier has limits, and a person on the first conversation path will reach them. A user turn that ends on HTTP 429 today shows `429 &lt;server text&gt;` under the input (`src/ui/notices/turn-error.ts:37`, `input.error_http`). Show a plain line inste…</p>
+              <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-11-02T16:07:41Z">01:07</time></p>
+            </div>
+          </li>
+          <li class="item" id="yui-repo-2">
+            <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1801">feat: a rate-limited turn shows a plain line</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T16:07:39Z">01:07</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Summary ```diff turnErrorMessage(&quot;network_drop&quot;, detail) + status 429 → input.error_rate_limit status present → &quot;{status} {message}&quot; no status → server text ``` Why 429 only: it is the status a free tier returns at its limit. The other statuses keep the server's text, which h…</p>
+              <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-11-02T16:07:39Z">01:07</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-3">
+            <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1798">[feature] Google Gemini chat preset that fills the URL and the model</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T16:07:30Z">01:07</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Work description Add a Google Gemini entry to the chat provider presets, and let a preset fill the model as well as the URL. `gemini-3.5-flash-lite` is the default free chat model (owner decision, 2026-11-02). `CHAT_PROVIDER_PRESETS` has no Gemini entry and no preset fills a …</p>
+              <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-11-02T16:07:30Z">01:07</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-4">
+            <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1799">feat: the Google Gemini chat preset fills the URL and the model</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T16:07:29Z">01:07</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Summary ```diff handleChatPresetChange commit chat_base_url + commit chat_model, when the preset names one commit chat_api, when the preset names one CHAT_PROVIDER_PRESETS groq + gemini: url + model hermes ``` Why these values: - `models/gemini-3.5-flash-lite`: the form `GET …</p>
+              <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-11-02T16:07:29Z">01:07</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-5">
+            <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1795">[bug] Chat Completions tool loop fails on Gemini: dropped signature, silent cue-only turns</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T14:26:19Z">11-02 23:26</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Symptoms The Chat Completions tool loop does not work against Gemini's OpenAI-compatible endpoint. Two separate defects show up on a `gemini-3.5-flash-lite` turn: 1. A tool round trip fails with HTTP 400, because the client drops the signature Gemini attaches to a tool call. …</p>
+              <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-11-02T14:26:19Z">11-02 23:26</time></p>
+            </details>
+          </li>
+          <li class="item" id="yui-repo-6">
+            <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1796">fix!: Chat Completions answers no-text cue-only responses and keeps call extras</a>
+            <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T14:26:17Z">11-02 23:26</time></span></p>
+            <details class="item-detail">
+              <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+              <p class="item-excerpt">## Summary Gemini's OpenAI-compatible endpoint ends a tool-calling response on `finish_reason: &quot;stop&quot;` and requires its per-call signature back on the next request. This PR makes the Chat Completions tool loop work with both. ``` streamChatCompletions ├─ reducer: keeps a call's …</p>
+              <p class="item-meta"><span class="item-kind">pull_request</span><span class="item-host">github.com</span><time datetime="2026-11-02T14:26:17Z">11-02 23:26</time></p>
+            </details>
+          </li>
+        </ol>
+        <details class="more">
+          <summary><span>18<span lang="en">&nbsp;more</span><span lang="ko">개 더 보기</span></span></summary>
+          <ol class="items" style="--start: 6">
+            <li class="item" id="yui-repo-7">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1792">[bug] Copying inside tmux in a Terminal never reaches the system clipboard</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T09:00:59Z">11-02 18:00</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Symptoms Copying inside tmux in a Terminal never reaches the system clipboard. The text stays in tmux's own paste buffers. ## Steps to reproduce 1. Open a Terminal in the Threads window. Run `tmux`. 2. Enter copy mode, select text, and copy it (`y`, or `Enter`). 3. Paste in a…</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-11-02T09:00:59Z">11-02 18:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-8">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1793">fix: copying inside tmux in a Terminal reaches the system clipboard</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T09:00:57Z">11-02 18:00</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary A Terminal now answers OSC 52, so a copy inside tmux reaches the system clipboard. Option drag forces a native selection when tmux has the mouse. ```diff tmux copy -&gt; ESC ] 52 ; ; &lt;base64&gt; BEL PTY -&gt; terminal_attach channel -&gt; xterm parser - no handler, frame dropped …</p>
+                <p class="item-meta"><span class="item-kind">pull_request</span><span class="item-host">github.com</span><time datetime="2026-11-02T09:00:57Z">11-02 18:00</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-9">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1790">[feature] The Threads chip hides while its window is open, and a transcript opens at its newest entry</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T06:50:50Z">11-02 15:50</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Work description Two Threads window changes the owner decided on 2026-11-02. 1. Main's Threads chip hides while the Threads window is open, on either tab. It shows &quot;Waiting for you&quot; beside the character while the same count and an Amber tab dot already show in the window, and…</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-11-02T06:50:50Z">11-02 15:50</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-10">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1791">feat: the Threads chip hides while its window is open, and a transcript opens at its newest entry</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T06:50:48Z">11-02 15:50</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary Two Threads window changes. **The Threads chip hides while its window is open.** It showed &quot;Waiting for you&quot; beside the character while the window showed the same count, and it took no pointer events then (`interactive-overlay.ts:23`). ``` threadsWindow.open() ─▶ noti…</p>
+                <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-11-02T06:50:48Z">11-02 15:50</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-11">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1786">[feature] The speech bubble keeps only the elements Markdown produces</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T03:14:20Z">11-02 12:14</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Work description The speech bubble and the message backlog render backend text through `renderMarkdownInline` (`src/ui/message/markdown.ts`), whose DOMPurify config is DOMPurify's default plus a `data:` hook. That default lets through elements and attributes Markdown never pr…</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-11-02T03:14:20Z">11-02 12:14</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-12">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1789">feat: the speech bubble keeps only the elements Markdown produces</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T03:14:18Z">11-02 12:14</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary The speech bubble and the backlog rendered backend text through DOMPurify's default config, which keeps elements Markdown never produces (`srcset`, `&lt;picture&gt;`, `&lt;video&gt;`/`&lt;audio&gt;` with autoplay, SVG `&lt;image href&gt;`, `style`, `td background`, `&lt;input type=&quot;image&quot;&gt;`, `&lt;…</p>
+                <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-11-02T03:14:18Z">11-02 12:14</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-13">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1787">[bug] The settings hint dot shows no cursor change on macOS 26.2</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T03:13:09Z">11-02 12:13</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Symptoms The settings hint dot (`.yui-hint-dot`, the small `?` beside a setting) sets `cursor: help` (`src/ui/quick-controls/quick-controls.css:374`). WebKit 26.2 does not show `help` (measured in the #1777 diagnosis; WebKit bug 303845), so the pointer stays the arrow over it…</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-11-02T03:13:09Z">11-02 12:13</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-14">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1788">fix: the settings hint dot shows the pointer cursor on macOS 26.2</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T03:13:07Z">11-02 12:13</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary The settings hint dot (`.yui-hint-dot`) set `cursor: help`, which WebKit 26.2 does not show (WebKit bug 303845; measured in the #1777 diagnosis). It now uses `pointer`, like the app's other buttons. ``` src/ui/quick-controls/quick-controls.css:374 cursor: help → point…</p>
+                <p class="item-meta"><span class="item-kind">pull_request</span><span class="item-host">github.com</span><time datetime="2026-11-02T03:13:07Z">11-02 12:13</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-15">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1779">[feature] Render Thread entries as Markdown</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T02:58:27Z">11-02 11:58</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Work description Render Thread entries as Markdown in the Threads window. Today `richText` (`src/ui/threads/window/rich-text.ts`, called from `thread-pane.ts:31`) styles only fenced code blocks and `code` spans and leaves every other character as text, so a table arrives as r…</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-11-02T02:58:27Z">11-02 11:58</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-16">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1785">feat: Thread entries render as Markdown</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T02:58:26Z">11-02 11:58</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary Thread entries showed producer text as plain text (only code fences and `code` spans were styled), so a Markdown table arrived as raw `| a | b |` lines. Entries now render as Markdown through the speech bubble's renderer. Built on #1784 (#1776, merged): its surface to…</p>
+                <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-11-02T02:58:26Z">11-02 11:58</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-17">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1776">[feature] Threads window: transcript follows the pane width, sections on distinct surfaces</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T02:53:35Z">11-02 11:53</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Work description Make the Threads window readable at any size and its sections easy to tell apart. This covers both the Threads tab and the Terminal tab. 1. The transcript follows the pane width. `.yui-threads-entry { max-width: 72ch; }` (`src/ui/threads/window/thread-pane.cs…</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-11-02T02:53:35Z">11-02 11:53</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-18">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1784">feat: the Threads window's sidebar, head and body sit on distinct surfaces, and the transcript fills the pane</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T02:53:33Z">11-02 11:53</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary The Threads window's sidebar, head and body were nearly one colour (Hearth: list `--yui-panel-bg` L 0.16, head and body `--yui-scrim-strong` L 0.18 at alpha 0.9), the desktop showed through the panel, and the transcript stopped at 72ch however wide the window was. Bui…</p>
+                <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-11-02T02:53:33Z">11-02 11:53</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-19">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1778">[bug] Korean IME input is wrong in the Terminal tab</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T02:38:14Z">11-02 11:38</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Symptoms Korean input through the macOS IME does not work correctly in the Threads window's Terminal tab (xterm.js 6.0.0). The exact failure (lost, duplicated or split syllables) is not measured yet. ## Steps to reproduce 1. Open the Threads window, Terminal tab, and open a t…</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-11-02T02:38:14Z">11-02 11:38</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-20">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1783">fix: the Terminal tab sends whole Hangul syllables typed through WebKit's Korean IME</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T02:38:12Z">11-02 11:38</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary Korean typed into the Terminal tab reached the shell as lone jamo (`안녕하세요` → `ㅇㄴㅎ세`). With the macOS Korean 2-Set IME, WebKit fires no composition events: it inserts a syllable as an `insertText` input and rewrites it in place as `insertReplacementText` inputs, and xt…</p>
+                <p class="item-meta"><span class="item-kind">pull_request</span><span class="item-host">github.com</span><time datetime="2026-11-02T02:38:12Z">11-02 11:38</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-21">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1777">[bug] The Threads window's resize edges show no resize cursor</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T02:28:25Z">11-02 11:28</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Symptoms The pointer does not change to a resize cursor on the Threads window's edges and corners, so the resize is hard to find. The handles set `ns-resize`, `ew-resize`, `nwse-resize` and `nesw-resize` in `src/ui/threads/window/resize-handles.css`. The cause is not measured…</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-11-02T02:28:25Z">11-02 11:28</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-22">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1782">fix: the Threads window's resize edges and corners show a resize cursor on macOS 26.2</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T02:28:23Z">11-02 11:28</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary On macOS 26.2 the Threads window's resize edges and corners showed the arrow: WebKit 26.2 does not show `ew-resize`, `ns-resize`, `nwse-resize` or `nesw-resize` ([WebKit bug 303845](https://bugs.webkit.org/show_bug.cgi?id=303845), regression in 300377@main; measured i…</p>
+                <p class="item-meta"><span class="item-kind">pull_request</span><span class="item-host">github.com</span><time datetime="2026-11-02T02:28:23Z">11-02 11:28</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-23">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/issues/1780">[feature] Picking a waiting Thread clears it from the Threads chip</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T02:28:13Z">11-02 11:28</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Work description A waiting Thread keeps the Threads chip's count and nod until the user answers it. `createThreadsChip` counts every Thread with `state === &quot;input-required&quot;` (`src/ui/threads/chip/threads-chip.ts:113`). A user who has read a Thread but does not want to answer …</p>
+                <p class="item-meta"><span class="item-kind">issue</span><span class="item-host">github.com</span><time datetime="2026-11-02T02:28:13Z">11-02 11:28</time></p>
+              </details>
+            </li>
+            <li class="item" id="yui-repo-24">
+              <a class="item-title" href="https://github.com/yw0nam/YUI/pull/1781">feat: picking a waiting Thread clears it from the Threads chip</a>
+              <p class="item-figure"><span class="figure-value"><time datetime="2026-11-02T02:28:11Z">11-02 11:28</time></span></p>
+              <details class="item-detail">
+                <summary><span lang="en">Details</span><span lang="ko">자세히</span></summary>
+                <p class="item-excerpt">## Summary A waiting Thread kept the Threads chip's count and nod until the user answered it. Now picking a Thread with an open ask in the Threads window's list or rail records that ask as seen, and main's Threads chip stops counting it. The Threads window itself still shows the…</p>
+                <p class="item-meta"><span class="item-kind">feature</span><span class="item-host">github.com</span><time datetime="2026-11-02T02:28:11Z">11-02 11:28</time></p>
+              </details>
+            </li>
+          </ol>
+        </details>
+      </section>
+    <!-- /slot -->
+    </div>
+  </main>
+
+  <nav class="days" aria-label="Other days">
+    <!-- slot: days -->
+    <a class="prev" href="../../../../../reports/2026/11/W1/02/"><span class="day-label"><span lang="en">Previous day</span><span lang="ko">이전 날</span></span><span class="day-date">2026-11-02</span></a>
+    <!-- /slot -->
+    <a class="all" href="../../../../../"><span class="day-date"><span lang="en">All days</span><span lang="ko">모든 날</span></span></a>
+    <a class="next" href="#" hidden><span class="day-label"><span lang="en">Next day</span><span lang="ko">다음 날</span></span><span class="day-date"></span></a>
+    <p class="next-none" hidden><span lang="en">No next day yet</span><span lang="ko">아직 다음 날이 없습니다</span></p>
+  </nav>
+
+</div>
+<script>
+  // The earliest of the next seven days that has a page; producers can skip days.
+  (function () {
+    var stamp = document.querySelector(".masthead time[datetime]");
+    var next = document.querySelector(".days .next");
+    var none = document.querySelector(".days .next-none");
+    if (!stamp || !next || !none) return;
+    var start = Date.parse(stamp.getAttribute("datetime").slice(0, 10) + "T00:00:00Z");
+    function folder(day) {
+      var week = Math.floor((Number(day.slice(8, 10)) - 1) / 7) + 1;
+      return "../../../../../reports/" + day.slice(0, 4) + "/" + day.slice(5, 7) + "/W" + week + "/" + day.slice(8, 10) + "/";
+    }
+    var days = [1, 2, 3, 4, 5, 6, 7].map(function (n) { return new Date(start + n * 864e5).toISOString().slice(0, 10); });
+    Promise.all(days.map(function (day) {
+      return fetch(folder(day), { method: "HEAD" }).then(function (r) { return r.ok ? day : null; }, function () { return null; });
+    })).then(function (found) {
+      var day = found.filter(Boolean)[0];
+      if (!day) { none.hidden = false; return; }
+      next.href = folder(day);
+      next.querySelector(".day-date").textContent = day;
+      next.hidden = false;
+    });
+  })();
+</script>
+</body>
+</html>
